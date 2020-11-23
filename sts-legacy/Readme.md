@@ -4,7 +4,7 @@ Contains the main source files for compiling CCSL into Automata (Synchronized Tr
 The binary files are availables in [sts-legacy.jar](../dependencies/jar/) 
 
 - **[ccsl-core](ccsl-core/):** legacy encoding of CCSL and plenty of utilities
-- **[sts-pojo](ccsl-pojo/):** contains the code to handle the Synchronized Transition Systems
+- **[sts-pojo](sts-pojo/):** contains the code to handle the Synchronized Transition Systems
   - *src-texo:* are automatically generated from a model. They mainly contain the data structure of STS
   - *src:* written manually
     - compose : contains the code for composing several STS and synchronize them
