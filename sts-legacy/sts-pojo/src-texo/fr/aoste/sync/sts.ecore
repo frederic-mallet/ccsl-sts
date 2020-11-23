@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="sts" nsURI="http://sync.aoste.fr/" nsPrefix="fr.aoste">
+  <eClassifiers xsi:type="ecore:EClass" name="SynchronousTransitionSystem" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="events" lowerBound="1"
+        upperBound="-1" eType="#//Event" containment="true">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="events"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="states" lowerBound="1"
+        upperBound="-1" eType="#//State" containment="true">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="states"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="initial" lowerBound="1"
+        eType="#//State">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="initial"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="final" eType="#//FinalState"
+        containment="true">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="final_"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transitions" upperBound="-1"
+        eType="#//Transition" containment="true">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="transitions"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="#//Parameter" containment="true">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="parameters"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="invariant" eType="#//valuespecification/BooleanExpression"
+        containment="true">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="invariant"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="State" eSuperTypes="#//Vertex">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="name"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="invariant" eType="#//valuespecification/BooleanExpression"
+        containment="true">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="invariant"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Transition">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//State">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="source"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//Vertex">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="target"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="guard" eType="#//valuespecification/BooleanExpression"
+        containment="true">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="guard"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="trigger" lowerBound="1"
+        eType="#//Trigger" containment="true">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="trigger"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Parameter" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defaultValue" lowerBound="1"
+        eType="#//valuespecification/ValueSpecification" containment="true">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="defaultValue"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="name"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParameterBinding">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="formal" lowerBound="1"
+        eType="#//Parameter">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="formal"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" lowerBound="1" eType="#//valuespecification/ValueSpecification"
+        containment="true">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="value"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Chi" eSuperTypes="#//valuespecification/IntegerExpression">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="event" lowerBound="1" eType="#//Event">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="event"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParameterReference" eSuperTypes="#//valuespecification/IntegerExpression">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reference" lowerBound="1"
+        eType="#//Parameter">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="reference"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Vertex" abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FinalState" eSuperTypes="#//Vertex"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ComposedTransitionSystem">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subsystems" lowerBound="1"
+        upperBound="-1" eType="#//SynchronousTransitionSystem" containment="true">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="subsystems"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pBindings" upperBound="-1"
+        eType="#//ParameterBinding" containment="true">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="pBindings"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="vectors" lowerBound="1"
+        upperBound="-1" eType="#//SynchronizationVector">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="vectors"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Event" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sync" eType="#//SynchronizationVector">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="sync"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Trigger">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="events" lowerBound="1"
+        upperBound="-1" eType="#//Event">
+      <eAnnotations source="org.eclipse.emf.texo">
+        <details key="java.member" value="events"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="SynchronizationVector" instanceClassName="fr.aoste.sts.SyncVector"/>
+  <eSubpackages name="dynamic" nsURI="http://sync.aoste.fr/dynamic" nsPrefix="fr.inria.aoste.sts">
+    <eClassifiers xsi:type="ecore:EClass" name="DynamicTransitionSystem">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="current" lowerBound="1"
+          upperBound="-1" eType="#//Vertex">
+        <eAnnotations source="org.eclipse.emf.texo">
+          <details key="java.member" value="current"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="counters" lowerBound="1"
+          upperBound="-1" eType="#//dynamic/EventCounter">
+        <eAnnotations source="org.eclipse.emf.texo">
+          <details key="java.member" value="counters"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="static" lowerBound="1"
+          eType="#//ComposedTransitionSystem">
+        <eAnnotations source="org.eclipse.emf.texo">
+          <details key="java.member" value="static_"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="EventCounter">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="counter" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="0">
+        <eAnnotations source="org.eclipse.emf.texo">
+          <details key="java.member" value="counter"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="event" lowerBound="1"
+          eType="#//Event">
+        <eAnnotations source="org.eclipse.emf.texo">
+          <details key="java.member" value="event"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="valuespecification" nsURI="http://sync.aoste.fr/vspec" nsPrefix="fr.aoste">
+    <eClassifiers xsi:type="ecore:EClass" name="ValueSpecification" abstract="true"
+        interface="true"/>
+    <eClassifiers xsi:type="ecore:EClass" name="IntegerExpression" abstract="true"
+        interface="true" eSuperTypes="#//valuespecification/ValueSpecification"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LiteralInteger" eSuperTypes="#//valuespecification/IntegerExpression">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+        <eAnnotations source="org.eclipse.emf.texo">
+          <details key="java.member" value="value"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Difference" eSuperTypes="#//valuespecification/IntegerExpression">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="left" lowerBound="1"
+          eType="#//valuespecification/IntegerExpression" containment="true">
+        <eAnnotations source="org.eclipse.emf.texo">
+          <details key="java.member" value="left"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="right" lowerBound="1"
+          eType="#//valuespecification/IntegerExpression" containment="true">
+        <eAnnotations source="org.eclipse.emf.texo">
+          <details key="java.member" value="right"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="BooleanExpression" abstract="true"
+        interface="true" eSuperTypes="#//valuespecification/ValueSpecification"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Conjunction" eSuperTypes="#//valuespecification/BooleanExpression">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="operands" lowerBound="2"
+          upperBound="-1" eType="#//valuespecification/BooleanExpression" containment="true">
+        <eAnnotations source="org.eclipse.emf.texo">
+          <details key="java.member" value="operands"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Comparison" eSuperTypes="#//valuespecification/BooleanExpression">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="operator" lowerBound="1"
+          eType="#//valuespecification/ComparisonOperator">
+        <eAnnotations source="org.eclipse.emf.texo">
+          <details key="java.member" value="operator"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="left" lowerBound="1"
+          eType="#//valuespecification/IntegerExpression" containment="true">
+        <eAnnotations source="org.eclipse.emf.texo">
+          <details key="java.member" value="left"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="right" lowerBound="1"
+          eType="#//valuespecification/IntegerExpression" containment="true">
+        <eAnnotations source="org.eclipse.emf.texo">
+          <details key="java.member" value="right"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="ComparisonOperator">
+      <eLiterals name="equals"/>
+      <eLiterals name="greaterThan" value="1"/>
+      <eLiterals name="lessThan" value="2"/>
+      <eLiterals name="greaterOrEqual" value="3"/>
+      <eLiterals name="lessOrEqual" value="4"/>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>

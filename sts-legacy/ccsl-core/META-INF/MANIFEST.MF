@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CCSL Core Elements
+Bundle-SymbolicName: fr.aoste.ccsl.core
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Aoste INRIA/I3S
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: fr.aoste.ccsl.basic,
+ fr.aoste.ccsl.core,
+ fr.aoste.ccsl.modelgeneration,
+ fr.aoste.ccsl.system,
+ fr.aoste.sts
+Automatic-Module-Name: fr.aoste.ccsl.core

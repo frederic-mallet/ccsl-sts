@@ -1,0 +1,57 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>frederic.lccsl</groupId>
+  <artifactId>sts-legacy</artifactId>
+  <version>0.1</version>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <timesquare.safety.core.path>${user.home}/src/jar/externalJar/lccsl/lccsl-core.jar</timesquare.safety.core.path>
+   </properties>
+ 
+  <build>
+    <directory>target</directory>
+    <sourceDirectory>${project.basedir}/src</sourceDirectory>
+    <outputDirectory>${project.basedir}/bin</outputDirectory>   
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <executions>
+          <execution>
+            <id>add-source</id>
+            <phase>generate-sources</phase>
+            <goals><goal>add-source</goal></goals>
+            <configuration>
+              <sources>
+                <source>ccsl-core/src</source>
+                <source>sts-pojo/src</source>
+                <source>sts-pojo/src-texo</source>
+                <source>sts-utility/src</source>
+              </sources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>frederic.common</groupId>
+      <artifactId>binaryWord</artifactId>
+      <version>0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>timesquare</groupId>
+      <artifactId>timesquare.safety.core</artifactId>
+      <scope>system</scope>
+      <systemPath>${timesquare.safety.core.path}</systemPath>
+      <version>0.1</version>
+    </dependency>
+  </dependencies>
+</project>
