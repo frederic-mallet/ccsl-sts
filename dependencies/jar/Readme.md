@@ -9,4 +9,6 @@
 
 ## Backends
 - html.jar [optional] : Contains a backend to produce a time trace as an HTML file
+  - depends on [common/html](../common)
 - vcd.jar [optional] : Contains a backend to produce a time trace as a VCD file
+  - depends on [common/vcd](../common)
