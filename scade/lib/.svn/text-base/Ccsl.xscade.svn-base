@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/3" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/2" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/1">
+	<declarations>
+		<Package name="Ccsl">
+			<declarations>
+				<Package name="Observers" href="Observers.xscade"/>
+				<Package name="Generators" href="Generators.xscade"/>
+				<Type name="XStrictness">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="RNS">
+									<pragmas>
+										<ed:Value oid="!ed/1e12/6CA1/11F8/4b769cb24cb"/>
+									</pragmas>
+								</Value>
+								<Value name="LNS">
+									<pragmas>
+										<ed:Value oid="!ed/1e13/6CA1/11F8/4b769cb2a47"/>
+									</pragmas>
+								</Value>
+								<Value name="S">
+									<pragmas>
+										<ed:Value oid="!ed/23f5/6CA1/11F8/4b76d6e7665f"/>
+									</pragmas>
+								</Value>
+								<Value name="NS">
+									<pragmas>
+										<ed:Value oid="!ed/23f6/6CA1/11F8/4b76d6f84278"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/b21/6CA1/11F8/4b769b7f3f64"/>
+					</pragmas>
+				</Type>
+				<Type name="Strictness">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="STRICT">
+									<pragmas>
+										<ed:Value oid="!ed/23f3/6CA1/11F8/4b76d63d6526"/>
+									</pragmas>
+								</Value>
+								<Value name="NONSTRICT">
+									<pragmas>
+										<ed:Value oid="!ed/23f4/6CA1/11F8/4b76d6665ffb"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/23f2/6CA1/11F8/4b76d6142f01"/>
+					</pragmas>
+				</Type>
+				<Type name="ClockStatus">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="PRESENT">
+									<pragmas>
+										<ed:Value oid="!ed/199/76FD/163C/4b77c70c6f61"/>
+									</pragmas>
+								</Value>
+								<Value name="ABSENT">
+									<pragmas>
+										<ed:Value oid="!ed/19a/76FD/163C/4b77c71b4090"/>
+									</pragmas>
+								</Value>
+								<Value name="DEAD">
+									<pragmas>
+										<ed:Value oid="!ed/19b/76FD/163C/4b77c7225ecf"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/198/76FD/163C/4b77c6d43902"/>
+					</pragmas>
+				</Type>
+				<Operator name="Mg_delta" href="Mg_delta.xscade"/>
+				<Operator name="DecodeClockStatus" href="DecodeClockStatus.xscade"/>
+				<Operator name="EncodeClockStatus" href="EncodeClockStatus.xscade"/>
+				<Operator name="isPresent" href="isPresent.xscade"/>
+				<Operator name="isDead" href="isDead.xscade"/>
+				<Operator name="AwaitNC" href="AwaitNC.xscade"/>
+				<Operator name="GtEqLt" href="GtEqLt.xscade"/>
+				<Operator name="And3" href="And3.xscade"/>
+				<Operator name="Or3" href="Or3.xscade"/>
+				<Operator name="SR" href="SR.xscade"/>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/b1d/6CA1/11F8/4b769b6b48cc" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/2">
+					<diagrams>
+						<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/b1e/6CA1/11F8/4b769b6b1b96" blockKind="constants"/>
+						<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/b1f/6CA1/11F8/4b769b6b547c" blockKind="types"/>
+						<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/b20/6CA1/11F8/4b769b6b57ac" blockKind="sensors"/>
+					</diagrams>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

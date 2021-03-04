@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/3" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/2" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/1" kind="function" name="Union">
+	<inputs>
+		<Variable name="a">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="ClockStatus"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/29c/7C6E/1790/4b77f9574bab"/>
+			</pragmas>
+		</Variable>
+		<Variable name="b">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="ClockStatus"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/29d/7C6E/1790/4b77f95826ae"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="c">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="ClockStatus"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/29e/7C6E/1790/4b77f95a460"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="_L1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="ClockStatus"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2bb/7C6E/1790/4b77f99d6268"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L3">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2c2/7C6E/1790/4b77f9a55cda"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2c1/7C6E/1790/4b77f9a54755"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L4">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="ClockStatus"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2c8/7C6E/1790/4b77f9ce54b"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L6">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2cf/7C6E/1790/4b77f9d635a1"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L5">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2ce/7C6E/1790/4b77f9d6a04"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L7">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2d5/7C6E/1790/4b77f9ed40a0"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L8">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2db/7C6E/1790/4b77f9f84bb4"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L9">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="ClockStatus"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2e1/7C6E/1790/4b77fa4c5fe5"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L10">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/38f/7C6E/1790/4b77fd2a2b6f"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- _L1 = a; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L1"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="a"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2ba/7C6E/1790/4b77f99d68cf"/>
+			</pragmas>
+		</Equation>
+		<!-- _L2, _L3 = DecodeClockStatus(_L1); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L2"/>
+				<VariableRef name="_L3"/>
+			</lefts>
+			<right>
+				<!-- DecodeClockStatus(_L1) -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="DecodeClockStatus"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L1"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2c0/7C6E/1790/4b77f9a52b02"/>
+			</pragmas>
+		</Equation>
+		<!-- _L4 = b; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L4"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="b"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2c7/7C6E/1790/4b77f9ce2be3"/>
+			</pragmas>
+		</Equation>
+		<!-- _L5, _L6 = DecodeClockStatus(_L4); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L5"/>
+				<VariableRef name="_L6"/>
+			</lefts>
+			<right>
+				<!-- DecodeClockStatus(_L4) -->
+				<CallExpression>
+					<operator>
+						<OpCall name="2">
+							<operator>
+								<OperatorRef name="DecodeClockStatus"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L4"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2cd/7C6E/1790/4b77f9d61ee"/>
+			</pragmas>
+		</Equation>
+		<!-- _L7 = _L2 or _L5; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L7"/>
+			</lefts>
+			<right>
+				<!-- _L2 or _L5 -->
+				<NAryOp name="1" operator="or">
+					<operands>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L2"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L5"/>
+							</path>
+						</IdExpression>
+					</operands>
+				</NAryOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2d4/7C6E/1790/4b77f9ed31b8"/>
+			</pragmas>
+		</Equation>
+		<!-- _L8 = _L3 or _L6; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L8"/>
+			</lefts>
+			<right>
+				<!-- _L3 or _L6 -->
+				<NAryOp name="2" operator="or">
+					<operands>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L3"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L6"/>
+							</path>
+						</IdExpression>
+					</operands>
+				</NAryOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2da/7C6E/1790/4b77f9f83b6e"/>
+			</pragmas>
+		</Equation>
+		<!-- _L9 = EncodeClockStatus(_L7, _L10); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L9"/>
+			</lefts>
+			<right>
+				<!-- EncodeClockStatus(_L7, _L10) -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="EncodeClockStatus"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L7"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L10"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2e0/7C6E/1790/4b77fa4c137c"/>
+			</pragmas>
+		</Equation>
+		<!-- c = _L9; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="c"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L9"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2e6/7C6E/1790/4b77fa7858eb"/>
+			</pragmas>
+		</Equation>
+		<!-- _L10 =  not _L8; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L10"/>
+			</lefts>
+			<right>
+				<!--  not _L8 -->
+				<UnaryOp name="1" operator="not">
+					<operand>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L8"/>
+							</path>
+						</IdExpression>
+					</operand>
+				</UnaryOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/38e/7C6E/1790/4b77fd2a2f76"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/29a/7C6E/1790/4b77f9477954" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/2">
+			<comment>c = a union b</comment>
+			<diagrams>
+				<NetDiagram name="diagram_Union_1" landscape="true" format="A4 (210 297)" oid="!ed/29b/7C6E/1790/4b77f947e9f">
+					<presentationElements>
+						<EquationGE presentable="!ed/2ba/7C6E/1790/4b77f99d68cf">
+							<position>
+								<Point x="1296" y="2117"/>
+							</position>
+							<size>
+								<Size width="265" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/2c0/7C6E/1790/4b77f9a52b02">
+							<position>
+								<Point x="3413" y="1667"/>
+							</position>
+							<size>
+								<Size width="1773" height="1402"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2ba/7C6E/1790/4b77f99d68cf" dstEquation="!ed/2c0/7C6E/1790/4b77f9a52b02">
+							<positions>
+								<Point x="1561" y="2381"/>
+								<Point x="2778" y="2381"/>
+								<Point x="2778" y="2381"/>
+								<Point x="3413" y="2381"/>
+							</positions>
+						</Edge>
+						<EquationGE presentable="!ed/2c7/7C6E/1790/4b77f9ce2be3">
+							<position>
+								<Point x="1191" y="4339"/>
+							</position>
+							<size>
+								<Size width="264" height="502"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/2cd/7C6E/1790/4b77f9d61ee">
+							<position>
+								<Point x="3413" y="3889"/>
+							</position>
+							<size>
+								<Size width="1773" height="1403"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2c7/7C6E/1790/4b77f9ce2be3" dstEquation="!ed/2cd/7C6E/1790/4b77f9d61ee">
+							<positions>
+								<Point x="1455" y="4604"/>
+								<Point x="2434" y="4604"/>
+								<Point x="2434" y="4604"/>
+								<Point x="3413" y="4604"/>
+							</positions>
+						</Edge>
+						<EquationGE presentable="!ed/2d4/7C6E/1790/4b77f9ed31b8">
+							<position>
+								<Point x="7567" y="1931"/>
+							</position>
+							<size>
+								<Size width="1005" height="662"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/2da/7C6E/1790/4b77f9f83b6e">
+							<position>
+								<Point x="7567" y="4366"/>
+							</position>
+							<size>
+								<Size width="1006" height="661"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2c0/7C6E/1790/4b77f9a52b02" dstEquation="!ed/2d4/7C6E/1790/4b77f9ed31b8">
+							<positions>
+								<Point x="5186" y="2143"/>
+								<Point x="6773" y="2143"/>
+								<Point x="6773" y="2143"/>
+								<Point x="7567" y="2143"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/2cd/7C6E/1790/4b77f9d61ee" dstEquation="!ed/2d4/7C6E/1790/4b77f9ed31b8">
+							<positions>
+								<Point x="5186" y="4366"/>
+								<Point x="6773" y="4366"/>
+								<Point x="6773" y="2381"/>
+								<Point x="7567" y="2381"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="2" rightExprIndex="1" srcEquation="!ed/2c0/7C6E/1790/4b77f9a52b02" dstEquation="!ed/2da/7C6E/1790/4b77f9f83b6e">
+							<positions>
+								<Point x="5186" y="2593"/>
+								<Point x="6218" y="2593"/>
+								<Point x="6218" y="4577"/>
+								<Point x="7567" y="4577"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="2" rightExprIndex="2" srcEquation="!ed/2cd/7C6E/1790/4b77f9d61ee" dstEquation="!ed/2da/7C6E/1790/4b77f9f83b6e">
+							<positions>
+								<Point x="5186" y="4815"/>
+								<Point x="6773" y="4815"/>
+								<Point x="6773" y="4815"/>
+								<Point x="7567" y="4815"/>
+							</positions>
+						</Edge>
+						<EquationGE presentable="!ed/2e0/7C6E/1790/4b77fa4c137c">
+							<position>
+								<Point x="12674" y="2672"/>
+							</position>
+							<size>
+								<Size width="1772" height="1403"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2d4/7C6E/1790/4b77f9ed31b8" dstEquation="!ed/2e0/7C6E/1790/4b77fa4c137c">
+							<positions>
+								<Point x="8573" y="2275"/>
+								<Point x="11721" y="2275"/>
+								<Point x="11721" y="3149"/>
+								<Point x="12674" y="3149"/>
+							</positions>
+						</Edge>
+						<EquationGE presentable="!ed/2e6/7C6E/1790/4b77fa7858eb">
+							<position>
+								<Point x="16113" y="3122"/>
+							</position>
+							<size>
+								<Size width="344" height="502"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2e0/7C6E/1790/4b77fa4c137c" dstEquation="!ed/2e6/7C6E/1790/4b77fa7858eb">
+							<positions>
+								<Point x="14446" y="3387"/>
+								<Point x="14949" y="3387"/>
+								<Point x="14949" y="3387"/>
+								<Point x="16166" y="3387"/>
+							</positions>
+						</Edge>
+						<EquationGE presentable="!ed/38e/7C6E/1790/4b77fd2a2f76">
+							<position>
+								<Point x="9790" y="4366"/>
+							</position>
+							<size>
+								<Size width="1006" height="661"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2da/7C6E/1790/4b77f9f83b6e" dstEquation="!ed/38e/7C6E/1790/4b77fd2a2f76">
+							<positions>
+								<Point x="8573" y="4710"/>
+								<Point x="9181" y="4710"/>
+								<Point x="9181" y="4710"/>
+								<Point x="9790" y="4710"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/38e/7C6E/1790/4b77fd2a2f76" dstEquation="!ed/2e0/7C6E/1790/4b77fa4c137c">
+							<positions>
+								<Point x="10795" y="4710"/>
+								<Point x="11721" y="4710"/>
+								<Point x="11721" y="3598"/>
+								<Point x="12674" y="3598"/>
+							</positions>
+						</Edge>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+		</ed:Operator>
+	</pragmas>
+</Operator>

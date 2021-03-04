@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://www.esterel-technologies.com/ns/scade/3" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/2" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/1" name="Generators">
+	<declarations>
+		<Operator name="Union" href="Union.xscade"/>
+		<Operator name="Inter" href="Inter.xscade"/>
+		<Operator name="Minus" href="Minus.xscade"/>
+		<Operator name="AsFrom" href="AsFrom.xscade"/>
+		<Operator name="Sup" href="Sup.xscade"/>
+		<Operator name="Inf" href="Inf.xscade"/>
+		<Operator name="Await" href="Await.xscade"/>
+		<Operator name="Sample" href="Sample.xscade"/>
+		<Operator name="Defer" href="Defer.xscade"/>
+	</declarations>
+	<pragmas>
+		<ed:Package oid="!ed/296/7C6E/1790/4b77f92d5c2e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/2">
+			<diagrams>
+				<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/297/7C6E/1790/4b77f92d49e7" blockKind="constants"/>
+				<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/298/7C6E/1790/4b77f92d50f" blockKind="types"/>
+				<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/299/7C6E/1790/4b77f92d7490" blockKind="sensors"/>
+			</diagrams>
+		</ed:Package>
+	</pragmas>
+</Package>
