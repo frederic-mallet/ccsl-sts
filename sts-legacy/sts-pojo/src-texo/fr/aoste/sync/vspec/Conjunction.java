@@ -110,6 +110,8 @@ public class Conjunction implements BooleanExpression {
 	 */
 	@Override
 	public String toString() {
-		return "Conjunction";
+		String[] op = new String[operands.size()];
+		for (int i = 0; i < op.length; i++) op[i] = operands.get(i).toString();
+		return String.join(" and ", op);
 	}
 }

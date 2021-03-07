@@ -5,5 +5,6 @@
 	<classpathentry kind="src" path="src-texo"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/fr.aoste.ccsl.core"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/common.binaryword"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/fr.kairos.common.java"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -55,4 +55,8 @@ class MyVertexState extends MyState {
 		} // empty list means not in finalState but no fireable transition
 		return res;
 	}
+	@Override
+	public String toString() {
+		return "*(" + state + ")*";
+	}
 }

@@ -32,23 +32,23 @@ class SupBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> {
 		Event supE = helper.createEvent(sup);
 
 		{ // general invariant
-			Conjunction c = InvariantBuilder.buildConjunction(
-					InvariantBuilder.buildInvariant(clock1Event, supE, 0, ComparisonOperator.GREATEROREQUAL),
-					InvariantBuilder.buildInvariant(clock2Event, supE, 0, ComparisonOperator.GREATEROREQUAL)
+			Conjunction c = InvariantBuilder.conjunction(
+					InvariantBuilder.inv(clock1Event, supE, 0, ComparisonOperator.GREATEROREQUAL),
+					InvariantBuilder.inv(clock2Event, supE, 0, ComparisonOperator.GREATEROREQUAL)
 			);
 			sts.setInvariant(c);
 		}
 		
 		State s0 = helper.createState("S0");
 		sts.setInitial(s0);
-		s0.setInvariant(InvariantBuilder.buildInvariant(clock1Event, clock2Event, 0, ComparisonOperator.EQUALS));
+		s0.setInvariant(InvariantBuilder.inv(clock1Event, clock2Event, 0, ComparisonOperator.EQUALS));
 
 		{ // s0 -> s0, c1.c2.sup
 			helper.createTransition(s0, s0, supE, clock1Event, clock2Event);	
 		}
 
 		State sPlus = helper.createState("S+");
-		sPlus.setInvariant(InvariantBuilder.buildInvariant(clock1Event, clock2Event, 1, ComparisonOperator.GREATEROREQUAL));
+		sPlus.setInvariant(InvariantBuilder.inv(clock1Event, clock2Event, 1, ComparisonOperator.GREATEROREQUAL));
 
 		{ // s0 -> s+, c1
 			helper.createTransition(s0, sPlus, clock1Event);	
@@ -63,15 +63,15 @@ class SupBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> {
 		
 		{ // s+ -> s+, c2.sup [delta>1]
 			Transition transition = helper.createTransition(sPlus, sPlus, supE, clock2Event);
-			transition.setGuard(InvariantBuilder.buildInvariant(clock1Event, clock2Event, 1, ComparisonOperator.GREATERTHAN));
+			transition.setGuard(InvariantBuilder.inv(clock1Event, clock2Event, 1, ComparisonOperator.GREATERTHAN));
 		}
 		{ // s+ -> s0, c2.sup [delta==1]
 			Transition transition = helper.createTransition(sPlus, s0, supE, clock2Event);
-			transition.setGuard(InvariantBuilder.buildInvariant(clock1Event, clock2Event, 1, ComparisonOperator.EQUALS));
+			transition.setGuard(InvariantBuilder.inv(clock1Event, clock2Event, 1, ComparisonOperator.EQUALS));
 		}
 		
 		State sMinus = helper.createState("S-");		
-		sMinus.setInvariant(InvariantBuilder.buildInvariant(clock2Event, clock1Event, 1, ComparisonOperator.GREATEROREQUAL));
+		sMinus.setInvariant(InvariantBuilder.inv(clock2Event, clock1Event, 1, ComparisonOperator.GREATEROREQUAL));
 		
 		{ // s0 -> s-, c2
 			helper.createTransition(s0, sMinus, clock2Event);
@@ -84,11 +84,11 @@ class SupBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> {
 		}
 		{ // s- -> s-, c1.sup [-delta>1]
 			Transition transition = helper.createTransition(sMinus, sMinus, supE, clock1Event);	
-			transition.setGuard(InvariantBuilder.buildInvariant(clock2Event, clock1Event, 1, ComparisonOperator.GREATERTHAN));
+			transition.setGuard(InvariantBuilder.inv(clock2Event, clock1Event, 1, ComparisonOperator.GREATERTHAN));
 		}
 		{ // s- -> s0, c1.sup [-delta==1]
 			Transition transition = helper.createTransition(sMinus, s0, supE, clock1Event);	
-			transition.setGuard(InvariantBuilder.buildInvariant(clock2Event, clock1Event, 1, ComparisonOperator.EQUALS));
+			transition.setGuard(InvariantBuilder.inv(clock2Event, clock1Event, 1, ComparisonOperator.EQUALS));
 		}
 		
 		return sts;

@@ -96,6 +96,6 @@ public class State implements Vertex {
 	 */
 	@Override
 	public String toString() {
-		return "State" + "<name: " + getName() + ">";
+		return "State" + "<" + getName() + ">";
 	}
 }

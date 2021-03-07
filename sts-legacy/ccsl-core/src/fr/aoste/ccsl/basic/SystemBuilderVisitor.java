@@ -74,6 +74,18 @@ public class SystemBuilderVisitor extends ACCSLSpecificationVisitor {
 		String res = builder.intersection(adapt(expression.getOperands()));
 		nameMappings.put(expression.getName(), res);
 	}
+	
+	@Override
+	public void visit(Infimum expression) {
+		String res = builder.inf(adapt(expression.getOperands()));
+		nameMappings.put(expression.getName(),  res);
+	}
+	@Override
+	public void visit(Supremum expression) {
+		String res = builder.sup(adapt(expression.getOperands()));
+		nameMappings.put(expression.getName(),  res);
+	}
+	
 	@Override
 	public void visit(Filter expression) {
 		String res = builder.filter(adapt(expression.getOperands()[0]), expression.getEvery(), expression.getFrom());

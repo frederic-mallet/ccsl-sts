@@ -5,6 +5,8 @@ class Filter extends Expression {
 	
 	protected Filter(String base, int every, int from) {
 		super(base);
+		this.every = every;
+		this.from = from;
 	}
 
 	@Override

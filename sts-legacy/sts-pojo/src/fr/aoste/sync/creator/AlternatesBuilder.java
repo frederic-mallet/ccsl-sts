@@ -24,10 +24,10 @@ class AlternatesBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> {
 
 		State s0 = helper.createState("A0");
 		sts.setInitial(s0);
-		s0.setInvariant(InvariantBuilder.buildInvariant(leftEvent, rightEvent, 0, ComparisonOperator.EQUALS));
+		s0.setInvariant(InvariantBuilder.inv(leftEvent, rightEvent, 0, ComparisonOperator.EQUALS));
 
 		State s1 = helper.createState("A1");
-		s1.setInvariant(InvariantBuilder.buildInvariant(leftEvent, rightEvent, 1, ComparisonOperator.EQUALS));
+		s1.setInvariant(InvariantBuilder.inv(leftEvent, rightEvent, 1, ComparisonOperator.EQUALS));
 
 		helper.createTransition(s0, s1, leftEvent);
 		helper.createTransition(s1, s0, rightEvent);

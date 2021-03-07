@@ -27,7 +27,7 @@ class SubclockBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> {
 
 		State init = helper.createState("S");
 		sts.setInitial(init);
-		sts.setInvariant(InvariantBuilder.buildInvariant(superEvent, subEvent, 0, ComparisonOperator.GREATEROREQUAL));
+		sts.setInvariant(InvariantBuilder.inv(superEvent, subEvent, 0, ComparisonOperator.GREATEROREQUAL));
 		
 		
 		{

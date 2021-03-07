@@ -25,17 +25,17 @@ class PrecedesBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> {
 
 		State p0 = helper.createState("p0");
 		sts.setInitial(p0);
-		p0.setInvariant(InvariantBuilder.buildInvariant(leftEvent, rightEvent, 0, ComparisonOperator.EQUALS));
+		p0.setInvariant(InvariantBuilder.inv(leftEvent, rightEvent, 0, ComparisonOperator.EQUALS));
 
 		State pi = helper.createState("pi");
-		pi.setInvariant(InvariantBuilder.buildInvariant(leftEvent, rightEvent, 1, ComparisonOperator.GREATEROREQUAL));
+		pi.setInvariant(InvariantBuilder.inv(leftEvent, rightEvent, 1, ComparisonOperator.GREATEROREQUAL));
 
 		{ // p0 -> pi (left)
 			helper.createTransition(p0, pi, leftEvent);
 		}
 		{ // pi -> p0 ([delta==1]right)
 			Transition rightT = helper.createTransition(pi, p0, rightEvent);
-			rightT.setGuard(InvariantBuilder.buildInvariant(leftEvent, rightEvent, 1, ComparisonOperator.EQUALS));
+			rightT.setGuard(InvariantBuilder.inv(leftEvent, rightEvent, 1, ComparisonOperator.EQUALS));
 		}
 		{ // pi -> pi (left)
 			helper.createTransition(pi, pi, leftEvent);
@@ -45,7 +45,7 @@ class PrecedesBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> {
 		}
 		{ // pi -> pi ([delta>1]right)
 			Transition rightT = helper.createTransition(pi, pi, rightEvent);
-			rightT.setGuard(InvariantBuilder.buildInvariant(leftEvent, rightEvent, 1, ComparisonOperator.GREATERTHAN));
+			rightT.setGuard(InvariantBuilder.inv(leftEvent, rightEvent, 1, ComparisonOperator.GREATERTHAN));
 		}
 
 		return sts;

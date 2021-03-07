@@ -56,7 +56,7 @@ public class CoreBuilderVisitor extends ACCSLSpecificationVisitor {
 
 	@Override
 	public void visit(Filter filter) {
-		// TODO Auto-generated method stub
+		throw new RuntimeException("Filter is not supported");
 	}	
 
 	@Override
@@ -90,6 +90,13 @@ public class CoreBuilderVisitor extends ACCSLSpecificationVisitor {
 		if (nameToClocks.put(intersection.getName(), res) != null)
 			throw new RuntimeException("Name conflict during intersection");
 	}
-
-
+	
+	@Override
+	public void visit(Infimum expression) {
+		throw new RuntimeException("Infimum is not supported");
+	}
+	@Override
+	public void visit(Supremum expression) {
+		throw new RuntimeException("Supremum is not supported");
+	}
 }

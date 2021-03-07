@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
-import fr.aoste.sts.IEvent;
 import fr.aoste.sts.SyncVector;
 import fr.aoste.sync.ComposedTransitionSystem;
 import fr.aoste.sync.Event;
@@ -68,18 +67,8 @@ public class STSParallelComposer {
 
 	public SynchronousTransitionSystem getComposedSTS(String name) {
 		SynchronizedState.clear(); // needs to clear the cache of Synchronized states (big mistake in using the factory !
-		SynchronousTransitionSystem sts = StsFactory.eINSTANCE.createSynchronousTransitionSystem();
-		sts.setName(name);
-		helper.buildSyncEventForStandaloneEvents();
-
-		HashMap<SyncVector<? extends IEvent>, Event> syncMap = new HashMap<>();
-		for(SyncVector<? extends IEvent> vec : cts.getVectors()){
-			Event e = StsFactory.eINSTANCE.createEvent();
-			e.setName(vec.getName());
-			sts.getEvents().add(e);
-			syncMap.put(vec, e);
-		}
-
+		SynchronousTransitionSystem sts = helper.buildEmptySTS(name);
+		
 		// deal with the initial state
 		List<MyState> initialStates = new ArrayList<>();
 		helper.fillWithInitialState(initialStates);
@@ -99,7 +88,7 @@ public class STSParallelComposer {
 			
 			sts.getStates().add(current.getState());
 
-			current.buildTransitions(helper, stateToExplore, syncMap);
+			helper.buildTransitionsFor(current, stateToExplore); 
 
 			for(Transition t : current.outgoing)
 				sts.getTransitions().add(t);

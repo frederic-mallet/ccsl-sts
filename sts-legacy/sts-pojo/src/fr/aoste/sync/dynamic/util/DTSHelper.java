@@ -53,11 +53,6 @@ final public class DTSHelper implements ITransitionValidator {
 		}
 	}
 	
-	void printFiredClockNames() {
-		for (String s : listener.firedClocks())
-			System.out.print(s + " ");
-		System.out.println();
-	}
 	void fire(Event e) {
 		if (e.getSync().getName() == null)
 			listener.fire(e.getName());

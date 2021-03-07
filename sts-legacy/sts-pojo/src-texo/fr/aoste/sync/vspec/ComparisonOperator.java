@@ -18,7 +18,7 @@ public enum ComparisonOperator {
 	 * 
 	 * @generated
 	 */
-	EQUALS(0, "equals", "equals") {
+	EQUALS(0, "equals", "equals", "=") {
 
 		/**
 		 * @return always true for this instance
@@ -34,7 +34,7 @@ public enum ComparisonOperator {
 	 * 
 	 * @generated
 	 */
-	GREATERTHAN(1, "greaterThan", "greaterThan") {
+	GREATERTHAN(1, "greaterThan", "greaterThan", ">") {
 
 		/**
 		 * @return always true for this instance
@@ -50,7 +50,7 @@ public enum ComparisonOperator {
 	 * 
 	 * @generated
 	 */
-	LESSTHAN(2, "lessThan", "lessThan") {
+	LESSTHAN(2, "lessThan", "lessThan", "<") {
 
 		/**
 		 * @return always true for this instance
@@ -66,7 +66,7 @@ public enum ComparisonOperator {
 	 * 
 	 * @generated
 	 */
-	GREATEROREQUAL(3, "greaterOrEqual", "greaterOrEqual") {
+	GREATEROREQUAL(3, "greaterOrEqual", "greaterOrEqual", ">=") {
 
 		/**
 		 * @return always true for this instance
@@ -82,7 +82,7 @@ public enum ComparisonOperator {
 	 * 
 	 * @generated
 	 */
-	LESSOREQUAL(4, "lessOrEqual", "lessOrEqual") {
+	LESSOREQUAL(4, "lessOrEqual", "lessOrEqual", "<=") {
 
 		/**
 		 * @return always true for this instance
@@ -189,16 +189,19 @@ public enum ComparisonOperator {
 	 */
 	private final String literal;
 
+	private final String display;
+	
 	/**
 	 * Only this class can construct instances. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
 	 * 
 	 * @generated
 	 */
-	private ComparisonOperator(int value, String name, String literal) {
+	private ComparisonOperator(int value, String name, String literal, String display) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
+		this.display = display;
 	}
 
 	/**
@@ -290,6 +293,6 @@ public enum ComparisonOperator {
 	 */
 	@Override
 	public String toString() {
-		return literal;
+		return display;
 	}
 }

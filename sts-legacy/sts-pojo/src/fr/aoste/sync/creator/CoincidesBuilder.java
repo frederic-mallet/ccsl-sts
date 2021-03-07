@@ -40,7 +40,7 @@ class CoincidesBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> {
 		sts.setInitial(init);
 		Conjunction c = ValuespecificationFactory.eINSTANCE.createConjunction();
 		for(int i = 1; i<nbClocks; i++) {
-			c.getOperands().add(InvariantBuilder.buildInvariant(events[0], events[i], 0, ComparisonOperator.EQUALS));
+			c.getOperands().add(InvariantBuilder.inv(events[0], events[i], 0, ComparisonOperator.EQUALS));
 		}
 		init.setInvariant(c);
 		sts.getStates().add(init);

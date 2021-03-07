@@ -2,7 +2,6 @@ package fr.kairos.lightccsl.sts;
 
 import fr.aoste.ccsl.system.ICCSLSystemBuilder;
 import fr.aoste.sync.SynchronousTransitionSystem;
-import fr.kairos.lightccsl.core.stepper.IClockBuilder;
 import fr.kairos.timesquare.ccsl.ISimpleSpecification;
 
 /**
@@ -14,17 +13,14 @@ import fr.kairos.timesquare.ccsl.ISimpleSpecification;
 class STSAdapter implements ISimpleSpecification {
 	// will put all the sts in parallel, remove aliases and fold n-ary expressions 
 	private ICCSLSystemBuilder<SynchronousTransitionSystem> stsBuilder;
-	private IClockBuilder clockBuilder;
 	
-	STSAdapter(ICCSLSystemBuilder<SynchronousTransitionSystem> stsBuilder, IClockBuilder clockBuilder) {
+	STSAdapter(ICCSLSystemBuilder<SynchronousTransitionSystem> stsBuilder) {
 		super();
 		this.stsBuilder = stsBuilder;
-		this.clockBuilder = clockBuilder;
 	}
-
+	
 	@Override
 	public void addClock(String name) {
-		this.clockBuilder.buildClock(name);
 	}
 	
 	@Override

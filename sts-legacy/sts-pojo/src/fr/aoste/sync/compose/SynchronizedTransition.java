@@ -1,6 +1,7 @@
 package fr.aoste.sync.compose;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -32,7 +33,10 @@ final public class SynchronizedTransition implements Iterable<Transition>{
 	int size() {
 		return transitions.length;
 	}
-	
+	@Override
+	public String toString() {
+		return "SyncT:" + Arrays.toString(transitions);
+	}
 	SynchronizedState buildTransition(SynchronizedState source, Map<SyncVector<? extends IEvent>, Event> syncMap, AInvariantHelper invHelper) {
 		Transition transition = StsFactory.eINSTANCE.createTransition();
 		transition.setSource(source.getState());

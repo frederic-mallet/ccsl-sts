@@ -33,12 +33,12 @@ class DelayBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> {
 		
 		State init = helper.createState("init");
 		sts.setInitial(init);
-		init.setInvariant(InvariantBuilder.buildInvariant(srcE, delE, 0, ComparisonOperator.EQUALS));
+		init.setInvariant(InvariantBuilder.inv(srcE, delE, 0, ComparisonOperator.EQUALS));
 		
 		State current = init;
 		for(int i = 0; i<delay; i++) {
 			State state = helper.createState("d"+(i+1));
-			state.setInvariant(InvariantBuilder.buildInvariant(srcE, delE, i+1, ComparisonOperator.EQUALS));
+			state.setInvariant(InvariantBuilder.inv(srcE, delE, i+1, ComparisonOperator.EQUALS));
 			
 			helper.createTransition(current, state, srcE);
 			
@@ -50,7 +50,7 @@ class DelayBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> {
 		if (isPure) {
 			for(int i = 0; i<delay; i++) {
 				State state = helper.createState("p"+(delay-i-1));
-				state.setInvariant(InvariantBuilder.buildInvariant(srcE, delE, delay-i-1, ComparisonOperator.EQUALS));
+				state.setInvariant(InvariantBuilder.inv(srcE, delE, delay-i-1, ComparisonOperator.EQUALS));
 				
 				helper.createTransition(current, state, delE);
 				

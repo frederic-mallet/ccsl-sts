@@ -56,11 +56,11 @@ public class Event extends NamedElement implements IEvent {
 	 * A toString method which prints the values of all EAttributes of this
 	 * instance. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @generated
 	 */
 	@Override
 	public String toString() {
-		return "Event" + "<name: " + getName() + ">" + "<sync: " + getSync()
-				+ ">";
+		return sync==null?getName():sync.getName();
+		//return "Event" + "<name: " + getName() + ">" + "<sync: " + getSync()
+//				+ ">";
 	}
 }

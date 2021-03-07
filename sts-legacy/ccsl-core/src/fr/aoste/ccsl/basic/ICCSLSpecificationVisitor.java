@@ -13,4 +13,7 @@ public interface ICCSLSpecificationVisitor {
 	void visit(Union expression);	
 	void visit(Intersection expression);	
 	void visit(Filter expression);	
+	
+	void visit(Infimum expression);
+	void visit(Supremum expression);
 }

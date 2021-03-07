@@ -58,10 +58,9 @@ public class LiteralInteger implements IntegerExpression {
 	 * A toString method which prints the values of all EAttributes of this
 	 * instance. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @generated
 	 */
 	@Override
 	public String toString() {
-		return "LiteralInteger" + "<value: " + getValue() + ">";
+		return value + "";
 	}
 }

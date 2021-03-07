@@ -5,7 +5,6 @@ import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.compose.STSParallelComposer;
 import fr.aoste.sync.compose.STSSystemBuilder;
 import fr.aoste.sync.dynamic.util.DTSRunner;
-import fr.kairos.lightccsl.core.stepper.IClockBuilder;
 import fr.kairos.lightccsl.core.stepper.IClockManager;
 import fr.kairos.lightccsl.core.stepper.INameToIntegerMapper;
 import fr.kairos.lightccsl.core.stepper.ISolutionSet;
@@ -17,13 +16,12 @@ public class STSSolutionFinder implements ISpecificationToSolution {
 	
 	@Override
 	public ISolutionSet buildSolutionsFor(ISpecificationBuilder builder, 
-			IClockBuilder clockBuilder, 
 			INameToIntegerMapper mapper,
 			IClockManager clockManager) { // do not need the clock manager here !
 		if (solution != null) return solution;
 		
 		ICCSLSystemBuilder<SynchronousTransitionSystem> sBuilder = STSSystemBuilder.buildParallelSystemBuilder();
-		STSAdapter adapter = new STSAdapter(sBuilder, clockBuilder);
+		STSAdapter adapter = new STSAdapter(sBuilder);
 		builder.build(adapter);
 
 		SynchronousTransitionSystem sts = sBuilder.getCCSLSystem();

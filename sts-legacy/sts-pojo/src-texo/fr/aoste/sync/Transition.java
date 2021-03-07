@@ -159,10 +159,11 @@ public class Transition {
 	 * A toString method which prints the values of all EAttributes of this
 	 * instance. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @generated
 	 */
 	@Override
 	public String toString() {
-		return "Transition";
+		String res = getSource() + " -> " + getTarget() + " on " + trigger;
+		if (guard != null) res += " if " + guard; 
+		return res;
 	}
 }

@@ -44,9 +44,9 @@ class DisjointUnionBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> 
 		sts.setName(sb.toString());
 
 		// Same as union
-		Conjunction c = InvariantBuilder.buildConjunction();
+		Conjunction c = InvariantBuilder.conjunction();
 		for(int i = 0; i<nbClocks; i++) {
-			c.getOperands().add(InvariantBuilder.buildInvariant(xUnionE, events[i], 0, ComparisonOperator.GREATEROREQUAL));
+			c.getOperands().add(InvariantBuilder.inv(xUnionE, events[i], 0, ComparisonOperator.GREATEROREQUAL));
 		}
 		init.setInvariant(c);
 		

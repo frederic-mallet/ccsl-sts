@@ -21,5 +21,8 @@ class DefaultInvariantHelper extends AInvariantHelper {
 	public void addInvariant(BooleanExpression invariant) {
 		// do nothing here
 	}
-
+	@Override
+	public AInvariantHelper newHelper() {
+		return this; // SINGLETON
+	}
 }

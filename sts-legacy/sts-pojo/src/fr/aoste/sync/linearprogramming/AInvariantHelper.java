@@ -16,7 +16,8 @@ public abstract class AInvariantHelper {
 		this.ev = new ValueSpecificationEvaluator(ctsHelper);
 	}
 
-	public void clear() { };
+	// make a new clean instance of the helper
+	public abstract AInvariantHelper newHelper();
 	
 	/**
 	 * @return false iif a ILP solver is connected
@@ -41,5 +42,4 @@ public abstract class AInvariantHelper {
 	}
 
 	public abstract void addInvariant(BooleanExpression invariant);
-
 }

@@ -89,32 +89,30 @@ Iterable<ICCSLSpecificationElement>{
 
 	@Override
 	public String inf(String... operands) {
-		throw new RuntimeException("Not implemented yet");
-		// TODO Auto-generated method stub
-		//		return null;
+		Infimum inf = new Infimum(operands);
+		elements.add(inf);
+		return inf.getName();
 	}
 
 	@Override
 	public String inf(String operand1, String operand2) {
-		throw new RuntimeException("Not implemented yet");
-
-		// TODO Auto-generated method stub
-		//		return null;
+		Infimum inf = new Infimum(operand1, operand2);
+		elements.add(inf);
+		return inf.getName();
 	}
 
 	@Override
 	public String sup(String... operands) {
-		throw new RuntimeException("Not implemented yet");
-		// TODO Auto-generated method stub
-		//		return null;
+		Supremum sup = new Supremum(operands);
+		elements.add(sup);
+		return sup.getName();
 	}
 
 	@Override
 	public String sup(String operand1, String operand2) {
-		throw new RuntimeException("Not implemented yet");
-
-		// TODO Auto-generated method stub
-		//		return null;
+		Supremum sup = new Supremum(operand1, operand2);
+		elements.add(sup);
+		return sup.getName();
 	}
 
 	@Override

@@ -1,5 +1,6 @@
 package fr.aoste.sync.compose;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
@@ -9,6 +10,7 @@ import fr.aoste.sync.ComposedTransitionSystem;
 import fr.aoste.sync.Event;
 import fr.aoste.sync.Parameter;
 import fr.aoste.sync.ParameterBinding;
+import fr.aoste.sync.StsFactory;
 import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.Transition;
 import fr.aoste.sync.compose.InternalMonitor.TransitionKind;
@@ -33,7 +35,28 @@ final public class CTSHelper implements Iterable<SynchronousTransitionSystem>, I
 		assert(cts != null);
 		this.cts = cts;
 	}
+	
+	private HashMap<SyncVector<? extends IEvent>, Event> syncMap;
+	
+	SynchronousTransitionSystem buildEmptySTS(String name) {
+		SynchronousTransitionSystem sts = StsFactory.eINSTANCE.createSynchronousTransitionSystem();
+		sts.setName(name);
+		buildSyncEventForStandaloneEvents();
 
+		syncMap = new HashMap<>();
+		for(SyncVector<? extends IEvent> vec : cts.getVectors()){
+			Event e = StsFactory.eINSTANCE.createEvent();
+			e.setName(vec.getName());
+			sts.getEvents().add(e);
+			syncMap.put(vec, e);
+		}
+		
+		return sts;
+	}
+	void buildTransitionsFor(SynchronizedState current, List<SynchronizedState> statesToExplore) {
+		current.buildTransitions(this, statesToExplore, syncMap);		
+	}
+	
 	void startMonitoring() {
 		monitor = new InternalMonitor(computeMaxNumberOfStates());
 	}
@@ -123,7 +146,7 @@ final public class CTSHelper implements Iterable<SynchronousTransitionSystem>, I
 				Transition t = it.next();
 				for(Event e : t.getTrigger().getEvents()) {
 					int pos = map.getPosition(e.getSync());
-					if ((cannot & (1<<pos)) == 1) {
+					if ((cannot & (1<<pos)) != 0) {
 						it.remove();
 						assert(logTransition(TransitionKind.REMOVED));
 						hasChanged = true;

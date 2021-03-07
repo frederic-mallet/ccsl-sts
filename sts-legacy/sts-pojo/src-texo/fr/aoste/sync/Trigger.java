@@ -1,6 +1,7 @@
 package fr.aoste.sync;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -110,6 +111,6 @@ public class Trigger {
 	 */
 	@Override
 	public String toString() {
-		return "Trigger";
+		return Arrays.toString(events.toArray());
 	}
 }

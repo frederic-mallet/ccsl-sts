@@ -26,7 +26,8 @@ final class SynchronizedState {
 	static private HashMap<String, SynchronizedState> stateMap = new HashMap<String, SynchronizedState>();
 
 	static void clear() { stateMap.clear(); }
-	static SynchronizedState getSynchronizedState(List<MyState> states, CTSHelper helper) {
+	
+	private static String buildName(List<MyState> states) {
 		StringBuilder nameBuilder = new StringBuilder();
 		String sep = "";
 
@@ -36,8 +37,10 @@ final class SynchronizedState {
 			sep="x";
 		}
 				
-		String name = nameBuilder.toString();
-
+		return nameBuilder.toString(); 
+	}
+	static SynchronizedState getSynchronizedState(List<MyState> states, CTSHelper helper) {
+		String name = buildName(states);
 		SynchronizedState res = stateMap.get(name);
 		if (res == null) {
 			res = new SynchronizedState(states, name, helper);
@@ -62,7 +65,7 @@ final class SynchronizedState {
 	
 	private void buildInvariantModel(CTSHelper helper) {
 		if (invHelper.cannotSimplifyGuards()) return;
-		invHelper.clear();
+		invHelper = invHelper.newHelper();
 		
 		 // used to compute the invariant of the resulting state (do not include sts invariants, only state invariants)
 		LinkedList<BooleanExpression> invariants = new LinkedList<>();

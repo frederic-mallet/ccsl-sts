@@ -124,10 +124,9 @@ public class Comparison implements BooleanExpression {
 	 * A toString method which prints the values of all EAttributes of this
 	 * instance. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
-	 * @generated
 	 */
 	@Override
 	public String toString() {
-		return "Comparison" + "<operator: " + getOperator() + ">";
+		return getLeft() + " " + getOperator() + " " + getRight();
 	}
 }

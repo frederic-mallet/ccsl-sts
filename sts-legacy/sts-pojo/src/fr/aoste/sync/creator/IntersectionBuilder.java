@@ -44,9 +44,9 @@ class IntersectionBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> {
 
 		State init = helper.createState("I");
 		sts.setInitial(init);
-		Conjunction c = InvariantBuilder.buildConjunction();
+		Conjunction c = InvariantBuilder.conjunction();
 		for(int i = 0; i<nbClocks; i++) {
-			c.getOperands().add(InvariantBuilder.buildInvariant(intersectionE, events[i], 0, ComparisonOperator.LESSOREQUAL));
+			c.getOperands().add(InvariantBuilder.inv(intersectionE, events[i], 0, ComparisonOperator.LESSOREQUAL));
 		}
 		init.setInvariant(c);
 		sts.getStates().add(init);

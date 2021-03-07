@@ -75,6 +75,6 @@ public class Chi implements IntegerExpression {
 	 */
 	@Override
 	public String toString() {
-		return "Chi";
+		return "\u03c7_" + event;
 	}
 }

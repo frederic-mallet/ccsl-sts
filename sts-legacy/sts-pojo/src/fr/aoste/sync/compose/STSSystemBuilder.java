@@ -152,13 +152,14 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 		int num = systems.size();
 		STSBuilder<SynchronousTransitionSystem> ex;
 		if (every == 1) 
-			ex = CCSLStsFactory.INSTANCE.createDelayBuilder("base", "expr"+num, from, true);
+			ex = CCSLStsFactory.INSTANCE.createDelayBuilder(base, "expr"+num, from, false);
 		else
 			ex = CCSLStsFactory.INSTANCE.createPeriodicBuilder(base, "expr"+num, every, from);
 		
 		systems.add(ex.create());
 		localClocks.add("expr"+num);
-
+		bindings.add(new Binding(base, num, base));
+		bindings.add(new Binding("expr" + num, num, "expr"+ num));
 		return "expr"+num;
 	}
 	
