@@ -2,7 +2,7 @@ package fr.aoste.sync.dynamic.util;
 
 import java.util.HashSet;
 
-class DefaultFiringTransitionListener implements IFiringTransitionListener {
+public class DefaultFiringTransitionListener implements IFiringTransitionListener {
 	private HashSet<String> namesOfFiredClocks = new HashSet<>();
 	
 	@Override
@@ -12,6 +12,7 @@ class DefaultFiringTransitionListener implements IFiringTransitionListener {
 	
 	@Override
 	public void fire(String clock) {
+		namesOfFiredClocks.add(clock);
 	}
 	
 	@Override

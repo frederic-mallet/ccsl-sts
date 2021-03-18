@@ -18,16 +18,19 @@ public class ParallelSpecificationComposer implements ICCSLSpecificationComposer
 	@Override
 	public SynchronousTransitionSystem treat(
 			List<SynchronousTransitionSystem> systems, List<Binding> bindings, List<String> localClocks) {
-
+		String name = "";
+		
 		ComposedTransitionSystem cts = StsFactory.eINSTANCE.createComposedTransitionSystem();
 		STSParallelComposer composer = new STSParallelComposer(cts);
-		for(SynchronousTransitionSystem sts : systems)
+		for(SynchronousTransitionSystem sts : systems) {
 			cts.getSubsystems().add(sts);
+			name += "_" + sts.getName();
+		}
 
 		for(Binding b : bindings)
 			b.bind(composer);
 		
-		SynchronousTransitionSystem sts = composer.getComposedSTS("");
+		SynchronousTransitionSystem sts = composer.getComposedSTS(name);
 		
 		for(String local : localClocks)
 			STSHelper.hide(sts, local);

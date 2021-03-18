@@ -28,9 +28,9 @@ public class STSPrettyPrinter extends AstsVisitor<StringBuilder> implements Ival
 	private DTSHelper helper;
 
 	public static void print(SynchronousTransitionSystem sts) {
-		System.out.println("**"+sts.getName()+"** State:"+sts.getStates().size()+" Transition:"+sts.getTransitions().size());
+		System.out.println("**"+sts.getName()+"** State:"+sts.getStates().size()+" Transition:"+sts.getTransitions().size());		
 //		STSPrettyPrinter pp = new STSPrettyPrinter(null);
-//		System.out.println(sts.accept(pp));
+//		System.out.println(sts.accept(pp));		
 	}
 	public STSPrettyPrinter(DTSHelper helper) {
 		this(helper, new StringBuilder());
@@ -72,7 +72,7 @@ public class STSPrettyPrinter extends AstsVisitor<StringBuilder> implements Ival
 			sb.append('\n');
 		}
 		sb.append("\t]\n");
-
+		
 		if (sts.getInvariant()!=null) {
 			sb.append("\t").append("Inv:");
 			sts.getInvariant().accept(this);
@@ -93,7 +93,7 @@ public class STSPrettyPrinter extends AstsVisitor<StringBuilder> implements Ival
 			sb.append("\n\t\t\t").append("inv:");
 			state.getInvariant().accept(this);
 		}
-
+		
 		return sb;
 	}
 	@Override
