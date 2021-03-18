@@ -28,5 +28,3 @@ Every time you edit and save the .lc files, a Java file is generated in the src-
 
 ## Options
 There are lots code generation options available. See Windows/Preferences and select the Light-ccsl tab to see the specific options
-
-
