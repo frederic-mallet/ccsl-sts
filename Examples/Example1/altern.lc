@@ -1,0 +1,6 @@
+Specification Altern {
+  Clock a b
+  [
+    Precedence a < (max: 1) b
+  ]
+}

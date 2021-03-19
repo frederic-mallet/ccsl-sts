@@ -1,0 +1,7 @@
+Specification AlternCompose {
+  Clock a b
+  [
+  	a1 = a $ 1
+    Precedence a < b < a1 
+  ]
+}

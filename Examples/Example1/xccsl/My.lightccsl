@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lightCCSL:Specification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lightCCSL="http://www.unice.fr/lightCCSL">
+  <clocks name="c0"/>
+  <clocks name="c1"/>
+  <constraints xsi:type="lightCCSL:CausalChain" first="//@clocks.0">
+    <causalities clock="//@clocks.1"/>
+  </constraints>
+</lightCCSL:Specification>

@@ -1,0 +1,21 @@
+MODULE main
+VAR 
+  _state : -2 .. 2;
+
+INVARSPEC !(_state=-2); -- not fail state
+
+ASSIGN 
+  init(_state) := 0;
+
+  next(_state) := case
+                    _state = 0: { 1 };
+                    _state = 1: { 2 };
+                    _state = 2: { 1 };
+                    TRUE: _state;
+                  esac;
+
+DEFINE 
+  a := ((_state = 0) & (next(_state) = 1))
+	| ((_state = 2) & (next(_state) = 1));
+  b := ((_state = 1) & (next(_state) = 2));
+

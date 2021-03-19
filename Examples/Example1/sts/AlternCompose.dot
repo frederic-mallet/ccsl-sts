@@ -1,0 +1,12 @@
+digraph AlternCompose { 
+  s0->s1 [
+    label= "a"
+  ] ;
+  s1->s2 [
+    label= "b"
+  ] ;
+  s2->s1 [
+    label= "a"
+  ] ;
+}
+

@@ -1,0 +1,9 @@
+digraph Altern { 
+  s0->s1 [
+    label= "a"
+  ] ;
+  s1->s0 [
+    label= "b"
+  ] ;
+}
+
