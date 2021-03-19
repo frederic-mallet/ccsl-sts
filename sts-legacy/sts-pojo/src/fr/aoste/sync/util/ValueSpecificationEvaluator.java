@@ -48,7 +48,7 @@ public class ValueSpecificationEvaluator extends AstsVisitor<Object> implements 
 		}
 		Event ev = object.getEvent();
 		EventCounter eb = dtsHelper.getEventCounterByEvent(ev);
-		return Integer.valueOf(eb.getCounter());
+		return eb.getCounter();
 	}
 	@Override
 	public Object visit(ParameterReference paramRef) {

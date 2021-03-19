@@ -22,7 +22,7 @@ public abstract class AvaluespecificationVisitor<T> implements
 
 	/**
 	 * Visiting a '<em><b>BooleanExpression</b></em>'. <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->toRemove
 	 * 
 	 * @generated
 	 */

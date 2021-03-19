@@ -7,6 +7,7 @@ import fr.aoste.sync.Event;
 import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.Transition;
 import fr.aoste.sync.Trigger;
+import fr.aoste.sync.vspec.visitor.CollectEvents;
 
 public class STSHelper {
 	public static void hide(SynchronousTransitionSystem sts, String local) {
@@ -14,7 +15,6 @@ public class STSHelper {
 		for(Iterator<Event> it = sts.getEvents().iterator(); it.hasNext(); ) {
 			Event e = it.next();
 			if (e.getName().equals(local)) {
-				it.remove();
 				toRemove = e;
 				break;
 			}
@@ -26,12 +26,27 @@ public class STSHelper {
 			return;
 		}
 		for(Transition transition : sts.getTransitions()) {
+			if (cannotRemove(transition, toRemove)) {
+				return; // stop the hiding
+			}
 			Trigger trigger = transition.getTrigger();
 			trigger.getEvents().remove(toRemove);
 			if (trigger.getEvents().size()==0)
 				throw new RuntimeException("Hidding event "+local+" makes the STS non deterministic!!");
 		}
+		
+		sts.getEvents().remove(toRemove); // only if was not stopped
 	}	
+	private static boolean cannotRemove(Transition t, Event toRemove) {
+		if (!t.getTrigger().getEvents().contains(toRemove)) 
+			return false;// cannot remove since not there but will find it later
+		if (t.getGuard() == null) return false; // can remove since no guard
+		CollectEvents ce = new CollectEvents();
+		@SuppressWarnings("unchecked")
+		List<Event> res = (List<Event>)t.getGuard().accept(ce);
+		if (res.contains(toRemove)) return true; // cannot remove since counter used in guard
+		return false;
+	}
 	
 	public static Event getEventByName(SynchronousTransitionSystem bts, String name) {
 		for(Event event : bts.getEvents()) {

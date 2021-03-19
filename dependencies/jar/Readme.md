@@ -11,6 +11,10 @@
   - requires [binaryWord.jar](../common/)
 - sts-choco.jar [optional] : CCSL solver that encodes CCSL constraint with Choco Constraint solver. If solver is Choco.
 
+## Invariant solvers
+To reduce STS automata, you need to use constraint solvers:
+- sts-choco: use choco solver to reduce invariants
+
 ## Backends
 - html.jar [optional] : Contains a backend to produce a time trace as an HTML file. If backend is HTML.
   - depends on [common/html](../common)

@@ -40,7 +40,10 @@ class STSAdapter implements ISimpleSpecification {
 
 	@Override
 	public void precedence(String left, String right, int min, int max) {
-		throw new RuntimeException("Unsupported operation precedence " + left + ":" + right + ":" + min + ":" + max);		
+		if (min == 0 && max == 1)
+			stsBuilder.alternates(left, right);
+		else
+			throw new RuntimeException("Unsupported operation precedence " + left + ":" + right + ":" + min + ":" + max);		
 	}
 
 	@Override
@@ -55,12 +58,14 @@ class STSAdapter implements ISimpleSpecification {
 
 	@Override
 	public void inf(String defClock, String... clocks) {
-		throw new RuntimeException("Unsupported operation");
+		String der = stsBuilder.inf(clocks);
+		stsBuilder.coincides(defClock, der);
 	}
 
 	@Override
 	public void sup(String defClock, String... clocks) {
-		throw new RuntimeException("Unsupported operation");
+		String der = stsBuilder.sup(clocks);
+		stsBuilder.coincides(defClock, der);
 	}
 
 	@Override
@@ -82,11 +87,17 @@ class STSAdapter implements ISimpleSpecification {
 
 	@Override
 	public void periodic(String defClock, String ref, int period, int from, int upto) {
-		throw new RuntimeException("Unsupported operation");
+		if (upto != -1)
+			throw new RuntimeException("Unsupported operation");
+		String der = stsBuilder.filter(ref, period, from);
+		stsBuilder.coincides(defClock, der);
 	}
 
 	@Override
 	public void delayFor(String defClock, String ref, int from, int upTo, String base) {
-		throw new RuntimeException("Unsupported operation");
+		if (upTo != -1 || base != null)
+			throw new RuntimeException("Unsupported operation");
+		String der = stsBuilder.filter(ref, 1, from);
+		stsBuilder.coincides(der, defClock);
 	}
 }
