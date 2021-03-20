@@ -20,4 +20,13 @@ public class DefaultFiringTransitionListener implements IFiringTransitionListene
 		return namesOfFiredClocks;
 	}
 
+	public String[] firedClocksAsArray() {
+		String[] s = new String[namesOfFiredClocks.size()];
+		int i = 0;
+		for (String clock : namesOfFiredClocks) {
+			s[i] = clock;
+			i++;
+		}
+		return s;
+	}
 }

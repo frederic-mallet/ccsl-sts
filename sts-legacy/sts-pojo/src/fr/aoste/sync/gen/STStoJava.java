@@ -39,21 +39,6 @@ public class STStoJava extends AstsVisitor<CharSequence> {
 		createBody = javaClass.addMethod("public SynchronousTransitionSystem create()");
 		createBody.ins("SynchronousTransitionSystem sts = helper.createSynchronousTransitionSystem(").
 				s(name).c(")");	
-		JavaElementList _main = javaClass.addMain();
-		_main.ins(name + " _instance = new " + name + "()");
-		_main.ins("SynchronousTransitionSystem sts = _instance.create()");
-		_main.lv("fr.aoste.sync.compose.STSParallelComposer", "composer = new STSParallelComposer(sts)");
-		_main.lv("fr.aoste.sync.dynamic.util.DTSRunner", "runner = DTSRunner.create(composer)");
-		_main.lv("fr.aoste.sync.dynamic.util.DefaultFiringTransitionListener", "l = new DefaultFiringTransitionListener()");
-		_main.ins("runner.setListener(l)");
-		
-		Block _forBlock = new Block(javaClass, "for (int i = 0; i < 10; i++)");
-		_main.add(_forBlock);
-		JavaElementList _forBody = _forBlock.body();
-		_forBody.ins("runner.fireRandomValidTransition()");
-		_forBody.ins("System.out.print(i)");
-		_forBody.ins("for (String c : l.firedClocks()) System.out.print(\" \" + c)");
-		_forBody.ins("System.out.println();");
 	}
 	@Override
 	public CharSequence visit(SynchronousTransitionSystem sts) {

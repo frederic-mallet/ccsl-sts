@@ -10,11 +10,6 @@
  *******************************************************************************/
 package fr.kairos.lightccsl.sts;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-
 import fr.aoste.ccsl.system.ICCSLSystemBuilder;
 import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.compose.STSSystemBuilder;
@@ -36,8 +31,7 @@ import fr.kairos.timesquare.ccsl.simple.IUtility;
  *
  */
 public class STSUtility extends AUtility implements IUtility {
-	private AstsVisitor<CharSequence> visitor = null;
-	private String ext = ".txt";
+	private ISTSBackend<?> backend = null;
 
 	@Override
 	public ISimpleSpecification treat(String name, ISpecificationBuilder specBuilder) {
@@ -46,23 +40,15 @@ public class STSUtility extends AUtility implements IUtility {
 		specBuilder.build(builder);
 		SynchronousTransitionSystem sts = sBuilder.getCCSLSystem();
 		sts.setName(name);
-		
-		if (visitor != null) {
-			File folder = createFolder("sts");
-			String res = sts.accept(visitor).toString();
-			File file = new File(folder, name + ext);
-			try (PrintWriter pw = new PrintWriter(new FileWriter(file))) {
-				pw.println(res);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+		if (backend != null) {
+			backend.treat(this, sts, name);
 		}
-
 		return builder;
 	}
-	
-	public void setBackend(AstsVisitor<CharSequence> visitor, String extension) {
-		this.visitor = visitor;
-		this.ext = extension;
+	public void setBackend(ISTSBackend<?> backend) {
+		this.backend = backend;
+	}
+	public void setBackend(AstsVisitor<CharSequence> visitor, String ext) {
+		setBackend(new STSDefaultBackend(visitor, ext));
 	}
 }
