@@ -8,6 +8,14 @@ import fr.aoste.ccsl.core.ICCSLClock;
 import fr.aoste.ccsl.core.ICCSLConstraint;
 import fr.aoste.ccsl.core.IState;
 
+/**
+ * Builds a full concrete generic data structure (in extension) to store the CCSL specification as a Model.
+ * Ultimately the MyCCSLModel can be used to produce the concrete syntax of TimeSquare so as to run simulations.
+ * 
+ * When not using TimeSquare, attempts to treat the specification on the fly with an intentional representation.
+ * 
+ * @author fmallet
+ */
 public class ExtendedCCSLSpecificationBuilder extends ACCSLSpecification<MyCCSLModel> {
 	private MyCCSLModel ccslModel = new MyCCSLModel();
 	

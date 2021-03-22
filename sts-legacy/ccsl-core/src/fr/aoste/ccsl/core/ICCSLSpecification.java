@@ -19,7 +19,6 @@ public interface ICCSLSpecification<CONTEXT> {
 	ICCSLClock addInfimum(Collection<ICCSLClock> clocks);
 	ICCSLClock addSupremum(Collection<ICCSLClock> clocks);
 	ICCSLClock addFilter(ICCSLClock base, int every, int from);
-	//TODO: Should also have a mechanism to add user-defined expressions! 
 	
 	// only kernel relations
 	void addPrecedes(ICCSLClock left, ICCSLClock right);
@@ -27,9 +26,8 @@ public interface ICCSLSpecification<CONTEXT> {
 	void addExclusion(ICCSLClock left, ICCSLClock right);
 	void addSubclock(ICCSLClock left, ICCSLClock right);
 	
-	// Should also have a mechanism to add user-defined relations!
-	//TODO: Should also have a mechanism to add user-defined relations!
-	
+	// the name binds to a library definition, the binding mechanism of ICCSLConstraint allows for customizing its parameters
+	// this is meant to add user-defined constraints
 	ICCSLConstraint addConstraint(String name);
 	
 	CONTEXT getContext();

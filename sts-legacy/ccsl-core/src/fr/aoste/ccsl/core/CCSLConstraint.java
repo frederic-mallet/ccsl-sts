@@ -2,6 +2,14 @@ package fr.aoste.ccsl.core;
 
 import java.util.HashMap;
 
+/**
+ * A generic CCSL constraint
+ * Parameters are defined the the HashMap, including clocks, periods, delays
+ * Default CCSL library gives a by default implementation, but can add others
+ * 
+ * @author fmallet
+ *
+ */
 public class CCSLConstraint implements ICCSLConstraint {
 	private HashMap<String, Object> parameters = new HashMap<>();
 	

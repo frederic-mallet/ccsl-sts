@@ -40,9 +40,17 @@ class STSAdapter implements ISimpleSpecification {
 
 	@Override
 	public void precedence(String left, String right, int min, int max) {
-		if (min == 0 && max == 1)
-			stsBuilder.alternates(left, right);
-		else
+		if (min == 0) {
+			if (max == 1) stsBuilder.alternates(left, right);
+			else {
+				this.precedence(left, right);
+				if (max != -1) {
+					String der = "_" + left;
+					this.periodic(der, left, 1, max, -1);
+					this.precedence(right, der);
+				}
+			}
+		} else
 			throw new RuntimeException("Unsupported operation precedence " + left + ":" + right + ":" + min + ":" + max);		
 	}
 
@@ -53,7 +61,15 @@ class STSAdapter implements ISimpleSpecification {
 
 	@Override
 	public void causality(String left, String right, int min, int max) {
-		throw new RuntimeException("Unsupported operation causality " + left + ":" + right + ":" + min + ":" + max);				
+		if (min == 0) {
+			this.causality(left, right);
+			if (max != -1) {
+				String der = "_" + left;
+				this.periodic(der, left, 1, max, -1);
+				this.causality(right, der);
+			}
+		} else
+			throw new RuntimeException("Unsupported operation causality " + left + ":" + right + ":" + min + ":" + max);				
 	}
 
 	@Override
