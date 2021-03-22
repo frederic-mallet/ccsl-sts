@@ -1,8 +1,8 @@
 # fr.aoste.ccsl.core
 
-**Author: ** F. Mallet
+**Author:** F. Mallet
 
-**Date: ** 2014
+**Date:** 2014
 
 ## fr.aoste.ccsl.core
 
