@@ -1,5 +1,11 @@
 package fr.aoste.ccsl.basic;
 
+/**
+ * Requires a type for BinaryRelation to get a dedicated visitor
+ * 
+ * @author fmallet
+ *
+ */
 abstract class BinaryRelation implements IRelation {
 	private String leftClock, rightClock;
 	

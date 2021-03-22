@@ -1,5 +1,11 @@
 package fr.aoste.ccsl.basic;
 
+/**
+ * Requires a type for Infimum to get a dedicated visitor
+ * 
+ * @author fmallet
+ *
+ */
 class Infimum extends Expression {
 	
 	protected Infimum(String...operands) {

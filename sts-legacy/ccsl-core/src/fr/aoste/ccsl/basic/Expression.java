@@ -1,5 +1,11 @@
 package fr.aoste.ccsl.basic;
 
+/**
+ * Requires a type for Expressions to get a dedicated visitor
+ * 
+ * @author fmallet
+ *
+ */
 abstract class Expression implements ICCSLSpecificationElement {
 	private static int num = 0;
 	private String name;

@@ -1,5 +1,11 @@
 package fr.aoste.ccsl.basic;
 
+/**
+ * Requires a type for Intersection to get a dedicated visitor
+ * 
+ * @author fmallet
+ *
+ */
 class Intersection extends Expression {
 	
 	protected Intersection(String...operands) {

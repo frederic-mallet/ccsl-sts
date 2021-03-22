@@ -92,11 +92,20 @@ public class CoreBuilderVisitor extends ACCSLSpecificationVisitor {
 	}
 	
 	@Override
-	public void visit(Infimum expression) {
-		throw new RuntimeException("Infimum is not supported");
+	public void visit(Infimum infimum) {
+		LinkedList<ICCSLClock> clocks = new LinkedList<>();
+		for(String clock : infimum.getOperands())
+			clocks.add(getClock(clock));		
+		ICCSLClock res = spec.addInfimum(clocks);
+		if (nameToClocks.put(infimum.getName(), res) != null)
+			throw new RuntimeException("Name conflict during infimum");
 	}
 	@Override
-	public void visit(Supremum expression) {
-		throw new RuntimeException("Supremum is not supported");
-	}
+	public void visit(Supremum supremum) {
+		LinkedList<ICCSLClock> clocks = new LinkedList<>();
+		for(String clock : supremum.getOperands())
+			clocks.add(getClock(clock));		
+		ICCSLClock res = spec.addSupremum(clocks);
+		if (nameToClocks.put(supremum.getName(), res) != null)
+			throw new RuntimeException("Name conflict during supremum");	}
 }

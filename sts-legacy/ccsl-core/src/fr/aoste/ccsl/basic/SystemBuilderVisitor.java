@@ -7,6 +7,8 @@ import fr.aoste.ccsl.system.ICCSLSystemBuilder;
 /**
  * Visit a BasicCCSLSpecification and invokes the 
  * builder
+ * Adapts the names from one system to the other
+ * 
  * @author fmallet
  *
  */

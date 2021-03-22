@@ -1,5 +1,11 @@
 package fr.aoste.ccsl.basic;
 
+/**
+ * Requires a type for Precedence to get a dedicated visitor
+ * 
+ * @author fmallet
+ *
+ */
 final class Precedence extends BinaryRelation {
 	protected Precedence(String leftClock, String rightClock) {
 		super(leftClock, rightClock);

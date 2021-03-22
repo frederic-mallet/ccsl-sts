@@ -1,5 +1,11 @@
 package fr.aoste.ccsl.basic;
 
+/**
+ * Requires a type for Filter to get a dedicated visitor
+ * 
+ * @author fmallet
+ *
+ */
 class Filter extends Expression {
 	private int every = 1, from = 0;
 	

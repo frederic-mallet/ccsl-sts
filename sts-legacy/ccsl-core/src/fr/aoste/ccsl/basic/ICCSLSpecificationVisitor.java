@@ -1,5 +1,11 @@
 package fr.aoste.ccsl.basic;
 
+/**
+ * Visitor for ICCSLSpecification
+ * 
+ * @author fmallet
+ *
+ */
 public interface ICCSLSpecificationVisitor {
 	void visit(BasicCCSLSpecification specification);
 	
