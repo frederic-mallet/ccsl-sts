@@ -14,5 +14,5 @@ A simple interactive execution is given ![Sim](aadl1-simulation.png)
 
 But computing the [Synchronous Transition Systems](sts/Aadl1.dot.png) results in  39 states and 949 transitions.
 
-- [FDL2007](https://web.archive.org/web/*/http://www.ecsi-association.org/ecsi/main.asp?l1=library&fn=def&id=265): F. Mallet, C. André, R. de Simone: *Modeling of immediate vs. delayed data communications: from AADL to UML Marte.* FDL 2007: 249-254.
+- [FDL2007](https://hal.inria.fr/inria-00204484/): F. Mallet, C. André, R. de Simone: *Modeling of immediate vs. delayed data communications: from AADL to UML Marte.* FDL 2007: 249-254.
 
