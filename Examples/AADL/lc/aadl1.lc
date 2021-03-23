@@ -1,0 +1,12 @@
+Specification Aadl1 {
+	Clock read, control
+		  t1, t2
+	[
+		// read the input before controlling
+		Precedence read < control
+		// allocate read on t1
+		Precedence t1 <= (max: 1) read
+		// allocate control on t2
+		Precedence t2 <= (max: 1) control
+	]
+}
