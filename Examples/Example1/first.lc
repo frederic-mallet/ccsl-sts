@@ -1,6 +1,0 @@
-Specification Premier {
-	Clock a,b,c,d,e,f [
-		Precedence a < b < c
-		Exclusion a # c
-	]
-}

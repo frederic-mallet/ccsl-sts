@@ -1,3 +1,7 @@
+// example of alternance as a bounded precedence
+//
+// Author: F. Mallet
+//
 Specification Altern {
   Clock a b
   [

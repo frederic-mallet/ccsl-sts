@@ -1,3 +1,7 @@
+// example of alternance as a composition of two precedences and delay
+//
+// Author: F. Mallet
+//
 Specification AlternCompose {
   Clock a b
   [
