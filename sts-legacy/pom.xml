@@ -28,7 +28,8 @@
             <goals><goal>add-source</goal></goals>
             <configuration>
               <sources>
-                <source>ccsl-core/src</source>
+                <source>ccsl-system/src</source>
+                <source>sts/src</source>
                 <source>sts-pojo/src</source>
                 <source>sts-pojo/src-texo</source>
                 <source>sts-utility/src</source>

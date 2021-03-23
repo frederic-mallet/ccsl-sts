@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Synchronous Transition Systems
+Bundle-SymbolicName: fr.aoste.sts
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: fr.aoste.sts
+Export-Package: fr.aoste.sts
+Bundle-Vendor: F. Mallet
