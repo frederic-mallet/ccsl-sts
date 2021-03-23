@@ -1,0 +1,19 @@
+ClockConstraintSystem AlternCompose {
+    imports {
+		import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib" as lib0;
+		import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib" as lib1;
+    }
+    entryBlock main
+
+    Block main {
+		Clock a
+		Clock b
+
+
+        Expression a1 = DelayFor(DelayForClockToDelay -> a,
+			DelayForClockForCounting -> a,
+			DelayForDelay -> one)
+        Relation r_1[Precedes] (LeftClock -> a, RightClock -> b)
+        Relation r_2[Precedes] (LeftClock -> b, RightClock -> a1)
+	}
+}

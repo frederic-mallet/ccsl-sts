@@ -1,0 +1,15 @@
+ClockConstraintSystem Altern {
+    imports {
+		import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib" as lib0;
+		import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib" as lib1;
+    }
+    entryBlock main
+
+    Block main {
+		Clock a
+		Clock b
+
+
+        Relation r_0[Alternates] (AlternatesLeftClock -> a, AlternatesRightClock -> b)
+	}
+}
