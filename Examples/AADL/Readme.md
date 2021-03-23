@@ -10,7 +10,7 @@ Looking at causality graph with identify that the specification is not safe sinc
 
 ![CCG](dot/Aadl1.dot.png)
 
-A simple interactive execution is given [here](Aadl1.html)
+A simple interactive execution is given ![Sim](aadl1-simulation.png)
 
 But computing the [Synchronous Transition Systems](sts/Aadl1.dot.png) results in  39 states and 949 transitions.
 
