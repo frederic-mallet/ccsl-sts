@@ -12,5 +12,8 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/sts-legacy"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/sts-choco"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lightccsl-sat4j"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lightccsl-core"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lightccsl-choco"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lightccsl-htmlvcd"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
