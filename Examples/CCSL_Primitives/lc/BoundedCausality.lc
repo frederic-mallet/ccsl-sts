@@ -1,0 +1,6 @@
+Specification BoundedCausality {
+	Clock a b
+	[
+		Precedence a <= (init: 2 max: 3) b
+	]
+}
