@@ -1,0 +1,7 @@
+digraph {
+  "a";
+  "b";
+a -> b
+a -> b["color"="red", "dir"="both", "arrowtail"="dot", "arrowhead"="dot"]
+
+}
