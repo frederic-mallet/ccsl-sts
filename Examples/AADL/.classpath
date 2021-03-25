@@ -13,5 +13,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lightccsl-htmlvcd"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lightccsl-core"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/sts-legacy"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/sts-ilp"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

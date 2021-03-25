@@ -1,0 +1,17 @@
+digraph {
+  "read";
+  "t";
+  "control";
+  "t1";
+  "t2";
+t2 -> control
+control -> t2["style"="dashed"]
+control -> t["color"="red", "dir"="both", "arrowtail"="dot", "arrowhead"="dot"]
+t1 -> read
+control -> t
+read -> t1["style"="dashed"]
+t -> t1["style"="dashed"]
+read -> control["color"="red", "dir"="both", "arrowtail"="dot", "arrowhead"="dot"]
+read -> control
+
+}

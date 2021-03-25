@@ -6,7 +6,7 @@ digraph AlternCompose {
     label= "b"
   ] ;
   s2->s1 [
-    label= "a"
+    label= "a.a1"
   ] ;
 }
 
