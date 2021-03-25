@@ -7,12 +7,11 @@ package fr.aoste.ccsl.system.basic;
  *
  */
 abstract class Expression implements ICCSLSpecificationElement {
-	private static int num = 0;
 	private String name;
 	private String[] operands;
 	
-	Expression(String ... operands) {
-		this.name = "_expr"+num++;
+	Expression(String name, String ... operands) {
+		this.name = name;
 		this.operands = operands;
 	}
 	public String getName() {

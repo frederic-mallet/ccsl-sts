@@ -35,7 +35,7 @@ class PrecedesBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> {
 		}
 		{ // pi -> p0 ([delta==1]right)
 			Transition rightT = helper.createTransition(pi, p0, rightEvent);
-			rightT.setGuard(InvariantBuilder.inv(leftEvent, rightEvent, 1, ComparisonOperator.EQUALS));
+			rightT.setGuard(InvariantBuilder.inv(leftEvent, rightEvent, 1, ComparisonOperator.EQUALS)); // remplace EQUALS by LESSEQUALS for Jalinopt
 		}
 		{ // pi -> pi (left)
 			helper.createTransition(pi, pi, leftEvent);

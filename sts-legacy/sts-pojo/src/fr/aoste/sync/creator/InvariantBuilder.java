@@ -8,6 +8,7 @@ import fr.aoste.sync.vspec.ComparisonOperator;
 import fr.aoste.sync.vspec.Conjunction;
 import fr.aoste.sync.vspec.Difference;
 import fr.aoste.sync.vspec.LiteralInteger;
+import fr.aoste.sync.vspec.NotExpression;
 import fr.aoste.sync.vspec.ValuespecificationFactory;
 
 // chi(src)-chi(tgt) op val
@@ -35,6 +36,10 @@ public class InvariantBuilder {
 		comp.setLeft(diff);
 		
 		return comp;
+	}
+	
+	static public NotExpression not(BooleanExpression be) {
+		return new NotExpression(be);
 	}
 	
 	static public Conjunction conjunction(BooleanExpression ...booleanExpressions) {

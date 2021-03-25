@@ -8,6 +8,7 @@ import fr.aoste.sync.vspec.Conjunction;
 import fr.aoste.sync.vspec.Difference;
 import fr.aoste.sync.vspec.IntegerExpression;
 import fr.aoste.sync.vspec.LiteralInteger;
+import fr.aoste.sync.vspec.NotExpression;
 import fr.aoste.sync.vspec.ValueSpecification;
 import fr.aoste.sync.vspec.visitor.AvaluespecificationVisitor;
 
@@ -72,5 +73,11 @@ public class ValueSpecificationPrettyPrinter extends AvaluespecificationVisitor<
 	public CharSequence visit(IntegerExpression e) {
 		// if here, it means it is a Chi or a ParameterReference
 		return e.accept(new STSPrettyPrinter(helper, sb)).toString();
+	}
+	@Override
+	public CharSequence visit(NotExpression e) {
+		sb.append("!");
+		e.getOperand().accept(this);
+		return sb;
 	}
 }

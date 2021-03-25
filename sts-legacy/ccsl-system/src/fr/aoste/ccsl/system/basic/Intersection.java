@@ -8,8 +8,8 @@ package fr.aoste.ccsl.system.basic;
  */
 class Intersection extends Expression {
 	
-	protected Intersection(String...operands) {
-		super(operands);
+	protected Intersection(String name, String...operands) {
+		super(name, operands);
 	}
 
 	@Override

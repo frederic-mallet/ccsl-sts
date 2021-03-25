@@ -40,3 +40,9 @@ The jar directory contains the dependencies to be used at runtime to run the pro
 - name : sts-choco
 - external-jar : [jar/sts-choco-0.1.jar](jar/sts-choco-0.1.jar) [Choco](thirparties/choco-solver-4.10.6-SNAPSHOT-jar-with-dependencies.jar)
 - description : Required to simplify the composition of STS with ChocoInvariantHelper
+
+## sts-ilp
+
+- name : sts-ilp
+- external-jar : [jar/sts-ilp-0.1.jar](jar/sts-ilp-0.1.jar) [Jalinopt](thirparties/jalinopt-0.1.1.jar)
+- description : Required to simplify the composition of STS with JalinoptInvariantHelper (Default Invariant Helper)

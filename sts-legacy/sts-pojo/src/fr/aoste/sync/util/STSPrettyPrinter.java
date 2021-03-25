@@ -21,8 +21,14 @@ import fr.aoste.sync.vspec.Difference;
 import fr.aoste.sync.vspec.IntegerExpression;
 import fr.aoste.sync.vspec.IvaluespecificationVisitor;
 import fr.aoste.sync.vspec.LiteralInteger;
+import fr.aoste.sync.vspec.NotExpression;
 import fr.aoste.sync.vspec.ValueSpecification;
 
+/**
+ * Pretty Print a STS
+ * @author fmallet
+ *
+ */
 public class STSPrettyPrinter extends AstsVisitor<StringBuilder> implements IvaluespecificationVisitor<StringBuilder> {
 	private StringBuilder sb;
 	private DTSHelper helper;
@@ -234,5 +240,11 @@ public class STSPrettyPrinter extends AstsVisitor<StringBuilder> implements Ival
 	@Override
 	public StringBuilder visit(ComparisonOperator e) {
 		return null;
+	}
+	@Override
+	public StringBuilder visit(NotExpression e) {
+		sb.append("!");
+		e.getOperand().accept(this);
+		return sb;
 	}
 }

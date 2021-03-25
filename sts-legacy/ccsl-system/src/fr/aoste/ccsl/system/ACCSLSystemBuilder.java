@@ -14,63 +14,63 @@ abstract public class ACCSLSystemBuilder<RESULT> implements ICCSLSystemBuilder<R
 	 * @see fr.aoste.sync.compose.ICCSLSpecification#union(java.lang.String)
 	 */
 	@Override
-	public String union(String ... operands) {
+	public String union(String der, String ... operands) {
 		if (operands.length==0) throw new RuntimeException("cannot make the union of nothing");
 		
-		return union(0, operands);
+		return union(der, 0, operands);
 	}
-	private String union(int pos, String ... operands) { 
+	private String union(String der, int pos, String ... operands) { 
 		assert (operands.length-pos>=2); // comes from the public method
 		if (operands.length-pos==1) return operands[pos];
 	
-		return union(operands[pos], inf(pos+1, operands));
+		return union(pos==0?der:(der+pos), operands[pos], union(der, pos+1, operands));
 	}
 
 	/* (non-Javadoc)
 	 * @see fr.aoste.sync.compose.ICCSLSpecification#intersection(java.lang.String)
 	 */
 	@Override
-	public String intersection(String ... operands) {
+	public String intersection(String der, String ... operands) {
 		if (operands.length==0) throw new RuntimeException("cannot make the intersection of nothing");
 		
-		return intersection(0, operands);
+		return intersection(der, 0, operands);
 	}
-	private String intersection(int pos, String ... operands) { 
+	private String intersection(String der, int pos, String ... operands) { 
 		assert (operands.length-pos>=2); // comes from the public method
 		if (operands.length-pos==1) return operands[pos];
 	
-		return intersection(operands[pos], inf(pos+1, operands));
+		return intersection(pos==0?der:(der+pos), operands[pos], intersection(der, pos+1, operands));
 	}
 	
 	/* (non-Javadoc)
 	 * @see fr.aoste.sync.compose.ICCSLSpecification#inf(java.lang.String)
 	 */
 	@Override
-	public String inf(String ... operands) {
+	public String inf(String der, String ... operands) {
 		if (operands.length==0) throw new RuntimeException("cannot make the inf of nothing");
 		
-		return inf(0, operands);
+		return inf(der, 0, operands);
 	}
-	private String inf(int pos, String ... operands) { 
+	private String inf(String der, int pos, String ... operands) { 
 		assert (operands.length-pos>=2); // comes from the public method
 		if (operands.length-pos==1) return operands[pos];
 	
-		return inf(operands[pos], inf(pos+1, operands));
+		return inf(pos==0?der:(der+pos), operands[pos], inf(der, pos+1, operands));
 	}
 	
 	/* (non-Javadoc)
 	 * @see fr.aoste.sync.compose.ICCSLSpecification#sup(java.lang.String)
 	 */
 	@Override
-	public String sup(String ... operands) {
+	public String sup(String der, String ... operands) {
 		if (operands.length==0) throw new RuntimeException("cannot make the sup of nothing");
 		
-		return sup(0, operands);
+		return sup(der, 0, operands);
 	}
-	private String sup(int pos, String ... operands) { 
+	private String sup(String der, int pos, String ... operands) { 
 		assert (operands.length-pos>=2); // comes from the public method
 		if (operands.length-pos==1) return operands[pos];
 	
-		return sup(operands[pos], sup(pos+1, operands));
+		return sup(pos==0?der:(der+pos), operands[pos], sup(der, pos+1, operands));
 	}	
 }

@@ -8,8 +8,8 @@ package fr.aoste.ccsl.system.basic;
  */
 class Union extends Expression {
 	
-	protected Union(String...operands) {
-		super(operands);
+	protected Union(String name, String...operands) {
+		super(name, operands);
 	}
 
 	@Override

@@ -15,6 +15,8 @@ public class STStoDOT extends AstsVisitor<CharSequence> {
 		this.sts = sts;
 
 		builder.append("digraph ").append(sts.getName()).append(" { \n");
+		builder.append("  rankdir=\"LR\"\n");
+		builder.append("  s").append(sts.getStates().indexOf(sts.getInitial())).append(" [ shape=\"doublecircle\" ]\n");
 		for(Transition t : sts.getTransitions()) {
 			t.accept(this);
 		}

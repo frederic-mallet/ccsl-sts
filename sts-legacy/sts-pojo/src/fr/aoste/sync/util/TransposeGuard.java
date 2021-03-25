@@ -20,6 +20,7 @@ import fr.aoste.sync.vspec.Difference;
 import fr.aoste.sync.vspec.IntegerExpression;
 import fr.aoste.sync.vspec.IvaluespecificationVisitor;
 import fr.aoste.sync.vspec.LiteralInteger;
+import fr.aoste.sync.vspec.NotExpression;
 import fr.aoste.sync.vspec.ValueSpecification;
 import fr.aoste.sync.vspec.ValuespecificationFactory;
 
@@ -115,5 +116,10 @@ public class TransposeGuard implements IvaluespecificationVisitor<ValueSpecifica
 		public Object visit(ParameterReference e) {
 			return visit(e.getReference());
 		}
+	}
+
+	@Override
+	public NotExpression visit(NotExpression e) {
+		return new NotExpression(visit(e.getOperand()));
 	}
 }

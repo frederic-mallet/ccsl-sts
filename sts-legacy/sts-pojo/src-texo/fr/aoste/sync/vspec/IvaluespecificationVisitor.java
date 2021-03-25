@@ -9,6 +9,11 @@ package fr.aoste.sync.vspec;
 
 public interface IvaluespecificationVisitor<T> {
 	/**
+	 * Visiting a '<em><b>NotExpression</b></em>'
+	 */
+	public T visit(NotExpression e);
+	
+	/**
 	 * Visiting a '<em><b>BooleanExpression</b></em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * 

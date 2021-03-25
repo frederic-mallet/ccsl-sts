@@ -113,6 +113,14 @@ final public class CCSLStsFactory implements ICCSLStsFactory<SynchronousTransiti
 		builder.setParameterValue(AlternatesBuilder.RIGHTCLOCK, right);
 		return builder;
 	}
+	public STSBuilder<SynchronousTransitionSystem> createPrecedesBuilder(String left, String right, int init, int max) {
+		BoundedPrecedesBuilder builder = new BoundedPrecedesBuilder();
+		builder.setParameterValue(PrecedesBuilder.LEFTCLOCK, left);
+		builder.setParameterValue(PrecedesBuilder.RIGHTCLOCK, right);
+		builder.setParameterValue(BoundedPrecedesBuilder.INIT, init);
+		builder.setParameterValue(BoundedPrecedesBuilder.MAX, max);
+		return builder;
+	}
 	@Override
 	public STSBuilder<SynchronousTransitionSystem> createPrecedesBuilder(String left, String right) {
 		PrecedesBuilder builder = new PrecedesBuilder();
@@ -158,6 +166,14 @@ final public class CCSLStsFactory implements ICCSLStsFactory<SynchronousTransiti
 		SubclockBuilder builder = new SubclockBuilder();
 		builder.setParameterValue(SubclockBuilder.SUBCLOCK, clock1);
 		builder.setParameterValue(SubclockBuilder.SUPERCLOCK, clock2);
+		return builder;
+	}
+	public STSBuilder<SynchronousTransitionSystem> createCausesBuilder(String left, String right, int init, int max) {
+		BoundedCausesBuilder builder = new BoundedCausesBuilder();
+		builder.setParameterValue(CausesBuilder.LEFTCLOCK, left);
+		builder.setParameterValue(CausesBuilder.RIGHTCLOCK, right);
+		builder.setParameterValue(BoundedCausesBuilder.INIT, init);
+		builder.setParameterValue(BoundedCausesBuilder.MAX, max);
 		return builder;
 	}
 }

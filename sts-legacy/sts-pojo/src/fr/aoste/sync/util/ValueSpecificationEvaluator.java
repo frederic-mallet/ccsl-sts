@@ -18,6 +18,7 @@ import fr.aoste.sync.vspec.Difference;
 import fr.aoste.sync.vspec.IntegerExpression;
 import fr.aoste.sync.vspec.IvaluespecificationVisitor;
 import fr.aoste.sync.vspec.LiteralInteger;
+import fr.aoste.sync.vspec.NotExpression;
 import fr.aoste.sync.vspec.ValueSpecification;
 
 public class ValueSpecificationEvaluator extends AstsVisitor<Object> implements IvaluespecificationVisitor<Object> {
@@ -107,5 +108,9 @@ public class ValueSpecificationEvaluator extends AstsVisitor<Object> implements 
 	@Override
 	public Object visit(ComparisonOperator e) {
 		return e;
+	}
+	@Override
+	public Boolean visit(NotExpression e) {
+		return !visit(e.getOperand());
 	}
 }

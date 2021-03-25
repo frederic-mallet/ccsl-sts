@@ -8,6 +8,7 @@ import fr.aoste.sync.vspec.Difference;
 import fr.aoste.sync.vspec.IntegerExpression;
 import fr.aoste.sync.vspec.IvaluespecificationVisitor;
 import fr.aoste.sync.vspec.LiteralInteger;
+import fr.aoste.sync.vspec.NotExpression;
 import fr.aoste.sync.vspec.ValueSpecification;
 
 /**
@@ -299,5 +300,34 @@ public class PrettyPrintvaluespecificationVisitor implements
 	 */
 	public CharSequence visit(ComparisonOperator obj) {
 		return obj.toString();
+	}
+
+	@Override
+	public CharSequence visit(NotExpression e) {
+		boolean toplevel = false;
+		if (surface == null) {
+			surface = new StringBuilder();
+			surface.append(tab).append("Not<");
+			toplevel = true;
+			sep = "";
+		}
+
+		/** SuperType:BooleanExpression */
+		visit((BooleanExpression) e);
+
+		/** Reference: name=operands many=true useList=true */
+		internal.append('\n').append(tab).append("\toperand={");
+		BooleanExpression be = e.getOperand();
+		internal.append('\n').append(
+				be.accept(new PrettyPrintvaluespecificationVisitor(tab
+						+ "\t\t")));
+
+		if (toplevel) {
+			surface.append("> [").append(internal);
+			if (internal.length() > 0)
+				surface.append('\n').append(tab);
+			surface.append(']');
+		}
+		return surface;
 	}
 }

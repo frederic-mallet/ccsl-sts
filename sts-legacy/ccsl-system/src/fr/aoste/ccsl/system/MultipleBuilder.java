@@ -100,81 +100,81 @@ final public class MultipleBuilder implements ICCSLSystemBuilder<List<Object>>{
 	}
 
 	@Override
-	public String union(String... operands) {
+	public String union(String der, String... operands) {
 		ArrayList<String> res = new ArrayList<>();
 		for (int i = 0; i<builders.size(); i++) {
-			res.add(builders.get(i).union(adaptOperands(i, operands)));
+			res.add(builders.get(i).union(idToClock(i,der), adaptOperands(i, operands)));
 		}
 		return getNameForList(res);
 	}
 
 	@Override
-	public String union(String operand1, String operand2) {
+	public String union(String der, String operand1, String operand2) {
 		ArrayList<String> res = new ArrayList<>();
 		for (int i = 0; i<builders.size(); i++) {
-			res.add(builders.get(i).union(idToClock(i, operand1), idToClock(i, operand2)));
+			res.add(builders.get(i).union(idToClock(i,der), idToClock(i, operand1), idToClock(i, operand2)));
 		}
 		return getNameForList(res);
 	}
 
 	@Override
-	public String intersection(String... operands) {
+	public String intersection(String der, String... operands) {
 		ArrayList<String> res = new ArrayList<>();
 		for (int i = 0; i<builders.size(); i++) {
-			res.add(builders.get(i).intersection(adaptOperands(i, operands)));
+			res.add(builders.get(i).intersection(idToClock(i,der), adaptOperands(i, operands)));
 		}
 		return getNameForList(res);
 	}
 
 	@Override
-	public String intersection(String operand1, String operand2) {
+	public String intersection(String der, String operand1, String operand2) {
 		ArrayList<String> res = new ArrayList<>();
 		for (int i = 0; i<builders.size(); i++) {
-			res.add(builders.get(i).intersection(idToClock(i, operand1), idToClock(i, operand2)));
+			res.add(builders.get(i).intersection(idToClock(i,der), idToClock(i, operand1), idToClock(i, operand2)));
 		}
 		return getNameForList(res);
 	}
 
 	@Override
-	public String inf(String... operands) {
+	public String inf(String der, String... operands) {
 		ArrayList<String> res = new ArrayList<>();
 		for (int i = 0; i<builders.size(); i++) {
-			res.add(builders.get(i).inf(adaptOperands(i, operands)));
+			res.add(builders.get(i).inf(idToClock(i,der), adaptOperands(i, operands)));
 		}
 		return getNameForList(res);
 	}
 
 	@Override
-	public String inf(String operand1, String operand2) {
+	public String inf(String der, String operand1, String operand2) {
 		ArrayList<String> res = new ArrayList<>();
 		for (int i = 0; i<builders.size(); i++) {
-			res.add(builders.get(i).inf(idToClock(i, operand1), idToClock(i, operand2)));
+			res.add(builders.get(i).inf(idToClock(i,der), idToClock(i, operand1), idToClock(i, operand2)));
 		}
 		return getNameForList(res);
 	}
 
 	@Override
-	public String sup(String... operands) {
+	public String sup(String der, String... operands) {
 		ArrayList<String> res = new ArrayList<>();
 		for (int i = 0; i<builders.size(); i++) {
-			res.add(builders.get(i).sup(adaptOperands(i, operands)));
+			res.add(builders.get(i).sup(idToClock(i,der), adaptOperands(i, operands)));
 		}
 		return getNameForList(res);
 	}
 
 	@Override
-	public String sup(String operand1, String operand2) {
+	public String sup(String der, String operand1, String operand2) {
 		ArrayList<String> res = new ArrayList<>();
 		for (int i = 0; i<builders.size(); i++) {
-			res.add(builders.get(i).sup(idToClock(i, operand1), idToClock(i, operand2)));
+			res.add(builders.get(i).sup(idToClock(i,der), idToClock(i, operand1), idToClock(i, operand2)));
 		}
 		return getNameForList(res);
 	}
 	@Override
-	public String filter(String base, int every, int from) {
+	public String filter(String der, String base, int every, int from) {
 		ArrayList<String> res = new ArrayList<>();
 		for (int i = 0; i<builders.size(); i++) {
-			res.add(builders.get(i).filter(idToClock(i, base), every, from));
+			res.add(builders.get(i).filter(idToClock(i,der), idToClock(i, base), every, from));
 		}
 		return getNameForList(res);
 	}

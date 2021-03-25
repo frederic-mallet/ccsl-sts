@@ -76,54 +76,54 @@ final public class AntiAliasCCSLSystemBuilder<RESULT> implements ICCSLSystemBuil
 	}	
 
 	@Override
-	public String union(String... operands) {
+	public String union(String der, String... operands) {
 		String[] ops = new String[operands.length];
 		for(int i=0;i<operands.length;i++)
 			ops[i]=resolveAlias(operands[i]);
-		return decorated.union(ops);
+		return decorated.union(der, ops);
 	}
 
 	@Override
-	public String union(String operand1, String operand2) {
-		return decorated.union(resolveAlias(operand1), resolveAlias(operand2));
+	public String union(String der, String operand1, String operand2) {
+		return decorated.union(resolveAlias(der), resolveAlias(operand1), resolveAlias(operand2));
 	}
 
 	@Override
-	public String intersection(String... operands) {
+	public String intersection(String der, String... operands) {
 		String[] ops = new String[operands.length];
 		for(int i=0;i<operands.length;i++)
 			ops[i]=resolveAlias(operands[i]);
-		return decorated.intersection(ops);
+		return decorated.intersection(resolveAlias(der), ops);
 	}
 
 	@Override
-	public String intersection(String operand1, String operand2) {
-		return decorated.intersection(resolveAlias(operand1), resolveAlias(operand2));
+	public String intersection(String der, String operand1, String operand2) {
+		return decorated.intersection(resolveAlias(der), resolveAlias(operand1), resolveAlias(operand2));
 	}
 
 	@Override
-	public String inf(String... operands) {
+	public String inf(String der, String... operands) {
 		String[] ops = new String[operands.length];
 		for(int i=0;i<operands.length;i++)
 			ops[i]=resolveAlias(operands[i]);
-		return decorated.inf(ops);
+		return decorated.inf(resolveAlias(der), ops);
 	}
 
 	@Override
-	public String inf(String operand1, String operand2) {
-		return decorated.inf(resolveAlias(operand1), resolveAlias(operand2));
+	public String inf(String der, String operand1, String operand2) {
+		return decorated.inf(resolveAlias(der), resolveAlias(operand1), resolveAlias(operand2));
 	}
 
 	@Override
-	public String sup(String... operands) {
+	public String sup(String der, String... operands) {
 		String[] ops = new String[operands.length];
 		for(int i=0;i<operands.length;i++)
 			ops[i]=resolveAlias(operands[i]);
-		return decorated.sup(ops);
+		return decorated.sup(resolveAlias(der), ops);
 	}
 
 	@Override
-	public String sup(String operand1, String operand2) {
+	public String sup(String der, String operand1, String operand2) {
 		return decorated.sup(resolveAlias(operand1), resolveAlias(operand2));
 	}
 
@@ -133,7 +133,7 @@ final public class AntiAliasCCSLSystemBuilder<RESULT> implements ICCSLSystemBuil
 	}
 
 	@Override
-	public String filter(String base, int every, int from) {
-		return decorated.filter(resolveAlias(base), every, from);
+	public String filter(String der, String base, int every, int from) {
+		return decorated.filter(resolveAlias(der), resolveAlias(base), every, from);
 	}
 }

@@ -22,7 +22,7 @@ public abstract class AInvariantHelper {
 	/**
 	 * @return false iif a ILP solver is connected
 	 */
-	public boolean cannotSimplifyGuards() { return true; }
+	public boolean cannotSimplifyGuards() { return false; }
 	
 	/**
 	 * 

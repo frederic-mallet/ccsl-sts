@@ -80,7 +80,10 @@ final class SynchronizedState {
 	
 	private void buildStateInvariant(LinkedList<BooleanExpression> invariants) {
 		if (invariants.size()==0) return;
-		if (invariants.size()==1) state.setInvariant(invariants.get(0)); // should duplicate ?
+		if (invariants.size()==1) {
+			state.setInvariant(invariants.get(0)); // should duplicate ?
+			return;
+		}
 		
 		Conjunction c = ValuespecificationFactory.eINSTANCE.createConjunction();
 		c.getOperands().addAll(invariants); // should duplicate ??

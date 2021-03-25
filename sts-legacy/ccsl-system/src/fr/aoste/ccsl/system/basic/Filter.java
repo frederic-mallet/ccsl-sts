@@ -9,8 +9,8 @@ package fr.aoste.ccsl.system.basic;
 class Filter extends Expression {
 	private int every = 1, from = 0;
 	
-	protected Filter(String base, int every, int from) {
-		super(base);
+	protected Filter(String der, String base, int every, int from) {
+		super(der, base);
 		this.every = every;
 		this.from = from;
 	}

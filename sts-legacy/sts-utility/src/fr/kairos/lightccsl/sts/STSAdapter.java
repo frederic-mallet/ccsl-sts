@@ -1,7 +1,9 @@
 package fr.kairos.lightccsl.sts;
 
 import fr.aoste.ccsl.system.ICCSLSystemBuilder;
+import fr.aoste.sts.STSBuilder;
 import fr.aoste.sync.SynchronousTransitionSystem;
+import fr.aoste.sync.creator.CCSLStsFactory;
 import fr.kairos.timesquare.ccsl.ISimpleSpecification;
 
 /**
@@ -40,18 +42,8 @@ class STSAdapter implements ISimpleSpecification {
 
 	@Override
 	public void precedence(String left, String right, int min, int max) {
-		if (min == 0) {
-			if (max == 1) stsBuilder.alternates(left, right);
-			else {
-				this.precedence(left, right);
-				if (max != -1) {
-					String der = "_" + left;
-					this.periodic(der, left, 1, max, -1);
-					this.precedence(right, der);
-				}
-			}
-		} else
-			throw new RuntimeException("Unsupported operation precedence " + left + ":" + right + ":" + min + ":" + max);		
+		STSBuilder<SynchronousTransitionSystem> builder = CCSLStsFactory.INSTANCE.createPrecedesBuilder(left, right, min, max);
+		stsBuilder.addSpecification(new DummyBuilder(builder.create()));
 	}
 
 	@Override
@@ -61,39 +53,28 @@ class STSAdapter implements ISimpleSpecification {
 
 	@Override
 	public void causality(String left, String right, int min, int max) {
-		if (min == 0) {
-			this.causality(left, right);
-			if (max != -1) {
-				String der = "_" + left;
-				this.periodic(der, left, 1, max, -1);
-				this.causality(right, der);
-			}
-		} else
-			throw new RuntimeException("Unsupported operation causality " + left + ":" + right + ":" + min + ":" + max);				
+		STSBuilder<SynchronousTransitionSystem> builder = CCSLStsFactory.INSTANCE.createCausesBuilder(left, right, min, max);
+		stsBuilder.addSpecification(new DummyBuilder(builder.create()));
 	}
 
 	@Override
 	public void inf(String defClock, String... clocks) {
-		String der = stsBuilder.inf(clocks);
-		stsBuilder.coincides(defClock, der);
+		stsBuilder.inf(defClock, clocks);
 	}
 
 	@Override
 	public void sup(String defClock, String... clocks) {
-		String der = stsBuilder.sup(clocks);
-		stsBuilder.coincides(defClock, der);
+		stsBuilder.sup(defClock, clocks);
 	}
 
 	@Override
 	public void union(String defClock, String... clocks) {
-		String der = stsBuilder.union(clocks);
-		stsBuilder.coincides(defClock, der);
+		stsBuilder.union(defClock, clocks);
 	}
 
 	@Override
 	public void intersection(String defClock, String... clocks) {
-		String der = stsBuilder.intersection(clocks);
-		stsBuilder.coincides(defClock, der);
+		stsBuilder.intersection(defClock, clocks);
 	}
 
 	@Override
@@ -103,17 +84,13 @@ class STSAdapter implements ISimpleSpecification {
 
 	@Override
 	public void periodic(String defClock, String ref, int period, int from, int upto) {
-		if (upto != -1)
-			throw new RuntimeException("Unsupported operation");
-		String der = stsBuilder.filter(ref, period, from);
-		stsBuilder.coincides(defClock, der);
+		stsBuilder.filter(defClock, ref, period, from);
 	}
 
 	@Override
 	public void delayFor(String defClock, String ref, int from, int upTo, String base) {
 		if (upTo != -1 || base != null)
 			throw new RuntimeException("Unsupported operation");
-		String der = stsBuilder.filter(ref, 1, from);
-		stsBuilder.coincides(der, defClock);
+		stsBuilder.filter(defClock, ref, 1, from);
 	}
 }

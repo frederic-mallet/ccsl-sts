@@ -18,6 +18,7 @@ import fr.aoste.sync.vspec.Difference;
 import fr.aoste.sync.vspec.IntegerExpression;
 import fr.aoste.sync.vspec.IvaluespecificationVisitor;
 import fr.aoste.sync.vspec.LiteralInteger;
+import fr.aoste.sync.vspec.NotExpression;
 import fr.aoste.sync.vspec.ValueSpecification;
 import fr.kairos.common.java.Block;
 import fr.kairos.common.java.ClassBlock;
@@ -191,6 +192,15 @@ public class STStoJava extends AstsVisitor<CharSequence> {
 		public CharSequence visit(ComparisonOperator e) {
 			javaClass.addImport("fr.aoste.sync.vspec.ComparisonOperator");
 			return "ComparisonOperator." + e.name();
+		}
+
+		@Override
+		public CharSequence visit(NotExpression e) {
+			Object op = e.getOperand().accept(this);
+			if (op == null) return null;
+			
+			javaClass.addImport("static fr.aoste.sync.creator.InvariantBuilder.not");
+			return "not(" + op + ")";
 		}
 		
 	}

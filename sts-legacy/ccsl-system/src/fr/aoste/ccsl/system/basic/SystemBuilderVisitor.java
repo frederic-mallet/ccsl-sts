@@ -67,31 +67,26 @@ public class SystemBuilderVisitor extends ACCSLSpecificationVisitor {
 	}
 	@Override
 	public void visit(Union union) {
-		String res = builder.union(adapt(union.getOperands()));
-		nameMappings.put(union.getName(), res);
+		builder.union(union.getName(), adapt(union.getOperands()));
 	}
 	
 	@Override
 	public void visit(Intersection expression) {
-		String res = builder.intersection(adapt(expression.getOperands()));
-		nameMappings.put(expression.getName(), res);
+		builder.intersection(expression.getName(), adapt(expression.getOperands()));
 	}
 	
 	@Override
 	public void visit(Infimum expression) {
-		String res = builder.inf(adapt(expression.getOperands()));
-		nameMappings.put(expression.getName(),  res);
+		builder.inf(expression.getName(), adapt(expression.getOperands()));
 	}
 	@Override
 	public void visit(Supremum expression) {
-		String res = builder.sup(adapt(expression.getOperands()));
-		nameMappings.put(expression.getName(),  res);
+		builder.sup(expression.getName(),  adapt(expression.getOperands()));
 	}
 	
 	@Override
 	public void visit(Filter expression) {
-		String res = builder.filter(adapt(expression.getOperands()[0]), expression.getEvery(), expression.getFrom());
-		nameMappings.put(expression.getName(), res);
+		builder.filter(expression.getName(), (expression.getOperands()[0]), expression.getEvery(), expression.getFrom());
 	}
 
 	// The builder has its own naming convention for expressions

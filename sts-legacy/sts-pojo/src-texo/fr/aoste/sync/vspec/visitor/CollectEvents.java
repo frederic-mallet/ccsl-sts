@@ -14,6 +14,7 @@ import fr.aoste.sync.vspec.Difference;
 import fr.aoste.sync.vspec.IntegerExpression;
 import fr.aoste.sync.vspec.IvaluespecificationVisitor;
 import fr.aoste.sync.vspec.LiteralInteger;
+import fr.aoste.sync.vspec.NotExpression;
 import fr.aoste.sync.vspec.ValueSpecification;
 
 public class CollectEvents extends AstsVisitor<Event> implements IvaluespecificationVisitor<List<Event>> {
@@ -70,5 +71,11 @@ public class CollectEvents extends AstsVisitor<Event> implements Ivaluespecifica
 	@Override
 	public Event visit(Chi e) {
 		return e.getEvent();
+	}
+
+	@Override
+	public List<Event> visit(NotExpression e) {
+		e.getOperand().accept(this);
+		return this.events;
 	}
 }

@@ -25,21 +25,21 @@ public interface ICCSLSystemBuilder<RESULT> {
 	public abstract void subclock(String left, String right);
 
 	// -- expressions
-	public abstract String union(String... operands);
-	public abstract String union(String operand1, String operand2);
+	public abstract String union(String der, String... operands);
+	public abstract String union(String der, String operand1, String operand2);
 	
-	public abstract String intersection(String... operands);
-	public abstract String intersection(String operand1, String operand2);
+	public abstract String intersection(String der, String... operands);
+	public abstract String intersection(String der, String operand1, String operand2);
 	
-	public abstract String inf(String... operands);
-	public abstract String inf(String operand1, String operand2);
+	public abstract String inf(String der, String... operands);
+	public abstract String inf(String der, String operand1, String operand2);
 	
-	public abstract String sup(String... operands);
-	public abstract String sup(String operand1, String operand2);
+	public abstract String sup(String der, String... operands);
+	public abstract String sup(String der, String operand1, String operand2);
 	
 	// -- generic way to add an existing specification
 	public abstract void addSpecification(ICCSLSystemBuilder<?> spec);
 
 	// Default values, every => 1, from => 0
-	String filter(String base, int every, int from);
+	String filter(String der, String base, int every, int from);
 }

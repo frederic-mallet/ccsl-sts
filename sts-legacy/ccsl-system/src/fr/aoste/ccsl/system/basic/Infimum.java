@@ -8,8 +8,8 @@ package fr.aoste.ccsl.system.basic;
  */
 class Infimum extends Expression {
 	
-	protected Infimum(String...operands) {
-		super(operands);
+	protected Infimum(String name, String...operands) {
+		super(name, operands);
 	}
 
 	@Override

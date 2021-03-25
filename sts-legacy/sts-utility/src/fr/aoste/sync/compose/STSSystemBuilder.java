@@ -79,7 +79,7 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 	 * @see fr.aoste.sync.compose.ICCSLSpecification#union(java.lang.String)
 	 */
 	@Override
-	public String union(String ... operands) {
+	public String union(String der, String ... operands) {
 		assert(operands.length>=2);
 		int num = systems.size();
 		String[] names = new String[operands.length];
@@ -88,29 +88,23 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 		SynchronousTransitionSystem sts =  CCSLStsFactory.INSTANCE.createUnionBuilder("u", names).create();
 		systems.add(sts);
 
-		String derived=""; 
-		String sep="u_";
 		for(int i = 0; i<operands.length; i++) {
 			bindings.add(new Binding(operands[i],  num,  names[i]));
-			derived += sep + operands[i];
-			sep = "_";
 		}
-		bindings.add(new Binding(derived,  num,  "u"));
+		bindings.add(new Binding(der,  num,  "u"));
 
-		localClocks.add(derived);
-
-		return derived;
+		return der;
 	}
 	@Override
-	public String union(String operand1, String operand2) {
-		return union(new String[] {operand1, operand2});
+	public String union(String der, String operand1, String operand2) {
+		return union(der, new String[] {operand1, operand2});
 	}
 
 	/* (non-Javadoc)
 	 * @see fr.aoste.sync.compose.ICCSLSpecification#intersection(java.lang.String)
 	 */
 	@Override
-	public String intersection(String ... operands) {
+	public String intersection(String der, String ... operands) {
 		assert(operands.length>=2);
 		int num = systems.size();
 		String[] names = new String[operands.length];
@@ -119,61 +113,52 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 		SynchronousTransitionSystem sts =  CCSLStsFactory.INSTANCE.createIntersectionBuilder("i", names).create();
 		systems.add(sts);
 
-		String derived=""; 
-		String sep="i_";
 		for(int i = 0; i<operands.length; i++) {
 			bindings.add(new Binding(operands[i],  num,  names[i]));
-			derived += sep + operands[i];
-			sep = "_";
 		}
-		bindings.add(new Binding(derived,  num,  "i"));
+		bindings.add(new Binding(der,  num,  "i"));
 
-		localClocks.add(derived);
-
-		return derived;
+		return der;
 	}
 	@Override
-	public String intersection(String operand1, String operand2) {
-		return intersection(new String[] {operand1, operand2});
+	public String intersection(String der, String operand1, String operand2) {
+		return intersection(der, new String[] {operand1, operand2});
 	}
 	
 	@Override
-	public String inf(String operand1, String operand2) {
-		return binExpression(inf.create(), operand1, operand2);
+	public String inf(String der, String operand1, String operand2) {
+		return binExpression(der, inf.create(), operand1, operand2);
 	}
 
 	@Override
-	public String sup(String operand1, String operand2) {
-		return binExpression(sup.create(), operand1, operand2);
+	public String sup(String der, String operand1, String operand2) {
+		return binExpression(der, sup.create(), operand1, operand2);
 	}
 
 	@Override
-	public String filter(String base, int every, int from) {
+	public String filter(String der, String base, int every, int from) {
 		int num = systems.size();
 		STSBuilder<SynchronousTransitionSystem> ex;
 		if (every == 1) 
-			ex = CCSLStsFactory.INSTANCE.createDelayBuilder(base, "expr"+num, from, false);
+			ex = CCSLStsFactory.INSTANCE.createDelayBuilder(base, der, from, false);
 		else
-			ex = CCSLStsFactory.INSTANCE.createPeriodicBuilder(base, "expr"+num, every, from);
+			ex = CCSLStsFactory.INSTANCE.createPeriodicBuilder(base, der, every, from);
 		
 		systems.add(ex.create());
-		localClocks.add("expr"+num);
 		bindings.add(new Binding(base, num, base));
-		bindings.add(new Binding("expr" + num, num, "expr"+ num));
-		return "expr"+num;
+		bindings.add(new Binding(der, num, der));
+		return der;
 	}
 	
-	private String binExpression(SynchronousTransitionSystem sts,
+	private String binExpression(String der, SynchronousTransitionSystem sts,
 			String op1, String op2) {
 		int num = systems.size();
 		systems.add(sts);
 		bindings.add(new Binding(op1,  num,  C1));
 		bindings.add(new Binding(op2,  num,  C2));
-		bindings.add(new Binding("expr"+num, num, DERIVED));
+		bindings.add(new Binding(der, num, DERIVED));
 
-		localClocks.add("expr"+num);
-
-		return "expr"+num;
+		return der;
 	}
 	private void binRelation(String left, String right, SynchronousTransitionSystem sts) {
 		int num = systems.size();

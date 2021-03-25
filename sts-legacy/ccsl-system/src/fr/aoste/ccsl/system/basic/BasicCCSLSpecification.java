@@ -53,66 +53,66 @@ Iterable<ICCSLSpecificationElement>{
 	}
 
 	@Override
-	public String union(String... operands) {
-		Union u = new Union(operands);
+	public String union(String der, String... operands) {
+		Union u = new Union(der, operands);
 		elements.add(u);
-		return u.getName();
+		return der;
 	}
 
 	@Override
-	public String union(String operand1, String operand2) {
-		Union u = new Union(operand1, operand2);
+	public String union(String der, String operand1, String operand2) {
+		Union u = new Union(der, operand1, operand2);
 		elements.add(u);
-		return u.getName();
+		return der;
 	}
 
 	@Override
-	public String intersection(String... operands) {
-		Intersection u = new Intersection(operands);
+	public String intersection(String der, String... operands) {
+		Intersection u = new Intersection(der, operands);
 		elements.add(u);
-		return u.getName();
+		return der;
 	}
 
 	@Override
-	public String intersection(String operand1, String operand2) {
+	public String intersection(String der, String operand1, String operand2) {
 		Intersection u = new Intersection(operand1, operand2);
 		elements.add(u);
-		return u.getName();
+		return der;
 	}
 
 	@Override
-	public String filter(String base, int every, int from) {
-		Filter f = new Filter(base, every, from);
+	public String filter(String der, String base, int every, int from) {
+		Filter f = new Filter(der, base, every, from);
 		elements.add(f);
-		return f.getName();
+		return der;
 	}
 
 	@Override
-	public String inf(String... operands) {
-		Infimum inf = new Infimum(operands);
+	public String inf(String der, String... operands) {
+		Infimum inf = new Infimum(der, operands);
 		elements.add(inf);
-		return inf.getName();
+		return der;
 	}
 
 	@Override
-	public String inf(String operand1, String operand2) {
-		Infimum inf = new Infimum(operand1, operand2);
+	public String inf(String der, String operand1, String operand2) {
+		Infimum inf = new Infimum(der, operand1, operand2);
 		elements.add(inf);
-		return inf.getName();
+		return der;
 	}
 
 	@Override
-	public String sup(String... operands) {
-		Supremum sup = new Supremum(operands);
+	public String sup(String der, String... operands) {
+		Supremum sup = new Supremum(der, operands);
 		elements.add(sup);
-		return sup.getName();
+		return der;
 	}
 
 	@Override
-	public String sup(String operand1, String operand2) {
-		Supremum sup = new Supremum(operand1, operand2);
+	public String sup(String der, String operand1, String operand2) {
+		Supremum sup = new Supremum(der, operand1, operand2);
 		elements.add(sup);
-		return sup.getName();
+		return der;
 	}
 
 	@Override

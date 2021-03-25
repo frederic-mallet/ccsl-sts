@@ -1,8 +1,11 @@
 digraph prec { 
+  rankdir="LR";
+  
+  s0 [shape= "doublecircle"];
   s0->s1 [
     label= "a"
   ] ;
-  s1:ne->s0:se [
+  s1->s0 [
     label= "[xa - xb = 1] b"
   ] ;
   s1->s1 [
@@ -11,7 +14,7 @@ digraph prec {
   s1->s1 [
     label= "a.b"
   ] ;
-  s1:nw->s1:sw [
+  s1->s1 [
     label= "[xa - xb > 1] b"
   ] ;
 }

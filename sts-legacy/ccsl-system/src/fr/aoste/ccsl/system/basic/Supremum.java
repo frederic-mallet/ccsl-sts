@@ -8,8 +8,8 @@ package fr.aoste.ccsl.system.basic;
  */
 class Supremum extends Expression {
 	
-	protected Supremum(String...operands) {
-		super(operands);
+	protected Supremum(String name, String...operands) {
+		super(name, operands);
 	}
 
 	@Override
