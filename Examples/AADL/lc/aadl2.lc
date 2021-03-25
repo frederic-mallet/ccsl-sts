@@ -9,6 +9,6 @@ Specification Aadl2 {
 		// allocate control on t2
 		Precedence t2 <= (max: 1) control
 		
-		Precedence control <= (init:2 max:1) t1
+		Precedence control <= (init:1 max:1) t1
 	]
 }
