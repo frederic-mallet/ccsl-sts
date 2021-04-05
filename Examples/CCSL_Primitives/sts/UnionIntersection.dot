@@ -2,25 +2,49 @@ digraph UnionIntersection {
   rankdir="LR"
   s0 [ shape="doublecircle" ]
   s0->s0 [
+    label= "d"
+  ] ;
+  s0->s0 [
+    label= "a"
+  ] ;
+  s0->s0 [
+    label= "b"
+  ] ;
+  s0->s0 [
+    label= "a.b"
+  ] ;
+  s0->s0 [
     label= "c"
   ] ;
   s0->s0 [
-    label= "u_0.a"
+    label= "a.c"
   ] ;
   s0->s0 [
-    label= "u_0.b"
+    label= "b.c"
   ] ;
   s0->s0 [
-    label= "u_0.a.b"
+    label= "a.b.c"
   ] ;
   s0->s0 [
-    label= "u_0.a.c.u"
+    label= "a.d"
   ] ;
   s0->s0 [
-    label= "u_0.b.c.u"
+    label= "b.d"
   ] ;
   s0->s0 [
-    label= "u_0.a.b.c.u"
+    label= "a.b.d"
+  ] ;
+  s0->s0 [
+    label= "c.d"
+  ] ;
+  s0->s0 [
+    label= "a.c.d"
+  ] ;
+  s0->s0 [
+    label= "b.c.d"
+  ] ;
+  s0->s0 [
+    label= "a.b.c.d"
   ] ;
 }
 

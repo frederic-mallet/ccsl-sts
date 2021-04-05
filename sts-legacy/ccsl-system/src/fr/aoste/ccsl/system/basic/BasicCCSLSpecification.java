@@ -24,6 +24,11 @@ Iterable<ICCSLSpecificationElement>{
 	}
 
 	@Override
+	public void addLocalClock(String name) {
+		// nothing to do
+	}
+
+	@Override
 	public void causes(String left, String right) {
 		elements.add(new Causality(left, right));
 	}

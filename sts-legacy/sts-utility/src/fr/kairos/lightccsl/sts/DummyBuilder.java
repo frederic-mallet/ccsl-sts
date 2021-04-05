@@ -23,6 +23,11 @@ class DummyBuilder implements ICCSLSystemBuilder<SynchronousTransitionSystem> {
 	}
 
 	@Override
+	public void addLocalClock(String name) {
+		// nothing to do
+	}
+
+	@Override
 	public void causes(String left, String right) {
 		throw new RuntimeException("Not expect to add new constraints in DummyBuilder");
 	}

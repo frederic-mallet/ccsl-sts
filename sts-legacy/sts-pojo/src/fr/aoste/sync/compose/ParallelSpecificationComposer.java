@@ -27,13 +27,21 @@ public class ParallelSpecificationComposer implements ICCSLSpecificationComposer
 			name += "_" + sts.getName();
 		}
 
-		for(Binding b : bindings)
+		int[] countRef = new int[localClocks.size()];
+		for(Binding b : bindings) {
+			int pos = localClocks.indexOf(b.getName());
+			if (pos != -1) countRef[pos]++;
 			b.bind(composer);
+		}
 		
 		SynchronousTransitionSystem sts = composer.getComposedSTS(name);
 		
-		for(String local : localClocks)
-			STSHelper.hide(sts, local);
+		int i = 0;
+		for(String local : localClocks) {
+			if (countRef[i] > 1) // only hide local clocks with several references
+				STSHelper.hide(sts, local);
+			i++;
+		}
 		
 		return sts;
 	}

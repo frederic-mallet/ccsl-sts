@@ -15,7 +15,6 @@ import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.compose.STSSystemBuilder;
 import fr.aoste.sync.visitor.AstsVisitor;
 import fr.kairos.lightccsl.core.stepper.StepperUtility;
-import fr.kairos.timesquare.ccsl.ISimpleSpecification;
 import fr.kairos.timesquare.ccsl.simple.AUtility;
 import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.timesquare.ccsl.simple.IUtility;
@@ -34,7 +33,7 @@ public class STSUtility extends AUtility implements IUtility {
 	private ISTSBackend<?> backend = null;
 
 	@Override
-	public ISimpleSpecification treat(String name, ISpecificationBuilder specBuilder) {
+	public void treat(String name, ISpecificationBuilder specBuilder) {
 		ICCSLSystemBuilder<SynchronousTransitionSystem> sBuilder = STSSystemBuilder.buildParallelSystemBuilder();
 		STSAdapter builder = new STSAdapter(sBuilder);
 		specBuilder.build(builder);
@@ -43,7 +42,6 @@ public class STSUtility extends AUtility implements IUtility {
 		if (backend != null) {
 			backend.treat(this, sts, name);
 		}
-		return builder;
 	}
 	public void setBackend(ISTSBackend<?> backend) {
 		this.backend = backend;

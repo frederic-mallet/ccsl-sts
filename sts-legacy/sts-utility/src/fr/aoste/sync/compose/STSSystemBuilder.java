@@ -42,6 +42,12 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 	public STSSystemBuilder(ICCSLSpecificationComposer composer) {
 		this.composer = composer;
 	}
+	
+	
+	@Override
+	public void addLocalClock(String name) {
+		localClocks.add(name);
+	}
 	/* (non-Javadoc)
 	 * @see fr.aoste.sync.compose.ICCSLSpecification#causes(java.lang.String, java.lang.String)
 	 */
@@ -92,6 +98,7 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 			bindings.add(new Binding(operands[i],  num,  names[i]));
 		}
 		bindings.add(new Binding(der,  num,  "u"));
+		addLocalClock(der);
 
 		return der;
 	}
@@ -117,6 +124,7 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 			bindings.add(new Binding(operands[i],  num,  names[i]));
 		}
 		bindings.add(new Binding(der,  num,  "i"));
+		addLocalClock(der);
 
 		return der;
 	}
@@ -147,6 +155,7 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 		systems.add(ex.create());
 		bindings.add(new Binding(base, num, base));
 		bindings.add(new Binding(der, num, der));
+		addLocalClock(der);
 		return der;
 	}
 	
@@ -157,7 +166,7 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 		bindings.add(new Binding(op1,  num,  C1));
 		bindings.add(new Binding(op2,  num,  C2));
 		bindings.add(new Binding(der, num, DERIVED));
-
+		addLocalClock(der);
 		return der;
 	}
 	private void binRelation(String left, String right, SynchronousTransitionSystem sts) {

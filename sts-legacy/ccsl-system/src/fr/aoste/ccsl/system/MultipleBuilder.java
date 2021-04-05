@@ -62,6 +62,10 @@ final public class MultipleBuilder implements ICCSLSystemBuilder<List<Object>>{
 	}
 
 	@Override
+	public void addLocalClock(String name) {
+		// nothing to do ?
+	}
+	@Override
 	public void exclusion(String c1, String c2) {
 		for (int i = 0; i<builders.size(); i++) {
 			builders.get(i).exclusion(idToClock(i, c1), idToClock(i, c2));

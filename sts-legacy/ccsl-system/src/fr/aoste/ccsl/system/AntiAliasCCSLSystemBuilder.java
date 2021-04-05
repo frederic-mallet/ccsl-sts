@@ -15,6 +15,11 @@ final public class AntiAliasCCSLSystemBuilder<RESULT> implements ICCSLSystemBuil
 		this.decorated = toDecorate;
 	}
 
+	@Override
+	public void addLocalClock(String name) {
+		this.decorated.addLocalClock(name);
+	}
+
 	/**
 	 * @param name may be an alias
 	 * @return concrete name of the alias
