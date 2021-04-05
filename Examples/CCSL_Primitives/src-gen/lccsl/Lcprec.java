@@ -10,31 +10,23 @@ import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
 
-public class LcAadl2 implements ISpecificationBuilder {
-	static public LcAadl2 INSTANCE = new LcAadl2();
-	private LcAadl2 () {
+public class Lcprec implements ISpecificationBuilder {
+	static public Lcprec INSTANCE = new Lcprec();
+	private Lcprec () {
 		// SINGLETON
 	}
 	@Override
 	public void build(ISimpleSpecification simple) {
-		simple.addClock("read", false);
-		simple.addClock("control", false);
-		simple.addClock("t1", false);
-		simple.addClock("t2", false);
+		simple.addClock("a");
+		simple.addClock("b");
 		
-		simple.precedence("read", "control");
-		
-		simple.causality("t1", "read", 0, 1);
-		
-		simple.causality("t2", "control", 0, 1);
-		
-		simple.causality("control", "t1", 1, 1);
+		simple.precedence("a", "b");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
 	};
 	public static void main(String[] args) {
-		String name = "Aadl2";
+		String name = "prec";
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}
