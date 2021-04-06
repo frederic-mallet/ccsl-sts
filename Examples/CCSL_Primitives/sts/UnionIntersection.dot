@@ -1,5 +1,5 @@
 digraph UnionIntersection { 
-  rankdir="LR"
+  rankdir="BT"
   s0 [ shape="doublecircle" ]
   s0->s0 [
     label= "d"
@@ -26,25 +26,25 @@ digraph UnionIntersection {
     label= "a.b.c"
   ] ;
   s0->s0 [
-    label= "a.d"
+    label= "a.d.u"
   ] ;
   s0->s0 [
-    label= "b.d"
+    label= "b.d.u"
   ] ;
   s0->s0 [
-    label= "a.b.d"
+    label= "a.b.d.u"
   ] ;
   s0->s0 [
-    label= "c.d"
+    label= "c.d.u"
   ] ;
   s0->s0 [
-    label= "a.c.d"
+    label= "a.c.d.u"
   ] ;
   s0->s0 [
-    label= "b.c.d"
+    label= "b.c.d.u"
   ] ;
   s0->s0 [
-    label= "a.b.c.d"
+    label= "a.b.c.d.u"
   ] ;
 }
 
