@@ -1,0 +1,11 @@
+digraph alternates { 
+  rankdir="LR"
+  s0 [ shape="doublecircle" ]
+  s0->s1 [
+    label= "a"
+  ] ;
+  s1->s0 [
+    label= "b"
+  ] ;
+}
+

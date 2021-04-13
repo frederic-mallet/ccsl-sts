@@ -7,9 +7,9 @@ import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
 
-public class LcBoundedCausality implements ISpecificationBuilder {
-	static public LcBoundedCausality INSTANCE = new LcBoundedCausality();
-	private LcBoundedCausality () {
+public class LcAlternatesInit implements ISpecificationBuilder {
+	static public LcAlternatesInit INSTANCE = new LcAlternatesInit();
+	private LcAlternatesInit () {
 		// SINGLETON
 	}
 	@Override
@@ -17,13 +17,13 @@ public class LcBoundedCausality implements ISpecificationBuilder {
 		simple.addClock("a");
 		simple.addClock("b");
 		
-		simple.causality("a", "b", 2, 3);
+		simple.precedence("a", "b", 1, 1);
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
 	};
 	public static void main(String[] args) {
-		String name = "BoundedCausality";
+		String name = "AlternatesInit";
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

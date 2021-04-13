@@ -1,0 +1,12 @@
+digraph AlternatesInit { 
+  rankdir="LR"
+  s0;
+  s1 [ shape="doublecircle" ]
+  s1->s0 [
+    label= "b"
+  ] ;
+  s0->s1 [
+    label= "a"
+  ] ;
+}
+

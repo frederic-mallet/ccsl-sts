@@ -1,0 +1,6 @@
+Specification alternates {
+	Clock a b
+	[
+		Precedence a < (max: 1) b
+	]
+}

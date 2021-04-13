@@ -1,12 +1,11 @@
 digraph prec { 
-  rankdir="LR";
-  
-  s0 [shape= "doublecircle"];
+  rankdir="LR"
+  s0 [ shape="doublecircle" ]
   s0->s1 [
     label= "a"
   ] ;
   s1->s0 [
-    label= "[xa - xb = 1] b"
+    label= <[&delta;<sub>a-b</sub> = 1] b>
   ] ;
   s1->s1 [
     label= "a"
@@ -15,7 +14,7 @@ digraph prec {
     label= "a.b"
   ] ;
   s1->s1 [
-    label= "[xa - xb > 1] b"
+    label= <[&delta;<sub>a-b</sub> &gt; 1] b>
   ] ;
 }
 
