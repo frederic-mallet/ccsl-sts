@@ -6,7 +6,7 @@ Example of some CCSL primitives and their semantics
 
 [src](lc/Precedes.lc) [simul](vcd/prec.html)
 
-- **Precedence** is an asynchronous primitive that forces one clock to precede another one, it will therefore remains ahead or in advance. It is akin of an infinite FIFO with blocking read. 
+- **Precedence** is an asynchronous primitive that forces one clock to precede another one, it will therefore remain ahead or in advance. It is akin of an infinite FIFO with blocking read. 
 
 <center>
 <img alt="precedence" src="sts/prec.png" height = "200px"/><br>
