@@ -1,0 +1,7 @@
+Specification simple2 {
+	Clock approve, transferFrom, allowance [	
+		Exclusion approve # transferFrom # allowance
+		
+		Precedence approve < transferFrom < allowance
+	]
+}

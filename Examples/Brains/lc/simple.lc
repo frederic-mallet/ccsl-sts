@@ -1,0 +1,5 @@
+Specification simple {
+	Clock approve, transferFrom, allowance [	
+		Precedence approve < transferFrom < allowance
+	]
+}

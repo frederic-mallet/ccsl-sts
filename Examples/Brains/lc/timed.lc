@@ -1,0 +1,7 @@
+Specification timed {
+	Clock approve, transferFrom, allowance, minutes [	
+		deadline = approve $ 2 on minutes
+	 
+		Precedence approve < transferFrom < allowance < deadline
+	]
+}

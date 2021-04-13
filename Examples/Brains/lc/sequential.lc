@@ -1,0 +1,7 @@
+Specification seq {
+	Clock approve, transferFrom, allowance [	
+		one_safe = approve $ 1
+	 
+		Precedence approve < transferFrom < allowance < one_safe
+	]
+}
