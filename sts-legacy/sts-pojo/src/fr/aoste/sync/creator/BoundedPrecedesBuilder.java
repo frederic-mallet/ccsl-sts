@@ -36,9 +36,9 @@ class BoundedPrecedesBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem
 		Event leftEvent = helper.createEvent(leftName);
 		Event rightEvent = helper.createEvent(rightName);
 
-		State[] states = new State[init + max + 1];
+		State[] states = new State[max + 1];
 		
-		states[init] = helper.createState("A0");
+		states[init] = helper.createState("Z");
 		states[init].setInvariant(InvariantBuilder.inv(leftEvent, rightEvent, 0, ComparisonOperator.EQUALS));
 		sts.setInitial(states[init]);
 		
@@ -46,7 +46,7 @@ class BoundedPrecedesBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem
 			states[init - i] = helper.createState("N"+i);
 			states[init - i].setInvariant(InvariantBuilder.inv(leftEvent, rightEvent, -i, ComparisonOperator.EQUALS));
 		}
-		for (int i=1; i <= max; i++) {
+		for (int i=1; i <= max - init; i++) {
 			states[init + i] = helper.createState("P"+i);
 			states[init + i].setInvariant(InvariantBuilder.inv(leftEvent, rightEvent, i, ComparisonOperator.EQUALS));
 		}

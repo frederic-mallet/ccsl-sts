@@ -64,7 +64,7 @@ class DTSRunnerToSolution implements ISolutionSet {
 		}
 
 		@Override
-		public ClockStatus status(int pos) {
+		public ClockStatus status(int pos, boolean...vals) {
 			return status[pos]?ClockStatus.Must:ClockStatus.Cannot;
 		}
 
