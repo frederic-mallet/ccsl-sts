@@ -1,0 +1,11 @@
+Specification modes {
+	Clock Mode1, Mode2, Trigger, ReactionTime [
+		
+		Let Mode be Mode1 + Mode2
+		Exclusion Mode1 # Mode2
+		
+		Delay = Trigger $ 1 on ReactionTime
+		
+		Precedence Mode < Trigger < Mode <= Delay
+	]
+}

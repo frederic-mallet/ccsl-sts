@@ -1,0 +1,5 @@
+digraph modes { 
+  rankdir="LR"
+  s0 [ shape="doublecircle" ]
+}
+

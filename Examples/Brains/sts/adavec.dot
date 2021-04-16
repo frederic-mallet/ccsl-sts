@@ -1,0 +1,17 @@
+digraph adavec { 
+  rankdir="LR"
+  s0 [ shape="doublecircle" ]
+  s0->s1 [
+    label= "Sunny"
+  ] ;
+  s0->s0 [
+    label= "Sunny.Night"
+  ] ;
+  s1->s0 [
+    label= "Night"
+  ] ;
+  s1->s1 [
+    label= "Sunny.Night"
+  ] ;
+}
+

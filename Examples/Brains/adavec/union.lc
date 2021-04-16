@@ -1,0 +1,16 @@
+Specification adavec {
+	Clock Urban, Highway, interurban, Sunny, Night,
+		On, Off [
+		Let Road be Urban + Highway + interurban  
+		Exclusion Urban # Highway # interurban
+//		Precedence Road < Urban
+
+		Let Daytime be Sunny + Night
+		Precedence Sunny <= (max: 1) Night
+		
+		Let sensor be On + Off
+		Precedence On <= (max: 2) Off
+		
+		Precedence sensor < (max:1) Daytime
+	]
+}
