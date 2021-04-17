@@ -39,7 +39,7 @@ Example of some CCSL primitives and their semantics
 - **Causality** is a weakest form of precedence that allows for a and b to tick exactly at the same rhythm, an unbounded FIFO. The bounded form restrict the advance that a can have over b (a bounded FIFO of size max). Init allows for initializing the FIFO with an initial number of tokens.
 
 <center>
-<img alt="bcauses" src="sts/BoundedCausality.png" height = "200px"/><br>
+<img alt="bcauses" src="sts/BoundedCausality.png" height="200px"/><br>
 <strong>a <= (init: 2 max: 3) b : </strong>a causes b 
 </center>
 
@@ -54,7 +54,7 @@ Example of some CCSL primitives and their semantics
 - **Union** and **Intersection** are two synchronous constraints that act as supremum and infimum for the subclock relation. **a + b** (union) is the slowest clock that is a superclock of both *a* and *b*. **a * b** (intersection) is the fastest clock that is a subclock of both *a* and *b*.
  
 <center>
-<img alt="bcauses" src="sts/UnionIntersection.png" width = "100%"/><br>
+<img alt="bcauses" src="dot/u1.dot.png" height="300px"/><br>
 <strong> u = d * (a + b + c)</strong> 
 </center>
 
