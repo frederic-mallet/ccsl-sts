@@ -1,0 +1,6 @@
+Specification simple {
+	Clock b, sec [	
+		a = b $ 5 on sec
+		c = b $ 3 on sec
+	]
+}

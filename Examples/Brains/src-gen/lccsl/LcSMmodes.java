@@ -8,23 +8,32 @@ import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
 
-public class Lcprec implements ISpecificationBuilder {
-	static public Lcprec INSTANCE = new Lcprec();
-	private Lcprec () {
+public class LcSMmodes implements ISpecificationBuilder {
+	static public LcSMmodes INSTANCE = new LcSMmodes();
+	private LcSMmodes () {
 		// SINGLETON
 	}
 	@Override
 	public void build(ISimpleSpecification simple) {
-		simple.addClock("a");
-		simple.addClock("b");
+		simple.addClock("StartMode");
+		simple.addClock("finalMode");
+		simple.addClock("Trigger");
+		simple.addClock("Context");
+		simple.addClock("ReactionTime");
 		
-		simple.precedence("a", "b");
+		simple.intersection("condition", "Trigger", "Context");
+		
+		simple.causality("condition", "finalMode");
+		
+		simple.delayFor("end", "StartMode", 1, -1, "ReactionTime");
+		
+		simple.causality("finalMode", "end");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
 	};
 	public static void main(String[] args) {
-		String name = "prec";
+		String name = "SMmodes";
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

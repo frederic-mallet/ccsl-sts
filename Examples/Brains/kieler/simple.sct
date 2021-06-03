@@ -1,0 +1,65 @@
+scchart simple {
+  input bool b;
+  input bool sec;
+  output bool a;
+  output bool c;
+  bool _b_on_sec = false;
+  bool _b_1sec = false;
+  bool _b_2sec = false;
+  bool _b_3sec = false;
+  bool _b_4sec = false;
+
+  initial state init "" {
+    region r0:
+    initial state off
+      --> on with b / _b_on_sec = true
+      ;
+    state on
+      --> off with sec && !b / _b_on_sec = false
+    ;
+    region r1:
+    initial state off
+      --> on with sec && pre(_b_on_sec) / _b_1sec = true
+      ;
+    state on
+      --> off with sec && !pre(_b_on_sec) / _b_1sec = false
+    ;
+    region r2:
+    initial state off
+      --> on with sec && pre(_b_1sec) / _b_2sec = true
+      ;
+    state on
+      --> off with sec && !pre(_b_1sec) / _b_2sec = false
+    ;
+    region r3:
+    initial state off
+      --> on with sec && pre(_b_2sec) / _b_3sec = true
+      ;
+    state on
+      --> off with sec && !pre(_b_2sec) / _b_3sec = false
+    ;
+    region r4:
+    initial state off
+      --> on with sec && pre(_b_3sec) / _b_4sec = true
+      ;
+    state on
+      --> off with sec && !pre(_b_3sec) / _b_4sec = false
+    ;
+    region r5:
+    initial state off
+      --> on immediate with sec && pre(_b_4sec) / a = true
+      ;
+    state on
+      --> off with  / a = false
+    ;
+    region r6:
+    initial state off
+      --> on immediate with sec && pre(_b_2sec) / c = true
+      ;
+    state on
+      --> off with  / c = false
+    ;
+  }
+  ;
+  final state err;
+}

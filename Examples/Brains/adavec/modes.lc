@@ -4,7 +4,7 @@ Specification modes {
 		Let Mode be Mode1 + Mode2
 		Exclusion Mode1 # Mode2
 		
-		Delay = Trigger $ 1 on ReactionTime
+		Delay = Trigger $ 1
 		
 		Precedence Mode < Trigger < Mode <= Delay
 	]

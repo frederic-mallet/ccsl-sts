@@ -8,23 +8,29 @@ import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
 
-public class Lcprec implements ISpecificationBuilder {
-	static public Lcprec INSTANCE = new Lcprec();
-	private Lcprec () {
+public class Lcerc20 implements ISpecificationBuilder {
+	static public Lcerc20 INSTANCE = new Lcerc20();
+	private Lcerc20 () {
 		// SINGLETON
 	}
 	@Override
 	public void build(ISimpleSpecification simple) {
-		simple.addClock("a");
-		simple.addClock("b");
+		simple.addClock("approve");
+		simple.addClock("transferFrom");
+		simple.addClock("allowance");
 		
-		simple.precedence("a", "b");
+		simple.exclusion("approve", "transferFrom");
+		simple.exclusion("approve", "allowance");
+		simple.exclusion("transferFrom", "allowance");
+		
+		simple.precedence("approve", "transferFrom");
+		simple.precedence("transferFrom", "allowance");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
 	};
 	public static void main(String[] args) {
-		String name = "prec";
+		String name = "erc20";
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

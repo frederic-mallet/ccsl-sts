@@ -1,0 +1,41 @@
+digraph erc20 { 
+  rankdir="LR"
+  s0 [ shape="doublecircle" ]
+  s0->s1 [
+    label= "approve"
+  ] ;
+  s1->s1 [
+    label= "approve"
+  ] ;
+  s1->s2 [
+    label= <[&delta;<sub>1</sub>=1]transferFrom>
+  ] ;
+  s1->s3 [
+    label= <[&delta;<sub>1</sub>&gt;1]transferFrom>
+  ] ;
+  s2->s3 [
+    label= "approve"
+  ] ;
+  s2->s0 [
+    label= <[&delta;<sub>2</sub>=1]allowance>
+  ] ;
+  s2->s2 [
+    label= <[&delta;<sub>2</sub>&gt;1]allowance>
+  ] ;
+  s3->s3 [
+    label= "approve"
+  ] ;
+  s3->s1 [
+    label= <[&delta;<sub>2</sub>=1]allowance>
+  ] ;
+  s3->s2 [
+    label= <[&delta;<sub>1</sub>=1]transferFrom>
+  ] ;
+  s3->s3 [
+    label= <[&delta;<sub>1</sub>&gt;1]transferFrom>
+  ] ;
+  s3->s3 [
+    label= <[&delta;<sub>2</sub>&gt;1]allowance>
+  ] ;
+}
+

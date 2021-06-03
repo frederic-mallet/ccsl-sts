@@ -16,27 +16,32 @@ public class Modes implements ISpecificationBuilder {
 	}
 	@Override
 	public void build(ISimpleSpecification simple) {
-		String[] modes = { "Auto", "Manual", "MRM" };
+		String[][] modes = { 
+				 {"Auto", "Manual"},  
+				 {"Manual", "MRM"}, 
+				 { "MRM", "Degraded"}};
 
-		for (String m1 : modes) {
-			changeMode(simple, m1, "MRM");
+		for (int i = 0; i < modes.length; i++) {
+			changeMode(simple, modes[i][0], modes[i][1]);
 		}
 	}
+	private static int i = 0;
 	private void changeMode(ISimpleSpecification simple, String initialMode, String finalMode) {
+		String mode = "mode" + (i++);
 		simple.addClock(initialMode);
-		simple.addClock("Mode2");
+		simple.addClock(finalMode);
 		simple.addClock("Trigger");
 		simple.addClock("ReactionTime");
 
-		simple.union("Mode", initialMode, "Mode2");
+		simple.union(mode, initialMode, finalMode);
 
-		simple.exclusion(initialMode, "Mode2");
+		simple.exclusion(initialMode, finalMode);
 
-		//simple.delayFor("Delay", "Trigger", 1, -1, "ReactionTime");
+		simple.delayFor("Delay", "Trigger", 1, -1, null);
 
 		simple.precedence("Mode", "Trigger");
 		simple.precedence("Trigger", "Mode");
-		simple.causality("Mode", "Delay");
+		simple.causality("Mode", "Delay", 0, 1);
 	}
 	private static IUtility[] utilities = { 
 			new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()

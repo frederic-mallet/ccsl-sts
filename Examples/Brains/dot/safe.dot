@@ -1,0 +1,16 @@
+digraph {
+  "transferFrom";
+  "approve";
+  "two_safe";
+  "allowance";
+approve -> transferFrom
+two_safe -> approve["style"="dashed"]
+transferFrom -> allowance
+approve -> transferFrom["color"="red", "dir"="both", "arrowtail"="dot", "arrowhead"="dot"]
+allowance -> two_safe["color"="red", "dir"="both", "arrowtail"="dot", "arrowhead"="dot"]
+approve -> two_safe
+transferFrom -> allowance["color"="red", "dir"="both", "arrowtail"="dot", "arrowhead"="dot"]
+allowance -> two_safe
+two_safe -> approve["color"="blue", "arrowhead"="onormal"]
+
+}

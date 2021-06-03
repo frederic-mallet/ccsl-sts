@@ -1,0 +1,13 @@
+Specification SMmodes {
+     Clock StartMode, finalMode, Trigger, Context, ReactionTime [
+           	Let condition be Trigger * Context
+                	
+           	Precedence condition <= finalMode
+                	
+           	end = StartMode $ 1 on ReactionTime
+                	
+           	Precedence finalMode <= end
+     ]
+}
+
+	

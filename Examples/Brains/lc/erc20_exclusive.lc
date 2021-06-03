@@ -1,4 +1,4 @@
-Specification simple2 {
+Specification erc20 {
 	Clock approve, transferFrom, allowance [	
 		Exclusion approve # transferFrom # allowance
 		
