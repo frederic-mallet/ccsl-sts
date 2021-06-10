@@ -90,7 +90,7 @@ class STSAdapter implements ISimpleSpecification {
 	@Override
 	public void delayFor(String defClock, String ref, int from, int upTo, String base) {
 		if (upTo != -1 || base != null)
-			throw new RuntimeException("Unsupported operation");
+			throw new RuntimeException("STS: Unsupported delayFor " + defClock + " = " + ref + "$" + from + " -> " + upTo + " on " + base);
 		stsBuilder.filter(defClock, ref, 1, from);
 	}
 }
