@@ -1,6 +1,7 @@
 # JAR Libraries
 ## Core files
 - lccsl-core.jar [required] : Contains the core files for Light-CCSL.
+- lccsl-main.jar : To work from the console line, `java -jar lccsl-main.jar`
 
 ## Solvers
 - sat-sat4j.jar [optional] : Contains a CCSL solver that relies on SAT4J solver. If solver is SAT4J.
