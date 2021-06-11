@@ -15,13 +15,15 @@ public class LcAlternatesInit implements ISpecificationBuilder {
 	private LcAlternatesInit () {
 		// SINGLETON
 	}
+
+	public void build(ISimpleSpecification simple, String a, String b) {
+		
+		simple.precedence(a, b, 1, 1);
+	}
 	
 	@Override
 	public void build(ISimpleSpecification simple) {
-		simple.addClock("a");
-		simple.addClock("b");
-		
-		simple.precedence("a", "b", 1, 1);
+		build(simple, "a", "b");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()

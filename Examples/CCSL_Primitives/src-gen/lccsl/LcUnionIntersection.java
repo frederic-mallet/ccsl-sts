@@ -15,16 +15,16 @@ public class LcUnionIntersection implements ISpecificationBuilder {
 	private LcUnionIntersection () {
 		// SINGLETON
 	}
-	
-	@Override
-	public void build(ISimpleSpecification simple) {
-		simple.addClock("a");
-		simple.addClock("b");
-		simple.addClock("c");
-		simple.addClock("d");
+
+	public void build(ISimpleSpecification simple, String a, String b, String c, String d) {
 		
 		simple.union("u_0", "a", "b", "c");
 		simple.intersection("u", "d", "u_0");
+	}
+	
+	@Override
+	public void build(ISimpleSpecification simple) {
+		build(simple, "a", "b", "c", "d");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()

@@ -1,0 +1,29 @@
+digraph scp15_v1b { 
+  rankdir="LR"
+  s0 [ shape="doublecircle" ]
+  s0->s1 [
+    label= "in1.in2"
+  ] ;
+  s0->s2 [
+    label= "in1"
+  ] ;
+  s0->s3 [
+    label= "in2"
+  ] ;
+  s1->s4 [
+    label= "step3"
+  ] ;
+  s1->s0 [
+    label= "step3.out"
+  ] ;
+  s2->s1 [
+    label= "in2"
+  ] ;
+  s3->s1 [
+    label= "in1"
+  ] ;
+  s4->s0 [
+    label= "out"
+  ] ;
+}
+

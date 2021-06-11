@@ -1,0 +1,20 @@
+digraph {
+  "in";
+  "in2";
+  "in1";
+  "step3";
+  "out";
+in -> out
+in -> in1
+in2 -> in["color"="blue", "arrowhead"="onormal"]
+step3 -> out["color"="red", "dir"="both", "arrowtail"="dot", "arrowhead"="dot"]
+in -> in2
+in2 -> step3["color"="red", "dir"="both", "arrowtail"="dot", "arrowhead"="dot"]
+step3 -> out
+in1 -> step3["color"="red", "dir"="both", "arrowtail"="dot", "arrowhead"="dot"]
+in1 -> in["color"="blue", "arrowhead"="onormal"]
+in2 -> step3
+in1 -> step3
+out -> in["style"="dashed"]
+
+}

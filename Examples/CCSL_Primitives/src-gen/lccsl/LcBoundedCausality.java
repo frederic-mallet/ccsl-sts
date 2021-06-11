@@ -15,13 +15,15 @@ public class LcBoundedCausality implements ISpecificationBuilder {
 	private LcBoundedCausality () {
 		// SINGLETON
 	}
+
+	public void build(ISimpleSpecification simple, String a, String b) {
+		
+		simple.causality(a, b, 2, 3);
+	}
 	
 	@Override
 	public void build(ISimpleSpecification simple) {
-		simple.addClock("a");
-		simple.addClock("b");
-		
-		simple.causality("a", "b", 2, 3);
+		build(simple, "a", "b");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
