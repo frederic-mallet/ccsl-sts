@@ -14,6 +14,7 @@ public class LcUnionIntersection implements ISpecificationBuilder {
 	private LcUnionIntersection () {
 		// SINGLETON
 	}
+	
 	@Override
 	public void build(ISimpleSpecification simple) {
 		simple.addClock("a");

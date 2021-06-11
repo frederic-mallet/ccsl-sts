@@ -8,7 +8,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lccsl-core"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lcssl-html"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/sat-bdd-lccsl"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/sts-legacy"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/sts-choco"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lightccsl-sat4j"/>
@@ -16,5 +15,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lightccsl-choco"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lightccsl-htmlvcd"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/sts-ilp"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lightccsl-bdd"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -14,6 +14,7 @@ public class LcAadl2 implements ISpecificationBuilder {
 	private LcAadl2 () {
 		// SINGLETON
 	}
+	
 	@Override
 	public void build(ISimpleSpecification simple) {
 		simple.addClock("read");

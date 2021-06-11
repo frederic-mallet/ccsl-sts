@@ -14,6 +14,7 @@ public class LcAlternatesInit implements ISpecificationBuilder {
 	private LcAlternatesInit () {
 		// SINGLETON
 	}
+	
 	@Override
 	public void build(ISimpleSpecification simple) {
 		simple.addClock("a");

@@ -14,6 +14,7 @@ public class Lcalternates implements ISpecificationBuilder {
 	private Lcalternates () {
 		// SINGLETON
 	}
+	
 	@Override
 	public void build(ISimpleSpecification simple) {
 		simple.addClock("a");

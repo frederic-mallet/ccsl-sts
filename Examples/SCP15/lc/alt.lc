@@ -1,0 +1,6 @@
+Specification alt {
+	Clock a c [
+		b = a $ 1
+		Precedence a < c < b
+	]
+}

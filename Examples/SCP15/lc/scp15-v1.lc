@@ -1,0 +1,9 @@
+Specification scp15_v1 {
+	Clock in1 in2 step1 step2 step3 out [
+		Precedence in1 <= step1 < step3 <= out
+		Precedence in2 <= step2 < step3
+		
+		Let in be inf(in1,in2)
+		Precedence in < (max: 1) out
+	]
+}

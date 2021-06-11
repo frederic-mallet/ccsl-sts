@@ -14,6 +14,7 @@ public class Lcprec implements ISpecificationBuilder {
 	private Lcprec () {
 		// SINGLETON
 	}
+	
 	@Override
 	public void build(ISimpleSpecification simple) {
 		simple.addClock("a");
