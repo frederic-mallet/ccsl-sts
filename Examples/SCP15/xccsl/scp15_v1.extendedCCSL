@@ -1,0 +1,25 @@
+ClockConstraintSystem scp15_v1 {
+    imports {
+		import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib" as lib0;
+		import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib" as lib1;
+    }
+    entryBlock main
+
+    Block main {
+		Clock in2
+		Clock step2
+		Clock in1
+		Clock step3
+		Clock step1
+		Clock out
+
+
+        Relation r_2[Causes] (LeftClock -> in1, RightClock -> step1)
+        Relation r_3[Precedes] (LeftClock -> step1, RightClock -> step3)
+        Relation r_4[Causes] (LeftClock -> step3, RightClock -> out)
+        Relation r_5[Causes] (LeftClock -> in2, RightClock -> step2)
+        Relation r_6[Precedes] (LeftClock -> step2, RightClock -> step3)
+        Expression in=Inf(Clock1 -> in1, Clock2 -> in2)
+        Relation r_7[Alternates] (AlternatesLeftClock -> in, AlternatesRightClock -> out)
+	}
+}
