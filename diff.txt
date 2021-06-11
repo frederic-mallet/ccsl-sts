@@ -1,29 +1,4 @@
 total 120						      |	total 188
--rw-r--r-- 1 fmallet kairos     0 Jun 11 11:26 before.txt     |	-rw-r--r-- 1 fmallet kairos     0 Jun 11 11:26 after.txt
-							      >	-rw-r--r-- 1 fmallet kairos 58945 Jun 11 11:26 before.txt
-drwxr-xr-x 2 fmallet kairos   4096 Jun 11 10:16 common	      |	drwxr-xr-x 2 fmallet kairos   4096 Jun 11 11:26 common
-drwxr-xr-x 2 fmallet kairos   4096 Jun 11 10:16 thirdparties  |	drwxr-xr-x 2 fmallet kairos   4096 Jun 11 11:26 thirdparties
--rw-r--r-- 1 fmallet kairos 15568 Jun 11 10:16 binaryWord-0.1 |	-rw-r--r-- 1 fmallet kairos 15568 Jun 11 11:25 binaryWord-0.1
--rw-r--r-- 1 fmallet kairos 18963 Jun 11 10:16 graphviz-0.1.j |	-rw-r--r-- 1 fmallet kairos 18963 Jun 11 11:25 graphviz-0.1.j
--rw-r--r-- 1 fmallet kairos  5532 Jun 11 10:16 html-0.1.jar   |	-rw-r--r-- 1 fmallet kairos  5532 Jun 11 11:25 html-0.1.jar
--rw-r--r-- 1 fmallet kairos  9889 Jun 11 10:16 java-0.1.jar   |	-rw-r--r-- 1 fmallet kairos  9889 Jun 11 11:25 java-0.1.jar
--rw-r--r-- 1 fmallet kairos 41275 Jun 11 10:16 memorymap-0.1. |	-rw-r--r-- 1 fmallet kairos 41275 Jun 11 11:25 memorymap-0.1.
--rw-r--r-- 1 fmallet kairos 27690 Jun 11 10:16 mybdd-0.1.jar  |	-rw-r--r-- 1 fmallet kairos 27690 Jun 11 11:25 mybdd-0.1.jar
--rw-r--r-- 1 fmallet kairos 23304 Jun 11 10:16 vcd-0.1.jar    |	-rw-r--r-- 1 fmallet kairos 23304 Jun 11 11:25 vcd-0.1.jar
-total 756						      |	total 760
--rw-r--r-- 1 fmallet kairos   7961 Jun 11 10:16 html-0.1.jar  |	-rw-r--r-- 1 fmallet kairos   7961 Jun 11 11:25 html-0.1.jar
--rw-r--r-- 1 fmallet kairos  93728 Jun 11 10:16 lccsl-core.ja |	-rw-r--r-- 1 fmallet kairos  93728 Jun 11 11:25 lccsl-core.ja
--rw-r--r-- 1 fmallet kairos 303073 Jun 11 10:15 lccsl-main.ja |	-rw-r--r-- 1 fmallet kairos 303404 Jun 11 11:24 lccsl-main.ja
--rw-r--r-- 1 fmallet kairos  10039 Jun 11 10:16 sat-bdd-0.1.j |	-rw-r--r-- 1 fmallet kairos  10037 Jun 11 11:25 sat-bdd-0.1.j
--rw-r--r-- 1 fmallet kairos   6155 Jun 11 10:16 sat-choco-0.1 |	-rw-r--r-- 1 fmallet kairos   6153 Jun 11 11:25 sat-choco-0.1
--rw-r--r-- 1 fmallet kairos   5730 Jun 11 10:16 sat-sat4j-0.1 |	-rw-r--r-- 1 fmallet kairos   5729 Jun 11 11:25 sat-sat4j-0.1
--rw-r--r-- 1 fmallet kairos   9453 Jun 11 10:16 sts-choco-0.1 |	-rw-r--r-- 1 fmallet kairos   9453 Jun 11 11:25 sts-choco-0.1
--rw-r--r-- 1 fmallet kairos   6047 Jun 11 10:16 sts-ilp-0.1.j |	-rw-r--r-- 1 fmallet kairos   6047 Jun 11 11:25 sts-ilp-0.1.j
--rw-r--r-- 1 fmallet kairos 206800 Jun 11 10:16 sts-legacy-0. |	-rw-r--r-- 1 fmallet kairos 206800 Jun 11 11:25 sts-legacy-0.
--rw-r--r-- 1 fmallet kairos   4679 Jun 11 10:16 vcd-0.1.jar   |	-rw-r--r-- 1 fmallet kairos   4679 Jun 11 11:25 vcd-0.1.jar
-drwxr-xr-x 2 fmallet kairos 4096 Jun 11 10:20 lccsl	      |	drwxr-xr-x 2 fmallet kairos 4096 Jun 11 11:25 lccsl
-total 60						      |	total 84
--rw-r--r-- 1 fmallet kairos 938 Jun 11 10:20 Lcscp15_v3.java  |	-rw-r--r-- 1 fmallet kairos 936 Jun 11 11:25 Lcscp15_v1.java
-							      >	-rw-r--r-- 1 fmallet kairos 936 Jun 11 11:25 Lcscp15_v2.java
-							      >	-rw-r--r-- 1 fmallet kairos 938 Jun 11 11:25 Lcscp15_v3.java
--rw-r--r-- 1 fmallet kairos 10935597 Jun 11 10:16 choco-solve |	-rw-r--r-- 1 fmallet kairos 10935597 Jun 11 11:25 choco-solve
+-rw-r--r-- 1 fmallet kairos     0 Jun 11 20:43 before.txt     |	-rw-r--r-- 1 fmallet kairos     0 Jun 11 20:43 after.txt
+							      >	-rw-r--r-- 1 fmallet kairos 59067 Jun 11 20:43 before.txt
+drwxr-xr-x 2 fmallet kairos   4096 Jun 11 20:42 common	      |	drwxr-xr-x 2 fmallet kairos   4096 Mar 18 18:05 common
