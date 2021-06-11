@@ -5,6 +5,7 @@ import fr.kairos.timesquare.ccsl.simple.IUtility;
 import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.core.stepper.StepperUtility;
 import fr.unice.lightccsl.sat.bdd.BDDSolutionFinder;
+import fr.kairos.lightccsl.sts.STSJavaBackend;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
@@ -14,18 +15,24 @@ public class Lcerc20 implements ISpecificationBuilder {
 	private Lcerc20 () {
 		// SINGLETON
 	}
+
+	public void build(ISimpleSpecification simple, String approve, String transferFrom, String allowance) {
+		simple.addClock(approve);
+simple.addClock(transferFrom);
+simple.addClock(allowance);
+		
+		
+		simple.exclusion(approve, transferFrom);
+		simple.exclusion(approve, allowance);
+		simple.exclusion(transferFrom, allowance);
+		
+		simple.precedence(approve, transferFrom);
+		simple.precedence(transferFrom, allowance);
+	}
+	
 	@Override
 	public void build(ISimpleSpecification simple) {
-		simple.addClock("approve");
-		simple.addClock("transferFrom");
-		simple.addClock("allowance");
-		
-		simple.exclusion("approve", "transferFrom");
-		simple.exclusion("approve", "allowance");
-		simple.exclusion("transferFrom", "allowance");
-		
-		simple.precedence("approve", "transferFrom");
-		simple.precedence("transferFrom", "allowance");
+		build(simple, "approve", "transferFrom", "allowance");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
@@ -45,8 +52,8 @@ public class Lcerc20 implements ISpecificationBuilder {
 		STSUtility sts = new STSUtility();
 		//ChocoInvariantHelper.activate(); // to reduce STS
 		JalinoptInvariantHelper.activate(); // to reduce STS
-		sts.setBackend(new fr.aoste.sync.gen.STStoDOT(), ".dot");
-		sts.setParam("folderName", "sts");
+		sts.setBackend(new STSJavaBackend());
+		sts.setParam("folderName", "src-gen/sts");
 		sts.treat(name, INSTANCE);
 	}
 }

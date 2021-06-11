@@ -17,6 +17,9 @@ public class LcBoundedCausality implements ISpecificationBuilder {
 	}
 
 	public void build(ISimpleSpecification simple, String a, String b) {
+		simple.addClock(a);
+simple.addClock(b);
+		
 		
 		simple.causality(a, b, 2, 3);
 	}

@@ -17,6 +17,11 @@ public class LcUnionIntersection implements ISpecificationBuilder {
 	}
 
 	public void build(ISimpleSpecification simple, String a, String b, String c, String d) {
+		simple.addClock(a);
+simple.addClock(b);
+simple.addClock(c);
+simple.addClock(d);
+		
 		
 		simple.union("u_0", "a", "b", "c");
 		simple.intersection("u", "d", "u_0");
