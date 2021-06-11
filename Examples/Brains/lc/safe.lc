@@ -1,7 +1,7 @@
 Specification safe {
 	Clock approve, transferFrom, allowance [	
 		two_safe = approve $ 2
-	 
+	 	
 		Precedence approve < transferFrom < allowance < two_safe
 		
 		Exclusion approve # transferFrom # allowance
