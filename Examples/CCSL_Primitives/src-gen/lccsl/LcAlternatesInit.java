@@ -18,7 +18,7 @@ public class LcAlternatesInit implements ISpecificationBuilder {
 
 	public void build(ISimpleSpecification simple, String a, String b) {
 		simple.addClock(a);
-simple.addClock(b);
+		simple.addClock(b);
 		
 		
 		simple.precedence(a, b, 1, 1);

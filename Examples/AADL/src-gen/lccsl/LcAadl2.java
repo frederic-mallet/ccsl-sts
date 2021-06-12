@@ -17,6 +17,11 @@ public class LcAadl2 implements ISpecificationBuilder {
 	}
 
 	public void build(ISimpleSpecification simple, String read, String control, String t1, String t2) {
+		simple.addClock(read);
+		simple.addClock(control);
+		simple.addClock(t1);
+		simple.addClock(t2);
+		
 		
 		simple.precedence(read, control);
 		

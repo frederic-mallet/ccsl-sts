@@ -18,9 +18,9 @@ public class Lcscp15_v2b implements ISpecificationBuilder {
 
 	public void build(ISimpleSpecification simple, String in1, String in2, String step3, String out) {
 		simple.addClock(in1);
-simple.addClock(in2);
-simple.addClock(step3);
-simple.addClock(out);
+		simple.addClock(in2);
+		simple.addClock(step3);
+		simple.addClock(out);
 		
 		
 		simple.precedence(in1, step3);

@@ -1,0 +1,5 @@
+Specification BinDelay {
+	Clock a [
+		b = a $ 5
+	]
+}
