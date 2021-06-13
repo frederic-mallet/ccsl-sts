@@ -1,0 +1,29 @@
+Specification SDF 
+   def token(Clock write, Clock read, int del) [
+   	 read_delayed = read $ del
+   	 Precedence write < read_delayed
+   ]
+   
+   def input(Clock actor, Clock read, int weight) [
+   	 repeat read_del every weight read from weight
+   	 Precedence read_del < actor
+   ]
+   
+   def output(Clock actor, Clock write, int weight) [
+   	 repeat write_weight every weight write
+   	 Precedence actor <= write_weight
+   ]
+   
+   def arc(Clock source, Clock target, Clock write, Clock read, int delay, int out, int in) [
+   	 call output(source, write)(out)
+   	 call token(write, read)(delay)
+   	 call input(target,read)(in)
+   ]
+   
+{
+	Clock A B C wr_AB rd_AB wr_BC rd_BC wr_CB rd_CB [
+		call arc(A, B, wr_AB, rd_AB)(0, 1, 2)
+		call arc(B, C, wr_BC, rd_BC)(0, 2, 1)
+		call arc(C, B, wr_CB, rd_CB)(2, 1, 2)
+	]
+}
