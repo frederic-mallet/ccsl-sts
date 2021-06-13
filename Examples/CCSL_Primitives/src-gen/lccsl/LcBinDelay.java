@@ -14,17 +14,13 @@ public class LcBinDelay implements ISpecificationBuilder {
 	private LcBinDelay () {
 		// SINGLETON
 	}
-
-	public void build(ISimpleSpecification simple, String a) {
-		simple.addClock(a);
-		
-		
-		simple.delayFor("b", a, 5, -1, null);
-	}
 	
+
 	@Override
 	public void build(ISimpleSpecification simple) {
-		build(simple, "a");
+		simple.addClock("a");
+		
+		simple.delayFor("b", "a", 5, -1, null);
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()

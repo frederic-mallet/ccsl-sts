@@ -5,7 +5,6 @@ import fr.kairos.timesquare.ccsl.simple.IUtility;
 import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.core.stepper.StepperUtility;
 import fr.unice.lightccsl.sat.bdd.BDDSolutionFinder;
-import fr.kairos.lightccsl.sts.STSJavaBackend;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
@@ -15,18 +14,14 @@ public class Lcalternates implements ISpecificationBuilder {
 	private Lcalternates () {
 		// SINGLETON
 	}
-
-	public void build(ISimpleSpecification simple, String a, String b) {
-		simple.addClock(a);
-		simple.addClock(b);
-		
-		
-		simple.precedence(a, b, 0, 1);
-	}
 	
+
 	@Override
 	public void build(ISimpleSpecification simple) {
-		build(simple, "a", "b");
+		simple.addClock("a");
+		simple.addClock("b");
+		
+		simple.precedence("a", "b", 0, 1);
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
@@ -46,8 +41,8 @@ public class Lcalternates implements ISpecificationBuilder {
 		STSUtility sts = new STSUtility();
 		//ChocoInvariantHelper.activate(); // to reduce STS
 		JalinoptInvariantHelper.activate(); // to reduce STS
-		sts.setBackend(new STSJavaBackend());
-		sts.setParam("folderName", "src-gen/sts");
+		sts.setBackend(new fr.aoste.sync.gen.STStoDOT(), ".dot");
+		sts.setParam("folderName", "sts");
 		sts.treat(name, INSTANCE);
 	}
 }

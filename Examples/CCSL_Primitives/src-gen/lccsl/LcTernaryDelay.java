@@ -14,18 +14,14 @@ public class LcTernaryDelay implements ISpecificationBuilder {
 	private LcTernaryDelay () {
 		// SINGLETON
 	}
-
-	public void build(ISimpleSpecification simple, String a, String sec) {
-		simple.addClock(a);
-		simple.addClock(sec);
-		
-		
-		simple.delayFor("b", a, 5, -1, sec);
-	}
 	
+
 	@Override
 	public void build(ISimpleSpecification simple) {
-		build(simple, "a", "sec");
+		simple.addClock("a");
+		simple.addClock("sec");
+		
+		simple.delayFor("b", "a", 5, -1, "sec");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
