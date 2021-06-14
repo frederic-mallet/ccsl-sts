@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="fr.inria.aoste.timesquare.launcher.core.launchConfigurationType">
+    <stringAttribute key="PrioritySource" value=""/>
+    <stringAttribute key="SimulationPolicy" value="fr.inria.aoste.timesquare.simulationpolicy@fr.inria.aoste.timesquare.simulationpolicy.random.RandomSimulationPolicy"/>
+    <intAttribute key="SimulationSteps" value="100"/>
+    <stringAttribute key="Source" value="/SCP15/xccsl/scp15_v2.extendedCCSL"/>
+    <booleanAttribute key="TimeDisplay" value="false"/>
+    <mapAttribute key="fr.inria.aoste.timesquare.backend.manager@behavior@fr.inria.aoste.timesquare.backend.codeexecution@fr.inria.aoste.timesquare.backend.codeexecution.manager.CodeExecutionManager">
+        <mapEntry key="IOO.active" value="false"/>
+        <mapEntry key="option" value=""/>
+    </mapAttribute>
+    <mapAttribute key="fr.inria.aoste.timesquare.backend.manager@behavior@fr.inria.aoste.timesquare.backend.obeoviewpointanimator@fr.inria.aoste.timesquare.backend.obeoviewpointanimator.ObeoViewpointAnimatorBehaviorManager">
+        <mapEntry key="IOO.active" value="false"/>
+        <mapEntry key="option" value=""/>
+    </mapAttribute>
+    <mapAttribute key="fr.inria.aoste.timesquare.backend.manager@behavior@fr.inria.aoste.timesquare.backend.power@fr.inria.aoste.timesquare.backend.power.behavior.PowerBehaviorManager">
+        <mapEntry key="IOO.active" value="false"/>
+        <mapEntry key="option" value=""/>
+    </mapAttribute>
+    <mapAttribute key="fr.inria.aoste.timesquare.backend.manager@behavior@fr.inria.aoste.timesquare.backend.vcdgenerator@fr.inria.aoste.timesquare.backend.vcdgenerator.manager.VCDGeneratorManager">
+        <mapEntry key="IOO.active" value="true"/>
+        <mapEntry key="option" value=""/>
+        <mapEntry key="vcdgeneration.clockBehaviorOptions" value="rO0ABXNyABNqYXZhLnV0aWwuQXJyYXlMaXN0eIHSHZnHYZ0DAAFJAARzaXpleHAAAAAIdwQAAAAIc3IAUGZyLmlucmlhLmFvc3RlLnRpbWVzcXVhcmUuYmFja2VuZC5tYW5hZ2VyLnNlcmlhbGl6YXRpb24uQmVoYXZpb3JQZXJzaXN0ZW50RW50aXR52sKHVk3Wa0ACAAJMAANfSUR0ABJMamF2YS9sYW5nL1N0cmluZztbAAZfc3RhdGV0AAJbWnhyAEhmci5pbnJpYS5hb3N0ZS50aW1lc3F1YXJlLmJhY2tlbmQubWFuYWdlci5zZXJpYWxpemF0aW9uLlBlcnNpc3RlbnRFbnRpdHmlAgBssQbGjwIAAkwAEl9wZXJzaXN0ZW50T3B0aW9uc3QARUxmci9pbnJpYS9hb3N0ZS90aW1lc3F1YXJlL2JhY2tlbmQvbWFuYWdlci92aXNpYmxlL1BlcnNpc3RlbnRPcHRpb25zO0wAC19wbHVnaW5OYW1lcQB+AAN4cHNyAF5mci5pbnJpYS5hb3N0ZS50aW1lc3F1YXJlLmJhY2tlbmQudmNkZ2VuZXJhdG9yLnBlcnNpc3RlbnRvcHRpb25zLlZDREdlbmVyYXRvclBlcnNpc3RlbnRPcHRpb25z2lsBWSSXilcCAARaAAdfZ2hvc3RzWgAHX3B1bHNlc0wAC19kaXNjcmV0aXplcQB+AANMAAVfbmFtZXEAfgADeHABAXQAAHQAEnNjcDE1X3YyOjptYWluOjppbnQADlZDRCBHZW5lcmF0aW9udAAkc2NwMTVfdjI6Om1haW46OmlueywgbWFpbiwgbWFpbjo6aW59dXIAAltaV48gORS4XeICAAB4cAAAAAgBAQEBAQEBAXNxAH4AAnNxAH4ACAEBcQB+AAp0ABNzY3AxNV92Mjo6bWFpbjo6aW4xcQB+AAx0ACZzY3AxNV92Mjo6bWFpbjo6aW4xeywgbWFpbiwgbWFpbjo6aW4xfXVxAH4ADgAAAAgBAQEBAQEBAXNxAH4AAnNxAH4ACAEBcQB+AAp0ABNzY3AxNV92Mjo6bWFpbjo6aW4ycQB+AAx0ACZzY3AxNV92Mjo6bWFpbjo6aW4yeywgbWFpbiwgbWFpbjo6aW4yfXVxAH4ADgAAAAgBAQEBAQEBAXNxAH4AAnNxAH4ACAEBcQB+AAp0ABNzY3AxNV92Mjo6bWFpbjo6b3V0cQB+AAx0ACZzY3AxNV92Mjo6bWFpbjo6b3V0eywgbWFpbiwgbWFpbjo6b3V0fXVxAH4ADgAAAAgBAQEBAQEBAXNxAH4AAnNxAH4ACAEBcQB+AAp0ADdzY3AxNV92Mjo6bWFpbjo6cl8xNzo6QWx0ZXJuYXRlc0RlZjo6QWx0X2MxRGVsYXllZEJ5T25lcQB+AAx0AJ1zY3AxNV92Mjo6bWFpbjo6cl8xNzo6QWx0ZXJuYXRlc0RlZjo6QWx0X2MxRGVsYXllZEJ5T25leywgbWFpbiwgbWFpbjo6cl8xNywgQ0NTTF9SZWxhdGlvbnM6OkFsdGVybmF0ZXNEZWYsIENDU0xfUmVsYXRpb25zOjpBbHRlcm5hdGVzRGVmOjpBbHRfYzFEZWxheWVkQnlPbmV9dXEAfgAOAAAACAEBAQEBAQEBc3EAfgACc3EAfgAIAQFxAH4ACnQAFXNjcDE1X3YyOjptYWluOjpzdGVwMXEAfgAMdAAqc2NwMTVfdjI6Om1haW46OnN0ZXAxeywgbWFpbiwgbWFpbjo6c3RlcDF9dXEAfgAOAAAACAEBAQEBAQEBc3EAfgACc3EAfgAIAQFxAH4ACnQAFXNjcDE1X3YyOjptYWluOjpzdGVwMnEAfgAMdAAqc2NwMTVfdjI6Om1haW46OnN0ZXAyeywgbWFpbiwgbWFpbjo6c3RlcDJ9dXEAfgAOAAAACAEBAQEBAQEBc3EAfgACc3EAfgAIAQFxAH4ACnQAFXNjcDE1X3YyOjptYWluOjpzdGVwM3EAfgAMdAAqc2NwMTVfdjI6Om1haW46OnN0ZXAzeywgbWFpbiwgbWFpbjo6c3RlcDN9dXEAfgAOAAAACAEBAQEBAQEBeA=="/>
+        <mapEntry key="vcdgeneration.pluginOptions" value="rO0ABXNyAFhmci5pbnJpYS5hb3N0ZS50aW1lc3F1YXJlLmJhY2tlbmQudmNkZ2VuZXJhdG9yLnBlcnNpc3RlbnRvcHRpb25zLlBsdWdJblBlcnNpc3RlbnRPcHRpb25z9xIAXqRX31MCAAJaABBfbGF1bmNoVkNEVmlld2VyTAAUX3BhdGhUb0R1cmF0aW9uTW9kZWx0ABJMamF2YS9sYW5nL1N0cmluZzt4cAFw"/>
+    </mapAttribute>
+</launchConfiguration>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="fr.inria.aoste.timesquare.launcher.core.launchConfigurationType">
+    <stringAttribute key="PrioritySource" value=""/>
+    <stringAttribute key="SimulationPolicy" value="fr.inria.aoste.timesquare.simulationpolicy@fr.inria.aoste.timesquare.simulationpolicy.random.RandomSimulationPolicy"/>
+    <intAttribute key="SimulationSteps" value="100"/>
+    <stringAttribute key="Source" value="/SCP15/xccsl/scp15_v1b.extendedCCSL"/>
+    <booleanAttribute key="TimeDisplay" value="false"/>
+    <mapAttribute key="fr.inria.aoste.timesquare.backend.manager@behavior@fr.inria.aoste.timesquare.backend.codeexecution@fr.inria.aoste.timesquare.backend.codeexecution.manager.CodeExecutionManager">
+        <mapEntry key="IOO.active" value="false"/>
+        <mapEntry key="option" value=""/>
+    </mapAttribute>
+    <mapAttribute key="fr.inria.aoste.timesquare.backend.manager@behavior@fr.inria.aoste.timesquare.backend.obeoviewpointanimator@fr.inria.aoste.timesquare.backend.obeoviewpointanimator.ObeoViewpointAnimatorBehaviorManager">
+        <mapEntry key="IOO.active" value="false"/>
+        <mapEntry key="option" value=""/>
+    </mapAttribute>
+    <mapAttribute key="fr.inria.aoste.timesquare.backend.manager@behavior@fr.inria.aoste.timesquare.backend.power@fr.inria.aoste.timesquare.backend.power.behavior.PowerBehaviorManager">
+        <mapEntry key="IOO.active" value="false"/>
+        <mapEntry key="option" value=""/>
+    </mapAttribute>
+    <mapAttribute key="fr.inria.aoste.timesquare.backend.manager@behavior@fr.inria.aoste.timesquare.backend.vcdgenerator@fr.inria.aoste.timesquare.backend.vcdgenerator.manager.VCDGeneratorManager">
+        <mapEntry key="IOO.active" value="true"/>
+        <mapEntry key="option" value=""/>
+        <mapEntry key="vcdgeneration.clockBehaviorOptions" value="rO0ABXNyABNqYXZhLnV0aWwuQXJyYXlMaXN0eIHSHZnHYZ0DAAFJAARzaXpleHAAAAAGdwQAAAAGc3IAUGZyLmlucmlhLmFvc3RlLnRpbWVzcXVhcmUuYmFja2VuZC5tYW5hZ2VyLnNlcmlhbGl6YXRpb24uQmVoYXZpb3JQZXJzaXN0ZW50RW50aXR52sKHVk3Wa0ACAAJMAANfSUR0ABJMamF2YS9sYW5nL1N0cmluZztbAAZfc3RhdGV0AAJbWnhyAEhmci5pbnJpYS5hb3N0ZS50aW1lc3F1YXJlLmJhY2tlbmQubWFuYWdlci5zZXJpYWxpemF0aW9uLlBlcnNpc3RlbnRFbnRpdHmlAgBssQbGjwIAAkwAEl9wZXJzaXN0ZW50T3B0aW9uc3QARUxmci9pbnJpYS9hb3N0ZS90aW1lc3F1YXJlL2JhY2tlbmQvbWFuYWdlci92aXNpYmxlL1BlcnNpc3RlbnRPcHRpb25zO0wAC19wbHVnaW5OYW1lcQB+AAN4cHNyAF5mci5pbnJpYS5hb3N0ZS50aW1lc3F1YXJlLmJhY2tlbmQudmNkZ2VuZXJhdG9yLnBlcnNpc3RlbnRvcHRpb25zLlZDREdlbmVyYXRvclBlcnNpc3RlbnRPcHRpb25z2lsBWSSXilcCAARaAAdfZ2hvc3RzWgAHX3B1bHNlc0wAC19kaXNjcmV0aXplcQB+AANMAAVfbmFtZXEAfgADeHABAXQAAHQAE3NjcDE1X3YxYjo6bWFpbjo6aW50AA5WQ0QgR2VuZXJhdGlvbnQAJXNjcDE1X3YxYjo6bWFpbjo6aW57LCBtYWluLCBtYWluOjppbn11cgACW1pXjyA5FLhd4gIAAHhwAAAACAEBAQEBAQEBc3EAfgACc3EAfgAIAQFxAH4ACnQAFHNjcDE1X3YxYjo6bWFpbjo6aW4xcQB+AAx0ACdzY3AxNV92MWI6Om1haW46OmluMXssIG1haW4sIG1haW46OmluMX11cQB+AA4AAAAIAQEBAQEBAQFzcQB+AAJzcQB+AAgBAXEAfgAKdAAUc2NwMTVfdjFiOjptYWluOjppbjJxAH4ADHQAJ3NjcDE1X3YxYjo6bWFpbjo6aW4yeywgbWFpbiwgbWFpbjo6aW4yfXVxAH4ADgAAAAgBAQEBAQEBAXNxAH4AAnNxAH4ACAEBcQB+AAp0ABRzY3AxNV92MWI6Om1haW46Om91dHEAfgAMdAAnc2NwMTVfdjFiOjptYWluOjpvdXR7LCBtYWluLCBtYWluOjpvdXR9dXEAfgAOAAAACAEBAQEBAQEBc3EAfgACc3EAfgAIAQFxAH4ACnQAOHNjcDE1X3YxYjo6bWFpbjo6cl8xMTo6QWx0ZXJuYXRlc0RlZjo6QWx0X2MxRGVsYXllZEJ5T25lcQB+AAx0AJ5zY3AxNV92MWI6Om1haW46OnJfMTE6OkFsdGVybmF0ZXNEZWY6OkFsdF9jMURlbGF5ZWRCeU9uZXssIG1haW4sIG1haW46OnJfMTEsIENDU0xfUmVsYXRpb25zOjpBbHRlcm5hdGVzRGVmLCBDQ1NMX1JlbGF0aW9uczo6QWx0ZXJuYXRlc0RlZjo6QWx0X2MxRGVsYXllZEJ5T25lfXVxAH4ADgAAAAgBAQEBAQEBAXNxAH4AAnNxAH4ACAEBcQB+AAp0ABZzY3AxNV92MWI6Om1haW46OnN0ZXAzcQB+AAx0ACtzY3AxNV92MWI6Om1haW46OnN0ZXAzeywgbWFpbiwgbWFpbjo6c3RlcDN9dXEAfgAOAAAACAEBAQEBAQEBeA=="/>
+        <mapEntry key="vcdgeneration.pluginOptions" value="rO0ABXNyAFhmci5pbnJpYS5hb3N0ZS50aW1lc3F1YXJlLmJhY2tlbmQudmNkZ2VuZXJhdG9yLnBlcnNpc3RlbnRvcHRpb25zLlBsdWdJblBlcnNpc3RlbnRPcHRpb25z9xIAXqRX31MCAAJaABBfbGF1bmNoVkNEVmlld2VyTAAUX3BhdGhUb0R1cmF0aW9uTW9kZWx0ABJMamF2YS9sYW5nL1N0cmluZzt4cAFw"/>
+    </mapAttribute>
+</launchConfiguration>

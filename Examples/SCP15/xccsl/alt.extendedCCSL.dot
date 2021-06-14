@@ -1,0 +1,13 @@
+digraph {
+	rankdir=LR;
+	start=0;
+	node [style="filled"]
+
+	0 [fillcolor="#ffffff", size="10", shape="circle", fontcolor="black", label="1212884568"];
+	1 [fillcolor="#ffffff", size="10", shape="circle", fontcolor="black", label="1631675552"];
+	2 [fillcolor="#ffffff", size="10", shape="circle", fontcolor="black", label="1664798917"];
+
+	0 -> 1 [penwidth="1", color="#aaaaaa", style="solid", label="[a]"];
+	1 -> 2 [penwidth="1", color="#aaaaaa", style="solid", label="[c]"];
+	2 -> 1 [penwidth="1", color="#aaaaaa", style="solid", label="[a]"];
+}

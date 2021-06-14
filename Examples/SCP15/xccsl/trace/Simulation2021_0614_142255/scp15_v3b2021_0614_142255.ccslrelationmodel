@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:OccurrenceRelationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel="http://fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel" xmlns:trace="https://team.inria.fr/kairos//trace/1.0.0">
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.4"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.4"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.0"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.1"/>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v3b2021_0614_142255.trace#//@logicalSteps.0/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v3b2021_0614_142255.trace#//@logicalSteps.0/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+  </refsToCCSLConstraints>
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.6"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.2"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.5"/>
+  </refsToCCSLConstraints>
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.5"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.5"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.4"/>
+  </refsToCCSLConstraints>
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.7"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.4"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.2"/>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v3b2021_0614_142255.trace#//@logicalSteps.0/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+  </refsToCCSLConstraints>
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.8"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.1"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.3"/>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v3b2021_0614_142255.trace#//@logicalSteps.0/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+  </refsToCCSLConstraints>
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.9"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.3"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.2"/>
+  </refsToCCSLConstraints>
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.10"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.0"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v3b2021_0614_142255.trace#//@references.3"/>
+  </refsToCCSLConstraints>
+</fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:OccurrenceRelationModel>

@@ -1,0 +1,2057 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:OccurrenceRelationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel="http://fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel" xmlns:trace="https://team.inria.fr/kairos//trace/1.0.0">
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.6"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.0"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.2"/>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.1/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.1/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.2/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.2/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.3/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.3/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.5/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.5/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.7/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.7/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.9/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.9/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.11/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.11/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.12/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.12/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.14/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.14/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.15/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.15/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.17/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.17/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.18/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.18/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.20/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.20/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.21/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.21/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.24/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.24/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.25/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.25/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.27/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.27/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.28/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.28/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.29/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.29/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.30/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.30/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.31/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.31/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.32/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.32/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.34/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.34/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.35/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.35/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.37/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.37/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.39/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.39/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.40/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.40/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.41/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.41/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.42/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.42/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.43/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.43/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.45/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.45/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.47/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.47/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.49/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.49/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.50/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.50/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.52/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.52/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.53/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.53/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.55/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.55/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.56/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.56/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.58/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.58/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.59/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.59/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.62/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.62/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.63/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.63/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.65/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.65/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.66/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.66/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.67/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.67/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.68/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.68/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.70/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.70/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.71/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.71/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.72/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.72/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.74/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.74/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.76/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.76/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.77/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.77/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.78/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.78/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.80/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.80/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.81/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.81/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.83/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.83/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.85/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.85/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.86/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.86/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.87/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.87/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.88/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.88/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.91/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.91/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.92/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.92/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.95/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.95/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.96/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.96/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.98/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.98/@eventOccurrences.0"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.99/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.99/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+  </refsToCCSLConstraints>
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.7"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.2"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.1"/>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.2/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.2/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.2/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.2/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.5/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.5/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.6/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.6/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.9/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.9/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.9/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.9/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.12/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.12/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.12/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.12/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.15/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.15/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.16/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.16/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.18/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.18/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.18/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.18/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.21/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.21/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.22/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.22/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.25/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.25/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.25/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.25/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.28/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.28/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.28/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.28/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.30/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.30/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.30/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.30/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.32/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.32/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.32/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.32/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.35/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.35/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.36/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.36/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.39/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.39/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.39/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.39/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.41/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.41/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.41/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.41/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.43/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.43/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.44/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.44/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.47/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.47/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.48/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.48/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.50/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.50/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.51/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.51/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.53/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.53/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.53/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.53/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.56/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.56/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.57/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.57/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.59/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.59/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.60/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.60/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.63/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.63/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.63/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.63/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.66/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.66/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.66/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.66/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.68/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.68/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.69/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.69/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.71/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.71/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.71/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.71/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.74/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.74/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.74/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.74/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.77/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.77/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.77/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.77/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.80/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.80/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.80/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.80/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.83/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.83/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.84/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.84/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.86/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.86/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.86/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.86/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.88/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.88/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.89/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.89/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.92/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.92/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.93/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.93/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.96/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.96/@eventOccurrences.2"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.97/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.97/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.99/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+  </refsToCCSLConstraints>
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.5"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.5"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.0"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.3"/>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.0/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.0/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.0/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.1/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.3/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.3/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.3/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.4/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.7/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.7/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.7/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.8/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.10/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.10/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.10/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.11/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.13/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.13/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.13/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.14/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.17/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.17/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.17/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.17/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.19/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.19/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.19/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.20/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.23/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.23/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.23/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.24/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.26/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.26/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.26/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.27/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.29/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.29/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.29/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.29/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.31/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.31/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.31/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.31/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.33/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.33/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.33/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.34/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.37/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.37/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.37/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.38/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.40/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.40/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.40/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.40/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.42/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.42/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.42/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.42/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.45/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.45/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.45/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.46/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.49/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.49/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.49/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.49/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.52/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.52/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.52/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.52/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.54/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.54/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.54/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.55/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.58/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.58/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.58/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.58/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.61/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.61/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.61/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.62/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.64/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.64/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.64/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.65/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.67/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.67/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.67/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.67/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.70/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.70/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.70/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.70/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.72/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.72/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.72/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.73/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.75/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.75/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.75/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.76/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.78/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.78/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.78/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.79/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.81/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.81/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.81/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.82/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.85/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.85/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.85/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.85/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.87/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.87/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.87/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.87/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.90/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.90/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.90/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.91/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.94/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.94/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.94/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.95/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.98/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.98/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.98/@eventOccurrences.5"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.98/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+  </refsToCCSLConstraints>
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.8"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.3"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.2"/>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.0/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.0/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.2/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.2/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.4/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.4/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.5/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.5/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.8/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.8/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.9/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.9/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.10/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.10/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.12/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.12/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.13/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.13/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.15/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.15/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.17/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.17/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.18/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.18/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.19/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.19/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.21/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.21/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.23/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.23/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.25/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.25/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.26/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.26/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.28/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.28/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.29/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.29/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.30/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.30/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.31/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.31/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.32/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.32/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.33/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.33/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.35/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.35/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.38/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.38/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.39/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.39/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.40/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.40/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.41/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.41/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.42/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.42/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.43/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.43/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.46/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.46/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.47/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.47/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.49/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.49/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.50/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.50/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.52/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.52/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.53/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.53/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.54/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.54/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.56/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.56/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.58/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.58/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.59/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.59/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.61/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.61/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.63/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.63/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.64/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.64/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.66/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.66/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.67/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.67/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.68/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.68/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.70/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.70/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.71/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.71/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.73/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.73/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.74/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.74/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.75/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.75/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.77/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.77/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.79/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.79/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.80/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.80/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.82/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.82/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.83/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.83/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.85/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.85/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.86/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.86/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.87/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.87/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.88/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.88/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.90/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.90/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.92/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.92/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.94/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.94/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.96/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.96/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.98/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.98/@eventOccurrences.3"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.99/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.99/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+  </refsToCCSLConstraints>
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.9"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.5"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.1"/>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.0/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.0/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.2/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.2/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.3/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.3/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.6/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.6/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.7/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.7/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.9/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.9/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.10/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.10/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.12/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.12/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.13/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.13/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.16/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.16/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.17/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.17/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.18/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.18/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.19/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.19/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.22/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.22/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.23/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.23/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.25/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.25/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.26/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.26/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.28/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.28/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.29/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.29/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.30/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.30/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.31/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.31/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.32/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.32/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.33/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.33/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.36/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.36/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.37/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.37/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.39/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.39/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.40/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.40/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.41/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.41/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.42/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.42/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.44/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.44/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.45/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.45/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.48/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.48/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.49/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.49/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.51/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.51/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.52/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.52/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.53/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.53/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.54/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.54/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.57/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.57/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.58/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.58/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.60/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.60/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.61/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.61/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.63/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.63/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.64/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.64/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.66/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.66/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.67/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.67/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.69/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.69/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.70/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.70/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.71/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.71/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.72/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.72/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.74/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.74/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.75/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.75/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.77/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.77/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.78/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.78/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.80/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.80/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.81/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.81/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.84/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.84/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.85/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.85/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.86/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.86/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.87/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.87/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.89/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.89/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.90/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.90/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.93/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.93/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.94/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.94/@eventOccurrences.5"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.97/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.97/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.98/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+  </refsToCCSLConstraints>
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.10"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.1"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.4"/>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.2/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.2/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.3/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.3/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.6/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.6/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.7/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.7/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.9/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.9/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.10/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.10/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.12/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.12/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.13/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.13/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.16/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.16/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.17/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.17/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.18/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.18/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.19/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.19/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.22/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.22/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.23/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.23/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.25/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.25/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.26/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.26/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.28/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.28/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.29/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.29/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.30/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.30/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.31/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.31/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.32/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.32/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.33/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.33/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.36/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.36/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.37/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.37/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.39/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.39/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.40/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.40/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.41/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.41/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.42/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.42/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.44/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.44/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.45/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.45/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.48/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.48/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.49/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.49/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.51/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.51/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.52/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.52/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.53/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.53/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.54/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.54/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.57/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.57/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.58/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.58/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.60/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.60/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.61/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.61/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.63/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.63/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.64/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.64/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.66/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.66/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.67/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.67/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.69/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.69/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.70/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.70/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.71/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.71/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.72/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.72/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.74/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.74/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.75/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.75/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.77/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.77/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.78/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.78/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.80/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.80/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.81/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.81/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.84/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.84/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.85/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.85/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.86/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.86/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.87/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.87/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.89/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.89/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.90/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.90/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.93/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.93/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.94/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.94/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.97/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Precedence" isStrict="true">
+      <source href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.97/@eventOccurrences.1"/>
+      <target href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.98/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Packet">
+      <occurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.98/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+  </refsToCCSLConstraints>
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.4"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.4"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="scp15_v1b2021_0614_141635.trace#//@references.5"/>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.3/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.3/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.7/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.7/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.10/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.10/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.13/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.13/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.17/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.17/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.19/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.19/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.23/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.23/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.26/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.26/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.29/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.29/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.31/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.31/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.33/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.33/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.37/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.37/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.40/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.40/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.42/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.42/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.45/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.45/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.49/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.49/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.52/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.52/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.54/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.54/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.58/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.58/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.61/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.61/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.64/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.64/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.67/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.67/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.70/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.70/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.72/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.72/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.75/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.75/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.78/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.78/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.81/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.81/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.85/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.85/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.87/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.87/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.90/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.90/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.94/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.94/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.98/@eventOccurrences.4"/>
+      <coincidentOccurrences href="scp15_v1b2021_0614_141635.trace#//@logicalSteps.98/@eventOccurrences.5"/>
+    </relatedOccurrenceRelations>
+  </refsToCCSLConstraints>
+</fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:OccurrenceRelationModel>
