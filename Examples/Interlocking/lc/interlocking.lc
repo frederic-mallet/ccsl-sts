@@ -1,0 +1,27 @@
+Specification interlocking_simple {
+	Clock request, inquiry, checkFail, redPulse, showRed, wait, checkSucc, greenPulse, showGreen, enter, leave, getOccupied,
+	getUnoccupied, tmp1, tmp2 [
+		Precedence request < inquiry < responseOfTrack
+		Precedence checkFail < redPulse <= showRed < wait < greenPulse <= showGreen < enter < leave
+		SubClocking enter <- getOccupied
+		SubClocking leave <- getUnoccupied
+		
+		Precedence getOccupied < (max:1)  tmp1
+		Precedence getUnoccupied < (max:1) tmp1
+		
+		SubClocking checkFail <- tmp1
+		Precedence tmp2 < getOccupied
+		
+		Let responseOfTrack be checkSucc + checkFail
+		Let responseOfTrain be enter + wait
+		
+		Precedence getUnoccupied < (max:1) getOccupied
+		
+		Exclusion getOccupied # getUnoccupied
+		
+		Precedence request <(max:1) responseOfTrain
+		
+		Precedence getUnoccupied < tmp2
+		SubClocking checkSucc <- tmp2
+	]
+}
