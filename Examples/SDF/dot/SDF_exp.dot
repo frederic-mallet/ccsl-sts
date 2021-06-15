@@ -1,0 +1,16 @@
+digraph {
+  "A";
+  "B";
+  "rd_AB_del";
+  "wr_BC";
+  "rd_AB";
+rd_AB_del -> B
+wr_BC -> B
+B -> wr_BC["color"="blue", "arrowhead"="onormal"]
+A -> rd_AB
+rd_AB -> rd_AB_del
+rd_AB_del -> rd_AB["color"="blue", "arrowhead"="onormal"]
+rd_AB -> A["style"="dashed"]
+B -> rd_AB_del["style"="dashed"]
+
+}

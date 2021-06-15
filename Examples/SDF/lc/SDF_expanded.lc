@@ -1,24 +1,15 @@
-// this file is produced by expansion of sdf.lc
+// this file is produced by expansion and reduction of sdf.lc
 Specification SDF_exp {
-	Clock A B C wr_AB rd_AB wr_BC rd_BC wr_CB rd_CB
+	Clock A B C rd_AB wr_BC rd_BC rd_CB
 	[
-		repeat wr_AB_weight every 1 wr_AB
-		Precedence A <= wr_AB_weight
-		rd_AB_delayed = rd_AB $ 0
-		Precedence wr_AB < rd_AB_delayed
-		repeat rd_AB_del every 2 rd_AB from 2
-		Precedence rd_AB_del < B
-		repeat wr_BC_weight every 2 wr_BC
-		Precedence B <= wr_BC_weight
-		rd_BC_delayed = rd_BC $ 0
-		Precedence wr_BC < rd_BC_delayed
-		repeat rd_BC_del every 1 rd_BC from 1
-		Precedence rd_BC_del < C
-		repeat wr_CB_weight every 1 wr_CB
-		Precedence C <= wr_CB_weight
-		rd_CB_delayed = rd_CB $ 2
-		Precedence wr_CB < rd_CB_delayed
-		repeat rd_CB_del every 2 rd_CB from 2
-		Precedence rd_CB_del < B
+		Precedence A <= (max:2) rd_AB
+		repeat rd_AB_del every 2 rd_AB from 1
+		Precedence rd_AB_del < (max:1) B
+		repeat B every 2 wr_BC
+		Precedence wr_BC <= (max:1) rd_BC
+		Precedence rd_BC < (max:1) C
+		Precedence C <= (init:2 max:2) rd_CB
+		repeat rd_CB_del every 2 rd_CB from 1
+		Precedence rd_CB_del < (max:1) B
 	]
 }

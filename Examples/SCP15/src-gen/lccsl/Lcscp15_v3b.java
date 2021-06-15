@@ -8,13 +8,13 @@ import fr.unice.lightccsl.sat.bdd.BDDSolutionFinder;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
+import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class Lcscp15_v3b implements ISpecificationBuilder {
 	static public Lcscp15_v3b INSTANCE = new Lcscp15_v3b();
 	private Lcscp15_v3b () {
 		// SINGLETON
-	}
-	
+	}	
 
 	@Override
 	public void build(ISimpleSpecification simple) {
@@ -36,6 +36,8 @@ public class Lcscp15_v3b implements ISpecificationBuilder {
 	};
 	public static void main(String[] args) {
 		String name = "scp15_v3b";
+		
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(Lcscp15_v3b.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}
@@ -43,7 +45,7 @@ public class Lcscp15_v3b implements ISpecificationBuilder {
 		StepperUtility exe = new StepperUtility(new BDDSolutionFinder());
 		exe.setParam(StepperUtility.INTERACTIVE, false);
 		exe.setBackend(new fr.unice.lightccsl.html.HtmlVCDBackend());
-		exe.setParam(StepperUtility.NB_STEPS, 10);
+		exe.setParam(StepperUtility.NB_STEPS, 20);
 		exe.treat(name, INSTANCE);
 		
 		STSUtility sts = new STSUtility();

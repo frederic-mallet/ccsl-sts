@@ -1,0 +1,1389 @@
+$date 
+Mon Jun 14 17:32:01 CEST 2021
+$end
+
+$version 
+VCD Generation 2.1.0
+$end
+
+$comment alias SDF_exp__main__A "A" $end
+$comment alias SDF_exp__main__B "B" $end
+$comment alias SDF_exp__main__C "C" $end
+$comment alias SDF_exp__main__rd_AB "rd_AB" $end
+$comment alias SDF_exp__main__rd_AB_del "rd_AB_del" $end
+$comment hide SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_concatOffsetPeriod $end
+$comment alias SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_concatOffsetPeriod "rd_AB_del::PeriodicDef::PeriodicDef_concatOffsetPeriod" $end
+$comment hide SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_periodicOffsetP $end
+$comment alias SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_periodicOffsetP "rd_AB_del::PeriodicDef::PeriodicDef_periodicOffsetP" $end
+$comment hide SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_concatOffsetPeriod $end
+$comment alias SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_concatOffsetPeriod "rd_AB_del::PeriodicDef::PeriodicDef_periodicOffsetP::PeriodicOffsetPDef::PeriodicOffsetPDef_concatOffsetPeriod" $end
+$comment hide SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_waitPeriod $end
+$comment alias SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_waitPeriod "rd_AB_del::PeriodicDef::PeriodicDef_periodicOffsetP::PeriodicOffsetPDef::PeriodicOffsetPDef_waitPeriod" $end
+$comment hide SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_waitOffset $end
+$comment alias SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_waitOffset "rd_AB_del::PeriodicDef::PeriodicDef_waitOffset" $end
+$comment alias SDF_exp__main__rd_AB_delayed "rd_AB_delayed" $end
+$comment hide SDF_exp__main__rd_AB_delayed__DelayForDef__DelayFor_defer $end
+$comment alias SDF_exp__main__rd_AB_delayed__DelayForDef__DelayFor_defer "rd_AB_delayed::DelayForDef::DelayFor_defer" $end
+$comment alias SDF_exp__main__rd_BC "rd_BC" $end
+$comment alias SDF_exp__main__rd_BC_del "rd_BC_del" $end
+$comment hide SDF_exp__main__rd_BC_del__DelayForDef__DelayFor_defer $end
+$comment alias SDF_exp__main__rd_BC_del__DelayForDef__DelayFor_defer "rd_BC_del::DelayForDef::DelayFor_defer" $end
+$comment alias SDF_exp__main__rd_BC_delayed "rd_BC_delayed" $end
+$comment hide SDF_exp__main__rd_BC_delayed__DelayForDef__DelayFor_defer $end
+$comment alias SDF_exp__main__rd_BC_delayed__DelayForDef__DelayFor_defer "rd_BC_delayed::DelayForDef::DelayFor_defer" $end
+$comment alias SDF_exp__main__rd_CB "rd_CB" $end
+$comment alias SDF_exp__main__rd_CB_del "rd_CB_del" $end
+$comment hide SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_concatOffsetPeriod $end
+$comment alias SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_concatOffsetPeriod "rd_CB_del::PeriodicDef::PeriodicDef_concatOffsetPeriod" $end
+$comment hide SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_periodicOffsetP $end
+$comment alias SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_periodicOffsetP "rd_CB_del::PeriodicDef::PeriodicDef_periodicOffsetP" $end
+$comment hide SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_concatOffsetPeriod $end
+$comment alias SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_concatOffsetPeriod "rd_CB_del::PeriodicDef::PeriodicDef_periodicOffsetP::PeriodicOffsetPDef::PeriodicOffsetPDef_concatOffsetPeriod" $end
+$comment hide SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_waitPeriod $end
+$comment alias SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_waitPeriod "rd_CB_del::PeriodicDef::PeriodicDef_periodicOffsetP::PeriodicOffsetPDef::PeriodicOffsetPDef_waitPeriod" $end
+$comment hide SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_waitOffset $end
+$comment alias SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_waitOffset "rd_CB_del::PeriodicDef::PeriodicDef_waitOffset" $end
+$comment alias SDF_exp__main__rd_CB_delayed "rd_CB_delayed" $end
+$comment hide SDF_exp__main__rd_CB_delayed__DelayForDef__DelayFor_defer $end
+$comment alias SDF_exp__main__rd_CB_delayed__DelayForDef__DelayFor_defer "rd_CB_delayed::DelayForDef::DelayFor_defer" $end
+$comment alias SDF_exp__main__wr_AB "wr_AB" $end
+$comment alias SDF_exp__main__wr_AB_weight "wr_AB_weight" $end
+$comment hide SDF_exp__main__wr_AB_weight__DelayForDef__DelayFor_defer $end
+$comment alias SDF_exp__main__wr_AB_weight__DelayForDef__DelayFor_defer "wr_AB_weight::DelayForDef::DelayFor_defer" $end
+$comment alias SDF_exp__main__wr_BC "wr_BC" $end
+$comment alias SDF_exp__main__wr_BC_weight "wr_BC_weight" $end
+$comment hide SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_concatOffsetPeriod $end
+$comment alias SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_concatOffsetPeriod "wr_BC_weight::PeriodicDef::PeriodicDef_concatOffsetPeriod" $end
+$comment hide SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_periodicOffsetP $end
+$comment alias SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_periodicOffsetP "wr_BC_weight::PeriodicDef::PeriodicDef_periodicOffsetP" $end
+$comment hide SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_concatOffsetPeriod $end
+$comment alias SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_concatOffsetPeriod "wr_BC_weight::PeriodicDef::PeriodicDef_periodicOffsetP::PeriodicOffsetPDef::PeriodicOffsetPDef_concatOffsetPeriod" $end
+$comment hide SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_waitPeriod $end
+$comment alias SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_waitPeriod "wr_BC_weight::PeriodicDef::PeriodicDef_periodicOffsetP::PeriodicOffsetPDef::PeriodicOffsetPDef_waitPeriod" $end
+$comment hide SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_waitOffset $end
+$comment alias SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_waitOffset "wr_BC_weight::PeriodicDef::PeriodicDef_waitOffset" $end
+$comment alias SDF_exp__main__wr_CB "wr_CB" $end
+$comment alias SDF_exp__main__wr_CB_weight "wr_CB_weight" $end
+$comment hide SDF_exp__main__wr_CB_weight__DelayForDef__DelayFor_defer $end
+$comment alias SDF_exp__main__wr_CB_weight__DelayForDef__DelayFor_defer "wr_CB_weight::DelayForDef::DelayFor_defer" $end
+$comment scale 0.1  $end
+$comment relation   "SDF_exp2021_0614_173201.ccslrelationmodel" $end
+$comment xmi  SDF_exp__main__rd_CB "SDF_exp2021_0614_173201.trace#//@references.0" $end
+$comment xmi  SDF_exp__main__C "SDF_exp2021_0614_173201.trace#//@references.1" $end
+$comment xmi  SDF_exp__main__A "SDF_exp2021_0614_173201.trace#//@references.2" $end
+$comment xmi  SDF_exp__main__wr_CB "SDF_exp2021_0614_173201.trace#//@references.3" $end
+$comment xmi  SDF_exp__main__wr_AB "SDF_exp2021_0614_173201.trace#//@references.4" $end
+$comment xmi  SDF_exp__main__rd_BC "SDF_exp2021_0614_173201.trace#//@references.5" $end
+$comment xmi  SDF_exp__main__rd_AB "SDF_exp2021_0614_173201.trace#//@references.6" $end
+$comment xmi  SDF_exp__main__B "SDF_exp2021_0614_173201.trace#//@references.7" $end
+$comment xmi  SDF_exp__main__wr_BC "SDF_exp2021_0614_173201.trace#//@references.8" $end
+$comment xmi  SDF_exp__main__rd_BC_del__DelayForDef__DelayFor_defer "SDF_exp2021_0614_173201.trace#//@references.9" $end
+$comment xmi  SDF_exp__main__rd_BC_delayed__DelayForDef__DelayFor_defer "SDF_exp2021_0614_173201.trace#//@references.10" $end
+$comment xmi  SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_waitPeriod "SDF_exp2021_0614_173201.trace#//@references.11" $end
+$comment xmi  SDF_exp__main__wr_AB_weight__DelayForDef__DelayFor_defer "SDF_exp2021_0614_173201.trace#//@references.12" $end
+$comment xmi  SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_waitPeriod "SDF_exp2021_0614_173201.trace#//@references.13" $end
+$comment xmi  SDF_exp__main__wr_CB_weight__DelayForDef__DelayFor_defer "SDF_exp2021_0614_173201.trace#//@references.14" $end
+$comment xmi  SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_concatOffsetPeriod "SDF_exp2021_0614_173201.trace#//@references.15" $end
+$comment xmi  SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_concatOffsetPeriod "SDF_exp2021_0614_173201.trace#//@references.16" $end
+$comment xmi  SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_concatOffsetPeriod "SDF_exp2021_0614_173201.trace#//@references.17" $end
+$comment xmi  SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_concatOffsetPeriod "SDF_exp2021_0614_173201.trace#//@references.18" $end
+$comment xmi  SDF_exp__main__rd_CB_delayed "SDF_exp2021_0614_173201.trace#//@references.19" $end
+$comment xmi  SDF_exp__main__wr_BC_weight "SDF_exp2021_0614_173201.trace#//@references.20" $end
+$comment xmi  SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_periodicOffsetP "SDF_exp2021_0614_173201.trace#//@references.21" $end
+$comment xmi  SDF_exp__main__rd_BC_del "SDF_exp2021_0614_173201.trace#//@references.22" $end
+$comment xmi  SDF_exp__main__rd_BC_delayed "SDF_exp2021_0614_173201.trace#//@references.23" $end
+$comment xmi  SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_waitPeriod "SDF_exp2021_0614_173201.trace#//@references.24" $end
+$comment xmi  SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_concatOffsetPeriod "SDF_exp2021_0614_173201.trace#//@references.25" $end
+$comment xmi  SDF_exp__main__wr_AB_weight "SDF_exp2021_0614_173201.trace#//@references.26" $end
+$comment xmi  SDF_exp__main__rd_CB_del "SDF_exp2021_0614_173201.trace#//@references.27" $end
+$comment xmi  SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_periodicOffsetP "SDF_exp2021_0614_173201.trace#//@references.28" $end
+$comment xmi  SDF_exp__main__rd_AB_delayed "SDF_exp2021_0614_173201.trace#//@references.29" $end
+$comment xmi  SDF_exp__main__wr_CB_weight "SDF_exp2021_0614_173201.trace#//@references.30" $end
+$comment xmi  SDF_exp__main__rd_AB_delayed__DelayForDef__DelayFor_defer "SDF_exp2021_0614_173201.trace#//@references.31" $end
+$comment xmi  SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_waitOffset "SDF_exp2021_0614_173201.trace#//@references.32" $end
+$comment xmi  SDF_exp__main__rd_AB_del "SDF_exp2021_0614_173201.trace#//@references.33" $end
+$comment xmi  SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_concatOffsetPeriod "SDF_exp2021_0614_173201.trace#//@references.34" $end
+$comment xmi  SDF_exp__main__rd_CB_delayed__DelayForDef__DelayFor_defer "SDF_exp2021_0614_173201.trace#//@references.35" $end
+$comment xmi  SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_periodicOffsetP "SDF_exp2021_0614_173201.trace#//@references.36" $end
+$comment xmi  SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_waitOffset "SDF_exp2021_0614_173201.trace#//@references.37" $end
+$comment xmi  SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_waitOffset "SDF_exp2021_0614_173201.trace#//@references.38" $end
+$scope module top $end
+$var event 1 !1 SDF_exp__main__A $end
+$var event 1 !2 SDF_exp__main__B $end
+$var event 1 !3 SDF_exp__main__C $end
+$var event 1 !4 SDF_exp__main__rd_AB $end
+$var event 1 !5 SDF_exp__main__rd_AB_del $end
+$var event 1 !6 SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_concatOffsetPeriod $end
+$var event 1 !7 SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_periodicOffsetP $end
+$var event 1 !8 SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_concatOffsetPeriod $end
+$var event 1 !9 SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_waitPeriod $end
+$var event 1 !10 SDF_exp__main__rd_AB_del__PeriodicDef__PeriodicDef_waitOffset $end
+$var event 1 !11 SDF_exp__main__rd_AB_delayed $end
+$var event 1 !12 SDF_exp__main__rd_AB_delayed__DelayForDef__DelayFor_defer $end
+$var event 1 !13 SDF_exp__main__rd_BC $end
+$var event 1 !14 SDF_exp__main__rd_BC_del $end
+$var event 1 !15 SDF_exp__main__rd_BC_del__DelayForDef__DelayFor_defer $end
+$var event 1 !16 SDF_exp__main__rd_BC_delayed $end
+$var event 1 !17 SDF_exp__main__rd_BC_delayed__DelayForDef__DelayFor_defer $end
+$var event 1 !18 SDF_exp__main__rd_CB $end
+$var event 1 !19 SDF_exp__main__rd_CB_del $end
+$var event 1 !20 SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_concatOffsetPeriod $end
+$var event 1 !21 SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_periodicOffsetP $end
+$var event 1 !22 SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_concatOffsetPeriod $end
+$var event 1 !23 SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_waitPeriod $end
+$var event 1 !24 SDF_exp__main__rd_CB_del__PeriodicDef__PeriodicDef_waitOffset $end
+$var event 1 !25 SDF_exp__main__rd_CB_delayed $end
+$var event 1 !26 SDF_exp__main__rd_CB_delayed__DelayForDef__DelayFor_defer $end
+$var event 1 !27 SDF_exp__main__wr_AB $end
+$var event 1 !28 SDF_exp__main__wr_AB_weight $end
+$var event 1 !29 SDF_exp__main__wr_AB_weight__DelayForDef__DelayFor_defer $end
+$var event 1 !30 SDF_exp__main__wr_BC $end
+$var event 1 !31 SDF_exp__main__wr_BC_weight $end
+$var event 1 !32 SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_concatOffsetPeriod $end
+$var event 1 !33 SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_periodicOffsetP $end
+$var event 1 !34 SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_concatOffsetPeriod $end
+$var event 1 !35 SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_periodicOffsetP__PeriodicOffsetPDef__PeriodicOffsetPDef_waitPeriod $end
+$var event 1 !36 SDF_exp__main__wr_BC_weight__PeriodicDef__PeriodicDef_waitOffset $end
+$var event 1 !37 SDF_exp__main__wr_CB $end
+$var event 1 !38 SDF_exp__main__wr_CB_weight $end
+$var event 1 !39 SDF_exp__main__wr_CB_weight__DelayForDef__DelayFor_defer $end
+$upscope $end
+$enddefinitions $end
+
+#0
+1!18
+1!1
+1!27
+x!35
+x!23
+x!34
+x!7
+x!9
+x!22
+x!33
+x!8
+x!21
+#10
+1!18
+1!1
+x!35
+x!23
+x!34
+x!7
+x!9
+x!22
+x!33
+x!8
+x!21
+#20
+1!37
+1!27
+x!35
+1!29
+x!23
+x!34
+x!7
+x!9
+x!22
+1!28
+x!33
+x!8
+x!21
+#30
+1!18
+1!27
+1!4
+x!35
+1!29
+x!23
+1!20
+x!34
+1!25
+x!7
+x!9
+x!22
+1!28
+1!19
+x!33
+x!8
+1!26
+x!21
+1!24
+#40
+1!13
+x!35
+x!34
+x!7
+x!9
+x!33
+x!8
+z!24
+#50
+1!1
+1!27
+x!35
+1!29
+x!34
+x!7
+x!9
+1!28
+x!33
+x!8
+z!24
+#60
+1!1
+1!4
+x!35
+x!34
+x!7
+x!9
+x!33
+1!11
+1!12
+x!8
+z!24
+#70
+1!27
+x!35
+1!29
+x!34
+x!7
+x!9
+1!28
+x!33
+x!8
+z!24
+#80
+1!1
+x!35
+x!34
+x!7
+x!9
+x!33
+x!8
+z!24
+#90
+1!27
+x!35
+1!29
+x!34
+x!7
+x!9
+1!28
+x!33
+x!8
+z!24
+#100
+1!1
+x!35
+x!34
+x!7
+x!9
+x!33
+x!8
+z!24
+#110
+1!1
+1!27
+1!4
+x!35
+1!29
+x!34
+1!6
+x!7
+x!9
+1!28
+x!33
+1!11
+1!12
+1!5
+x!8
+z!24
+1!10
+#120
+1!1
+1!27
+1!2
+x!35
+1!29
+x!34
+1!28
+x!33
+z!24
+z!10
+#130
+1!4
+1!30
+x!35
+1!32
+x!34
+1!31
+x!33
+1!11
+1!12
+1!36
+z!24
+z!10
+#140
+1!1
+1!27
+1!4
+1!30
+1!29
+1!6
+1!7
+1!9
+1!28
+1!11
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#150
+1!1
+1!27
+1!4
+1!29
+1!28
+1!11
+1!12
+z!36
+z!24
+z!10
+#160
+1!1
+z!36
+z!24
+z!10
+#170
+1!1
+1!13
+1!15
+1!17
+1!14
+1!16
+z!36
+z!24
+z!10
+#180
+1!1
+1!27
+1!29
+1!28
+z!36
+z!24
+z!10
+#190
+1!27
+1!29
+1!28
+z!36
+z!24
+z!10
+#200
+1!3
+1!37
+1!4
+1!39
+1!6
+1!7
+1!9
+1!11
+1!38
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#210
+1!18
+1!25
+z!36
+1!26
+z!24
+z!10
+#220
+1!27
+1!4
+1!29
+1!28
+1!11
+1!12
+z!36
+z!24
+z!10
+#230
+1!13
+1!4
+1!15
+1!17
+1!6
+1!7
+1!14
+1!16
+1!9
+1!11
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#240
+1!3
+1!1
+1!4
+1!11
+1!12
+z!36
+z!24
+z!10
+#250
+1!1
+1!37
+1!4
+1!39
+1!6
+1!7
+1!9
+1!11
+1!38
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#260
+1!18
+1!1
+1!23
+1!20
+1!25
+1!22
+1!19
+z!36
+1!26
+1!21
+z!24
+z!10
+#270
+1!1
+1!2
+1!30
+1!35
+1!32
+1!34
+1!31
+1!33
+z!36
+z!24
+z!10
+#280
+1!1
+1!4
+1!11
+1!12
+z!36
+z!24
+z!10
+#290
+1!4
+1!6
+1!7
+1!9
+1!11
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#300
+1!27
+1!29
+1!28
+z!36
+z!24
+z!10
+#310
+1!1
+1!13
+1!4
+1!15
+1!17
+1!14
+1!16
+1!11
+1!12
+z!36
+z!24
+z!10
+#320
+1!3
+1!1
+1!37
+1!27
+1!30
+1!29
+1!39
+1!28
+1!38
+z!36
+z!24
+z!10
+#330
+1!18
+1!1
+1!27
+1!4
+1!29
+1!6
+1!25
+1!7
+1!9
+1!28
+1!11
+1!12
+z!36
+1!5
+1!8
+1!26
+z!24
+z!10
+#340
+1!1
+1!13
+1!15
+1!17
+1!14
+1!16
+z!36
+z!24
+z!10
+#350
+1!27
+1!4
+1!29
+1!28
+1!11
+1!12
+z!36
+z!24
+z!10
+#360
+1!1
+z!36
+z!24
+z!10
+#370
+1!3
+1!1
+1!37
+1!27
+1!29
+1!39
+1!28
+1!38
+z!36
+z!24
+z!10
+#380
+1!18
+1!4
+1!23
+1!20
+1!6
+1!25
+1!7
+1!9
+1!22
+1!19
+1!11
+1!12
+z!36
+1!5
+1!8
+1!26
+1!21
+z!24
+z!10
+#390
+1!2
+z!36
+z!24
+z!10
+#400
+1!1
+1!27
+1!30
+1!35
+1!29
+1!32
+1!34
+1!31
+1!28
+1!33
+z!36
+z!24
+z!10
+#410
+1!4
+1!30
+1!11
+1!12
+z!36
+z!24
+z!10
+#420
+1!27
+1!13
+1!4
+1!15
+1!17
+1!29
+1!6
+1!7
+1!14
+1!16
+1!9
+1!28
+1!11
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#430
+1!1
+1!27
+1!13
+1!15
+1!17
+1!29
+1!14
+1!16
+1!28
+z!36
+z!24
+z!10
+#440
+1!3
+1!4
+1!11
+1!12
+z!36
+z!24
+z!10
+#450
+1!3
+1!1
+z!36
+z!24
+z!10
+#460
+1!1
+1!37
+1!27
+1!29
+1!39
+1!28
+1!38
+z!36
+z!24
+z!10
+#470
+1!18
+1!1
+1!4
+1!6
+1!25
+1!7
+1!9
+1!11
+1!12
+z!36
+1!5
+1!8
+1!26
+z!24
+z!10
+#480
+1!37
+1!27
+1!29
+1!39
+1!28
+1!38
+z!36
+z!24
+z!10
+#490
+1!18
+1!4
+1!23
+1!20
+1!25
+1!22
+1!19
+1!11
+1!12
+z!36
+1!26
+1!21
+z!24
+z!10
+#500
+1!1
+1!27
+1!4
+1!29
+1!6
+1!7
+1!9
+1!28
+1!11
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#510
+1!1
+1!4
+1!2
+1!11
+1!12
+z!36
+z!24
+z!10
+#520
+1!1
+1!27
+1!29
+1!28
+z!36
+z!24
+z!10
+#530
+1!1
+z!36
+z!24
+z!10
+#540
+1!1
+1!4
+1!6
+1!7
+1!9
+1!11
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#550
+1!1
+1!27
+1!30
+1!35
+1!29
+1!32
+1!34
+1!31
+1!28
+1!33
+z!36
+z!24
+z!10
+#560
+1!1
+1!27
+1!4
+1!30
+1!29
+1!28
+1!11
+1!12
+z!36
+z!24
+z!10
+#570
+1!1
+1!27
+1!4
+1!29
+1!6
+1!7
+1!9
+1!28
+1!11
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#580
+1!1
+1!4
+1!11
+1!12
+z!36
+z!24
+z!10
+#590
+1!27
+1!29
+1!28
+z!36
+z!24
+z!10
+#600
+1!1
+1!27
+1!29
+1!28
+z!36
+z!24
+z!10
+#610
+1!27
+1!13
+1!15
+1!17
+1!29
+1!14
+1!16
+1!28
+z!36
+z!24
+z!10
+#620
+1!1
+1!4
+1!6
+1!7
+1!9
+1!11
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#630
+1!3
+1!1
+1!27
+1!29
+1!28
+z!36
+z!24
+z!10
+#640
+1!1
+1!37
+1!4
+1!39
+1!11
+1!38
+1!12
+z!36
+z!24
+z!10
+#650
+1!1
+1!27
+1!29
+1!28
+z!36
+z!24
+z!10
+#660
+1!18
+1!13
+1!15
+1!17
+1!25
+1!14
+1!16
+z!36
+1!26
+z!24
+z!10
+#670
+1!4
+1!6
+1!7
+1!9
+1!11
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#680
+1!1
+1!4
+1!11
+1!12
+z!36
+z!24
+z!10
+#690
+1!3
+1!1
+1!4
+1!6
+1!7
+1!9
+1!11
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#700
+1!1
+1!37
+1!27
+1!4
+1!29
+1!39
+1!28
+1!11
+1!38
+1!12
+z!36
+z!24
+z!10
+#710
+1!27
+1!4
+1!29
+1!6
+1!7
+1!9
+1!28
+1!11
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#720
+1!1
+1!27
+1!29
+1!28
+z!36
+z!24
+z!10
+#730
+1!18
+1!1
+1!23
+1!20
+1!25
+1!22
+1!19
+z!36
+1!26
+1!21
+z!24
+z!10
+#740
+1!27
+1!29
+1!28
+z!36
+z!24
+z!10
+#750
+1!1
+1!27
+1!2
+1!30
+1!35
+1!29
+1!32
+1!34
+1!31
+1!28
+1!33
+z!36
+z!24
+z!10
+#760
+1!1
+1!27
+1!13
+1!30
+1!15
+1!17
+1!29
+1!14
+1!16
+1!28
+z!36
+z!24
+z!10
+#770
+1!3
+1!27
+1!29
+1!28
+z!36
+z!24
+z!10
+#780
+1!1
+1!27
+1!4
+1!29
+1!28
+1!11
+1!12
+z!36
+z!24
+z!10
+#790
+1!1
+1!37
+1!27
+1!13
+1!15
+1!17
+1!29
+1!39
+1!14
+1!16
+1!28
+1!38
+z!36
+z!24
+z!10
+#800
+1!18
+1!3
+1!37
+1!4
+1!39
+1!6
+1!25
+1!7
+1!9
+1!11
+1!38
+1!12
+z!36
+1!5
+1!8
+1!26
+z!24
+z!10
+#810
+1!18
+1!27
+1!4
+1!29
+1!23
+1!20
+1!25
+1!22
+1!28
+1!19
+1!11
+1!12
+z!36
+1!26
+1!21
+z!24
+z!10
+#820
+1!1
+1!27
+1!4
+1!2
+1!30
+1!35
+1!29
+1!32
+1!34
+1!6
+1!31
+1!7
+1!9
+1!28
+1!33
+1!11
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#830
+1!13
+1!4
+1!30
+1!15
+1!17
+1!14
+1!16
+1!11
+1!12
+z!36
+z!24
+z!10
+#840
+1!13
+1!15
+1!17
+1!14
+1!16
+z!36
+z!24
+z!10
+#850
+1!1
+1!27
+1!29
+1!28
+z!36
+z!24
+z!10
+#860
+1!27
+1!4
+1!29
+1!6
+1!7
+1!9
+1!28
+1!11
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#870
+1!1
+1!27
+1!4
+1!29
+1!28
+1!11
+1!12
+z!36
+z!24
+z!10
+#880
+1!3
+1!37
+1!4
+1!39
+1!6
+1!7
+1!9
+1!11
+1!38
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#890
+1!18
+1!3
+1!1
+1!27
+1!4
+1!29
+1!25
+1!28
+1!11
+1!12
+z!36
+1!26
+z!24
+z!10
+#900
+1!1
+1!37
+1!27
+1!29
+1!39
+1!28
+1!38
+z!36
+z!24
+z!10
+#910
+1!27
+1!29
+1!28
+z!36
+z!24
+z!10
+#920
+1!18
+1!1
+1!4
+1!23
+1!20
+1!6
+1!25
+1!7
+1!9
+1!22
+1!19
+1!11
+1!12
+z!36
+1!5
+1!8
+1!26
+1!21
+z!24
+z!10
+#930
+1!1
+1!27
+1!29
+1!28
+z!36
+z!24
+z!10
+#940
+1!1
+1!4
+1!2
+1!30
+1!35
+1!32
+1!34
+1!31
+1!33
+1!11
+1!12
+z!36
+z!24
+z!10
+#950
+1!1
+1!27
+1!13
+1!4
+1!15
+1!17
+1!29
+1!6
+1!7
+1!14
+1!16
+1!9
+1!28
+1!11
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#960
+1!3
+1!30
+z!36
+z!24
+z!10
+#970
+1!13
+1!4
+1!15
+1!17
+1!14
+1!16
+1!11
+1!12
+z!36
+z!24
+z!10
+#980
+1!4
+1!6
+1!7
+1!9
+1!11
+1!12
+z!36
+1!5
+1!8
+z!24
+z!10
+#990
+1!3
+1!37
+1!27
+1!4
+1!29
+1!39
+1!28
+1!11
+1!38
+1!12
+z!36
+z!24
+z!10
+#1000
+z!1
+z!2
+z!3
+z!4
+z!5
+z!6
+z!7
+z!8
+z!9
+z!10
+z!11
+z!12
+z!13
+z!14
+z!15
+z!16
+z!17
+z!18
+z!19
+z!20
+z!21
+z!22
+z!23
+z!24
+z!25
+z!26
+z!27
+z!28
+z!29
+z!30
+z!31
+z!32
+z!33
+z!34
+z!35
+z!36
+z!37
+z!38
+z!39

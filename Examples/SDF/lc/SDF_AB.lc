@@ -1,0 +1,8 @@
+Specification SDF_ab {
+	Clock A B rd_AB
+	[
+		Precedence A <= (max:2) rd_AB
+		repeat rd_AB_del every 2 rd_AB from 1
+		Precedence rd_AB_del < (max:1) B
+	]
+}

@@ -8,13 +8,13 @@ import fr.unice.lightccsl.sat.bdd.BDDSolutionFinder;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
+import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class LcBoundedCausality implements ISpecificationBuilder {
 	static public LcBoundedCausality INSTANCE = new LcBoundedCausality();
 	private LcBoundedCausality () {
 		// SINGLETON
-	}
-	
+	}	
 
 	@Override
 	public void build(ISimpleSpecification simple) {
@@ -28,6 +28,8 @@ public class LcBoundedCausality implements ISpecificationBuilder {
 	};
 	public static void main(String[] args) {
 		String name = "BoundedCausality";
+		
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcBoundedCausality.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}
@@ -35,7 +37,7 @@ public class LcBoundedCausality implements ISpecificationBuilder {
 		StepperUtility exe = new StepperUtility(new BDDSolutionFinder());
 		exe.setParam(StepperUtility.INTERACTIVE, false);
 		exe.setBackend(new fr.unice.lightccsl.html.HtmlVCDBackend());
-		exe.setParam(StepperUtility.NB_STEPS, 10);
+		exe.setParam(StepperUtility.NB_STEPS, 20);
 		exe.treat(name, INSTANCE);
 		
 		STSUtility sts = new STSUtility();

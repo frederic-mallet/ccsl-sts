@@ -1,0 +1,21 @@
+ClockConstraintSystem SDF {
+    imports {
+		import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib" as lib0;
+		import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib" as lib1;
+    }
+    entryBlock main
+
+    Block main {
+		Clock A
+		Clock wr_CB
+		Clock B
+		Clock C
+		Clock wr_AB
+		Clock wr_BC
+		Clock rd_CB
+		Clock rd_AB
+		Clock rd_BC
+
+
+	}
+}

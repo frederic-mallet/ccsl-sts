@@ -8,13 +8,13 @@ import fr.unice.lightccsl.sat.bdd.BDDSolutionFinder;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
+import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class Lcerc20 implements ISpecificationBuilder {
 	static public Lcerc20 INSTANCE = new Lcerc20();
 	private Lcerc20 () {
 		// SINGLETON
-	}
-	
+	}	
 
 	@Override
 	public void build(ISimpleSpecification simple) {
@@ -34,6 +34,8 @@ public class Lcerc20 implements ISpecificationBuilder {
 	};
 	public static void main(String[] args) {
 		String name = "erc20";
+		
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(Lcerc20.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}
@@ -41,7 +43,7 @@ public class Lcerc20 implements ISpecificationBuilder {
 		StepperUtility exe = new StepperUtility(new BDDSolutionFinder());
 		exe.setParam(StepperUtility.INTERACTIVE, false);
 		exe.setBackend(new fr.unice.lightccsl.html.HtmlVCDBackend());
-		exe.setParam(StepperUtility.NB_STEPS, 10);
+		exe.setParam(StepperUtility.NB_STEPS, 20);
 		exe.treat(name, INSTANCE);
 		
 		STSUtility sts = new STSUtility();

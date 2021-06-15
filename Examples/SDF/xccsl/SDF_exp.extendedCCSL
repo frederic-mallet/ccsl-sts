@@ -1,0 +1,45 @@
+ClockConstraintSystem SDF_exp {
+    imports {
+		import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib" as lib0;
+		import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib" as lib1;
+    }
+    entryBlock main
+
+    Block main {
+		Clock A
+		Clock wr_CB
+		Clock B
+		Clock C
+		Clock wr_AB
+		Clock wr_BC
+		Clock rd_CB
+		Clock rd_AB
+		Clock rd_BC
+
+
+        Relation r_0[Causes] (LeftClock -> A, RightClock -> wr_AB)
+        Relation r_1[Precedes] (LeftClock -> wr_AB, RightClock -> rd_AB)
+        Expression rd_AB_del = Periodic(PeriodicBaseClock -> rd_AB,
+			PeriodicPeriod -> two,
+			PeriodicOffset -> two)
+        Relation r_2[Precedes] (LeftClock -> rd_AB_del, RightClock -> B)
+        Expression wr_BC_weight = Periodic(PeriodicBaseClock -> wr_BC,
+			PeriodicPeriod -> two,
+			PeriodicOffset -> zero)
+        Relation r_3[Causes] (LeftClock -> B, RightClock -> wr_BC_weight)
+        Relation r_4[Precedes] (LeftClock -> wr_BC, RightClock -> rd_BC)
+        Expression rd_BC_del = DelayFor(DelayForClockToDelay -> rd_BC,
+			DelayForClockForCounting -> rd_BC,
+			DelayForDelay -> one)
+        Relation r_5[Precedes] (LeftClock -> rd_BC_del, RightClock -> C)
+        Relation r_6[Causes] (LeftClock -> C, RightClock -> wr_CB)
+        Expression rd_CB_delayed = DelayFor(DelayForClockToDelay -> rd_CB,
+			DelayForClockForCounting -> rd_CB,
+			DelayForDelay -> two)
+        Relation r_7[Precedes] (LeftClock -> wr_CB, RightClock -> rd_CB_delayed)
+        Expression rd_CB_del = Periodic(PeriodicBaseClock -> rd_CB,
+			PeriodicPeriod -> two,
+			PeriodicOffset -> two)
+        Relation r_8[Precedes] (LeftClock -> rd_CB_del, RightClock -> B)
+	}
+}

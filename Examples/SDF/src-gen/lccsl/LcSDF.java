@@ -8,6 +8,7 @@ import fr.unice.lightccsl.sat.bdd.BDDSolutionFinder;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
+import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class LcSDF implements ISpecificationBuilder {
 	static public LcSDF INSTANCE = new LcSDF();
@@ -15,13 +16,12 @@ public class LcSDF implements ISpecificationBuilder {
 		// SINGLETON
 	}	
 
-	public void token(ISimpleSpecification simple, int del, String... _c) {
+	public void token(ISimpleSpecification simple, int del, int max, String... _c) {
 		int _i = 0;
 		int _write = _i++;
 		int _read = _i++;
 		
-		simple.delayFor(local(_c[_read], "delayed"), _c[_read], del, -1, null);
-		simple.precedence(_c[_write], local(_c[_read], "delayed"));
+		simple.causality(_c[_write], _c[_read], del, max);
 	}
 
 	public void input(ISimpleSpecification simple, int weight, String... _c) {
@@ -29,8 +29,8 @@ public class LcSDF implements ISpecificationBuilder {
 		int _actor = _i++;
 		int _read = _i++;
 		
-		simple.periodic(local(_c[_read], "del"), _c[_read], weight, weight, -1);
-		simple.precedence(local(_c[_read], "del"), _c[_actor]);
+		simple.periodic(local(_c[_read], "del"), _c[_read], weight, weight-1, -1);
+		simple.precedence(local(_c[_read], "del"), _c[_actor], 0, 1);
 	}
 
 	public void output(ISimpleSpecification simple, int weight, String... _c) {
@@ -39,7 +39,7 @@ public class LcSDF implements ISpecificationBuilder {
 		int _write = _i++;
 		
 		simple.periodic(local(_c[_write], "weight"), _c[_write], weight, 0, -1);
-		simple.causality(_c[_actor], local(_c[_write], "weight"));
+		simple.causality(_c[_actor], local(_c[_write], "weight"), 0, 0);
 	}
 
 	public void arc(ISimpleSpecification simple, int delay, int out, int in, String... _c) {
@@ -50,7 +50,7 @@ public class LcSDF implements ISpecificationBuilder {
 		int _read = _i++;
 		
 		output(simple, out, _c[_source], _c[_write]);
-		token(simple, delay, _c[_write], _c[_read]);
+		token(simple, delay, in, _c[_write], _c[_read]);
 		input(simple, in, _c[_target], _c[_read]);		
 	}
 
@@ -76,6 +76,8 @@ public class LcSDF implements ISpecificationBuilder {
 	};
 	public static void main(String[] args) {
 		String name = "SDF";
+		
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcSDF.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}
@@ -83,7 +85,7 @@ public class LcSDF implements ISpecificationBuilder {
 		StepperUtility exe = new StepperUtility(new BDDSolutionFinder());
 		exe.setParam(StepperUtility.INTERACTIVE, false);
 		exe.setBackend(new fr.unice.lightccsl.html.HtmlVCDBackend());
-		exe.setParam(StepperUtility.NB_STEPS, 10);
+		exe.setParam(StepperUtility.NB_STEPS, 20);
 		exe.treat(name, INSTANCE);
 		
 		STSUtility sts = new STSUtility();
