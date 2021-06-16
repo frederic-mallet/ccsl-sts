@@ -33,7 +33,7 @@ Expressions build new clocks based on existing ones
 - [Union](doc/UnionIntersection.md): The union of n clocks `{c_1, ..., c_n}` ticks if and only if any of the clock **c_i** ticks. 
 - [Intersection](doc/UnionIntersection.md): The intersection of n clocks `{c_1, ..., c_n}` ticks if and only if all the clocks **c_i** tick simultaneously. 
 - [Binary Delay](doc/BinaryDelay.md): This expression is akin of having n buffers in sequence.
-- Ternary Delay: this expression resembles a shift register of size n.
+- [Ternary Delay](doc/TernaryDelay.md): This expression resembles a shift register of size n.
 - Infimum : The infimum of n clocks `{c_1, ..., c_n}` is the slowest clock that is faster than all of the clocks **c_i**.
 - Supremum : The supremum of n clocks `{c_1, ..., c_n}` is the fastest clock that is slower than all of the clocks **c_i**.
  
