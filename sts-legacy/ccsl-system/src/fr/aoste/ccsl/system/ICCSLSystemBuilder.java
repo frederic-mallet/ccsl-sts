@@ -16,7 +16,7 @@ public interface ICCSLSystemBuilder<RESULT> {
 	 */
 	public RESULT getCCSLSystem();
 	
-	public abstract void addLocalClock(String name);
+	public abstract void addClock(String name, boolean local);
 	
 	// --relations
 	public abstract void causes(String left, String right);

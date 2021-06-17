@@ -5,9 +5,8 @@ import fr.aoste.sync.State;
 import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.Transition;
 import fr.aoste.sync.Trigger;
-import fr.aoste.sync.visitor.AstsVisitor;
 
-public class STStoNuSMV extends AstsVisitor<CharSequence> {
+public class STStoNuSMV extends CheckVisitor {
 	private StringBuilder builder = new StringBuilder();
 	private SynchronousTransitionSystem sts;
 	
@@ -32,6 +31,7 @@ public class STStoNuSMV extends AstsVisitor<CharSequence> {
 		builder.append("  next(_state) := case\n");
 		int statepos=0;
 		for(State s : sts.getStates()) {
+			s.accept(this); // only for checkVisitor
 			builder.append("                    _state = ");
 			builder.append(statepos);
 			builder.append(": { ");
@@ -51,12 +51,16 @@ public class STStoNuSMV extends AstsVisitor<CharSequence> {
 		
 		
 		builder.append("DEFINE \n");
+		for (Transition t : sts.getTransitions()) 
+			t.accept(this); // only for diagnostic
+			
 		for(Event e : sts.getEvents()) {
 			boolean assigned = false;
 			String sep="";
 			builder.append("  ").append(e.getName()).append(" := ");
 			for(Transition t: sts.getTransitions()) {
 				if (t.getTrigger().getEvents().contains(e)) {
+					super.visit(e); // only for diagnostic
 					builder.append(sep).append("((_state = ");
 					builder.append(sts.getStates().indexOf(t.getSource()));
 					builder.append(") & (next(_state) = ");
@@ -70,11 +74,14 @@ public class STStoNuSMV extends AstsVisitor<CharSequence> {
 			builder.append(";\n");
 		}
 
+		diagnostic();
+		
 		return builder;
 	}
 
 	@Override
 	public StringBuilder visit(Transition t) {
+		super.visit(t);
 		builder.append("\t  _state=").append(t.getSource().accept(this));
 		visit(t.getTrigger());
 		builder.append(" :\n");

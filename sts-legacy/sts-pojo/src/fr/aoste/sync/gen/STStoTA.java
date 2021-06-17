@@ -6,9 +6,8 @@ import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.Transition;
 import fr.aoste.sync.Trigger;
 import fr.aoste.sync.ta.states.MyLocationFactory;
-import fr.aoste.sync.visitor.AstsVisitor;
 
-public class STStoTA extends AstsVisitor<CharSequence> {
+public class STStoTA extends CheckVisitor {
 	private StringBuilder builder = new StringBuilder();
 	private String tab;
 	private MyLocationFactory factory = new MyLocationFactory();
@@ -27,6 +26,7 @@ public class STStoTA extends AstsVisitor<CharSequence> {
 
 		String sep="bool ";
 		for(Event e : sts.getEvents()) {
+			super.visit(e); // only for diagnostic
 			builder.append(sep).append(e.getName());
 			sep=", ";
 		}
@@ -50,11 +50,15 @@ public class STStoTA extends AstsVisitor<CharSequence> {
 		builder.append("\t\tsystem ").append(sts.getName()).append(";\n");
 		builder.append("\t</system>").append('\n');
 		builder.append("</nta>").append('\n');
+		
+		diagnostic();
+		
 		return builder;
 	}
 
 	@Override
 	public StringBuilder visit(State s) {
+		super.visit(s);
 		builder.append(tab);
 		factory.buildLocation(s, builder);
 		builder.append('\n');
@@ -63,6 +67,8 @@ public class STStoTA extends AstsVisitor<CharSequence> {
 
 	@Override
 	public StringBuilder visit(Transition t) {
+		super.visit(t); // only for diagnostic
+		
 		//<transition><source ref="id9"/><target ref="id1"/><label kind="assignment" x="120" y="128">in1=1,in2=1,step1=1,step2=1,out=0</label><nail x="136" y="128"/><nail x="336" y="128"/></transition>		
 		builder.append(tab);
 		factory.buildTransition(t, builder);
@@ -80,6 +86,7 @@ public class STStoTA extends AstsVisitor<CharSequence> {
 		String sep="";
 		for(Event e : sts.getEvents()) {
 			if (showOneOnly && !trigger.getEvents().contains(e)) continue;
+			super.visit(e); // for diagnostic
 			builder.append(sep);
 			builder.append(e.getName());
 			if(trigger.getEvents().contains(e))

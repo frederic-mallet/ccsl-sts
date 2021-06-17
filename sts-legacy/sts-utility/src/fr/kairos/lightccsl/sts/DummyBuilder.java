@@ -23,7 +23,7 @@ class DummyBuilder implements ICCSLSystemBuilder<SynchronousTransitionSystem> {
 	}
 
 	@Override
-	public void addLocalClock(String name) {
+	public void addClock(String name, boolean local) {
 		// nothing to do
 	}
 

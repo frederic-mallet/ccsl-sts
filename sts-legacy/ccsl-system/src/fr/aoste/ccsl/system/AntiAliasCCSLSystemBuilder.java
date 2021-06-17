@@ -16,8 +16,8 @@ final public class AntiAliasCCSLSystemBuilder<RESULT> implements ICCSLSystemBuil
 	}
 
 	@Override
-	public void addLocalClock(String name) {
-		this.decorated.addLocalClock(name);
+	public void addClock(String name, boolean local) {
+		this.decorated.addClock(name, local);
 	}
 
 	/**

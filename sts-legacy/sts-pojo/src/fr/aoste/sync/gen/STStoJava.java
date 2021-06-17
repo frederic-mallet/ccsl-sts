@@ -9,7 +9,6 @@ import fr.aoste.sync.Event;
 import fr.aoste.sync.State;
 import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.Transition;
-import fr.aoste.sync.visitor.AstsVisitor;
 import fr.aoste.sync.vspec.BooleanExpression;
 import fr.aoste.sync.vspec.Comparison;
 import fr.aoste.sync.vspec.ComparisonOperator;
@@ -26,7 +25,7 @@ import fr.kairos.common.java.JavaElementList;
 import fr.kairos.common.java.PrettyPrintJavaVisitor;
 import fr.kairos.common.java.Statement;
 
-public class STStoJava extends AstsVisitor<CharSequence> {
+public class STStoJava extends CheckVisitor {
 	private ClassBlock javaClass;
 	private JavaElementList createBody;
 	
@@ -77,18 +76,21 @@ public class STStoJava extends AstsVisitor<CharSequence> {
 		PrettyPrintJavaVisitor jv = new PrettyPrintJavaVisitor(sw);
 		javaClass.accept(jv);
 		
+		diagnostic();
 		return sw.getBuffer();
 	}
 
 	private HashMap<String,Integer> eventToIndex = new HashMap<>();
 	@Override
 	public CharSequence visit(Event e) {
+		super.visit(e);
 		createBody.lv("fr.aoste.sync.Event", ev(e)).c(" = helper.createEvent(").s(e.getName()).pc();
 		return null;
 	}
 	private HashMap<State,Integer> stateToIndex = new HashMap<>();
 	@Override
 	public CharSequence visit(State s) {
+		super.visit(s);
 		String stateName = st(s);
 		createBody.lv("fr.aoste.sync.State", stateName).c(" = helper.createState(").s(s.getName()).pc();
 		treat(stateName, s.getInvariant(), "Invariant");
@@ -106,7 +108,9 @@ public class STStoJava extends AstsVisitor<CharSequence> {
 		return "s" + stateToIndex.get(s);
 	}
 	@Override
-	public CharSequence visit(Transition t) {		
+	public CharSequence visit(Transition t) {	
+		super.visit(t);
+		super.visit(t.getTrigger()); // only for diagnostic
 		JavaElementList body = createBody;
 		BooleanExpression guard = t.getGuard();
 		String decl = "";

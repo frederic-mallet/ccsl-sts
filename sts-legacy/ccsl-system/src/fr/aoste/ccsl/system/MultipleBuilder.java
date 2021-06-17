@@ -62,7 +62,7 @@ final public class MultipleBuilder implements ICCSLSystemBuilder<List<Object>>{
 	}
 
 	@Override
-	public void addLocalClock(String name) {
+	public void addClock(String name, boolean local) {
 		// nothing to do ?
 	}
 	@Override

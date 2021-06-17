@@ -4,7 +4,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 import fr.aoste.ccsl.system.ACCSLSystemBuilder;
-import fr.aoste.ccsl.system.AntiAliasCCSLSystemBuilder;
 import fr.aoste.ccsl.system.ICCSLSystemBuilder;
 import fr.aoste.ccsl.system.basic.BasicCCSLSpecification;
 import fr.aoste.ccsl.system.basic.SystemBuilderVisitor;
@@ -27,13 +26,18 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 	private List<Binding> bindings = new LinkedList<>();
 	private List<SynchronousTransitionSystem> systems = new LinkedList<>();
 
-	private List<String> localClocks = new LinkedList<>();
-
+	private LinkedList<String> localClocks = new LinkedList<>();
+	private LinkedList<String> declaredClocks = new LinkedList<>();
+	
 	static public ICCSLSystemBuilder<SynchronousTransitionSystem> buildParallelSystemBuilder() {
-		return new AntiAliasCCSLSystemBuilder<>(new STSSystemBuilder(new ParallelSpecificationComposer()));
+//		return new AntiAliasCCSLSystemBuilder<>(new STSSystemBuilder(new ParallelSpecificationComposer()));
+		// do not need AntiAlias if resolved beforehand
+		return new STSSystemBuilder(new ParallelSpecificationComposer());
 	}
 	static public ICCSLSystemBuilder<SynchronousTransitionSystem> buildSequentialSystemBuilder() {
-		return new AntiAliasCCSLSystemBuilder<>(new STSSystemBuilder(new SequentialSpecificationComposer()));
+//		return new AntiAliasCCSLSystemBuilder<>(new STSSystemBuilder(new SequentialSpecificationComposer()));
+		// do not need AntiAlias if resolved beforehand
+		return new STSSystemBuilder(new SequentialSpecificationComposer());
 	}
 	public STSSystemBuilder() { // Could be made private to avoid problems, but useful when no use of coincides
 		this(new ParallelSpecificationComposer());
@@ -45,8 +49,11 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 	
 	
 	@Override
-	public void addLocalClock(String name) {
-		localClocks.add(name);
+	public void addClock(String name, boolean local) {
+		if (local)
+			localClocks.add(name);
+		else 
+			declaredClocks.add(name);
 	}
 	/* (non-Javadoc)
 	 * @see fr.aoste.sync.compose.ICCSLSpecification#causes(java.lang.String, java.lang.String)
@@ -98,7 +105,7 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 			bindings.add(new Binding(operands[i],  num,  names[i]));
 		}
 		bindings.add(new Binding(der,  num,  "u"));
-		addLocalClock(der);
+		addClock(der, true);
 
 		return der;
 	}
@@ -124,7 +131,7 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 			bindings.add(new Binding(operands[i],  num,  names[i]));
 		}
 		bindings.add(new Binding(der,  num,  "i"));
-		addLocalClock(der);
+		addClock(der, true);
 
 		return der;
 	}
@@ -155,7 +162,7 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 		systems.add(ex.create());
 		bindings.add(new Binding(base, num, base));
 		bindings.add(new Binding(der, num, der));
-		addLocalClock(der);
+		addClock(der, true);
 		return der;
 	}
 	
@@ -166,7 +173,7 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 		bindings.add(new Binding(op1,  num,  C1));
 		bindings.add(new Binding(op2,  num,  C2));
 		bindings.add(new Binding(der, num, DERIVED));
-		addLocalClock(der);
+		addClock(der, true);
 		return der;
 	}
 	private void binRelation(String left, String right, SynchronousTransitionSystem sts) {
@@ -196,6 +203,7 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 	}
 	@Override
 	public SynchronousTransitionSystem getCCSLSystem() {
+		localClocks.removeAll(declaredClocks); // remove all explicitly declared
 		return composer.treat(systems, bindings, localClocks);
 	}
 	@Override

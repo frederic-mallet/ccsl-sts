@@ -23,6 +23,7 @@ class STSAdapter implements ISimpleSpecification {
 	
 	@Override
 	public void addClock(String name) {
+		stsBuilder.addClock(name, false);
 	}
 	
 	@Override
@@ -42,6 +43,12 @@ class STSAdapter implements ISimpleSpecification {
 
 	@Override
 	public void precedence(String left, String right, int min, int max) {
+		if (min > 0) {
+			String left_min = "_" + left + "_" + min;
+			delayFor(left_min, left, min, -1, null);
+			min = 0;
+			left = left_min;
+		}
 		STSBuilder<SynchronousTransitionSystem> builder = CCSLStsFactory.INSTANCE.createPrecedesBuilder(left, right, min, max);
 		stsBuilder.addSpecification(new DummyBuilder(builder.create()));
 	}
@@ -53,6 +60,12 @@ class STSAdapter implements ISimpleSpecification {
 
 	@Override
 	public void causality(String left, String right, int min, int max) {
+		if (min > 0 && max == -1) {
+			String left_min = "_" + left + "_" + min;
+			delayFor(left_min, left, min, -1, null);
+			min = 0;
+			left = left_min;
+		}
 		STSBuilder<SynchronousTransitionSystem> builder = CCSLStsFactory.INSTANCE.createCausesBuilder(left, right, min, max);
 		stsBuilder.addSpecification(new DummyBuilder(builder.create()));
 	}
@@ -84,6 +97,8 @@ class STSAdapter implements ISimpleSpecification {
 
 	@Override
 	public void periodic(String defClock, String ref, int period, int from, int upto) {
+		if (upto != -1)
+			throw new RuntimeException("STS: Unsupported: repeat " + defClock + " every " + period + " " + ref + "$" + " from " + from + " upTo " + upto);
 		stsBuilder.filter(defClock, ref, period, from);
 	}
 
