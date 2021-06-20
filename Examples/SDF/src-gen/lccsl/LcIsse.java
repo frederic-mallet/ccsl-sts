@@ -10,9 +10,9 @@ import fr.kairos.lightccsl.sts.STSUtility;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
 import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
-public class LcSDF implements ISpecificationBuilder {
-	static public LcSDF INSTANCE = new LcSDF();
-	private LcSDF () {
+public class LcIsse implements ISpecificationBuilder {
+	static public LcIsse INSTANCE = new LcIsse();
+	private LcIsse () {
 		// SINGLETON
 	}	
 
@@ -21,7 +21,7 @@ public class LcSDF implements ISpecificationBuilder {
 		int _write = _i++;
 		int _read = _i++;
 		
-		simple.causality(_c[_write], _c[_read], del, max);
+		simple.causality(_c[_write], _c[_read], del, -1);
 	}
 
 	public void input(ISimpleSpecification simple, int weight, String... _c) {
@@ -29,8 +29,8 @@ public class LcSDF implements ISpecificationBuilder {
 		int _actor = _i++;
 		int _read = _i++;
 		
-		simple.periodic(local(_c[_read], "del"), _c[_read], weight, weight-1, -1);
-		simple.precedence(local(_c[_read], "del"), _c[_actor], 0, 1);
+		simple.periodic(_c[_read] + "_" + "del", _c[_read], weight, weight-1, -1);
+		simple.precedence(_c[_read] + "_" + "del", _c[_actor]);
 	}
 
 	public void output(ISimpleSpecification simple, int weight, String... _c) {
@@ -38,20 +38,20 @@ public class LcSDF implements ISpecificationBuilder {
 		int _actor = _i++;
 		int _write = _i++;
 		
-		simple.periodic(local(_c[_write], "weight"), _c[_write], weight, 0, -1);
-		simple.causality(_c[_actor], local(_c[_write], "weight"), 0, 0);
+		simple.periodic(_c[_write] + "_" + "weight", _c[_write], weight, 0, -1);
+		simple.causality(_c[_actor], _c[_write] + "_" + "weight", 0, 0);
 	}
 
 	public void arc(ISimpleSpecification simple, int delay, int out, int in, String... _c) {
 		int _i = 0;
 		int _source = _i++;
 		int _target = _i++;
-		int _write = _i++;
-		int _read = _i++;
+		simple.addClock("read" + "_" + _c[_source] + "_" + _c[_target]);
+		simple.addClock("write" + "_" + _c[_source] + "_" + _c[_target]);
 		
-		output(simple, out, _c[_source], _c[_write]);
-		token(simple, delay, in, _c[_write], _c[_read]);
-		input(simple, in, _c[_target], _c[_read]);		
+		output(simple, out, _c[_source], "write" + "_" + _c[_source] + "_" + _c[_target]);
+		token(simple, delay, in, "write" + "_" + _c[_source] + "_" + _c[_target], "read" + "_" + _c[_source] + "_" + _c[_target]);
+		input(simple, in, _c[_target], "read" + "_" + _c[_source] + "_" + _c[_target]);		
 	}
 
 	@Override
@@ -59,25 +59,18 @@ public class LcSDF implements ISpecificationBuilder {
 		simple.addClock("A");
 		simple.addClock("B");
 		simple.addClock("C");
-		simple.addClock("wr_AB");
-		simple.addClock("rd_AB");
-		simple.addClock("wr_BC");
-		simple.addClock("rd_BC");
-		simple.addClock("wr_CB");
-		simple.addClock("rd_CB");
 		
-		arc(simple, 0, 1, 2, "A", "B", "wr_AB", "rd_AB");
-		arc(simple, 0, 2, 1, "B", "C", "wr_BC", "rd_BC");
-		arc(simple, 2, 1, 2, "C", "B", "wr_CB", "rd_CB");
+		arc(simple, 0, 1, 2, "A", "B");
+		arc(simple, 0, 2, 1, "B", "C");
+		arc(simple, 2, 1, 2, "C", "B");
 	}
-	private static String local(String base, String ext) { return base+"_"+ext; }
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
 	};
 	public static void main(String[] args) {
-		String name = "SDF";
+		String name = "Isse";
 		
-		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcSDF.INSTANCE);
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcIsse.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

@@ -1,0 +1,14 @@
+Specification Isse_exp {
+	Clock A B C read_A_B read_B_C write_B_C read_C_B
+	[
+		Precedence A <= read_A_B
+		repeat read_A_B_del every 2 read_A_B from 1
+		Precedence read_A_B_del < B
+		repeat B every 2 write_B_C
+		Precedence write_B_C <= read_B_C
+		Precedence read_B_C < C
+		Precedence C <= (init:2 ) read_C_B
+		repeat read_C_B_del every 2 read_C_B from 1
+		Precedence read_C_B_del < B
+	]
+}

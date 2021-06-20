@@ -10,9 +10,9 @@ import fr.kairos.lightccsl.sts.STSUtility;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
 import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
-public class LcSDF_exp implements ISpecificationBuilder {
-	static public LcSDF_exp INSTANCE = new LcSDF_exp();
-	private LcSDF_exp () {
+public class LcIsse_v2_exp implements ISpecificationBuilder {
+	static public LcIsse_v2_exp INSTANCE = new LcIsse_v2_exp();
+	private LcIsse_v2_exp () {
 		// SINGLETON
 	}	
 
@@ -21,41 +21,47 @@ public class LcSDF_exp implements ISpecificationBuilder {
 		simple.addClock("A");
 		simple.addClock("B");
 		simple.addClock("C");
-		simple.addClock("rd_AB");
-		simple.addClock("wr_BC");
-		simple.addClock("rd_BC");
-		simple.addClock("rd_CB");
+		simple.addClock("read_A_B");
+		simple.addClock("read_B_A");
+		simple.addClock("write_B_A");
+		simple.addClock("read_B_C");
+		simple.addClock("write_B_C");
+		simple.addClock("read_C_B");
 		
-		simple.causality("A", "rd_AB", 0, 2);
+		simple.causality("A", "read_A_B");
 		
-		simple.periodic("rd_AB_del", "rd_AB", 2, 1, -1);
-		simple.precedence("rd_AB_del", "B", 0, 1);
+		simple.periodic("read_A_B_del", "read_A_B", 2, 1, -1);
+		simple.precedence("read_A_B_del", "B");
 		
-		simple.periodic("B", "wr_BC", 2, 0, -1);
-		simple.causality("wr_BC", "rd_BC", 0, 1);
+		simple.periodic("B", "write_B_A", 2, 0, -1);
+		simple.causality("write_B_A", "read_B_A", 2, -1);
 		
-		simple.precedence("rd_BC", "C", 0, 1);
+		simple.precedence("read_B_A", "A");
 		
-		simple.causality("C", "rd_CB", 2, 2);
+		simple.periodic("B", "write_B_C", 2, 0, -1);
+		simple.causality("write_B_C", "read_B_C");
 		
-		simple.periodic("rd_CB_del", "rd_CB", 2, 1, -1);
-		simple.precedence("rd_CB_del", "B", 0, 1);
+		simple.precedence("read_B_C", "C");
+		
+		simple.causality("C", "read_C_B", 2, -1);
+		
+		simple.periodic("read_C_B_del", "read_C_B", 2, 1, -1);
+		simple.precedence("read_C_B_del", "B");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
 	};
 	public static void main(String[] args) {
-		String name = "SDF_exp";
+		String name = "Isse_v2_exp";
 		
-		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcSDF_exp.INSTANCE);
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcIsse_v2_exp.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}
 		
 		StepperUtility exe = new StepperUtility(new BDDSolutionFinder());
-		exe.setParam(StepperUtility.INTERACTIVE, false);
+		exe.setParam(StepperUtility.INTERACTIVE, true);
 		exe.setBackend(new fr.unice.lightccsl.html.HtmlVCDBackend());
-		exe.setParam(StepperUtility.NB_STEPS, 10);
 		exe.treat(name, INSTANCE);
 		
 		STSUtility sts = new STSUtility();

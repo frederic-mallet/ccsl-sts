@@ -1,0 +1,31 @@
+Specification Isse_v2 
+   def token(Clock write, Clock read, int del, int max) [
+   	 Precedence write <= (init: del) read
+   ]
+   
+   def input(Clock actor, Clock read, int weight) [
+   	 repeat read_del every weight read from weight-1
+   	 Precedence read_del < actor
+   ]
+   
+   def output(Clock actor, Clock write, int weight) [
+   	 repeat write_weight every weight write
+   	 Precedence actor <= (max:0) write_weight
+   ]
+   
+   def arc(Clock source, Clock target, int delay, int out, int in) [
+   	 Clock read_source_target, write_source_target
+   	 
+   	 call output(source, write_source_target)(out)
+   	 call token(write_source_target, read_source_target)(delay, in)
+   	 call input(target,read_source_target)(in)
+   ]
+   
+{
+	Clock A B C [
+		call arc(A, B)(0, 1, 2)
+		call arc(B, A)(2, 2, 1)
+		call arc(B, C)(0, 2, 1)
+		call arc(C, B)(2, 1, 2)
+	]
+}
