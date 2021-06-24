@@ -17,7 +17,7 @@ class AlternatesBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> {
 		String leftName = getStringParameterValue(LEFTCLOCK, "left");
 		String rightName = getStringParameterValue(RIGHTCLOCK, "right");
 		
-		SynchronousTransitionSystem sts = helper.createSynchronousTransitionSystem(leftName+"  ~ "+rightName);
+		SynchronousTransitionSystem sts = helper.createSynchronousTransitionSystem(leftName+" ~ "+rightName);
 
 		Event leftEvent = helper.createEvent(leftName);
 		Event rightEvent = helper.createEvent(rightName);

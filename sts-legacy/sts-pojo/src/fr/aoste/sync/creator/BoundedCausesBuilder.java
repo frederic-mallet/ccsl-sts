@@ -14,15 +14,14 @@ class BoundedCausesBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> 
 
 	@Override
 	public SynchronousTransitionSystem create() {
+		int max = getIntParameterValue(MAX, -1);
+		if (max == -1) throw new RuntimeException("Cannot use BoundedCausesBuilder when max != -1 : " + max);
+		int init = getIntParameterValue(INIT, 0);
+		if (init > max) throw new RuntimeException("Init must not be bigger than max : " + init + "," + max);
+			
 		String leftName = getStringParameterValue(CausesBuilder.LEFTCLOCK, "left");
 		String rightName = getStringParameterValue(CausesBuilder.RIGHTCLOCK, "right");
-		int init = getIntParameterValue(INIT, 0);
-		int max = getIntParameterValue(MAX, -1);
-		if (init == 0 && max == -1) {
-			return new CausesBuilder().create();
-		} else if (max == -1) {
-			throw new RuntimeException("Unsupported unbounded with init " + init);
-		}
+		
 		SynchronousTransitionSystem sts = helper.createSynchronousTransitionSystem(leftName+"<=(" + init + "," + max + ")" + rightName);
 
 		Event leftEvent = helper.createEvent(leftName);
