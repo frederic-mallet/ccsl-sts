@@ -43,9 +43,8 @@ public class Lcscp15_v1b implements ISpecificationBuilder {
 		}
 		
 		StepperUtility exe = new StepperUtility(new BDDSolutionFinder());
-		exe.setParam(StepperUtility.INTERACTIVE, false);
+		exe.setParam(StepperUtility.INTERACTIVE, true);
 		exe.setBackend(new fr.unice.lightccsl.html.HtmlVCDBackend());
-		exe.setParam(StepperUtility.NB_STEPS, 20);
 		exe.treat(name, INSTANCE);
 		
 		STSUtility sts = new STSUtility();

@@ -20,8 +20,10 @@ public class Lcprec implements ISpecificationBuilder {
 	public void build(ISimpleSpecification simple) {
 		simple.addClock("a");
 		simple.addClock("b");
+		simple.addClock("c");
 		
 		simple.precedence("a", "b");
+		simple.causality("b", "c");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
@@ -35,9 +37,8 @@ public class Lcprec implements ISpecificationBuilder {
 		}
 		
 		StepperUtility exe = new StepperUtility(new BDDSolutionFinder());
-		exe.setParam(StepperUtility.INTERACTIVE, false);
+		exe.setParam(StepperUtility.INTERACTIVE, true);
 		exe.setBackend(new fr.unice.lightccsl.html.HtmlVCDBackend());
-		exe.setParam(StepperUtility.NB_STEPS, 20);
 		exe.treat(name, INSTANCE);
 		
 		STSUtility sts = new STSUtility();
