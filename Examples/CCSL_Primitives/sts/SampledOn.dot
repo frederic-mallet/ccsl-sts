@@ -1,0 +1,23 @@
+digraph SampledOn { 
+  rankdir="LR"
+  s0 [ shape="doublecircle" ]
+  s0->s0 [
+    label= "s"
+  ] ;
+  s0->s1 [
+    label= "b.s"
+  ] ;
+  s0->s1 [
+    label= "b"
+  ] ;
+  s1->s1 [
+    label= "b"
+  ] ;
+  s1->s0 [
+    label= "a.s"
+  ] ;
+  s1->s0 [
+    label= "a.b.s"
+  ] ;
+}
+
