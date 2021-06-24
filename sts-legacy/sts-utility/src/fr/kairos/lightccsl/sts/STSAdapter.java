@@ -43,12 +43,6 @@ class STSAdapter implements ISimpleSpecification {
 
 	@Override
 	public void precedence(String left, String right, int min, int max) {
-		if (min > 0) {
-			String left_min = "_" + left + "_" + min;
-			delayFor(left_min, left, min, -1, null);
-			min = 0;
-			left = left_min;
-		}
 		STSBuilder<SynchronousTransitionSystem> builder = CCSLStsFactory.INSTANCE.createPrecedesBuilder(left, right, min, max);
 		stsBuilder.addSpecification(new DummyBuilder(builder.create()));
 	}
@@ -60,12 +54,6 @@ class STSAdapter implements ISimpleSpecification {
 
 	@Override
 	public void causality(String left, String right, int min, int max) {
-		if (min > 0 && max == -1) {
-			String left_min = "_" + left + "_" + min;
-			delayFor(left_min, left, min, -1, null);
-			min = 0;
-			left = left_min;
-		}
 		STSBuilder<SynchronousTransitionSystem> builder = CCSLStsFactory.INSTANCE.createCausesBuilder(left, right, min, max);
 		stsBuilder.addSpecification(new DummyBuilder(builder.create()));
 	}

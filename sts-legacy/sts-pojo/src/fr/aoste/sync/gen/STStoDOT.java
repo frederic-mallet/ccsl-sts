@@ -10,11 +10,22 @@ public class STStoDOT extends CheckVisitor {
 	private StringBuilder builder = new StringBuilder();
 	private SynchronousTransitionSystem sts;
 	
+	private String cleanId(String id) {
+		id = id.replaceAll(" ", "_");
+		id = id.replaceAll("<", "less");
+		id = id.replaceAll("~", "alt");
+		id = id.replaceAll(">", "more");
+		id = id.replaceAll("=", "eq");
+		id = id.replaceAll("\\(", "_");
+		id = id.replaceAll("\\)", "_");
+		id = id.replaceAll(",", "_");
+		return id;
+	}
 	@Override
 	public StringBuilder visit(SynchronousTransitionSystem sts) {
 		this.sts = sts;
 
-		builder.append("digraph ").append(sts.getName()).append(" { \n");
+		builder.append("digraph ").append(cleanId(sts.getName())).append(" { \n");
 		builder.append("  rankdir=\"LR\"\n");
 		builder.append("  s").append(sts.getStates().indexOf(sts.getInitial())).append(" [ shape=\"doublecircle\" ]\n");
 		for(Event e : sts.getEvents()) { e.accept(this); } // only for CheckVisitor
@@ -23,9 +34,11 @@ public class STStoDOT extends CheckVisitor {
 			t.accept(this);
 		}
 		builder.append("}\n");
-
+		
+		StringBuilder res = builder;
+		builder = new StringBuilder(); // clean for the next one
 		diagnostic();
-		return builder;
+		return res;
 	}
 
 	@Override

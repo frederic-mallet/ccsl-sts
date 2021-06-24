@@ -138,6 +138,7 @@ final public class CTSHelper implements Iterable<SynchronousTransitionSystem>, I
 			}
 			cannot |= map.xor(i, may[i]);				
 		}
+		if (cannot == 0) return;
 		boolean hasChanged = false;
 		// remove transitions that cannot tick anyway
 		for (int i = 0; i<list.length; i++) {
