@@ -1,4 +1,4 @@
-Specification Isse 
+Specification Isse
    def token(Clock write, Clock read, int del, int max) [
    	 Precedence write <= (init: del) read
    ]

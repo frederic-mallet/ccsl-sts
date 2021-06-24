@@ -6,8 +6,9 @@ import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.Transition;
 import fr.aoste.sync.Trigger;
 import fr.aoste.sync.ta.states.MyLocationFactory;
+import fr.aoste.sync.visitor.AstsVisitor;
 
-public class STStoTA extends CheckVisitor {
+public class STStoTA extends AstsVisitor<CharSequence> {
 	private StringBuilder builder = new StringBuilder();
 	private String tab;
 	private MyLocationFactory factory = new MyLocationFactory();
@@ -50,8 +51,6 @@ public class STStoTA extends CheckVisitor {
 		builder.append("\t\tsystem ").append(sts.getName()).append(";\n");
 		builder.append("\t</system>").append('\n');
 		builder.append("</nta>").append('\n');
-		
-		diagnostic();
 		
 		return builder;
 	}

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2017,2018 I3S laboratory, INRIA and others.
+ * Copyright (c) 2017,2018,2019,2020,2021 I3S laboratory, INRIA and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -13,6 +13,7 @@ package fr.kairos.lightccsl.sts;
 import fr.aoste.ccsl.system.ICCSLSystemBuilder;
 import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.compose.STSSystemBuilder;
+import fr.aoste.sync.gen.CheckVisitor;
 import fr.aoste.sync.visitor.AstsVisitor;
 import fr.kairos.lightccsl.core.stepper.StepperUtility;
 import fr.kairos.timesquare.ccsl.simple.AUtility;
@@ -31,7 +32,7 @@ import fr.kairos.timesquare.ccsl.simple.IUtility;
  */
 public class STSUtility extends AUtility implements IUtility {
 	private ISTSBackend<?> backend = null;
-
+	private static final String STATS = "stats";
 	@Override
 	public void treat(String name, ISpecificationBuilder specBuilder) {
 		ICCSLSystemBuilder<SynchronousTransitionSystem> sBuilder = STSSystemBuilder.buildParallelSystemBuilder();
@@ -39,6 +40,9 @@ public class STSUtility extends AUtility implements IUtility {
 		specBuilder.build(builder);
 		SynchronousTransitionSystem sts = sBuilder.getCCSLSystem();
 		sts.setName(name);
+		if (getBooleanParam(STATS, true)) {
+			CheckVisitor.check(sts);
+		}
 		if (backend != null) {
 			backend.treat(this, sts, name);
 		}

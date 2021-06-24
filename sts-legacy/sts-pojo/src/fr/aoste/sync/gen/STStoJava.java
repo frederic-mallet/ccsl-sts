@@ -9,6 +9,7 @@ import fr.aoste.sync.Event;
 import fr.aoste.sync.State;
 import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.Transition;
+import fr.aoste.sync.visitor.AstsVisitor;
 import fr.aoste.sync.vspec.BooleanExpression;
 import fr.aoste.sync.vspec.Comparison;
 import fr.aoste.sync.vspec.ComparisonOperator;
@@ -25,7 +26,7 @@ import fr.kairos.common.java.JavaElementList;
 import fr.kairos.common.java.PrettyPrintJavaVisitor;
 import fr.kairos.common.java.Statement;
 
-public class STStoJava extends CheckVisitor {
+public class STStoJava extends AstsVisitor<CharSequence> {
 	private ClassBlock javaClass;
 	private JavaElementList createBody;
 	
@@ -76,7 +77,6 @@ public class STStoJava extends CheckVisitor {
 		PrettyPrintJavaVisitor jv = new PrettyPrintJavaVisitor(sw);
 		javaClass.accept(jv);
 		
-		diagnostic();
 		return sw.getBuffer();
 	}
 

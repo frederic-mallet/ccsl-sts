@@ -5,13 +5,16 @@ import fr.aoste.sync.State;
 import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.Transition;
 import fr.aoste.sync.Trigger;
+import fr.aoste.sync.visitor.AstsVisitor;
 
-public class STStoNuSMV extends CheckVisitor {
+public class STStoNuSMV extends AstsVisitor<CharSequence> {
 	private StringBuilder builder = new StringBuilder();
 	private SynchronousTransitionSystem sts;
 	
 	@Override
 	public StringBuilder visit(SynchronousTransitionSystem sts) {
+		CheckVisitor.check(sts);
+		
 		this.sts = sts;
 
 		builder.append("MODULE main\n");//").append(sts.getName()).append('\n');
@@ -73,8 +76,6 @@ public class STStoNuSMV extends CheckVisitor {
 			if (!assigned) builder.append("FALSE");
 			builder.append(";\n");
 		}
-
-		diagnostic();
 		
 		return builder;
 	}

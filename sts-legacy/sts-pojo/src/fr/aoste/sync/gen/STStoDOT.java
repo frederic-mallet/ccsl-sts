@@ -5,8 +5,9 @@ import fr.aoste.sync.State;
 import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.Transition;
 import fr.aoste.sync.Trigger;
+import fr.aoste.sync.visitor.AstsVisitor;
 
-public class STStoDOT extends CheckVisitor {
+public class STStoDOT extends AstsVisitor<CharSequence> {
 	private StringBuilder builder = new StringBuilder();
 	private SynchronousTransitionSystem sts;
 	
@@ -37,7 +38,6 @@ public class STStoDOT extends CheckVisitor {
 		
 		StringBuilder res = builder;
 		builder = new StringBuilder(); // clean for the next one
-		diagnostic();
 		return res;
 	}
 

@@ -1,3 +1,5 @@
+// Nb states: 1550
+// Nb transitions: 63198
 Specification Isse_v2 
    def token(Clock write, Clock read, int del, int max) [
    	 Precedence write <= (init: del) read
