@@ -42,8 +42,9 @@ public class LcSMmodes implements ISpecificationBuilder {
 		}
 		
 		StepperUtility exe = new StepperUtility(new BDDSolutionFinder());
-		exe.setParam(StepperUtility.INTERACTIVE, true);
+		exe.setParam(StepperUtility.INTERACTIVE, false);
 		exe.setBackend(new fr.unice.lightccsl.html.HtmlVCDBackend());
+		exe.setParam(StepperUtility.NB_STEPS, 20);
 		exe.treat(name, INSTANCE);
 		
 		STSUtility sts = new STSUtility();

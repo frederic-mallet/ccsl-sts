@@ -1,3 +1,7 @@
+// Nb states: 326
+// Nb transitions: 8042
+// Nb of guards: 6996
+// No soft lock!
 Specification Isse
    def token(Clock write, Clock read, int del, int max) [
    	 Precedence write <= (init: del) read
