@@ -189,4 +189,11 @@ final public class CCSLStsFactory implements ICCSLStsFactory<SynchronousTransiti
 		builder.setParameterValue(BoundedCausesBuilder.MAX, max);
 		return builder;
 	}
+	public STSBuilder<SynchronousTransitionSystem> createSampledBuilder(String derived, String ref, String base) {
+		SampledOnBuilder builder = new SampledOnBuilder();
+		builder.setParameterValue(SampledOnBuilder.DERIVED, derived);
+		builder.setParameterValue(SampledOnBuilder.REF, ref);
+		builder.setParameterValue(SampledOnBuilder.BASE, base);
+		return builder;
+	}
 }
