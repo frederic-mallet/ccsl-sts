@@ -1,6 +1,6 @@
 Specification simple {
-	Clock approve, transferFrom, allowance, clock [	
+	Clock approve, transferFrom, allowance [	
 		Precedence approve < transferFrom < allowance
-		Exclusion clock # approve
+		Exclusion transferFrom # approve # allowance
 	]
 }

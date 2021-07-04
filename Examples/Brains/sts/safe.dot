@@ -11,7 +11,7 @@ digraph safe {
     label= "transferFrom"
   ] ;
   s2->s4 [
-    label= "transferFrom"
+    color = "red"label= "transferFrom"
   ] ;
   s2->s5 [
     label= "transferFrom"
@@ -23,7 +23,7 @@ digraph safe {
     label= "allowance"
   ] ;
   s4->s7 [
-    label= "allowance"
+    color = "red"label= "allowance"
   ] ;
   s4->s8 [
     label= "allowance"
@@ -32,7 +32,7 @@ digraph safe {
     label= "transferFrom"
   ] ;
   s5->s5 [
-    label= "transferFrom"
+    color = "red"label= "transferFrom"
   ] ;
   s5->s9 [
     label= "allowance"
@@ -41,7 +41,7 @@ digraph safe {
     label= "approve"
   ] ;
   s7->s2 [
-    label= "approve.two_safe"
+    color = "red"label= "approve.two_safe"
   ] ;
   s7->s9 [
     label= "approve.two_safe"
@@ -53,13 +53,13 @@ digraph safe {
     label= "allowance"
   ] ;
   s8->s8 [
-    label= "allowance"
+    color = "red"label= "allowance"
   ] ;
   s9->s2 [
     label= "approve.two_safe"
   ] ;
   s9->s9 [
-    label= "approve.two_safe"
+    color = "red"label= "approve.two_safe"
   ] ;
   s9->s8 [
     label= "transferFrom"

@@ -1,0 +1,17 @@
+digraph seq { 
+  rankdir="LR"
+  s0 [ shape="doublecircle" ]
+  s0->s1 [
+    label= "approve"
+  ] ;
+  s1->s2 [
+    label= "transferFrom"
+  ] ;
+  s2->s3 [
+    label= "allowance"
+  ] ;
+  s3->s1 [
+    label= "approve"
+  ] ;
+}
+

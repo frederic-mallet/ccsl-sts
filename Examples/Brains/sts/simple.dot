@@ -1,0 +1,41 @@
+digraph simple { 
+  rankdir="LR"
+  s0 [ shape="doublecircle" ]
+  s0->s1 [
+    label= "approve"
+  ] ;
+  s1->s2 [
+    color = "red"label= "transferFrom"
+  ] ;
+  s1->s3 [
+    color = "red"label= "transferFrom"
+  ] ;
+  s1->s1 [
+    label= "approve"
+  ] ;
+  s2->s3 [
+    label= "approve"
+  ] ;
+  s2->s0 [
+    color = "red"label= "allowance"
+  ] ;
+  s2->s2 [
+    color = "red"label= "allowance"
+  ] ;
+  s3->s2 [
+    color = "red"label= "transferFrom"
+  ] ;
+  s3->s3 [
+    color = "red"label= "transferFrom"
+  ] ;
+  s3->s3 [
+    label= "approve"
+  ] ;
+  s3->s1 [
+    color = "red"label= "allowance"
+  ] ;
+  s3->s3 [
+    color = "red"label= "allowance"
+  ] ;
+}
+
