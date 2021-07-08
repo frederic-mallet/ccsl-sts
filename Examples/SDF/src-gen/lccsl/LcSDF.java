@@ -29,8 +29,8 @@ public class LcSDF implements ISpecificationBuilder {
 		int _actor = _i++;
 		int _read = _i++;
 		
-		simple.periodic(_c[_read] + "_" + "del", _c[_read], weight, weight-1, -1);
-		simple.precedence(_c[_read] + "_" + "del", _c[_actor], 0, 1);
+		simple.periodic(local(_c[_read], "del"), _c[_read], weight, weight-1, -1);
+		simple.precedence(local(_c[_read], "del"), _c[_actor], 0, 1);
 	}
 
 	public void output(ISimpleSpecification simple, int weight, String... _c) {
@@ -38,8 +38,8 @@ public class LcSDF implements ISpecificationBuilder {
 		int _actor = _i++;
 		int _write = _i++;
 		
-		simple.periodic(_c[_write] + "_" + "weight", _c[_write], weight, 0, -1);
-		simple.causality(_c[_actor], _c[_write] + "_" + "weight", 0, 0);
+		simple.periodic(local(_c[_write], "weight"), _c[_write], weight, 0, -1);
+		simple.causality(_c[_actor], local(_c[_write], "weight"), 0, 0);
 	}
 
 	public void arc(ISimpleSpecification simple, int delay, int out, int in, String... _c) {
@@ -70,6 +70,7 @@ public class LcSDF implements ISpecificationBuilder {
 		arc(simple, 0, 2, 1, "B", "C", "wr_BC", "rd_BC");
 		arc(simple, 2, 1, 2, "C", "B", "wr_CB", "rd_CB");
 	}
+	private static String local(String base, String ext) { return base+"_"+ext; }
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
 	};
@@ -82,9 +83,8 @@ public class LcSDF implements ISpecificationBuilder {
 		}
 		
 		StepperUtility exe = new StepperUtility(new BDDSolutionFinder());
-		exe.setParam(StepperUtility.INTERACTIVE, false);
+		exe.setParam(StepperUtility.INTERACTIVE, true);
 		exe.setBackend(new fr.unice.lightccsl.html.HtmlVCDBackend());
-		exe.setParam(StepperUtility.NB_STEPS, 20);
 		exe.treat(name, INSTANCE);
 		
 		STSUtility sts = new STSUtility();

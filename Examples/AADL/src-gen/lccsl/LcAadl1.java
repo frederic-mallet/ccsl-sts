@@ -8,6 +8,7 @@ import fr.unice.lightccsl.sat.bdd.BDDSolutionFinder;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
+import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class LcAadl1 implements ISpecificationBuilder {
 	static public LcAadl1 INSTANCE = new LcAadl1();
@@ -33,14 +34,15 @@ public class LcAadl1 implements ISpecificationBuilder {
 	};
 	public static void main(String[] args) {
 		String name = "Aadl1";
+		
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcAadl1.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}
 		
 		StepperUtility exe = new StepperUtility(new BDDSolutionFinder());
-		exe.setParam(StepperUtility.INTERACTIVE, false);
+		exe.setParam(StepperUtility.INTERACTIVE, true);
 		exe.setBackend(new fr.unice.lightccsl.html.HtmlVCDBackend());
-		exe.setParam(StepperUtility.NB_STEPS, 10);
 		exe.treat(name, INSTANCE);
 		
 		STSUtility sts = new STSUtility();
