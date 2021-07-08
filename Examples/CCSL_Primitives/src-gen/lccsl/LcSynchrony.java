@@ -10,9 +10,9 @@ import fr.kairos.lightccsl.sts.STSUtility;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
 import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
-public class Lcsubclocking implements ISpecificationBuilder {
-	static public Lcsubclocking INSTANCE = new Lcsubclocking();
-	private Lcsubclocking () {
+public class LcSynchrony implements ISpecificationBuilder {
+	static public LcSynchrony INSTANCE = new LcSynchrony();
+	private LcSynchrony () {
 		// SINGLETON
 	}	
 
@@ -20,18 +20,18 @@ public class Lcsubclocking implements ISpecificationBuilder {
 	public void build(ISimpleSpecification simple) {
 		simple.addClock("a");
 		simple.addClock("b");
-		simple.addClock("c");
 		
 		simple.subclock("a", "b");
-		simple.subclock("b", "c");
+		
+		simple.subclock("b", "a");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
 	};
 	public static void main(String[] args) {
-		String name = "subclocking";
+		String name = "Synchrony";
 		
-		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(Lcsubclocking.INSTANCE);
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcSynchrony.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

@@ -23,8 +23,8 @@ The relations of CCSL constrains the logical clocks by defining instants where c
 - [Precedence](doc/Precedence.md): It makes sure that a clock ticks faster than another one.
 - [Causality](doc/causality.md): When an event causes another one or one depends on an earlier one.
 - [Subclock](doc/subclock.md): Forces a clock to tick only when another (super) clock ticks.
-- Synchrony: When a is a subclock of b and b a subclock of a, then a and b are synchronous. When a causes b and b causes a then a and b are also synchronous.
-- Exclusion: Forbids n clocks to tick simultaneously pair-wise.
+- [Synchrony](doc/Synchrony.md): When a is a subclock of b and b a subclock of a, then a and b are synchronous. When a causes b and b causes a then a and b are also synchronous.
+- [Exclusion](doc/Exclusion.md): Forbids n clocks to tick simultaneously pair-wise.
 
 ## Expressions
 

@@ -1,0 +1,8 @@
+digraph Synchrony { 
+  rankdir="LR"
+  s0 [ shape="doublecircle" ]
+  s0->s0 [
+    label= "a.b"
+  ] ;
+}
+

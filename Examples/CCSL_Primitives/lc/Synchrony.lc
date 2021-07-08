@@ -1,0 +1,7 @@
+Specification Synchrony {
+	Clock a b
+	[
+		SubClocking a <- b
+		SubClocking b <- a
+	]
+}
