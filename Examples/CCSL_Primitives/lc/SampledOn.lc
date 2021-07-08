@@ -1,6 +1,6 @@
 Specification SampledOn {
 	Clock a b s
 	[
-	    Let a be b sampledOn s	
+	    a = b sampledOn s	
 	]
 }
