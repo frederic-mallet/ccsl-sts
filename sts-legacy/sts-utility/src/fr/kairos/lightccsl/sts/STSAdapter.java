@@ -92,7 +92,7 @@ class STSAdapter implements ISimpleSpecification {
 
 	@Override
 	public void delayFor(String defClock, String ref, int from, int upTo, String base) {
-		if (base != null && from ==1) {
+		if (base != null && from == 0) {
 			sampledOn(defClock, ref, base);
 			return;
 		}
