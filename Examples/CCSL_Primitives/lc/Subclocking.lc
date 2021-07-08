@@ -1,6 +1,6 @@
-Specification prec {
+Specification subclocking {
 	Clock a b c
 	[
-		Precedence a < b <= c
+		SubClocking a <- b <- c
 	]
 }
