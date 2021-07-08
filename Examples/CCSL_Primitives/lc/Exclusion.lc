@@ -1,0 +1,6 @@
+Specification Excludes {
+	Clock a b c d
+	[
+		Exclusion a # b # c
+	]
+}
