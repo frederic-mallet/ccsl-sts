@@ -3,8 +3,7 @@ package lccsl;
 import fr.kairos.timesquare.ccsl.ISimpleSpecification;
 import fr.kairos.timesquare.ccsl.simple.IUtility;
 import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
-import fr.kairos.lightccsl.core.stepper.StepperUtility;
-import fr.unice.lightccsl.sat.bdd.BDDSolutionFinder;
+import fr.kairos.lightccsl.sts.STSJavaBackend;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
@@ -29,8 +28,8 @@ public class LcSDF implements ISpecificationBuilder {
 		int _actor = _i++;
 		int _read = _i++;
 		
-		simple.periodic(local(_c[_read], "del"), _c[_read], weight, weight-1, -1);
-		simple.precedence(local(_c[_read], "del"), _c[_actor], 0, 1);
+		simple.periodic(_c[_read] + "_" + "del", _c[_read], weight, weight-1, -1);
+		simple.precedence(_c[_read] + "_" + "del", _c[_actor], 0, 1);
 	}
 
 	public void output(ISimpleSpecification simple, int weight, String... _c) {
@@ -38,11 +37,11 @@ public class LcSDF implements ISpecificationBuilder {
 		int _actor = _i++;
 		int _write = _i++;
 		
-		simple.periodic(local(_c[_write], "weight"), _c[_write], weight, 0, -1);
-		simple.causality(_c[_actor], local(_c[_write], "weight"), 0, 0);
+		simple.periodic(_c[_write] + "_" + "weight", _c[_write], weight, 0, -1);
+		simple.causality(_c[_actor], _c[_write] + "_" + "weight", 0, 0);
 	}
 
-	public void arc(ISimpleSpecification simple, int delay, int out, int in, String... _c) {
+	public void arc(ISimpleSpecification simple, int del, int out, int in, String... _c) {
 		int _i = 0;
 		int _source = _i++;
 		int _target = _i++;
@@ -50,7 +49,7 @@ public class LcSDF implements ISpecificationBuilder {
 		int _read = _i++;
 		
 		output(simple, out, _c[_source], _c[_write]);
-		token(simple, delay, in, _c[_write], _c[_read]);
+		token(simple, del, in, _c[_write], _c[_read]);
 		input(simple, in, _c[_target], _c[_read]);		
 	}
 
@@ -70,7 +69,6 @@ public class LcSDF implements ISpecificationBuilder {
 		arc(simple, 0, 2, 1, "B", "C", "wr_BC", "rd_BC");
 		arc(simple, 2, 1, 2, "C", "B", "wr_CB", "rd_CB");
 	}
-	private static String local(String base, String ext) { return base+"_"+ext; }
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
 	};
@@ -81,17 +79,13 @@ public class LcSDF implements ISpecificationBuilder {
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}
-		
-		StepperUtility exe = new StepperUtility(new BDDSolutionFinder());
-		exe.setParam(StepperUtility.INTERACTIVE, true);
-		exe.setBackend(new fr.unice.lightccsl.html.HtmlVCDBackend());
-		exe.treat(name, INSTANCE);
+		// no execution
 		
 		STSUtility sts = new STSUtility();
 		//ChocoInvariantHelper.activate(); // to reduce STS
 		JalinoptInvariantHelper.activate(); // to reduce STS
-		sts.setBackend(new fr.aoste.sync.gen.STStoDOT(), ".dot");
-		sts.setParam("folderName", "sts");
+		sts.setBackend(new STSJavaBackend());
+		sts.setParam("folderName", "src-gen/sts");
 		sts.treat(name, INSTANCE);
 	}
 }

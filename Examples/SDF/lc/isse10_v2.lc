@@ -15,11 +15,11 @@ Specification Isse_v2
    	 Precedence actor <= (max:0) write_weight
    ]
    
-   def arc(Clock source, Clock target, int delay, int out, int in) [
+   def arc(Clock source, Clock target, int del, int out, int in) [
    	 Clock read_source_target, write_source_target
    	 
    	 call output(source, write_source_target)(out)
-   	 call token(write_source_target, read_source_target)(delay, in)
+   	 call token(write_source_target, read_source_target)(del, in)
    	 call input(target,read_source_target)(in)
    ]
    

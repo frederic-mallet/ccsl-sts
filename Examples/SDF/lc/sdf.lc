@@ -17,9 +17,9 @@ Specification SDF
    	 Precedence actor <= (max:0) write_weight
    ]
    
-   def arc(Clock source, Clock target, Clock write, Clock read, int delay, int out, int in) [
+   def arc(Clock source, Clock target, Clock write, Clock read, int del, int out, int in) [
    	 call output(source, write)(out)
-   	 call token(write, read)(delay, in)
+   	 call token(write, read)(del, in)
    	 call input(target,read)(in)
    ]
    

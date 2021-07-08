@@ -19,10 +19,8 @@ public class Lcprec implements ISpecificationBuilder {
 	public void build(ISimpleSpecification simple) {
 		simple.addClock("a");
 		simple.addClock("b");
-		simple.addClock("c");
 		
 		simple.precedence("a", "b");
-		simple.causality("b", "c");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
