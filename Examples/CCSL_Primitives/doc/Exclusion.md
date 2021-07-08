@@ -4,7 +4,7 @@
 
 ## Exclusion
 
-[src](../lc/Exclusion.lc) [simul](../vcd/Exclusion.html)
+[src](../lc/Exclusion.lc) [simul](../vcd/Excludes.html)
 
 - **Exclusion** forbids n clocks to tick simultaneously pair-wise.
 

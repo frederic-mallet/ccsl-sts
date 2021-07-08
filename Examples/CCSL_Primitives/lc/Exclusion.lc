@@ -1,5 +1,5 @@
 Specification Excludes {
-	Clock a b c d
+	Clock a b c
 	[
 		Exclusion a # b # c
 	]

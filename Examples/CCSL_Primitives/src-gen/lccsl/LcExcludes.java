@@ -21,7 +21,6 @@ public class LcExcludes implements ISpecificationBuilder {
 		simple.addClock("a");
 		simple.addClock("b");
 		simple.addClock("c");
-		simple.addClock("d");
 		
 		simple.exclusion("a", "b");
 		simple.exclusion("a", "c");
