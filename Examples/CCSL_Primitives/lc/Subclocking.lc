@@ -1,0 +1,6 @@
+Specification prec {
+	Clock a b c
+	[
+		Precedence a < b <= c
+	]
+}

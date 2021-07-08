@@ -1,0 +1,10 @@
+digraph {
+  "a";
+  "b";
+  "c";
+a -> b["color"="blue", "arrowhead"="onormal"]
+b -> a
+b -> c["color"="blue", "arrowhead"="onormal"]
+c -> b
+
+}
