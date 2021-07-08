@@ -1,5 +1,14 @@
 digraph Excludes { 
   rankdir="LR"
-  s-1 [ shape="doublecircle" ]
+  s0 [ shape="doublecircle" ]
+  s0->s0 [
+    label= "a"
+  ] ;
+  s0->s0 [
+    label= "b"
+  ] ;
+  s0->s0 [
+    label= "c"
+  ] ;
 }
 

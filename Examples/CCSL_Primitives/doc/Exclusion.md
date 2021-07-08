@@ -10,6 +10,6 @@
 
 
 <center>
-<img alt="subclocking" src="../sts/subclocking.png" height="200"/><br>
+<img alt="excludes" src="../sts/Excludes.png" height="200"/><br>
 <strong>a # b # c</strong> 
 </center>
