@@ -1,0 +1,5 @@
+Specification TernaryDelay1 {
+	Clock a, sec [
+		b = a $ 1 on sec
+	]
+}

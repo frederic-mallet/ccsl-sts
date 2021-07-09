@@ -8,9 +8,9 @@ import fr.kairos.lightccsl.sts.STSUtility;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
 import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
-public class LcTernaryDelay implements ISpecificationBuilder {
-	static public LcTernaryDelay INSTANCE = new LcTernaryDelay();
-	private LcTernaryDelay () {
+public class LcTernaryDelay2 implements ISpecificationBuilder {
+	static public LcTernaryDelay2 INSTANCE = new LcTernaryDelay2();
+	private LcTernaryDelay2 () {
 		// SINGLETON
 	}	
 
@@ -19,15 +19,15 @@ public class LcTernaryDelay implements ISpecificationBuilder {
 		simple.addClock("a");
 		simple.addClock("sec");
 		
-		simple.delayFor("b", "a", 5, -1, "sec");
+		simple.delayFor("b", "a", 2, -1, "sec");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
 	};
 	public static void main(String[] args) {
-		String name = "TernaryDelay";
+		String name = "TernaryDelay2";
 		
-		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcTernaryDelay.INSTANCE);
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcTernaryDelay2.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

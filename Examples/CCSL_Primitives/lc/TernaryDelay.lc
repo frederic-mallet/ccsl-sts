@@ -1,5 +1,5 @@
 Specification TernaryDelay {
 	Clock a, sec [
-		b = a $ 5 on sec
+		Let b be a $ 5 on sec
 	]
 }
