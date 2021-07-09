@@ -150,6 +150,7 @@ public class CheckVisitor implements IstsVisitor<int[]> {
 		if (!events.isEmpty()) {
 			System.err.print("Some clocks are never used:");
 			for (Event ev : events) System.out.print(" " + ev.getName());
+			System.out.println();
 		}
 		return statistics;
 	}

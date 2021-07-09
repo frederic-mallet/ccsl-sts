@@ -1,0 +1,41 @@
+digraph TernaryDelay1 { 
+  rankdir="LR"
+  s0 [ shape="doublecircle" ]
+  s0->s0 [
+    label= "sec"
+  ] ;
+  s0->s1 [
+    label= "a"
+  ] ;
+  s0->s1 [
+    label= "a.sec"
+  ] ;
+  s1->s1 [
+    label= "a"
+  ] ;
+  s1->s2 [
+    label= "sec"
+  ] ;
+  s1->s3 [
+    label= "a.sec"
+  ] ;
+  s2->s3 [
+    label= "a"
+  ] ;
+  s2->s0 [
+    label= "sec.b"
+  ] ;
+  s2->s1 [
+    label= "a.sec.b"
+  ] ;
+  s3->s3 [
+    label= "a"
+  ] ;
+  s3->s2 [
+    label= "sec.b"
+  ] ;
+  s3->s3 [
+    label= "a.sec.b"
+  ] ;
+}
+

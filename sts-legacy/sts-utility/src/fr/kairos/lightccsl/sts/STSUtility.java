@@ -10,7 +10,6 @@
  *******************************************************************************/
 package fr.kairos.lightccsl.sts;
 
-import fr.aoste.ccsl.system.ICCSLSystemBuilder;
 import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.compose.STSSystemBuilder;
 import fr.aoste.sync.gen.CheckVisitor;
@@ -35,7 +34,7 @@ public class STSUtility extends AUtility implements IUtility {
 	private static final String STATS = "stats";
 	@Override
 	public void treat(String name, ISpecificationBuilder specBuilder) {
-		ICCSLSystemBuilder<SynchronousTransitionSystem> sBuilder = STSSystemBuilder.buildParallelSystemBuilder();
+		STSSystemBuilder sBuilder = STSSystemBuilder.buildParallelSystemBuilder();
 		STSAdapter builder = new STSAdapter(sBuilder);
 		specBuilder.build(builder);
 		SynchronousTransitionSystem sts = sBuilder.getCCSLSystem();

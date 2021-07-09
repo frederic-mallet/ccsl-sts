@@ -1,6 +1,5 @@
 package fr.aoste.ccsl.system.basic;
 
-import fr.aoste.ccsl.system.ICCSLSystemBuilder;
 import fr.aoste.ccsl.system.ICCSLSystemBuilderFactory;
 
 /**
@@ -17,7 +16,7 @@ class BasicCCSLSpecificationSystemBuilderFactory implements ICCSLSystemBuilderFa
 		// SINGLETON
 	}
 	@Override
-	public ICCSLSystemBuilder<?> createSystemBuilder() {
+	public BasicCCSLSpecification createSystemBuilder() {
 		return new BasicCCSLSpecification();
 	}
 }

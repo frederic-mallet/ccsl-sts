@@ -18,8 +18,11 @@ public class ParallelSpecificationComposer implements ICCSLSpecificationComposer
 	@Override
 	public SynchronousTransitionSystem treat(
 			List<SynchronousTransitionSystem> systems, List<Binding> bindings, List<String> localClocks) {
+		if (systems.size() == 1) {
+			return systems.get(0);
+		} 
+
 		String name = "";
-		
 		ComposedTransitionSystem cts = StsFactory.eINSTANCE.createComposedTransitionSystem();
 		STSParallelComposer composer = new STSParallelComposer(cts);
 		for(SynchronousTransitionSystem sts : systems) {
@@ -33,16 +36,15 @@ public class ParallelSpecificationComposer implements ICCSLSpecificationComposer
 			if (pos != -1) countRef[pos]++;
 			b.bind(composer);
 		}
-		
 		SynchronousTransitionSystem sts = composer.getComposedSTS(name);
-		
+
 		int i = 0;
 		for(String local : localClocks) {
 			if (countRef[i] > 1) // only hide local clocks with several references
 				STSHelper.hide(sts, local);
 			i++;
 		}
-		
+
 		return sts;
 	}
 }

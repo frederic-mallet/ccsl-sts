@@ -1,8 +1,6 @@
 package fr.aoste.sync.compose;
 
-import fr.aoste.ccsl.system.ICCSLSystemBuilder;
 import fr.aoste.ccsl.system.ICCSLSystemBuilderFactory;
-import fr.aoste.sync.SynchronousTransitionSystem;
 
 final public class STSSequentialBuilderFactory implements ICCSLSystemBuilderFactory{
 	public final static STSSequentialBuilderFactory SINGLETON = new STSSequentialBuilderFactory();
@@ -10,7 +8,7 @@ final public class STSSequentialBuilderFactory implements ICCSLSystemBuilderFact
 		// SINGLETON
 	}
 	@Override
-	public ICCSLSystemBuilder<SynchronousTransitionSystem> createSystemBuilder() {
+	public STSSystemBuilder createSystemBuilder() {
 		return STSSystemBuilder.buildSequentialSystemBuilder();
 	}
 }

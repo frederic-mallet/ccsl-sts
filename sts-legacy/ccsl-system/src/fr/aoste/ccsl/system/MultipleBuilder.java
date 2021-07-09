@@ -48,7 +48,7 @@ final public class MultipleBuilder implements ICCSLSystemBuilder<List<Object>>{
 	 */
 	private HashMap<String, List<String>> manyToSingle = new HashMap<>();
  
-	private ArrayList<ICCSLSystemBuilder<? extends Object>> builders = new ArrayList<>();
+	private ArrayList<ICCSLSystemBuilder<?>> builders = new ArrayList<>();
 	public MultipleBuilder(ICCSLSystemBuilder<?> ... builders) {
 		for(ICCSLSystemBuilder<?> builder : builders)
 			this.builders.add(builder);
@@ -183,7 +183,7 @@ final public class MultipleBuilder implements ICCSLSystemBuilder<List<Object>>{
 		return getNameForList(res);
 	}
 	@Override
-	public void addSpecification(ICCSLSystemBuilder<?> b) {
+	public void addSpecification(Object b) {
 		for(ICCSLSystemBuilder<?> builder : builders) {
 			builder.addSpecification(b);
 		}

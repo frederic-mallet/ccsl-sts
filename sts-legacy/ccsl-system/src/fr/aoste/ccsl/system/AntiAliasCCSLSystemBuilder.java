@@ -133,8 +133,8 @@ final public class AntiAliasCCSLSystemBuilder<RESULT> implements ICCSLSystemBuil
 	}
 
 	@Override
-	public void addSpecification(ICCSLSystemBuilder<?> builder) {
-		decorated.addSpecification(builder);
+	public void addSpecification(Object spec) {
+		decorated.addSpecification(spec);
 	}
 
 	@Override

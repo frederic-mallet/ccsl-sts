@@ -121,11 +121,11 @@ Iterable<ICCSLSpecificationElement>{
 	}
 
 	@Override
-	public void addSpecification(ICCSLSystemBuilder<?> spec) {
-		if (spec instanceof BasicCCSLSpecification) {
+	public void addSpecification(Object spec) {
+		if (spec instanceof BasicCCSLSpecification)
 			elements.add((BasicCCSLSpecification)spec);
-		} else
-			throw new RuntimeException("Do not know what to do with that "+spec);
+		else
+			throw new RuntimeException("not supported type " + spec);
 	}
 
 	@Override

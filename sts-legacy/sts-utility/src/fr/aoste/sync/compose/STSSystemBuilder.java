@@ -28,14 +28,14 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 
 	private LinkedList<String> localClocks = new LinkedList<>();
 	private LinkedList<String> declaredClocks = new LinkedList<>();
-	
-	static public ICCSLSystemBuilder<SynchronousTransitionSystem> buildParallelSystemBuilder() {
-//		return new AntiAliasCCSLSystemBuilder<>(new STSSystemBuilder(new ParallelSpecificationComposer()));
+
+	static public STSSystemBuilder buildParallelSystemBuilder() {
+		//		return new AntiAliasCCSLSystemBuilder<>(new STSSystemBuilder(new ParallelSpecificationComposer()));
 		// do not need AntiAlias if resolved beforehand
 		return new STSSystemBuilder(new ParallelSpecificationComposer());
 	}
-	static public ICCSLSystemBuilder<SynchronousTransitionSystem> buildSequentialSystemBuilder() {
-//		return new AntiAliasCCSLSystemBuilder<>(new STSSystemBuilder(new SequentialSpecificationComposer()));
+	static public STSSystemBuilder buildSequentialSystemBuilder() {
+		//		return new AntiAliasCCSLSystemBuilder<>(new STSSystemBuilder(new SequentialSpecificationComposer()));
 		// do not need AntiAlias if resolved beforehand
 		return new STSSystemBuilder(new SequentialSpecificationComposer());
 	}
@@ -46,8 +46,8 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 	public STSSystemBuilder(ICCSLSpecificationComposer composer) {
 		this.composer = composer;
 	}
-	
-	
+
+
 	@Override
 	public void addClock(String name, boolean local) {
 		if (local)
@@ -87,18 +87,18 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 	public void exclusion(String left, String right) {
 		binRelation(left, right, excludes.create());
 	}
-	
+
 	/* (non-Javadoc)
 	 * @see fr.aoste.sync.compose.ICCSLSpecification#union(java.lang.String)
 	 */
 	@Override
 	public String union(String der, String ... operands) {
 		assert(operands.length>=2);
-		int num = systems.size();
 		String[] names = new String[operands.length];
 		for(int i = 0; i<names.length; i++) names[i] = "u"+i;
 
 		SynchronousTransitionSystem sts =  CCSLStsFactory.INSTANCE.createUnionBuilder("u", names).create();
+		int num = systems.size();
 		systems.add(sts);
 
 		for(int i = 0; i<operands.length; i++) {
@@ -120,11 +120,11 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 	@Override
 	public String intersection(String der, String ... operands) {
 		assert(operands.length>=2);
-		int num = systems.size();
 		String[] names = new String[operands.length];
 		for(int i = 0; i<names.length; i++) names[i] = "i"+i;
 
 		SynchronousTransitionSystem sts =  CCSLStsFactory.INSTANCE.createIntersectionBuilder("i", names).create();
+		int num = systems.size();
 		systems.add(sts);
 
 		for(int i = 0; i<operands.length; i++) {
@@ -139,7 +139,7 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 	public String intersection(String der, String operand1, String operand2) {
 		return intersection(der, new String[] {operand1, operand2});
 	}
-	
+
 	@Override
 	public String inf(String der, String operand1, String operand2) {
 		return binExpression(der, inf.create(), operand1, operand2);
@@ -152,40 +152,30 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 
 	@Override
 	public String filter(String der, String base, int every, int from) {
-		int num = systems.size();
 		STSBuilder<SynchronousTransitionSystem> ex;
 		if (every == 1) 
 			ex = CCSLStsFactory.INSTANCE.createDelayBuilder(base, der, from, false);
 		else
 			ex = CCSLStsFactory.INSTANCE.createPeriodicBuilder(base, der, every, from);
-		
-		systems.add(ex.create());
-		bindings.add(new Binding(base, num, base));
-		bindings.add(new Binding(der, num, der));
+
+		addConstraint(ex.create(), base, base, der, der);
 		addClock(der, true);
 		return der;
 	}
-	
+
 	private String binExpression(String der, SynchronousTransitionSystem sts,
 			String op1, String op2) {
-		int num = systems.size();
-		systems.add(sts);
-		bindings.add(new Binding(op1,  num,  C1));
-		bindings.add(new Binding(op2,  num,  C2));
-		bindings.add(new Binding(der, num, DERIVED));
+		addConstraint(sts, op1, C1, op2, C2, der, DERIVED);
 		addClock(der, true);
 		return der;
 	}
 	private void binRelation(String left, String right, SynchronousTransitionSystem sts) {
-		int num = systems.size();
-		systems.add(sts);
-		bindings.add(new Binding(left,  num,  LEFT));
-		bindings.add(new Binding(right,  num,  RIGHT));
+		addConstraint(sts, left, LEFT, right, RIGHT);
 	}	
 
 	public void addConstraint(SynchronousTransitionSystem sts, String ...local) {
 		assert(local.length%2==0);
-		
+
 		int num = systems.size();
 		systems.add(sts);
 		for (int i = 0; i<local.length; i+=2) {
@@ -197,7 +187,7 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 	public void coincides(String c1, String c2) {
 		throw new RuntimeException("coincides:Should be intercepted by the AntiAlias decorator");
 	}
-	
+
 	public void setComposer(ICCSLSpecificationComposer composer) {
 		this.composer = composer;
 	}
@@ -207,27 +197,29 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 		return composer.treat(systems, bindings, localClocks);
 	}
 	@Override
-	public void addSpecification(ICCSLSystemBuilder<?> builder) {
-		Object o = builder.getCCSLSystem();
-		SynchronousTransitionSystem sts = null;
+	public void addSpecification(Object o) {
 		if (o instanceof SynchronousTransitionSystem) {
-			sts = (SynchronousTransitionSystem)o;
-		} else if (o instanceof BasicCCSLSpecification) {
-			// Makes the parallel composition of the local specification
-			// If that was not the intent, then could have flattened the spec calling precedes, alternates, ...
-			ICCSLSystemBuilder<SynchronousTransitionSystem> localBuilder = buildParallelSystemBuilder();
-			SystemBuilderVisitor visitor = new SystemBuilderVisitor(localBuilder);
-			BasicCCSLSpecification spec = (BasicCCSLSpecification) o;
-			spec.accept(visitor);
-			sts = localBuilder.getCCSLSystem();
-		} else
-			throw new RuntimeException("Do not know what to do with "+o);
-
-		int num = systems.size();
-		sts.setName("intern"+systems.size());
-		systems.add(sts);
-		for(Event e : sts.getEvents()) {
-			bindings.add(new Binding(e.getName(), num, e.getName()));
+			SynchronousTransitionSystem sts = (SynchronousTransitionSystem)o;
+			int num = systems.size();
+			systems.add(sts);
+			for(Event e : sts.getEvents()) {
+				bindings.add(new Binding(e.getName(), num, e.getName()));
+			}
+		} else if (o instanceof ICCSLSystemBuilder<?>) {
+			ICCSLSystemBuilder<?> builder = (ICCSLSystemBuilder<?>)o;
+			o = builder.getCCSLSystem();
+			if (o instanceof SynchronousTransitionSystem) {
+				this.addSpecification((SynchronousTransitionSystem)o);
+			} else if (o instanceof BasicCCSLSpecification) {
+				// Makes the parallel composition of the local specification
+				// If that was not the intent, then could have flattened the spec calling precedes, alternates, ...
+				ICCSLSystemBuilder<SynchronousTransitionSystem> localBuilder = buildParallelSystemBuilder();
+				SystemBuilderVisitor visitor = new SystemBuilderVisitor(localBuilder);
+				BasicCCSLSpecification spec = (BasicCCSLSpecification) o;
+				spec.accept(visitor);
+				addSpecification(localBuilder.getCCSLSystem());
+			} else
+				throw new RuntimeException("Do not know what to do with "+o);
 		}
 	}
 }

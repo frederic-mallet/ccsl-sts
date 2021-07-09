@@ -1,6 +1,5 @@
 package fr.kairos.lightccsl.sts;
 
-import fr.aoste.ccsl.system.ICCSLSystemBuilder;
 import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.compose.STSParallelComposer;
 import fr.aoste.sync.compose.STSSystemBuilder;
@@ -20,7 +19,7 @@ public class STSSolutionFinder implements ISpecificationToSolution {
 			IClockManager clockManager) { // do not need the clock manager here !
 		if (solution != null) return solution;
 		
-		ICCSLSystemBuilder<SynchronousTransitionSystem> sBuilder = STSSystemBuilder.buildParallelSystemBuilder();
+		STSSystemBuilder sBuilder = STSSystemBuilder.buildParallelSystemBuilder();
 		STSAdapter adapter = new STSAdapter(sBuilder);
 		builder.build(adapter);
 

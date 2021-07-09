@@ -40,7 +40,7 @@ public interface ICCSLSystemBuilder<RESULT> {
 	public abstract String sup(String der, String operand1, String operand2);
 	
 	// -- generic way to add an existing specification
-	public abstract void addSpecification(ICCSLSystemBuilder<?> spec);
+	public abstract void addSpecification(Object spec);
 
 	// Default values, every => 1, from => 0
 	String filter(String der, String base, int every, int from);

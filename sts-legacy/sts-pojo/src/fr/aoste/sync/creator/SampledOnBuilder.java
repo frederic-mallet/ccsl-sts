@@ -21,21 +21,20 @@ public class SampledOnBuilder extends ACCSLStsBuilder<SynchronousTransitionSyste
 
 	@Override
 	public SynchronousTransitionSystem create() {
-		String clock1 = getStringParameterValue(REF, "c1");
-		String clock2 = getStringParameterValue(BASE, "c2");
+		String ref = getStringParameterValue(REF, "c1");
+		String base = getStringParameterValue(BASE, "c2");
 		String derived = getStringParameterValue(DERIVED, "s");
-		
 
-		SynchronousTransitionSystem sts = helper.createSynchronousTransitionSystem(derived+" = " + clock1 + " sampledOn " + clock2);
+		SynchronousTransitionSystem sts = helper.createSynchronousTransitionSystem(derived+" = " + ref + " sampledOn " + base);
 
-		Event clock1Event = helper.createEvent(clock1);
-		Event clock2Event = helper.createEvent(clock2);
+		Event refEvent = helper.createEvent(ref);
+		Event baseEvent = helper.createEvent(base);
 		Event derivedEvent = helper.createEvent(derived);
 		
 		{ // general invariant
 			Conjunction c = InvariantBuilder.conjunction(
-					InvariantBuilder.inv(clock1Event, derivedEvent, 0, ComparisonOperator.GREATEROREQUAL),
-					InvariantBuilder.inv(clock2Event, derivedEvent, 0, ComparisonOperator.GREATEROREQUAL));
+					InvariantBuilder.inv(refEvent, derivedEvent, 0, ComparisonOperator.GREATEROREQUAL),
+					InvariantBuilder.inv(baseEvent, derivedEvent, 0, ComparisonOperator.GREATEROREQUAL));
 			sts.setInvariant(c);
 		}
 		
@@ -44,19 +43,19 @@ public class SampledOnBuilder extends ACCSLStsBuilder<SynchronousTransitionSyste
 //		init.setInvariant(InvariantBuilder.inv(clock1Event, clock2Event, 0, ComparisonOperator.EQUALS));
 
 		{ 
-			helper.createTransition(init, init, clock2Event);	
+			helper.createTransition(init, init, baseEvent);	
 		}
 
 		State s1 = helper.createState("s1"); // received clock1
 		{ 
-			helper.createTransition(init, s1, clock1Event, clock2Event);	
-			helper.createTransition(init, s1, clock1Event);	
-			helper.createTransition(s1, s1, clock1Event);			
+			helper.createTransition(init, s1, refEvent, baseEvent);	
+			helper.createTransition(init, s1, refEvent);	
+			helper.createTransition(s1, s1, refEvent);			
 		}
 		
 		{ 
-			helper.createTransition(s1, init, derivedEvent, clock2Event);	
-			helper.createTransition(s1, init, derivedEvent, clock1Event, clock2Event);			
+			helper.createTransition(s1, init, derivedEvent, baseEvent);	
+			helper.createTransition(s1, init, derivedEvent, refEvent, baseEvent);			
 		}
 		
 		return sts;

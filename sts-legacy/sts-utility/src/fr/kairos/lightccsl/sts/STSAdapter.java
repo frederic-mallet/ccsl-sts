@@ -4,6 +4,7 @@ import fr.aoste.ccsl.system.ICCSLSystemBuilder;
 import fr.aoste.sts.STSBuilder;
 import fr.aoste.sync.SynchronousTransitionSystem;
 import fr.aoste.sync.creator.CCSLStsFactory;
+import fr.aoste.sync.creator.TernaryDelayBuilder;
 import fr.kairos.timesquare.ccsl.ISimpleSpecification;
 
 /**
@@ -44,7 +45,7 @@ class STSAdapter implements ISimpleSpecification {
 	@Override
 	public void precedence(String left, String right, int min, int max) {
 		STSBuilder<SynchronousTransitionSystem> builder = CCSLStsFactory.INSTANCE.createPrecedesBuilder(left, right, min, max);
-		stsBuilder.addSpecification(new DummyBuilder(builder.create()));
+		stsBuilder.addSpecification(builder.create());
 	}
 
 	@Override
@@ -55,7 +56,7 @@ class STSAdapter implements ISimpleSpecification {
 	@Override
 	public void causality(String left, String right, int min, int max) {
 		STSBuilder<SynchronousTransitionSystem> builder = CCSLStsFactory.INSTANCE.createCausesBuilder(left, right, min, max);
-		stsBuilder.addSpecification(new DummyBuilder(builder.create()));
+		stsBuilder.addSpecification(builder.create());
 	}
 
 	@Override
@@ -96,12 +97,17 @@ class STSAdapter implements ISimpleSpecification {
 			sampledOn(defClock, ref, base);
 			return;
 		}
-		if (upTo != -1 || base != null)
+		if (upTo != -1)
 			throw new RuntimeException("STS: Unsupported delayFor " + defClock + " = " + ref + "$" + from + " -> " + upTo + " on " + base);
-		stsBuilder.filter(defClock, ref, 1, from);
+		if (base == null || base.equals(ref))
+			stsBuilder.filter(defClock, ref, 1, from);
+		else {
+			TernaryDelayBuilder builder = new TernaryDelayBuilder(defClock, ref, from, base);
+			stsBuilder.addSpecification(builder.create());
+		}
 	}
 	private void sampledOn(String defClock, String ref, String base) {
 		STSBuilder<SynchronousTransitionSystem> builder = CCSLStsFactory.INSTANCE.createSampledBuilder(defClock, ref, base);
-		stsBuilder.addSpecification(new DummyBuilder(builder.create()));
+		stsBuilder.addSpecification(builder.create());
 	}
 }
