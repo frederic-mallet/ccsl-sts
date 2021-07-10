@@ -55,7 +55,7 @@ public class SampledOnBuilder extends ACCSLStsBuilder<SynchronousTransitionSyste
 		
 		{ 
 			helper.createTransition(s1, init, derivedEvent, baseEvent);	
-			helper.createTransition(s1, init, derivedEvent, refEvent, baseEvent);			
+			helper.createTransition(s1, s1, derivedEvent, refEvent, baseEvent);			
 		}
 		
 		return sts;

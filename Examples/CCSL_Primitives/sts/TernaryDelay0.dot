@@ -16,7 +16,7 @@ digraph TernaryDelay0 {
   s1->s0 [
     label= "b.sec"
   ] ;
-  s1->s0 [
+  s1->s1 [
     label= "b.a.sec"
   ] ;
 }

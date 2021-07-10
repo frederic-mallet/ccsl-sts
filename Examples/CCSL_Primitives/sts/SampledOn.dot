@@ -2,22 +2,22 @@ digraph SampledOn {
   rankdir="LR"
   s0 [ shape="doublecircle" ]
   s0->s0 [
-    label= "s"
+    label= "sec"
   ] ;
   s0->s1 [
-    label= "b.s"
+    label= "a.sec"
   ] ;
   s0->s1 [
-    label= "b"
+    label= "a"
   ] ;
   s1->s1 [
-    label= "b"
+    label= "a"
   ] ;
   s1->s0 [
-    label= "a.s"
+    label= "b.sec"
   ] ;
-  s1->s0 [
-    label= "a.b.s"
+  s1->s1 [
+    label= "b.a.sec"
   ] ;
 }
 

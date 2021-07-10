@@ -1,7 +1,1 @@
-total 112						      |	total 204
--rw-r--r-- 1 fmallet kairos     0 Jul  9 21:30 before.txt     |	-rw-r--r-- 1 fmallet kairos     0 Jul  9 21:30 after.txt
-drwxr-xr-x 5 fmallet kairos  4096 Jul  8 19:12 dependencies   |	-rw-r--r-- 1 fmallet kairos 83328 Jul  9 21:30 before.txt
-							      >	drwxr-xr-x 5 fmallet kairos  4096 Jul  9 21:30 dependencies
-drwxr-xr-x 2 fmallet kairos   4096 Jul  9 21:29 common	      |	drwxr-xr-x 2 fmallet kairos   4096 Mar 18 18:05 common
-drwxr-xr-x 4 fmallet kairos   4096 Jul  9 21:29 jar	      |	drwxr-xr-x 4 fmallet kairos   4096 Jul  9 21:30 jar
--rw-r--r-- 1 fmallet kairos 681782 Jul  8 18:29 lightccsl-fea |	-rw-r--r-- 1 fmallet kairos 681788 Jul  9 21:30 lightccsl-fea
+379536	.						      |	379556	.

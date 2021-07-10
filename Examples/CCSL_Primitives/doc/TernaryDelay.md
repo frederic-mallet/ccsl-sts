@@ -12,7 +12,7 @@
 
 <table>
 <tr>
-<td width=15%><img alt="ternarydelay0" src="../sts/TernaryDelay0.dot.png" width="100%"/></td>
+<td width=12%><img alt="ternarydelay0" src="../sts/TernaryDelay0.dot.png" width="100%"/></td>
 <td width=30%><img alt="ternarydelay1" src="../sts/TernaryDelay1.dot.png" width="100%"/></td>
 <td width=40%><img alt="ternarydelay2" src="../sts/TernaryDelay2.dot.png" width="100%"/></td>
 <tr>
