@@ -31,7 +31,7 @@ public class TernaryDelayBuilder extends ACCSLStsBuilder<SynchronousTransitionSy
 		SynchronousTransitionSystem 
 		sts = helper.createSynchronousTransitionSystem(delayed + "=" + source + "$" + delay + " on " + base);
 
-		Event srcE = helper.createEvent(source);		
+		Event srcE = helper.createEvent(source);
 		Event delE = helper.createEvent(delayed);
 		Event baseE = helper.createEvent(base);
 

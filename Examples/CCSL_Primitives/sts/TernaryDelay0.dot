@@ -2,10 +2,10 @@ digraph TernaryDelay0 {
   rankdir="LR"
   s0 [ shape="doublecircle" ]
   s0->s0 [
-    label= "a.a"
+    label= "a.b"
   ] ;
   s0->s0 [
-    label= "a.sec.a"
+    label= "a.sec.b"
   ] ;
   s0->s0 [
     label= "sec"
