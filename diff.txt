@@ -1,1 +1,6 @@
-379536	.						      |	379556	.
+108	./dependencies/jar/lccsl-core.jar		      |	112	./dependencies/jar/lccsl-core.jar
+764	./dependencies/jar				      |	768	./dependencies/jar
+16280	./dependencies					      |	16284	./dependencies
+							      >	220	./after.txt
+252	./before.txt					      |	256	./before.txt
+381188	.						      |	381416	.

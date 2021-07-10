@@ -19,7 +19,7 @@ public class LcSampledOn implements ISpecificationBuilder {
 		simple.addClock("a");
 		simple.addClock("sec");
 		
-		simple.delayFor("b", "a", 0, -1, "sec");
+		simple.delayFor("b", "a", 1, -1, "sec");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()

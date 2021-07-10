@@ -5,19 +5,19 @@ digraph SampledOn {
     label= "sec"
   ] ;
   s0->s1 [
-    label= "a.sec"
+    label= "a"
   ] ;
   s0->s1 [
-    label= "a"
+    label= "a.sec"
   ] ;
   s1->s1 [
     label= "a"
   ] ;
   s1->s0 [
-    label= "b.sec"
+    label= "sec.b"
   ] ;
   s1->s1 [
-    label= "b.a.sec"
+    label= "a.sec.b"
   ] ;
 }
 

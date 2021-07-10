@@ -22,55 +22,19 @@ digraph TernaryDelay2 {
   s2->s3 [
     label= "a"
   ] ;
-  s2->s4 [
-    label= "sec"
+  s2->s0 [
+    label= "sec.b"
   ] ;
-  s2->s5 [
-    label= "a.sec"
+  s2->s1 [
+    label= "a.sec.b"
   ] ;
   s3->s3 [
     label= "a"
   ] ;
-  s3->s6 [
-    label= "sec"
-  ] ;
-  s3->s7 [
-    label= "a.sec"
-  ] ;
-  s4->s5 [
-    label= "a"
-  ] ;
-  s4->s0 [
+  s3->s2 [
     label= "sec.b"
   ] ;
-  s4->s1 [
-    label= "a.sec.b"
-  ] ;
-  s5->s5 [
-    label= "a"
-  ] ;
-  s5->s2 [
-    label= "sec.b"
-  ] ;
-  s5->s3 [
-    label= "a.sec.b"
-  ] ;
-  s6->s7 [
-    label= "a"
-  ] ;
-  s6->s4 [
-    label= "sec.b"
-  ] ;
-  s6->s5 [
-    label= "a.sec.b"
-  ] ;
-  s7->s7 [
-    label= "a"
-  ] ;
-  s7->s6 [
-    label= "sec.b"
-  ] ;
-  s7->s7 [
+  s3->s3 [
     label= "a.sec.b"
   ] ;
 }

@@ -148,433 +148,145 @@ digraph TernaryDelay {
   s16->s17 [
     label= "a"
   ] ;
-  s16->s32 [
-    label= "sec"
+  s16->s0 [
+    label= "sec.b"
   ] ;
-  s16->s33 [
-    label= "a.sec"
+  s16->s1 [
+    label= "a.sec.b"
   ] ;
   s17->s17 [
     label= "a"
   ] ;
-  s17->s34 [
-    label= "sec"
+  s17->s2 [
+    label= "sec.b"
   ] ;
-  s17->s35 [
-    label= "a.sec"
+  s17->s3 [
+    label= "a.sec.b"
   ] ;
   s18->s19 [
     label= "a"
   ] ;
-  s18->s36 [
-    label= "sec"
+  s18->s4 [
+    label= "sec.b"
   ] ;
-  s18->s37 [
-    label= "a.sec"
+  s18->s5 [
+    label= "a.sec.b"
   ] ;
   s19->s19 [
     label= "a"
   ] ;
-  s19->s38 [
-    label= "sec"
+  s19->s6 [
+    label= "sec.b"
   ] ;
-  s19->s39 [
-    label= "a.sec"
+  s19->s7 [
+    label= "a.sec.b"
   ] ;
   s20->s21 [
     label= "a"
   ] ;
-  s20->s40 [
-    label= "sec"
+  s20->s8 [
+    label= "sec.b"
   ] ;
-  s20->s41 [
-    label= "a.sec"
+  s20->s9 [
+    label= "a.sec.b"
   ] ;
   s21->s21 [
     label= "a"
   ] ;
-  s21->s42 [
-    label= "sec"
+  s21->s10 [
+    label= "sec.b"
   ] ;
-  s21->s43 [
-    label= "a.sec"
+  s21->s11 [
+    label= "a.sec.b"
   ] ;
   s22->s23 [
     label= "a"
   ] ;
-  s22->s44 [
-    label= "sec"
+  s22->s12 [
+    label= "sec.b"
   ] ;
-  s22->s45 [
-    label= "a.sec"
+  s22->s13 [
+    label= "a.sec.b"
   ] ;
   s23->s23 [
     label= "a"
   ] ;
-  s23->s46 [
-    label= "sec"
+  s23->s14 [
+    label= "sec.b"
   ] ;
-  s23->s47 [
-    label= "a.sec"
+  s23->s15 [
+    label= "a.sec.b"
   ] ;
   s24->s25 [
     label= "a"
   ] ;
-  s24->s48 [
-    label= "sec"
+  s24->s16 [
+    label= "sec.b"
   ] ;
-  s24->s49 [
-    label= "a.sec"
+  s24->s17 [
+    label= "a.sec.b"
   ] ;
   s25->s25 [
     label= "a"
   ] ;
-  s25->s50 [
-    label= "sec"
+  s25->s18 [
+    label= "sec.b"
   ] ;
-  s25->s51 [
-    label= "a.sec"
+  s25->s19 [
+    label= "a.sec.b"
   ] ;
   s26->s27 [
     label= "a"
   ] ;
-  s26->s52 [
-    label= "sec"
+  s26->s20 [
+    label= "sec.b"
   ] ;
-  s26->s53 [
-    label= "a.sec"
+  s26->s21 [
+    label= "a.sec.b"
   ] ;
   s27->s27 [
     label= "a"
   ] ;
-  s27->s54 [
-    label= "sec"
+  s27->s22 [
+    label= "sec.b"
   ] ;
-  s27->s55 [
-    label= "a.sec"
+  s27->s23 [
+    label= "a.sec.b"
   ] ;
   s28->s29 [
     label= "a"
   ] ;
-  s28->s56 [
-    label= "sec"
+  s28->s24 [
+    label= "sec.b"
   ] ;
-  s28->s57 [
-    label= "a.sec"
+  s28->s25 [
+    label= "a.sec.b"
   ] ;
   s29->s29 [
     label= "a"
   ] ;
-  s29->s58 [
-    label= "sec"
+  s29->s26 [
+    label= "sec.b"
   ] ;
-  s29->s59 [
-    label= "a.sec"
+  s29->s27 [
+    label= "a.sec.b"
   ] ;
   s30->s31 [
     label= "a"
   ] ;
-  s30->s60 [
-    label= "sec"
+  s30->s28 [
+    label= "sec.b"
   ] ;
-  s30->s61 [
-    label= "a.sec"
+  s30->s29 [
+    label= "a.sec.b"
   ] ;
   s31->s31 [
     label= "a"
   ] ;
-  s31->s62 [
-    label= "sec"
-  ] ;
-  s31->s63 [
-    label= "a.sec"
-  ] ;
-  s32->s33 [
-    label= "a"
-  ] ;
-  s32->s0 [
+  s31->s30 [
     label= "sec.b"
   ] ;
-  s32->s1 [
-    label= "a.sec.b"
-  ] ;
-  s33->s33 [
-    label= "a"
-  ] ;
-  s33->s2 [
-    label= "sec.b"
-  ] ;
-  s33->s3 [
-    label= "a.sec.b"
-  ] ;
-  s34->s35 [
-    label= "a"
-  ] ;
-  s34->s4 [
-    label= "sec.b"
-  ] ;
-  s34->s5 [
-    label= "a.sec.b"
-  ] ;
-  s35->s35 [
-    label= "a"
-  ] ;
-  s35->s6 [
-    label= "sec.b"
-  ] ;
-  s35->s7 [
-    label= "a.sec.b"
-  ] ;
-  s36->s37 [
-    label= "a"
-  ] ;
-  s36->s8 [
-    label= "sec.b"
-  ] ;
-  s36->s9 [
-    label= "a.sec.b"
-  ] ;
-  s37->s37 [
-    label= "a"
-  ] ;
-  s37->s10 [
-    label= "sec.b"
-  ] ;
-  s37->s11 [
-    label= "a.sec.b"
-  ] ;
-  s38->s39 [
-    label= "a"
-  ] ;
-  s38->s12 [
-    label= "sec.b"
-  ] ;
-  s38->s13 [
-    label= "a.sec.b"
-  ] ;
-  s39->s39 [
-    label= "a"
-  ] ;
-  s39->s14 [
-    label= "sec.b"
-  ] ;
-  s39->s15 [
-    label= "a.sec.b"
-  ] ;
-  s40->s41 [
-    label= "a"
-  ] ;
-  s40->s16 [
-    label= "sec.b"
-  ] ;
-  s40->s17 [
-    label= "a.sec.b"
-  ] ;
-  s41->s41 [
-    label= "a"
-  ] ;
-  s41->s18 [
-    label= "sec.b"
-  ] ;
-  s41->s19 [
-    label= "a.sec.b"
-  ] ;
-  s42->s43 [
-    label= "a"
-  ] ;
-  s42->s20 [
-    label= "sec.b"
-  ] ;
-  s42->s21 [
-    label= "a.sec.b"
-  ] ;
-  s43->s43 [
-    label= "a"
-  ] ;
-  s43->s22 [
-    label= "sec.b"
-  ] ;
-  s43->s23 [
-    label= "a.sec.b"
-  ] ;
-  s44->s45 [
-    label= "a"
-  ] ;
-  s44->s24 [
-    label= "sec.b"
-  ] ;
-  s44->s25 [
-    label= "a.sec.b"
-  ] ;
-  s45->s45 [
-    label= "a"
-  ] ;
-  s45->s26 [
-    label= "sec.b"
-  ] ;
-  s45->s27 [
-    label= "a.sec.b"
-  ] ;
-  s46->s47 [
-    label= "a"
-  ] ;
-  s46->s28 [
-    label= "sec.b"
-  ] ;
-  s46->s29 [
-    label= "a.sec.b"
-  ] ;
-  s47->s47 [
-    label= "a"
-  ] ;
-  s47->s30 [
-    label= "sec.b"
-  ] ;
-  s47->s31 [
-    label= "a.sec.b"
-  ] ;
-  s48->s49 [
-    label= "a"
-  ] ;
-  s48->s32 [
-    label= "sec.b"
-  ] ;
-  s48->s33 [
-    label= "a.sec.b"
-  ] ;
-  s49->s49 [
-    label= "a"
-  ] ;
-  s49->s34 [
-    label= "sec.b"
-  ] ;
-  s49->s35 [
-    label= "a.sec.b"
-  ] ;
-  s50->s51 [
-    label= "a"
-  ] ;
-  s50->s36 [
-    label= "sec.b"
-  ] ;
-  s50->s37 [
-    label= "a.sec.b"
-  ] ;
-  s51->s51 [
-    label= "a"
-  ] ;
-  s51->s38 [
-    label= "sec.b"
-  ] ;
-  s51->s39 [
-    label= "a.sec.b"
-  ] ;
-  s52->s53 [
-    label= "a"
-  ] ;
-  s52->s40 [
-    label= "sec.b"
-  ] ;
-  s52->s41 [
-    label= "a.sec.b"
-  ] ;
-  s53->s53 [
-    label= "a"
-  ] ;
-  s53->s42 [
-    label= "sec.b"
-  ] ;
-  s53->s43 [
-    label= "a.sec.b"
-  ] ;
-  s54->s55 [
-    label= "a"
-  ] ;
-  s54->s44 [
-    label= "sec.b"
-  ] ;
-  s54->s45 [
-    label= "a.sec.b"
-  ] ;
-  s55->s55 [
-    label= "a"
-  ] ;
-  s55->s46 [
-    label= "sec.b"
-  ] ;
-  s55->s47 [
-    label= "a.sec.b"
-  ] ;
-  s56->s57 [
-    label= "a"
-  ] ;
-  s56->s48 [
-    label= "sec.b"
-  ] ;
-  s56->s49 [
-    label= "a.sec.b"
-  ] ;
-  s57->s57 [
-    label= "a"
-  ] ;
-  s57->s50 [
-    label= "sec.b"
-  ] ;
-  s57->s51 [
-    label= "a.sec.b"
-  ] ;
-  s58->s59 [
-    label= "a"
-  ] ;
-  s58->s52 [
-    label= "sec.b"
-  ] ;
-  s58->s53 [
-    label= "a.sec.b"
-  ] ;
-  s59->s59 [
-    label= "a"
-  ] ;
-  s59->s54 [
-    label= "sec.b"
-  ] ;
-  s59->s55 [
-    label= "a.sec.b"
-  ] ;
-  s60->s61 [
-    label= "a"
-  ] ;
-  s60->s56 [
-    label= "sec.b"
-  ] ;
-  s60->s57 [
-    label= "a.sec.b"
-  ] ;
-  s61->s61 [
-    label= "a"
-  ] ;
-  s61->s58 [
-    label= "sec.b"
-  ] ;
-  s61->s59 [
-    label= "a.sec.b"
-  ] ;
-  s62->s63 [
-    label= "a"
-  ] ;
-  s62->s60 [
-    label= "sec.b"
-  ] ;
-  s62->s61 [
-    label= "a.sec.b"
-  ] ;
-  s63->s63 [
-    label= "a"
-  ] ;
-  s63->s62 [
-    label= "sec.b"
-  ] ;
-  s63->s63 [
+  s31->s31 [
     label= "a.sec.b"
   ] ;
 }

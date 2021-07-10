@@ -93,12 +93,8 @@ class STSAdapter implements ISimpleSpecification {
 
 	@Override
 	public void delayFor(String defClock, String ref, int from, int upTo, String base) {
-		if (base != null && from == 0) {
-			sampledOn(defClock, ref, base);
-			return;
-		}
 		if (upTo != -1)
-			throw new RuntimeException("STS: Unsupported delayFor " + defClock + " = " + ref + "$" + from + " -> " + upTo + " on " + base);
+			throw new RuntimeException("STS: Unsupported upTo in delayFor " + defClock + " = " + ref + "$" + from + " -> " + upTo + " on " + base);
 		if (base == null || base.equals(ref))
 			stsBuilder.filter(defClock, ref, 1, from);
 		else {
@@ -106,8 +102,8 @@ class STSAdapter implements ISimpleSpecification {
 			stsBuilder.addSpecification(builder.create());
 		}
 	}
-	private void sampledOn(String defClock, String ref, String base) {
-		STSBuilder<SynchronousTransitionSystem> builder = CCSLStsFactory.INSTANCE.createSampledBuilder(defClock, ref, base);
-		stsBuilder.addSpecification(builder.create());
-	}
+//	private void sampledOn(String defClock, String ref, String base) {
+//		STSBuilder<SynchronousTransitionSystem> builder = CCSLStsFactory.INSTANCE.createSampledBuilder(defClock, ref, base);
+//		stsBuilder.addSpecification(builder.create());
+//	}
 }
