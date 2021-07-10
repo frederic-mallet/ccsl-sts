@@ -35,6 +35,6 @@ Expressions build new clocks based on existing ones
 - [Binary Delay](doc/BinaryDelay.md): This expression is akin of having n buffers in sequence.
 - [SampledOn](doc/SampledOn.md): Sampling is used to synchronize a clock on another one. 
 - [Ternary Delay](doc/TernaryDelay.md): This expression resembles a shift register of size n.
-- Infimum : The infimum of n clocks `{c_1, ..., c_n}` is the slowest clock that is faster than all of the clocks **c_i**.
-- Supremum : The supremum of n clocks `{c_1, ..., c_n}` is the fastest clock that is slower than all of the clocks **c_i**.
+- [Infimum](InfSup.md) : The infimum of n clocks `{c_1, ..., c_n}` is the slowest clock that is faster than all of the clocks **c_i**.
+- [Supremum](InfSup.md) : The supremum of n clocks `{c_1, ..., c_n}` is the fastest clock that is slower than all of the clocks **c_i**.
  

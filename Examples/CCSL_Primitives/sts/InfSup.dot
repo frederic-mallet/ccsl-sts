@@ -1,0 +1,521 @@
+digraph InfSup { 
+  rankdir="LR"
+  s0 [ shape="doublecircle" ]
+  s0->s1 [
+    label= "b.i"
+  ] ;
+  s0->s2 [
+    label= "c.i"
+  ] ;
+  s0->s0 [
+    label= "b.c.i.a.u"
+  ] ;
+  s0->s3 [
+    label= "i.a"
+  ] ;
+  s0->s4 [
+    label= "b.i.a"
+  ] ;
+  s0->s5 [
+    label= "c.i.a"
+  ] ;
+  s0->s6 [
+    label= "b.c.i"
+  ] ;
+  s1->s1 [
+    label= "b.i"
+  ] ;
+  s1->s1 [
+    label= "b.c.i.a.u"
+  ] ;
+  s1->s1 [
+    color = "red"label= "c.a.u"
+  ] ;
+  s1->s7 [
+    color = "red"label= "c.a.u"
+  ] ;
+  s1->s0 [
+    color = "red"label= "c.a.u"
+  ] ;
+  s1->s8 [
+    color = "red"label= "a"
+  ] ;
+  s1->s4 [
+    color = "red"label= "a"
+  ] ;
+  s1->s8 [
+    label= "b.i.a"
+  ] ;
+  s1->s9 [
+    label= "b.c.i"
+  ] ;
+  s1->s9 [
+    color = "red"label= "c"
+  ] ;
+  s1->s6 [
+    color = "red"label= "c"
+  ] ;
+  s2->s2 [
+    label= "c.i"
+  ] ;
+  s2->s2 [
+    label= "b.c.i.a.u"
+  ] ;
+  s2->s2 [
+    color = "red"label= "b.a.u"
+  ] ;
+  s2->s7 [
+    color = "red"label= "b.a.u"
+  ] ;
+  s2->s0 [
+    color = "red"label= "b.a.u"
+  ] ;
+  s2->s10 [
+    color = "red"label= "a"
+  ] ;
+  s2->s5 [
+    color = "red"label= "a"
+  ] ;
+  s2->s10 [
+    label= "c.i.a"
+  ] ;
+  s2->s11 [
+    label= "b.c.i"
+  ] ;
+  s2->s11 [
+    color = "red"label= "b"
+  ] ;
+  s2->s6 [
+    color = "red"label= "b"
+  ] ;
+  s3->s12 [
+    color = "red"label= "i1.b"
+  ] ;
+  s3->s4 [
+    color = "red"label= "i1.b"
+  ] ;
+  s3->s13 [
+    color = "red"label= "i1.c"
+  ] ;
+  s3->s5 [
+    color = "red"label= "i1.c"
+  ] ;
+  s3->s3 [
+    label= "i.a"
+  ] ;
+  s3->s12 [
+    label= "i1.b.i.a"
+  ] ;
+  s3->s13 [
+    label= "i1.c.i.a"
+  ] ;
+  s3->s3 [
+    label= "i1.b.c.i.a.u"
+  ] ;
+  s3->s3 [
+    color = "red"label= "i1.b.c.u1.u"
+  ] ;
+  s3->s14 [
+    color = "red"label= "i1.b.c.u1.u"
+  ] ;
+  s3->s0 [
+    color = "red"label= "i1.b.c.u1.u"
+  ] ;
+  s4->s8 [
+    label= "i1.b.i"
+  ] ;
+  s4->s12 [
+    label= "i.a"
+  ] ;
+  s4->s4 [
+    label= "i1.b.i.a"
+  ] ;
+  s4->s4 [
+    label= "i1.b.c.i.a.u1.u"
+  ] ;
+  s4->s12 [
+    color = "red"label= "c.i.a.u1.u"
+  ] ;
+  s4->s3 [
+    color = "red"label= "c.i.a.u1.u"
+  ] ;
+  s4->s8 [
+    color = "red"label= "i1.b.c.i.u1.u"
+  ] ;
+  s4->s4 [
+    color = "red"label= "c.u1.u"
+  ] ;
+  s4->s14 [
+    color = "red"label= "c.u1.u"
+  ] ;
+  s4->s1 [
+    color = "red"label= "i1.b.c.i.u1.u"
+  ] ;
+  s4->s0 [
+    color = "red"label= "c.u1.u"
+  ] ;
+  s5->s10 [
+    label= "i1.c.i"
+  ] ;
+  s5->s13 [
+    label= "i.a"
+  ] ;
+  s5->s5 [
+    label= "i1.c.i.a"
+  ] ;
+  s5->s5 [
+    label= "i1.b.c.i.a.u1.u"
+  ] ;
+  s5->s13 [
+    color = "red"label= "b.i.a.u1.u"
+  ] ;
+  s5->s3 [
+    color = "red"label= "b.i.a.u1.u"
+  ] ;
+  s5->s10 [
+    color = "red"label= "i1.b.c.i.u1.u"
+  ] ;
+  s5->s5 [
+    color = "red"label= "b.u1.u"
+  ] ;
+  s5->s14 [
+    color = "red"label= "b.u1.u"
+  ] ;
+  s5->s2 [
+    color = "red"label= "i1.b.c.i.u1.u"
+  ] ;
+  s5->s0 [
+    color = "red"label= "b.u1.u"
+  ] ;
+  s6->s9 [
+    label= "i1.b.i"
+  ] ;
+  s6->s11 [
+    label= "i1.c.i"
+  ] ;
+  s6->s6 [
+    label= "i1.b.c.i.u1"
+  ] ;
+  s6->s6 [
+    label= "i1.b.c.i.a.u1.u"
+  ] ;
+  s6->s6 [
+    color = "red"label= "a.u"
+  ] ;
+  s6->s9 [
+    color = "red"label= "i1.b.i.a.u"
+  ] ;
+  s6->s11 [
+    color = "red"label= "i1.c.i.a.u"
+  ] ;
+  s6->s7 [
+    color = "red"label= "a.u"
+  ] ;
+  s6->s0 [
+    color = "red"label= "a.u"
+  ] ;
+  s6->s1 [
+    color = "red"label= "i1.b.i.a.u"
+  ] ;
+  s6->s2 [
+    color = "red"label= "i1.c.i.a.u"
+  ] ;
+  s7->s1 [
+    label= "i1.b.i"
+  ] ;
+  s7->s2 [
+    label= "i1.c.i"
+  ] ;
+  s7->s7 [
+    label= "i1.b.c.i.a.u1.u"
+  ] ;
+  s7->s15 [
+    color = "red"label= "a"
+  ] ;
+  s7->s14 [
+    color = "red"label= "a"
+  ] ;
+  s7->s8 [
+    label= "i1.b.i.a"
+  ] ;
+  s7->s10 [
+    label= "i1.c.i.a"
+  ] ;
+  s7->s6 [
+    label= "i1.b.c.i.u1"
+  ] ;
+  s8->s8 [
+    label= "i1.b.i"
+  ] ;
+  s8->s8 [
+    color = "red"label= "a"
+  ] ;
+  s8->s4 [
+    color = "red"label= "a"
+  ] ;
+  s8->s8 [
+    label= "i1.b.i.a"
+  ] ;
+  s8->s8 [
+    label= "i1.b.c.i.a.u1.u"
+  ] ;
+  s8->s8 [
+    color = "red"label= "c.a.u1.u"
+  ] ;
+  s8->s4 [
+    color = "red"label= "c.a.u1.u"
+  ] ;
+  s8->s15 [
+    color = "red"label= "c.a.u1.u"
+  ] ;
+  s8->s14 [
+    color = "red"label= "c.a.u1.u"
+  ] ;
+  s8->s8 [
+    color = "red"label= "i1.b.c.i.u1.u"
+  ] ;
+  s8->s8 [
+    color = "red"label= "c.u1.u"
+  ] ;
+  s8->s15 [
+    color = "red"label= "c.u1.u"
+  ] ;
+  s8->s1 [
+    color = "red"label= "i1.b.c.i.u1.u"
+  ] ;
+  s8->s1 [
+    color = "red"label= "c.u1.u"
+  ] ;
+  s8->s7 [
+    color = "red"label= "c.u1.u"
+  ] ;
+  s9->s9 [
+    label= "i1.b.i"
+  ] ;
+  s9->s9 [
+    label= "i1.b.c.i.u1"
+  ] ;
+  s9->s9 [
+    color = "red"label= "c.u1"
+  ] ;
+  s9->s6 [
+    color = "red"label= "c.u1"
+  ] ;
+  s9->s9 [
+    label= "i1.b.c.i.a.u1.u"
+  ] ;
+  s9->s9 [
+    color = "red"label= "c.a.u1.u"
+  ] ;
+  s9->s6 [
+    color = "red"label= "c.a.u1.u"
+  ] ;
+  s9->s9 [
+    color = "red"label= "a.u"
+  ] ;
+  s9->s9 [
+    color = "red"label= "i1.b.i.a.u"
+  ] ;
+  s9->s1 [
+    color = "red"label= "a.u"
+  ] ;
+  s9->s1 [
+    color = "red"label= "i1.b.i.a.u"
+  ] ;
+  s10->s10 [
+    label= "i1.c.i"
+  ] ;
+  s10->s10 [
+    color = "red"label= "a"
+  ] ;
+  s10->s5 [
+    color = "red"label= "a"
+  ] ;
+  s10->s10 [
+    label= "i1.c.i.a"
+  ] ;
+  s10->s10 [
+    label= "i1.b.c.i.a.u1.u"
+  ] ;
+  s10->s10 [
+    color = "red"label= "b.a.u1.u"
+  ] ;
+  s10->s5 [
+    color = "red"label= "b.a.u1.u"
+  ] ;
+  s10->s15 [
+    color = "red"label= "b.a.u1.u"
+  ] ;
+  s10->s14 [
+    color = "red"label= "b.a.u1.u"
+  ] ;
+  s10->s10 [
+    color = "red"label= "i1.b.c.i.u1.u"
+  ] ;
+  s10->s10 [
+    color = "red"label= "b.u1.u"
+  ] ;
+  s10->s15 [
+    color = "red"label= "b.u1.u"
+  ] ;
+  s10->s2 [
+    color = "red"label= "i1.b.c.i.u1.u"
+  ] ;
+  s10->s2 [
+    color = "red"label= "b.u1.u"
+  ] ;
+  s10->s7 [
+    color = "red"label= "b.u1.u"
+  ] ;
+  s11->s11 [
+    label= "i1.c.i"
+  ] ;
+  s11->s11 [
+    label= "i1.b.c.i.u1"
+  ] ;
+  s11->s11 [
+    color = "red"label= "b.u1"
+  ] ;
+  s11->s6 [
+    color = "red"label= "b.u1"
+  ] ;
+  s11->s11 [
+    label= "i1.b.c.i.a.u1.u"
+  ] ;
+  s11->s11 [
+    color = "red"label= "b.a.u1.u"
+  ] ;
+  s11->s6 [
+    color = "red"label= "b.a.u1.u"
+  ] ;
+  s11->s11 [
+    color = "red"label= "a.u"
+  ] ;
+  s11->s11 [
+    color = "red"label= "i1.c.i.a.u"
+  ] ;
+  s11->s2 [
+    color = "red"label= "a.u"
+  ] ;
+  s11->s2 [
+    color = "red"label= "i1.c.i.a.u"
+  ] ;
+  s12->s12 [
+    color = "red"label= "i1.b"
+  ] ;
+  s12->s4 [
+    color = "red"label= "i1.b"
+  ] ;
+  s12->s12 [
+    label= "i.a"
+  ] ;
+  s12->s12 [
+    label= "i1.b.i.a"
+  ] ;
+  s12->s12 [
+    label= "i1.b.c.i.a.u1.u"
+  ] ;
+  s12->s12 [
+    color = "red"label= "c.i.a.u1.u"
+  ] ;
+  s12->s3 [
+    color = "red"label= "c.i.a.u1.u"
+  ] ;
+  s12->s12 [
+    color = "red"label= "i1.b.c.u1.u"
+  ] ;
+  s12->s4 [
+    color = "red"label= "i1.b.c.u1.u"
+  ] ;
+  s12->s12 [
+    color = "red"label= "c.u1.u"
+  ] ;
+  s12->s3 [
+    color = "red"label= "c.u1.u"
+  ] ;
+  s13->s13 [
+    color = "red"label= "i1.c"
+  ] ;
+  s13->s5 [
+    color = "red"label= "i1.c"
+  ] ;
+  s13->s13 [
+    label= "i.a"
+  ] ;
+  s13->s13 [
+    label= "i1.c.i.a"
+  ] ;
+  s13->s13 [
+    label= "i1.b.c.i.a.u1.u"
+  ] ;
+  s13->s13 [
+    color = "red"label= "b.i.a.u1.u"
+  ] ;
+  s13->s3 [
+    color = "red"label= "b.i.a.u1.u"
+  ] ;
+  s13->s13 [
+    color = "red"label= "i1.b.c.u1.u"
+  ] ;
+  s13->s5 [
+    color = "red"label= "i1.b.c.u1.u"
+  ] ;
+  s13->s13 [
+    color = "red"label= "b.u1.u"
+  ] ;
+  s13->s3 [
+    color = "red"label= "b.u1.u"
+  ] ;
+  s14->s8 [
+    label= "i1.b.i"
+  ] ;
+  s14->s10 [
+    label= "i1.c.i"
+  ] ;
+  s14->s3 [
+    label= "i.a"
+  ] ;
+  s14->s4 [
+    label= "i1.b.i.a"
+  ] ;
+  s14->s5 [
+    label= "i1.c.i.a"
+  ] ;
+  s14->s14 [
+    label= "i1.b.c.i.a.u1.u"
+  ] ;
+  s14->s15 [
+    color = "red"label= "i1.b.c.i.u1.u"
+  ] ;
+  s14->s7 [
+    color = "red"label= "i1.b.c.i.u1.u"
+  ] ;
+  s15->s8 [
+    label= "i1.b.i"
+  ] ;
+  s15->s10 [
+    label= "i1.c.i"
+  ] ;
+  s15->s15 [
+    color = "red"label= "a"
+  ] ;
+  s15->s14 [
+    color = "red"label= "a"
+  ] ;
+  s15->s8 [
+    label= "i1.b.i.a"
+  ] ;
+  s15->s10 [
+    label= "i1.c.i.a"
+  ] ;
+  s15->s15 [
+    label= "i1.b.c.i.a.u1.u"
+  ] ;
+  s15->s15 [
+    color = "red"label= "i1.b.c.i.u1.u"
+  ] ;
+  s15->s7 [
+    color = "red"label= "i1.b.c.i.u1.u"
+  ] ;
+}
+

@@ -1,0 +1,7 @@
+Specification InfSup {
+	Clock a b c
+	[
+		Let i be inf(a,b,c)
+		Let u be sup(a,b,c)
+	]
+}
