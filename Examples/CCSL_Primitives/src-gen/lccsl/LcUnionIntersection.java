@@ -21,8 +21,9 @@ public class LcUnionIntersection implements ISpecificationBuilder {
 		simple.addClock("c");
 		simple.addClock("d");
 		
-		simple.union("u_0", "a", "b", "c");
-		simple.intersection("u", "d", "u_0");
+		simple.union("_u_0_0", "b", "c");
+		simple.union("_u_0", "a", "_u_0_0");
+		simple.intersection("u", "d", "_u_0");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
