@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:OccurrenceRelationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel="http://fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel" xmlns:trace="https://team.inria.fr/kairos//trace/1.0.0">
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="UnionIntersection2021_0713_162954.trace#//@references.5"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="UnionIntersection2021_0713_162954.trace#//@references.5"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="UnionIntersection2021_0713_162954.trace#//@references.4"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="UnionIntersection2021_0713_162954.trace#//@references.6"/>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.1/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.1/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.2/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.2/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.3/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.3/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.4/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.4/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.10/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.10/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.11/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.11/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.12/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.12/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.14/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.14/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.22/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.22/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.24/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.24/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.24/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.24/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.27/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.27/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.30/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.30/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.33/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.33/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.35/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.35/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.38/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.38/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.41/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.41/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.43/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.43/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.46/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.46/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.47/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.47/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.47/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.47/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.48/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.48/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.51/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.51/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.53/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.53/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.57/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.57/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.58/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.58/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.60/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.60/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.61/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.61/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.62/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.62/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.65/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.65/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.69/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.69/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.70/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.70/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.73/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.73/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.74/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.74/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.75/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.75/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.76/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.76/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.77/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.77/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.79/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.79/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.81/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.81/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.81/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.81/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.84/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.84/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.85/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.85/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.86/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.86/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.88/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.88/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.89/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.89/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.89/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.89/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.91/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.91/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.92/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.92/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.92/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.92/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.93/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.93/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.94/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.94/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.95/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.95/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.95/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.95/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.97/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.97/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.98/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.98/@eventOccurrences.4"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.98/@eventOccurrences.5"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.98/@eventOccurrences.6"/>
+    </relatedOccurrenceRelations>
+  </refsToCCSLConstraints>
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="UnionIntersection2021_0713_162954.trace#//@references.6"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="UnionIntersection2021_0713_162954.trace#//@references.6"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="UnionIntersection2021_0713_162954.trace#//@references.1"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="UnionIntersection2021_0713_162954.trace#//@references.0"/>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.3/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.3/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.3/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.3/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.4/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.4/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.4/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.4/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.10/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.10/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.10/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.10/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.12/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.12/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.12/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.12/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.22/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.22/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.22/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.22/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.24/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.24/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.24/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.24/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.27/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.27/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.27/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.27/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.35/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.35/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.35/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.35/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.41/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.41/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.41/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.41/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.43/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.43/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.43/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.43/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.46/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.46/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.46/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.46/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.47/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.47/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.47/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.47/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.48/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.48/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.48/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.48/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.51/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.51/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.51/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.51/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.57/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.57/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.57/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.57/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.58/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.58/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.58/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.58/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.60/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.60/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.60/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.60/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.61/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.61/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.61/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.61/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.62/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.62/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.62/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.62/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.65/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.65/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.65/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.65/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.70/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.70/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.70/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.70/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.73/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.73/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.73/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.73/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.74/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.74/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.74/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.74/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.76/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.76/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.76/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.76/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.81/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.81/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.81/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.81/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.88/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.88/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.88/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.88/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.89/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.89/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.89/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.89/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.91/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.91/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.91/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.91/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.92/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.92/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.92/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.92/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.93/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.93/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.93/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.93/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.94/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.94/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.94/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.94/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.95/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.95/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.95/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.95/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.98/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.98/@eventOccurrences.1"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.98/@eventOccurrences.6"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.98/@eventOccurrences.0"/>
+    </relatedOccurrenceRelations>
+  </refsToCCSLConstraints>
+  <refsToCCSLConstraints>
+    <ccslConstraint xsi:type="trace:ModelElementReference" href="UnionIntersection2021_0713_162954.trace#//@references.4"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="UnionIntersection2021_0713_162954.trace#//@references.4"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="UnionIntersection2021_0713_162954.trace#//@references.3"/>
+    <ccslElements xsi:type="trace:ModelElementReference" href="UnionIntersection2021_0713_162954.trace#//@references.2"/>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.1/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.1/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.1/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.1/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.2/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.2/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.2/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.2/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.11/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.11/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.11/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.11/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.14/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.14/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.14/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.14/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.24/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.24/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.24/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.24/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.30/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.30/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.30/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.30/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.33/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.33/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.33/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.33/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.38/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.38/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.38/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.38/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.47/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.47/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.47/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.47/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.53/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.53/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.53/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.53/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.69/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.69/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.69/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.69/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.75/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.75/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.75/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.75/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.77/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.77/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.77/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.77/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.79/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.79/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.79/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.79/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.81/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.81/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.81/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.81/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.84/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.84/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.84/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.84/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.85/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.85/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.85/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.85/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.86/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.86/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.86/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.86/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.89/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.89/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.89/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.89/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.92/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.92/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.92/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.92/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.95/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.95/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.95/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.95/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.97/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.97/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.97/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.97/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.98/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.98/@eventOccurrences.3"/>
+    </relatedOccurrenceRelations>
+    <relatedOccurrenceRelations xsi:type="fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:Coincidence">
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.98/@eventOccurrences.4"/>
+      <coincidentOccurrences href="UnionIntersection2021_0713_162954.trace#//@logicalSteps.98/@eventOccurrences.2"/>
+    </relatedOccurrenceRelations>
+  </refsToCCSLConstraints>
+</fr.inria.aoste.timesquare.instantrelation.CCSLRelationModel:OccurrenceRelationModel>

@@ -1,0 +1,8 @@
+Specification UnionIntersection {
+	Clock a b c d
+	[
+		Let _u_0_0 be b + c
+		Let _u_0 be a + _u_0_0
+		Let u be d * _u_0
+	]
+}

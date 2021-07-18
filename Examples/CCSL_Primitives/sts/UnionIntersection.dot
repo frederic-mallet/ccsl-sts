@@ -1,5 +1,5 @@
 digraph UnionIntersection { 
-  rankdir="BT"
+  rankdir="LR"
   s0 [ shape="doublecircle" ]
   s0->s0 [
     label= "d"

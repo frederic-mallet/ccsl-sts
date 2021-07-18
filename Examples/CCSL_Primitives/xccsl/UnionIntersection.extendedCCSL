@@ -1,0 +1,19 @@
+ClockConstraintSystem UnionIntersection {
+    imports {
+		import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib" as lib0;
+		import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib" as lib1;
+    }
+    entryBlock main
+
+    Block main {
+		Clock a
+		Clock b
+		Clock c
+		Clock d
+
+
+        Expression _u_0_0=Union(Clock1 -> b, Clock2 -> c)
+        Expression _u_0=Union(Clock1 -> a, Clock2 -> _u_0_0)
+        Expression u=Intersection(Clock1 -> d, Clock2 -> _u_0)
+	}
+}
