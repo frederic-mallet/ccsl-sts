@@ -2,7 +2,7 @@
 // Nb transitions: 751
 // The STS is safe!
 // No soft lock!
-Specification SDF 
+Specification SDF
    def token(Clock write, Clock read, int del, int max) [
    	 Precedence write <= (init: del max: max) read
    ]

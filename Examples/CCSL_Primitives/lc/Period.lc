@@ -1,0 +1,6 @@
+Specification Period {
+	Clock c2 [
+		repeat c1 every 3 c2
+		Let c3 be c1 $ 2
+	]
+}
