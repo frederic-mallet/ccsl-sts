@@ -1,6 +1,6 @@
 #!/bin/bash
 du -a > before.txt
-rsync -a ~/git/light-ccsl/SynchronousTransitionSystems/sts-legacy .
+rsync -a ~/git/_CCSL/light-ccsl/SynchronousTransitionSystems/sts-legacy .
 rsync -a ~/src/jar/externalJar/*.jar dependencies/thirdparties/
 rsync -a ~/src/jar/toools.jar dependencies/thirdparties/
 rsync -a ~/src/jar/externalJar/lccsl/ dependencies/jar/

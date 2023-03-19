@@ -1,2 +1,6 @@
-							      >	228	./after.txt
-387316	.						      |	387544	.
+4	./before.txt					      |	80	./before.txt
+							      >	8	./after.txt
+80	./dependencies/jar/lccsl-main.jar		      |	444	./dependencies/jar/lccsl-main.jar
+552	./dependencies/jar				      |	916	./dependencies/jar
+17628	./dependencies					      |	17992	./dependencies
+338776	.						      |	339224	.

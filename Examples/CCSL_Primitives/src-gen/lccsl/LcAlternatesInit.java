@@ -5,6 +5,7 @@ import fr.kairos.timesquare.ccsl.simple.IUtility;
 import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.core.stepper.StepperUtility;
 import fr.unice.lightccsl.sat.bdd.BDDSolutionFinder;
+import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class LcAlternatesInit implements ISpecificationBuilder {
 	static public LcAlternatesInit INSTANCE = new LcAlternatesInit();
@@ -25,7 +26,7 @@ public class LcAlternatesInit implements ISpecificationBuilder {
 	public static void main(String[] args) {
 		String name = "AlternatesInit";
 		
-		// do not reduce
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcAlternatesInit.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

@@ -33,26 +33,23 @@ public class TernaryDelayBuilder extends ACCSLStsBuilder<SynchronousTransitionSy
 
 		Event srcE = helper.createEvent(source);
 		Event delE = helper.createEvent(delayed);
-		Event baseE = base.equals(source)?srcE:helper.createEvent(base);
+		Event baseE = helper.createEvent(base);
 
 		State[] states = new State[1<<delay];
 		states[0] = helper.createState("Z0");
 		sts.setInitial(states[0]);
 		if (delay == 0) {
 			helper.createTransition(states[0], states[0], srcE, delE);
-			if (baseE != srcE)
-				helper.createTransition(states[0], states[0], srcE, baseE, delE);
+			helper.createTransition(states[0], states[0], srcE, baseE, delE);
 		}
-		if (baseE != srcE)
-			helper.createTransition(states[0], states[0], baseE);
+		helper.createTransition(states[0], states[0], baseE);
 
 		for (int i = 1; i < states.length; i++) {
 			states[i] = helper.createState("Z" + i);
 		}
 		if (delay > 0) {
 			helper.createTransition(states[0], states[1], srcE);
-			if (baseE != srcE)
-				helper.createTransition(states[0], states[1], srcE, baseE);
+			helper.createTransition(states[0], states[1], srcE, baseE);
 		}
 
 		for(int i = 1; i < states.length; i++) {

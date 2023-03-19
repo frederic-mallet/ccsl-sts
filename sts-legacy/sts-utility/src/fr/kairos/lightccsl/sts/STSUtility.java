@@ -31,9 +31,7 @@ import fr.kairos.timesquare.ccsl.simple.IUtility;
  */
 public class STSUtility extends AUtility implements IUtility {
 	private ISTSBackend<?> backend = null;
-	public static final String STATS = "stats";
-	private Object result = null;
-	
+	private static final String STATS = "stats";
 	@Override
 	public void treat(String name, ISpecificationBuilder specBuilder) {
 		STSSystemBuilder sBuilder = STSSystemBuilder.buildParallelSystemBuilder();
@@ -45,11 +43,8 @@ public class STSUtility extends AUtility implements IUtility {
 			CheckVisitor.check(sts);
 		}
 		if (backend != null) {
-			result = backend.treat(this, sts, name);
+			backend.treat(this, sts, name);
 		}
-	}
-	public Object getResult() {
-		return result;
 	}
 	public void setBackend(ISTSBackend<?> backend) {
 		this.backend = backend;

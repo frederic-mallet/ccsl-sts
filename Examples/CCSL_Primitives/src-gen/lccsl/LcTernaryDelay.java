@@ -5,6 +5,7 @@ import fr.kairos.timesquare.ccsl.simple.IUtility;
 import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.core.stepper.StepperUtility;
 import fr.unice.lightccsl.sat.bdd.BDDSolutionFinder;
+import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class LcTernaryDelay implements ISpecificationBuilder {
 	static public LcTernaryDelay INSTANCE = new LcTernaryDelay();
@@ -25,7 +26,7 @@ public class LcTernaryDelay implements ISpecificationBuilder {
 	public static void main(String[] args) {
 		String name = "TernaryDelay";
 		
-		// do not reduce
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcTernaryDelay.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

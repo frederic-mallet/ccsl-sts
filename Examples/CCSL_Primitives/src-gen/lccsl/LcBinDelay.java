@@ -5,6 +5,7 @@ import fr.kairos.timesquare.ccsl.simple.IUtility;
 import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.core.stepper.StepperUtility;
 import fr.unice.lightccsl.sat.bdd.BDDSolutionFinder;
+import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class LcBinDelay implements ISpecificationBuilder {
 	static public LcBinDelay INSTANCE = new LcBinDelay();
@@ -24,7 +25,7 @@ public class LcBinDelay implements ISpecificationBuilder {
 	public static void main(String[] args) {
 		String name = "BinDelay";
 		
-		// do not reduce
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcBinDelay.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}
