@@ -1,0 +1,41 @@
+$date
+  Wed Mar 15 16:44:13 CET 2023
+$end
+
+$version
+  VCD  1.0
+$end
+
+$timescale
+  1 s
+$end
+
+$scope module top $end
+  $var event 1 !1 a $end
+  $var event 1 !2 b $end
+$upscope $end
+$enddefinitions $end
+
+#0
+1!1
+#10
+1!2
+#20
+1!1
+#30
+1!2
+#40
+1!1
+#50
+1!2
+#60
+1!1
+#70
+1!2
+#80
+1!1
+#90
+1!2
+#100
+z!1
+z!2
