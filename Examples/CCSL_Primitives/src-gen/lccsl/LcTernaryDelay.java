@@ -4,7 +4,7 @@ import fr.kairos.timesquare.ccsl.ISimpleSpecification;
 import fr.kairos.timesquare.ccsl.simple.IUtility;
 import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.core.stepper.StepperUtility;
-import fr.kairos.lightccsl.sts.STSSolutionFinder;
+import fr.unice.lightccsl.sat.bdd.BDDSolutionFinder;
 import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class LcTernaryDelay implements ISpecificationBuilder {
@@ -31,7 +31,7 @@ public class LcTernaryDelay implements ISpecificationBuilder {
 			u.treat(name, INSTANCE);
 		}
 		
-		StepperUtility exe = new StepperUtility(new STSSolutionFinder());
+		StepperUtility exe = new StepperUtility(new BDDSolutionFinder());
 		exe.setParam(StepperUtility.INTERACTIVE, false);
 		exe.setParam(StepperUtility.NB_STEPS, 20);
 		exe.treat(name, INSTANCE);

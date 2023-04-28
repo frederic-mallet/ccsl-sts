@@ -1,8 +1,5 @@
-4	./before.txt					      |	84	./before.txt
-							      >	16	./after.txt
-12	./dependencies/jar/html-0.1.jar			      |	20	./dependencies/jar/html-0.1.jar
-8	./dependencies/jar/vcd-0.1.jar			      |	12	./dependencies/jar/vcd-0.1.jar
-916	./dependencies/jar				      |	928	./dependencies/jar
-668	./dependencies/lightccsl-feature.zip		      |	464	./dependencies/lightccsl-feature.zip
-17992	./dependencies					      |	17800	./dependencies
-342768	.						      |	342672	.
+4	./before.txt					      |	92	./before.txt
+							      >	24	./after.txt
+464	./dependencies/lightccsl-feature.zip		      |	668	./dependencies/lightccsl-feature.zip
+17800	./dependencies					      |	18004	./dependencies
+344200	.						      |	344516	.
