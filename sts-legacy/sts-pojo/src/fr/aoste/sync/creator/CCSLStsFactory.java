@@ -32,6 +32,19 @@ final public class CCSLStsFactory {
 		builder.setParameterValue(DisjointUnionBuilder.DISJOINT_UNION, derived);
 		return builder;
 	}
+	public STSBuilder<SynchronousTransitionSystem> createExclusiveUnionBuilder(String derived, String... src) {
+		ExclusiveUnionBuilder builder = new ExclusiveUnionBuilder();
+		// cannot have less than two clocks
+		int nbClocks = Math.max(src.length, 2);
+		builder.setParameterValue(ExclusiveUnionBuilder.NB_CLOCKS, nbClocks);
+		builder.setParameterValue(ExclusiveUnionBuilder.EXCLUSIVEUNION, derived);
+		int i = 1;
+		for(String s : src) {
+			builder.setParameterValue("x"+i, s);
+			i++;
+		}
+		return builder;
+	}
 	public STSBuilder<SynchronousTransitionSystem> createUnionBuilder(String derived, String ... src) {
 		UnionBuilder builder = new UnionBuilder();
 		// cannot have less than two clocks

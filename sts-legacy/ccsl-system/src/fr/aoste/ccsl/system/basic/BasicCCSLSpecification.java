@@ -86,6 +86,20 @@ Iterable<ICCSLSpecificationElement>{
 	}
 
 	@Override
+	public String xor(String der, String... operands) {
+		ExclusiveUnion u = new ExclusiveUnion(der, operands);
+		elements.add(u);
+		return der;
+	}
+
+	@Override
+	public String xor(String der, String operand1, String operand2) {
+		ExclusiveUnion u = new ExclusiveUnion(operand1, operand2);
+		elements.add(u);
+		return der;
+	}
+
+	@Override
 	public String filter(String der, String base, int every, int from) {
 		Filter f = new Filter(der, base, every, from);
 		elements.add(f);

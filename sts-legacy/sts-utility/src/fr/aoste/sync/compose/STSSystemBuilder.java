@@ -222,4 +222,26 @@ final public class STSSystemBuilder extends ACCSLSystemBuilder<SynchronousTransi
 				throw new RuntimeException("Do not know what to do with "+o);
 		}
 	}
+	@Override
+	public String xor(String der, String operand1, String operand2) {
+		return xor(der, new String[] { operand1, operand2 });
+	}
+	@Override
+	public String xor(String der, String... operands) {
+		assert(operands.length>=2);
+		String[] names = new String[operands.length];
+		for(int i = 0; i<names.length; i++) names[i] = "x"+i;
+
+		SynchronousTransitionSystem sts =  CCSLStsFactory.INSTANCE.createExclusiveUnionBuilder("x", names).create();
+		int num = systems.size();
+		systems.add(sts);
+
+		for(int i = 0; i<operands.length; i++) {
+			bindings.add(new Binding(operands[i],  num,  names[i]));
+		}
+		bindings.add(new Binding(der,  num,  "x"));
+		addClock(der, true);
+
+		return der;
+	}
 }

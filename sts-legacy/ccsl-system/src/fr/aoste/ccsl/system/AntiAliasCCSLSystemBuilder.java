@@ -94,6 +94,19 @@ final public class AntiAliasCCSLSystemBuilder<RESULT> implements ICCSLSystemBuil
 	}
 
 	@Override
+	public String xor(String der, String operand1, String operand2) {
+		return decorated.xor(resolveAlias(der), resolveAlias(operand1), resolveAlias(operand2));
+	}
+
+	@Override
+	public String xor(String der, String... operands) {
+		String[] ops = new String[operands.length];
+		for(int i=0;i<operands.length;i++)
+			ops[i]=resolveAlias(operands[i]);
+		return decorated.xor(resolveAlias(der), ops);
+	}
+
+	@Override
 	public String intersection(String der, String... operands) {
 		String[] ops = new String[operands.length];
 		for(int i=0;i<operands.length;i++)

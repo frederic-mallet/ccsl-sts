@@ -12,6 +12,7 @@ public interface ICCSLSpecificationVisitor {
 	void visit(Causality relation);
 	void visit(Precedence relation);
 	void visit(Exclusion relation);
+	void visit(ExclusiveUnion relation);
 	void visit(Coincidence relation);
 	void visit(Subclock relation);
 	void visit(Alternation relation);

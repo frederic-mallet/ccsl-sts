@@ -27,6 +27,9 @@ public interface ICCSLSystemBuilder<RESULT> {
 	public abstract void subclock(String left, String right);
 
 	// -- expressions
+	public abstract String xor(String defClock, String operand1, String operand2);
+	public abstract String xor(String defClock, String... clocks);
+
 	public abstract String union(String der, String... operands);
 	public abstract String union(String der, String operand1, String operand2);
 	
@@ -44,4 +47,5 @@ public interface ICCSLSystemBuilder<RESULT> {
 
 	// Default values, every => 1, from => 0
 	String filter(String der, String base, int every, int from);
+
 }

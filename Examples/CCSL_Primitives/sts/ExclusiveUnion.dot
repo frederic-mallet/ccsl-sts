@@ -1,0 +1,11 @@
+digraph ExclusiveUnion { 
+  rankdir="LR"
+  s0 [ shape="doublecircle" ]
+  s0->s0 [
+    label= "x.x0"
+  ] ;
+  s0->s0 [
+    label= "x.x1"
+  ] ;
+}
+

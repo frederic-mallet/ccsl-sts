@@ -1,0 +1,6 @@
+Specification ExclusiveUnion {
+	Clock a b c
+	[
+		Let x be a xor b
+	]
+}
