@@ -1,5 +1,53 @@
 digraph modes { 
   rankdir="LR"
   s0 [ shape="doublecircle" ]
+  s0->s1 [
+    label= "Mode1"
+  ] ;
+  s0->s1 [
+    label= "Mode2"
+  ] ;
+  s1->s1 [
+    label= "Mode1"
+  ] ;
+  s1->s1 [
+    label= "Mode2"
+  ] ;
+  s1->s2 [
+    color = "red"label= "Trigger"
+  ] ;
+  s1->s3 [
+    label= "Mode1.Trigger"
+  ] ;
+  s1->s3 [
+    label= "Mode2.Trigger"
+  ] ;
+  s1->s3 [
+    color = "red"label= "Trigger"
+  ] ;
+  s2->s3 [
+    label= "Mode1"
+  ] ;
+  s2->s3 [
+    label= "Mode2"
+  ] ;
+  s3->s3 [
+    label= "Mode1"
+  ] ;
+  s3->s3 [
+    label= "Mode2"
+  ] ;
+  s3->s2 [
+    color = "red"label= "Trigger.Delay"
+  ] ;
+  s3->s3 [
+    label= "Mode1.Trigger.Delay"
+  ] ;
+  s3->s3 [
+    label= "Mode2.Trigger.Delay"
+  ] ;
+  s3->s3 [
+    color = "red"label= "Trigger.Delay"
+  ] ;
 }
 
