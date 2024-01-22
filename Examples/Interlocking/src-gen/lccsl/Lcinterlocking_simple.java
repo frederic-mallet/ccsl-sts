@@ -6,6 +6,7 @@ import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
+import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class Lcinterlocking_simple implements ISpecificationBuilder {
 	static public Lcinterlocking_simple INSTANCE = new Lcinterlocking_simple();
@@ -72,7 +73,7 @@ public class Lcinterlocking_simple implements ISpecificationBuilder {
 	public static void main(String[] args) {
 		String name = "interlocking_simple";
 		
-		// do not reduce
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(Lcinterlocking_simple.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

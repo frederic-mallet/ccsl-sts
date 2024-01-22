@@ -110,4 +110,8 @@ public class SystemBuilderVisitor extends ACCSLSpecificationVisitor {
 	public void visit(Exclusion relation) {
 		builder.exclusion(adapt(relation.getLeftClock()), adapt(relation.getRightClock()));
 	}
+	@Override
+	public void visit(ExclusiveUnion expr) {
+		builder.union(expr.getName(), adapt(expr.getOperands()));
+	}
 }

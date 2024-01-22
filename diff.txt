@@ -1,6 +1,36 @@
-4	./before.txt					      |	80	./before.txt
-							      >	8	./after.txt
-80	./dependencies/jar/lccsl-main.jar		      |	444	./dependencies/jar/lccsl-main.jar
-552	./dependencies/jar				      |	916	./dependencies/jar
-17628	./dependencies					      |	17992	./dependencies
-338776	.						      |	339224	.
+4	./before.txt					      |	96	./before.txt
+							      >	28	./after.txt
+212	./dependencies/jar/sts-legacy-0.1.jar		      |	216	./dependencies/jar/sts-legacy-0.1.jar
+928	./dependencies/jar				      |	932	./dependencies/jar
+668	./dependencies/lightccsl-feature.zip		      |	672	./dependencies/lightccsl-feature.zip
+18004	./dependencies					      |	18012	./dependencies
+							      >	4	./sts-legacy/ccsl-system/bin/fr/aoste/ccsl/system/bas
+100	./sts-legacy/ccsl-system/bin/fr/aoste/ccsl/system/bas |	104	./sts-legacy/ccsl-system/bin/fr/aoste/ccsl/system/bas
+132	./sts-legacy/ccsl-system/bin/fr/aoste/ccsl/system     |	136	./sts-legacy/ccsl-system/bin/fr/aoste/ccsl/system
+136	./sts-legacy/ccsl-system/bin/fr/aoste/ccsl	      |	140	./sts-legacy/ccsl-system/bin/fr/aoste/ccsl
+140	./sts-legacy/ccsl-system/bin/fr/aoste		      |	144	./sts-legacy/ccsl-system/bin/fr/aoste
+144	./sts-legacy/ccsl-system/bin/fr			      |	148	./sts-legacy/ccsl-system/bin/fr
+148	./sts-legacy/ccsl-system/bin			      |	152	./sts-legacy/ccsl-system/bin
+							      >	4	./sts-legacy/ccsl-system/src/fr/aoste/ccsl/system/bas
+88	./sts-legacy/ccsl-system/src/fr/aoste/ccsl/system/bas |	92	./sts-legacy/ccsl-system/src/fr/aoste/ccsl/system/bas
+120	./sts-legacy/ccsl-system/src/fr/aoste/ccsl/system     |	124	./sts-legacy/ccsl-system/src/fr/aoste/ccsl/system
+124	./sts-legacy/ccsl-system/src/fr/aoste/ccsl	      |	128	./sts-legacy/ccsl-system/src/fr/aoste/ccsl
+128	./sts-legacy/ccsl-system/src/fr/aoste		      |	132	./sts-legacy/ccsl-system/src/fr/aoste
+132	./sts-legacy/ccsl-system/src/fr			      |	136	./sts-legacy/ccsl-system/src/fr
+136	./sts-legacy/ccsl-system/src			      |	140	./sts-legacy/ccsl-system/src
+1168	./sts-legacy/ccsl-system			      |	1176	./sts-legacy/ccsl-system
+							      >	4	./sts-legacy/sts-pojo/bin/fr/aoste/sync/creator/Exclu
+120	./sts-legacy/sts-pojo/bin/fr/aoste/sync/creator	      |	124	./sts-legacy/sts-pojo/bin/fr/aoste/sync/creator
+648	./sts-legacy/sts-pojo/bin/fr/aoste/sync		      |	652	./sts-legacy/sts-pojo/bin/fr/aoste/sync
+652	./sts-legacy/sts-pojo/bin/fr/aoste		      |	656	./sts-legacy/sts-pojo/bin/fr/aoste
+656	./sts-legacy/sts-pojo/bin/fr			      |	660	./sts-legacy/sts-pojo/bin/fr
+660	./sts-legacy/sts-pojo/bin			      |	664	./sts-legacy/sts-pojo/bin
+							      >	4	./sts-legacy/sts-pojo/src/fr/aoste/sync/creator/Exclu
+104	./sts-legacy/sts-pojo/src/fr/aoste/sync/creator	      |	108	./sts-legacy/sts-pojo/src/fr/aoste/sync/creator
+348	./sts-legacy/sts-pojo/src/fr/aoste/sync		      |	352	./sts-legacy/sts-pojo/src/fr/aoste/sync
+352	./sts-legacy/sts-pojo/src/fr/aoste		      |	356	./sts-legacy/sts-pojo/src/fr/aoste
+356	./sts-legacy/sts-pojo/src/fr			      |	360	./sts-legacy/sts-pojo/src/fr
+360	./sts-legacy/sts-pojo/src			      |	364	./sts-legacy/sts-pojo/src
+1520	./sts-legacy/sts-pojo				      |	1528	./sts-legacy/sts-pojo
+3092	./sts-legacy					      |	3108	./sts-legacy
+345524	.						      |	345668	.

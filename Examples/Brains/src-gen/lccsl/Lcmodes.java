@@ -6,6 +6,7 @@ import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
+import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class Lcmodes implements ISpecificationBuilder {
 	static public Lcmodes INSTANCE = new Lcmodes();
@@ -19,14 +20,14 @@ public class Lcmodes implements ISpecificationBuilder {
 		simple.addClock("Mode2");
 		simple.addClock("Trigger");
 		simple.addClock("ReactionTime");
+		simple.addClock("Delay");
 		
 		simple.union("Mode", "Mode1", "Mode2");
 		simple.exclusion("Mode1", "Mode2");
 		
 		simple.delayFor("Delay", "Trigger", 1, -1, null);
 		simple.precedence("Mode", "Trigger");
-		simple.precedence("Trigger", "Mode");
-		simple.causality("Mode", "Delay");
+		simple.causality("Trigger", "Delay");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
@@ -34,7 +35,7 @@ public class Lcmodes implements ISpecificationBuilder {
 	public static void main(String[] args) {
 		String name = "modes";
 		
-		// do not reduce
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(Lcmodes.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

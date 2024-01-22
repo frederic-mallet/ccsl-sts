@@ -6,6 +6,7 @@ import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
+import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class LcIsse_v2_exp implements ISpecificationBuilder {
 	static public LcIsse_v2_exp INSTANCE = new LcIsse_v2_exp();
@@ -51,7 +52,7 @@ public class LcIsse_v2_exp implements ISpecificationBuilder {
 	public static void main(String[] args) {
 		String name = "Isse_v2_exp";
 		
-		// do not reduce
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcIsse_v2_exp.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

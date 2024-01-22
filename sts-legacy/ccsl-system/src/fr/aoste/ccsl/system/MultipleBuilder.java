@@ -138,7 +138,22 @@ final public class MultipleBuilder implements ICCSLSystemBuilder<List<Object>>{
 		}
 		return getNameForList(res);
 	}
-
+	@Override
+	public String xor(String der, String... operands) {
+		ArrayList<String> res = new ArrayList<>();
+		for (int i = 0; i<builders.size(); i++) {
+			res.add(builders.get(i).xor(idToClock(i,der), adaptOperands(i, operands)));
+		}
+		return getNameForList(res);
+	}
+	@Override
+	public String xor(String der, String operand1, String operand2) {
+		ArrayList<String> res = new ArrayList<>();
+		for (int i = 0; i<builders.size(); i++) {
+			res.add(builders.get(i).xor(idToClock(i,der), idToClock(i, operand1), idToClock(i, operand2)));
+		}
+		return getNameForList(res);
+	}
 	@Override
 	public String inf(String der, String... operands) {
 		ArrayList<String> res = new ArrayList<>();

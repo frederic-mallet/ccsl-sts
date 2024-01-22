@@ -1,0 +1,247 @@
+MODULE main
+VAR 
+  _state : -2 .. 7;
+
+INVARSPEC !(_state=-2); -- not fail state
+
+ASSIGN 
+  init(_state) := 0;
+
+  next(_state) := case
+                    _state = 0: { 1, 2, 3, 4, 5 };
+                    _state = 1: { 2, 6, 4, 5, 7 };
+                    _state = 2: { 6, 2, 5, 7, 5, 0, 2, 1, 6, 2 };
+                    _state = 3: { 4, 5 };
+                    _state = 4: { 5, 7 };
+                    _state = 5: { 7, 5, 0, 2, 1, 6, 2, 3, 5, 4, 7, 5 };
+                    _state = 6: { 2, 6, 7, 5, 7, 1, 6, 2, 6 };
+                    _state = 7: { 5, 7, 1, 6, 2, 6, 4, 7, 5, 7 };
+                    TRUE: _state;
+                  esac;
+
+DEFINE 
+	  _state=null & !read & !control & t1 & !t2 :
+	    null;
+	  _state=null & read & !control & t1 & !t2 :
+	    null;
+	  _state=null & !read & !control & !t1 & t2 :
+	    null;
+	  _state=null & !read & !control & t1 & t2 :
+	    null;
+	  _state=null & read & !control & t1 & t2 :
+	    null;
+	  _state=null & read & !control & !t1 & !t2 :
+	    null;
+	  _state=null & read & !control & t1 & !t2 :
+	    null;
+	  _state=null & !read & !control & !t1 & t2 :
+	    null;
+	  _state=null & read & !control & !t1 & t2 :
+	    null;
+	  _state=null & read & !control & t1 & t2 :
+	    null;
+	  _state=null & !read & !control & t1 & !t2 :
+	    null;
+	  _state=null & read & !control & t1 & !t2 :
+	    null;
+	  _state=null & !read & !control & !t1 & t2 :
+	    null;
+	  _state=null & !read & !control & t1 & t2 :
+	    null;
+	  _state=null & read & !control & t1 & t2 :
+	    null;
+	  _state=null & !read & control & !t1 & t2 :
+	    null;
+	  _state=null & !read & control & !t1 & t2 :
+	    null;
+	  _state=null & !read & control & t1 & t2 :
+	    null;
+	  _state=null & !read & control & t1 & t2 :
+	    null;
+	  _state=null & read & control & t1 & t2 :
+	    null;
+	  _state=null & !read & !control & t1 & !t2 :
+	    null;
+	  _state=null & read & !control & t1 & !t2 :
+	    null;
+	  _state=null & read & !control & !t1 & !t2 :
+	    null;
+	  _state=null & read & !control & t1 & !t2 :
+	    null;
+	  _state=null & !read & !control & t1 & !t2 :
+	    null;
+	  _state=null & read & !control & t1 & !t2 :
+	    null;
+	  _state=null & !read & control & !t1 & !t2 :
+	    null;
+	  _state=null & !read & control & !t1 & !t2 :
+	    null;
+	  _state=null & !read & control & t1 & !t2 :
+	    null;
+	  _state=null & !read & control & t1 & !t2 :
+	    null;
+	  _state=null & read & control & t1 & !t2 :
+	    null;
+	  _state=null & !read & control & !t1 & t2 :
+	    null;
+	  _state=null & !read & control & !t1 & t2 :
+	    null;
+	  _state=null & !read & control & t1 & t2 :
+	    null;
+	  _state=null & !read & control & t1 & t2 :
+	    null;
+	  _state=null & read & control & t1 & t2 :
+	    null;
+	  _state=null & read & !control & !t1 & !t2 :
+	    null;
+	  _state=null & read & !control & t1 & !t2 :
+	    null;
+	  _state=null & !read & !control & !t1 & t2 :
+	    null;
+	  _state=null & read & !control & !t1 & t2 :
+	    null;
+	  _state=null & read & !control & t1 & t2 :
+	    null;
+	  _state=null & !read & control & !t1 & t2 :
+	    null;
+	  _state=null & !read & control & !t1 & t2 :
+	    null;
+	  _state=null & read & control & !t1 & t2 :
+	    null;
+	  _state=null & read & control & t1 & t2 :
+	    null;
+	  _state=null & read & !control & !t1 & !t2 :
+	    null;
+	  _state=null & read & !control & t1 & !t2 :
+	    null;
+	  _state=null & !read & control & !t1 & !t2 :
+	    null;
+	  _state=null & !read & control & !t1 & !t2 :
+	    null;
+	  _state=null & read & control & !t1 & !t2 :
+	    null;
+	  _state=null & read & control & t1 & !t2 :
+	    null;
+	  _state=null & !read & control & !t1 & t2 :
+	    null;
+	  _state=null & !read & control & !t1 & t2 :
+	    null;
+	  _state=null & read & control & !t1 & t2 :
+	    null;
+	  _state=null & read & control & t1 & t2 :
+	    null;
+  read := ((_state = 0) & (next(_state) = 2))
+	| ((_state = 0) & (next(_state) = 5))
+	| ((_state = 1) & (next(_state) = 2))
+	| ((_state = 1) & (next(_state) = 6))
+	| ((_state = 1) & (next(_state) = 5))
+	| ((_state = 1) & (next(_state) = 7))
+	| ((_state = 2) & (next(_state) = 2))
+	| ((_state = 2) & (next(_state) = 5))
+	| ((_state = 2) & (next(_state) = 2))
+	| ((_state = 3) & (next(_state) = 5))
+	| ((_state = 4) & (next(_state) = 5))
+	| ((_state = 4) & (next(_state) = 7))
+	| ((_state = 5) & (next(_state) = 5))
+	| ((_state = 5) & (next(_state) = 2))
+	| ((_state = 5) & (next(_state) = 5))
+	| ((_state = 6) & (next(_state) = 2))
+	| ((_state = 6) & (next(_state) = 6))
+	| ((_state = 6) & (next(_state) = 5))
+	| ((_state = 6) & (next(_state) = 7))
+	| ((_state = 6) & (next(_state) = 2))
+	| ((_state = 6) & (next(_state) = 6))
+	| ((_state = 7) & (next(_state) = 5))
+	| ((_state = 7) & (next(_state) = 7))
+	| ((_state = 7) & (next(_state) = 2))
+	| ((_state = 7) & (next(_state) = 6))
+	| ((_state = 7) & (next(_state) = 5))
+	| ((_state = 7) & (next(_state) = 7));
+  control := ((_state = 2) & (next(_state) = 0))
+	| ((_state = 2) & (next(_state) = 2))
+	| ((_state = 2) & (next(_state) = 1))
+	| ((_state = 2) & (next(_state) = 6))
+	| ((_state = 2) & (next(_state) = 2))
+	| ((_state = 5) & (next(_state) = 0))
+	| ((_state = 5) & (next(_state) = 2))
+	| ((_state = 5) & (next(_state) = 1))
+	| ((_state = 5) & (next(_state) = 6))
+	| ((_state = 5) & (next(_state) = 2))
+	| ((_state = 5) & (next(_state) = 3))
+	| ((_state = 5) & (next(_state) = 5))
+	| ((_state = 5) & (next(_state) = 4))
+	| ((_state = 5) & (next(_state) = 7))
+	| ((_state = 5) & (next(_state) = 5))
+	| ((_state = 6) & (next(_state) = 1))
+	| ((_state = 6) & (next(_state) = 6))
+	| ((_state = 6) & (next(_state) = 2))
+	| ((_state = 6) & (next(_state) = 6))
+	| ((_state = 7) & (next(_state) = 1))
+	| ((_state = 7) & (next(_state) = 6))
+	| ((_state = 7) & (next(_state) = 2))
+	| ((_state = 7) & (next(_state) = 6))
+	| ((_state = 7) & (next(_state) = 4))
+	| ((_state = 7) & (next(_state) = 7))
+	| ((_state = 7) & (next(_state) = 5))
+	| ((_state = 7) & (next(_state) = 7));
+  t1 := ((_state = 0) & (next(_state) = 1))
+	| ((_state = 0) & (next(_state) = 2))
+	| ((_state = 0) & (next(_state) = 4))
+	| ((_state = 0) & (next(_state) = 5))
+	| ((_state = 1) & (next(_state) = 6))
+	| ((_state = 1) & (next(_state) = 7))
+	| ((_state = 2) & (next(_state) = 6))
+	| ((_state = 2) & (next(_state) = 2))
+	| ((_state = 2) & (next(_state) = 7))
+	| ((_state = 2) & (next(_state) = 5))
+	| ((_state = 2) & (next(_state) = 1))
+	| ((_state = 2) & (next(_state) = 6))
+	| ((_state = 2) & (next(_state) = 2))
+	| ((_state = 3) & (next(_state) = 4))
+	| ((_state = 3) & (next(_state) = 5))
+	| ((_state = 4) & (next(_state) = 7))
+	| ((_state = 5) & (next(_state) = 7))
+	| ((_state = 5) & (next(_state) = 5))
+	| ((_state = 5) & (next(_state) = 1))
+	| ((_state = 5) & (next(_state) = 6))
+	| ((_state = 5) & (next(_state) = 2))
+	| ((_state = 5) & (next(_state) = 4))
+	| ((_state = 5) & (next(_state) = 7))
+	| ((_state = 5) & (next(_state) = 5))
+	| ((_state = 6) & (next(_state) = 6))
+	| ((_state = 6) & (next(_state) = 7))
+	| ((_state = 6) & (next(_state) = 6))
+	| ((_state = 7) & (next(_state) = 7))
+	| ((_state = 7) & (next(_state) = 6))
+	| ((_state = 7) & (next(_state) = 7));
+  t2 := ((_state = 0) & (next(_state) = 3))
+	| ((_state = 0) & (next(_state) = 4))
+	| ((_state = 0) & (next(_state) = 5))
+	| ((_state = 1) & (next(_state) = 4))
+	| ((_state = 1) & (next(_state) = 5))
+	| ((_state = 1) & (next(_state) = 7))
+	| ((_state = 2) & (next(_state) = 5))
+	| ((_state = 2) & (next(_state) = 7))
+	| ((_state = 2) & (next(_state) = 5))
+	| ((_state = 2) & (next(_state) = 0))
+	| ((_state = 2) & (next(_state) = 2))
+	| ((_state = 2) & (next(_state) = 1))
+	| ((_state = 2) & (next(_state) = 6))
+	| ((_state = 2) & (next(_state) = 2))
+	| ((_state = 5) & (next(_state) = 3))
+	| ((_state = 5) & (next(_state) = 5))
+	| ((_state = 5) & (next(_state) = 4))
+	| ((_state = 5) & (next(_state) = 7))
+	| ((_state = 5) & (next(_state) = 5))
+	| ((_state = 6) & (next(_state) = 7))
+	| ((_state = 6) & (next(_state) = 5))
+	| ((_state = 6) & (next(_state) = 7))
+	| ((_state = 6) & (next(_state) = 1))
+	| ((_state = 6) & (next(_state) = 6))
+	| ((_state = 6) & (next(_state) = 2))
+	| ((_state = 6) & (next(_state) = 6))
+	| ((_state = 7) & (next(_state) = 4))
+	| ((_state = 7) & (next(_state) = 7))
+	| ((_state = 7) & (next(_state) = 5))
+	| ((_state = 7) & (next(_state) = 7));
+

@@ -6,6 +6,7 @@ import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
+import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class LcAadl2 implements ISpecificationBuilder {
 	static public LcAadl2 INSTANCE = new LcAadl2();
@@ -34,7 +35,7 @@ public class LcAadl2 implements ISpecificationBuilder {
 	public static void main(String[] args) {
 		String name = "Aadl2";
 		
-		// do not reduce
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcAadl2.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

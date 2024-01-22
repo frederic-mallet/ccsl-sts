@@ -42,14 +42,13 @@ class UnionBuilder extends ACCSLStsBuilder<SynchronousTransitionSystem> {
 		
 		Event unionE = helper.createEvent(union);
 		
-		State init = helper.createState("U");
+		State init = helper.createState("U"); // create and add
 		sts.setInitial(init);
 		Conjunction c = InvariantBuilder.conjunction();
 		for(int i = 0; i<nbClocks; i++) {
 			c.getOperands().add(InvariantBuilder.inv(unionE, events[i], 0, ComparisonOperator.GREATEROREQUAL));
 		}
 		init.setInvariant(c);
-		sts.getStates().add(init);		
 		
 		boolean[] clockStatus = new boolean[nbClocks];
 		int pos = 0;

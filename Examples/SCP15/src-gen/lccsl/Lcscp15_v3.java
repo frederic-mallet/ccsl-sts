@@ -6,6 +6,7 @@ import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
+import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class Lcscp15_v3 implements ISpecificationBuilder {
 	static public Lcscp15_v3 INSTANCE = new Lcscp15_v3();
@@ -38,7 +39,7 @@ public class Lcscp15_v3 implements ISpecificationBuilder {
 	public static void main(String[] args) {
 		String name = "scp15_v3";
 		
-		// do not reduce
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(Lcscp15_v3.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

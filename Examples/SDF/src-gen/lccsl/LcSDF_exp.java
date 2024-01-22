@@ -6,6 +6,7 @@ import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
+import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class LcSDF_exp implements ISpecificationBuilder {
 	static public LcSDF_exp INSTANCE = new LcSDF_exp();
@@ -44,7 +45,7 @@ public class LcSDF_exp implements ISpecificationBuilder {
 	public static void main(String[] args) {
 		String name = "SDF_exp";
 		
-		// do not reduce
+		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcSDF_exp.INSTANCE);
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

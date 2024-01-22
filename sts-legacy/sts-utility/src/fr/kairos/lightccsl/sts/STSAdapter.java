@@ -106,4 +106,20 @@ class STSAdapter implements ISimpleSpecification {
 //		STSBuilder<SynchronousTransitionSystem> builder = CCSLStsFactory.INSTANCE.createSampledBuilder(defClock, ref, base);
 //		stsBuilder.addSpecification(builder.create());
 //	}
+
+	@Override
+	public void nor(String defClock, String... clocks) {
+		System.err.println("STSAdapter: nor not implemented");
+//		stsBuilder.nor(defClock, clocks);
+	}
+
+	@Override
+	public void nand(String defClock, String... clocks) {
+		System.err.println("STSAdapter: nand not implemented");
+	}
+
+	@Override
+	public void xor(String defClock, String ...clocks) {
+		stsBuilder.xor(defClock, clocks);
+	}
 }

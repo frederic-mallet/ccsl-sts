@@ -89,5 +89,19 @@ public class JavaToC implements ISimpleSpecification {
 		// TODO Auto-generated method stub
 
 	}
-
+	@Override
+	public void nor(String defClock, String... clocks) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void nand(String defClock, String... clocks) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void xor(String defClock, String... clocks) {
+		// TODO Auto-generated method stub
+		
+	}
 }
