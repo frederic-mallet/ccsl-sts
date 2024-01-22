@@ -1,0 +1,14 @@
+Specification test1 {
+	Clock ms_s ms_f v_s v_f
+	[
+		Precedence ms_s <(max:1) ms_f
+		Precedence v_s < (max:1) v_f
+		
+//		Let v1 be v_s sampledOn ms_f
+//		Let v2 be v_f sampledOn ms_f
+		
+//		SubClocking v1 <- v2
+//		SubClocking v2 <- v1
+	]
+	
+}

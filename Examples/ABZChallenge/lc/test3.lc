@@ -1,0 +1,15 @@
+Specification test3 {
+	Clock v_s v_f m_s m_f
+	[
+		Precedence v_s < (max: 1) v_f
+		Precedence m_s < (max: 1) m_f
+
+		Let u1 be m_s + v_f
+		Let u2 be m_f + v_s
+		
+		Exclusion m_s # v_f
+		Exclusion m_f # v_s
+
+		Precedence u1 < (max: 1) u2
+	]
+}

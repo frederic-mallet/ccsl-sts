@@ -1,0 +1,29 @@
+digraph test1b { 
+  rankdir="LR"
+  s0 [ shape="doublecircle" ]
+  s0->s1 [
+    label= "m_s"
+  ] ;
+  s0->s2 [
+    label= "v_s"
+  ] ;
+  s1->s3 [
+    label= "v_s"
+  ] ;
+  s1->s0 [
+    label= "m_f"
+  ] ;
+  s2->s3 [
+    label= "m_s"
+  ] ;
+  s2->s0 [
+    label= "v_f"
+  ] ;
+  s3->s2 [
+    label= "m_f"
+  ] ;
+  s3->s1 [
+    label= "v_f"
+  ] ;
+}
+
