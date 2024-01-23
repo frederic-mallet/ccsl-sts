@@ -3,6 +3,9 @@ package lccsl;
 import fr.kairos.timesquare.ccsl.ISimpleSpecification;
 import fr.kairos.timesquare.ccsl.simple.IUtility;
 import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
+import fr.kairos.lightccsl.sts.STSUtility;
+//import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
+import fr.aoste.sync.ilp.JalinoptInvariantHelper;
 
 public class Lcinterlocking_simple implements ISpecificationBuilder {
 	static public Lcinterlocking_simple INSTANCE = new Lcinterlocking_simple();
@@ -40,23 +43,20 @@ public class Lcinterlocking_simple implements ISpecificationBuilder {
 		simple.precedence("enter", "leave");
 		
 		simple.subclock("enter", "getOccupied");
-		
 		simple.subclock("leave", "getUnoccupied");
-		
 		simple.precedence("getOccupied", "tmp1", 0, 1);
 		
 		simple.precedence("getUnoccupied", "tmp1", 0, 1);
 		
 		simple.subclock("checkFail", "tmp1");
-		
 		simple.precedence("tmp2", "getOccupied");
 		
 		simple.union("responseOfTrack", "checkSucc", "checkFail");
 		simple.union("responseOfTrain", "enter", "wait");
 		simple.precedence("getUnoccupied", "getOccupied", 0, 1);
 		
-		simple.exclusion("getOccupied", "getUnoccupied");
 		
+		simple.exclusion("getOccupied", "getUnoccupied");
 		simple.precedence("request", "responseOfTrain", 0, 1);
 		
 		simple.precedence("getUnoccupied", "tmp2");
@@ -74,6 +74,12 @@ public class Lcinterlocking_simple implements ISpecificationBuilder {
 			u.treat(name, INSTANCE);
 		}
 		// no execution
-		// no STS generation
+		
+		STSUtility sts = new STSUtility();
+		//ChocoInvariantHelper.activate(); // to reduce STS
+		JalinoptInvariantHelper.activate(); // to reduce STS
+		sts.setBackend(new fr.aoste.sync.gen.STStoDOT(), ".dot");
+		sts.setParam("folderName", "sts");
+		sts.treat(name, INSTANCE);
 	}
 }

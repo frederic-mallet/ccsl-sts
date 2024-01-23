@@ -3,6 +3,9 @@ package lccsl;
 import fr.kairos.timesquare.ccsl.ISimpleSpecification;
 import fr.kairos.timesquare.ccsl.simple.IUtility;
 import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
+import fr.kairos.lightccsl.sts.STSUtility;
+//import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
+import fr.aoste.sync.ilp.JalinoptInvariantHelper;
 
 public class Lctimed implements ISpecificationBuilder {
 	static public Lctimed INSTANCE = new Lctimed();
@@ -33,6 +36,12 @@ public class Lctimed implements ISpecificationBuilder {
 			u.treat(name, INSTANCE);
 		}
 		// no execution
-		// no STS generation
+		
+		STSUtility sts = new STSUtility();
+		//ChocoInvariantHelper.activate(); // to reduce STS
+		JalinoptInvariantHelper.activate(); // to reduce STS
+		sts.setBackend(new fr.aoste.sync.gen.STStoDOT(), ".dot");
+		sts.setParam("folderName", "sts");
+		sts.treat(name, INSTANCE);
 	}
 }

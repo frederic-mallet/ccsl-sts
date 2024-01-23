@@ -3,6 +3,9 @@ package lccsl;
 import fr.kairos.timesquare.ccsl.ISimpleSpecification;
 import fr.kairos.timesquare.ccsl.simple.IUtility;
 import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
+import fr.kairos.lightccsl.sts.STSUtility;
+//import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
+import fr.aoste.sync.ilp.JalinoptInvariantHelper;
 
 public class Lcadavec implements ISpecificationBuilder {
 	static public Lcadavec INSTANCE = new Lcadavec();
@@ -21,10 +24,10 @@ public class Lcadavec implements ISpecificationBuilder {
 		simple.addClock("Off");
 		
 		simple.union("Road", "Urban", "Highway", "interurban");
+		
 		simple.exclusion("Urban", "Highway");
 		simple.exclusion("Urban", "interurban");
 		simple.exclusion("Highway", "interurban");
-		
 		simple.union("Daytime", "Sunny", "Night");
 		simple.causality("Sunny", "Night", 0, 1);
 		
@@ -44,6 +47,12 @@ public class Lcadavec implements ISpecificationBuilder {
 			u.treat(name, INSTANCE);
 		}
 		// no execution
-		// no STS generation
+		
+		STSUtility sts = new STSUtility();
+		//ChocoInvariantHelper.activate(); // to reduce STS
+		JalinoptInvariantHelper.activate(); // to reduce STS
+		sts.setBackend(new fr.aoste.sync.gen.STStoDOT(), ".dot");
+		sts.setParam("folderName", "sts");
+		sts.treat(name, INSTANCE);
 	}
 }
