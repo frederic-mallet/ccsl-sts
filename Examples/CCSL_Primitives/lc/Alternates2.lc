@@ -1,0 +1,6 @@
+Specification alternates2 {
+	Clock a b
+	[
+		Alternates a ~ b
+	]
+}
