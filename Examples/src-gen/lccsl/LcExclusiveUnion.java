@@ -4,32 +4,25 @@ import fr.kairos.timesquare.ccsl.ISimpleSpecification;
 import fr.kairos.timesquare.ccsl.simple.IUtility;
 import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 
-public class Lcmodes implements ISpecificationBuilder {
-	static public Lcmodes INSTANCE = new Lcmodes();
-	private Lcmodes () {
+public class LcExclusiveUnion implements ISpecificationBuilder {
+	static public LcExclusiveUnion INSTANCE = new LcExclusiveUnion();
+	private LcExclusiveUnion () {
 		// SINGLETON
 	}	
 
 	@Override
 	public void build(ISimpleSpecification simple) {
-		simple.addClock("Mode1");
-		simple.addClock("Mode2");
-		simple.addClock("Trigger");
-		simple.addClock("ReactionTime");
-		simple.addClock("Delay");
+		simple.addClock("a");
+		simple.addClock("b");
+		simple.addClock("c");
 		
-		simple.union("Mode", "Mode1", "Mode2");
-		simple.exclusion("Mode1", "Mode2");
-		
-		simple.delayFor("Delay", "Trigger", 1, -1, null);
-		simple.precedence("Mode", "Trigger");
-		simple.causality("Trigger", "Delay");
+		simple.xor("x", "a", "b");
 	}
 	private static IUtility[] utilities = { 
 		new fr.kairos.timesquare.ccsl.simple.PrettyPrintUtility()
 	};
 	public static void main(String[] args) {
-		String name = "modes";
+		String name = "ExclusiveUnion";
 		
 		// do not reduce
 		for (IUtility u : utilities) {

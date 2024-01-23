@@ -21,6 +21,7 @@ A logical clock represents repetitive events independently of a notion of physic
 The relations of CCSL constrains the logical clocks by defining instants where clocks cannot tick.
 
 - [Precedence](doc/Precedence.md): It makes sure that a clock ticks faster than another one.
+	- [Alternates](doc/Alternates.md): Bounded precedence of size 1
 - [Causality](doc/causality.md): When an event causes another one or one depends on an earlier one.
 - [Subclock](doc/subclock.md): Forces a clock to tick only when another (super) clock ticks.
 - [Synchrony](doc/Synchrony.md): When a is a subclock of b and b a subclock of a, then a and b are synchronous. When a causes b and b causes a then a and b are also synchronous.

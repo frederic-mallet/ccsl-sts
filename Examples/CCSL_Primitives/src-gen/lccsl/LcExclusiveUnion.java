@@ -6,7 +6,6 @@ import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
-import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class LcExclusiveUnion implements ISpecificationBuilder {
 	static public LcExclusiveUnion INSTANCE = new LcExclusiveUnion();
@@ -28,7 +27,7 @@ public class LcExclusiveUnion implements ISpecificationBuilder {
 	public static void main(String[] args) {
 		String name = "ExclusiveUnion";
 		
-		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcExclusiveUnion.INSTANCE);
+		// do not reduce
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

@@ -6,7 +6,6 @@ import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
-import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class LcSynchrony implements ISpecificationBuilder {
 	static public LcSynchrony INSTANCE = new LcSynchrony();
@@ -19,8 +18,8 @@ public class LcSynchrony implements ISpecificationBuilder {
 		simple.addClock("a");
 		simple.addClock("b");
 		
-		simple.subclock("a", "b");
 		
+		simple.subclock("a", "b");
 		simple.subclock("b", "a");
 	}
 	private static IUtility[] utilities = { 
@@ -29,7 +28,7 @@ public class LcSynchrony implements ISpecificationBuilder {
 	public static void main(String[] args) {
 		String name = "Synchrony";
 		
-		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcSynchrony.INSTANCE);
+		// do not reduce
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

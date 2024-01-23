@@ -6,7 +6,6 @@ import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
-import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class LcExcludes implements ISpecificationBuilder {
 	static public LcExcludes INSTANCE = new LcExcludes();
@@ -20,6 +19,7 @@ public class LcExcludes implements ISpecificationBuilder {
 		simple.addClock("b");
 		simple.addClock("c");
 		
+		
 		simple.exclusion("a", "b");
 		simple.exclusion("a", "c");
 		simple.exclusion("b", "c");
@@ -30,7 +30,7 @@ public class LcExcludes implements ISpecificationBuilder {
 	public static void main(String[] args) {
 		String name = "Excludes";
 		
-		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcExcludes.INSTANCE);
+		// do not reduce
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

@@ -6,7 +6,6 @@ import fr.kairos.timesquare.ccsl.simple.ISpecificationBuilder;
 import fr.kairos.lightccsl.sts.STSUtility;
 //import fr.kairos.sts.pojo.choco.ChocoInvariantHelper;
 import fr.aoste.sync.ilp.JalinoptInvariantHelper;
-import fr.kairos.timesquare.ccsl.reduce.ReduceSpecificationBuilder;
 
 public class LcInfSup implements ISpecificationBuilder {
 	static public LcInfSup INSTANCE = new LcInfSup();
@@ -29,7 +28,7 @@ public class LcInfSup implements ISpecificationBuilder {
 	public static void main(String[] args) {
 		String name = "InfSup";
 		
-		ReduceSpecificationBuilder INSTANCE = new ReduceSpecificationBuilder(LcInfSup.INSTANCE);
+		// do not reduce
 		for (IUtility u : utilities) {
 			u.treat(name, INSTANCE);
 		}

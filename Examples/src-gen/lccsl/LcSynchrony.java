@@ -15,8 +15,8 @@ public class LcSynchrony implements ISpecificationBuilder {
 		simple.addClock("a");
 		simple.addClock("b");
 		
-		simple.subclock("a", "b");
 		
+		simple.subclock("a", "b");
 		simple.subclock("b", "a");
 	}
 	private static IUtility[] utilities = { 

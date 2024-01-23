@@ -2,8 +2,8 @@ Specification test2b {
 	Clock m_s m_f v_s v_f x_s
 	[
 		Precedence m_s < (max:1) x_s  < (max:1) m_f
-		Precedence m_s < (max:1) m_f
-		Precedence v_s < (max:1) v_f
+		Alternates m_s ~ m_f
+		Alternates v_s ~ v_f
 		
 		SubClocking v_s <- x_s
 		
@@ -12,8 +12,7 @@ Specification test2b {
 		Let v1 be v_s sampledOn m_f
 		Let v2 be v_f sampledOn m_f
 		
-		SubClocking v1 <- v2
-		SubClocking v2 <- v1
+		Synchronizes v1 = v2
 	]
 	
 }

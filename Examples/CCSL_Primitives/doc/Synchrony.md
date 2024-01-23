@@ -11,7 +11,7 @@
 
 <center>
 <table>
-<tr><td align="center"><img alt="subclocking" src="../sts/Synchrony.png" height="150"/></td><td width="25%"></td>
-<td align="center"><img alt="subclocking" src="../dot/Synchrony.png" height="150"/></td></tr>
+<tr><td align="center"><img alt="synchrony_sts" src="../sts/Synchrony.png" height="150"/></td><td width="25%"></td>
+<td align="center"><img alt="synchrony_dot" src="../dot/Synchrony.png" height="150"/></td></tr>
 <tr><th align="center">a is subclock of b</th><td width="25%" align="center">and</td><th align="center">b is subclock of a</th></tr> 
 </center>
