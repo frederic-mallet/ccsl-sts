@@ -6,10 +6,10 @@ Specification test3 {
 
 		Let u1 be m_s + v_f
 		Let u2 be m_f + v_s
-		
+
 		Exclusion m_s # v_f
 		Exclusion m_f # v_s
-
+		
 		Precedence u1 < (max: 1) u2
 	]
 }
