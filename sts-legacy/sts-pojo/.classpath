@@ -7,7 +7,7 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="src-texo"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/common.binaryword"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/common-binaryword"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/fr.kairos.common.java"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/fr.aoste.sts"/>
 	<classpathentry kind="output" path="bin"/>

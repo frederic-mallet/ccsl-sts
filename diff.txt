@@ -1,12 +1,8 @@
 4	./before.txt					      |	108	./before.txt
-							      >	36	./after.txt
-20	./dependencies/jar/html-0.1.jar			      |	8	./dependencies/jar/html-0.1.jar
-12	./dependencies/jar/vcd-0.1.jar			      |	8	./dependencies/jar/vcd-0.1.jar
-444	./dependencies/jar/lccsl-main.jar		      |	448	./dependencies/jar/lccsl-main.jar
-932	./dependencies/jar				      |	920	./dependencies/jar
-40	./dependencies/common/memorymap-0.1.jar		      |	44	./dependencies/common/memorymap-0.1.jar
-156	./dependencies/common				      |	160	./dependencies/common
-1512	./dependencies/thirdparties/choco-solver-4.10.6.jar   |	1516	./dependencies/thirdparties/choco-solver-4.10.6.jar
-16244	./dependencies/thirdparties			      |	16248	./dependencies/thirdparties
-18012	./dependencies					      |	18008	./dependencies
-348524	.						      |	348660	.
+							      >	40	./after.txt
+448	./dependencies/jar/lccsl-main.jar		      |	444	./dependencies/jar/lccsl-main.jar
+920	./dependencies/jar				      |	916	./dependencies/jar
+1516	./dependencies/thirdparties/choco-solver-4.10.6.jar   |	1512	./dependencies/thirdparties/choco-solver-4.10.6.jar
+16248	./dependencies/thirdparties			      |	16244	./dependencies/thirdparties
+18008	./dependencies					      |	18000	./dependencies
+348872	.						      |	349008	.
