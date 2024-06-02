@@ -1,3 +1,7 @@
-4	./before.txt					      |	112	./before.txt
+4	./before.txt					      |	116	./before.txt
 							      >	44	./after.txt
-349220	.						      |	349372	.
+8	./dependencies/jar/html-0.1.jar			      |	12	./dependencies/jar/html-0.1.jar
+444	./dependencies/jar/lccsl-main.jar		      |	448	./dependencies/jar/lccsl-main.jar
+916	./dependencies/jar				      |	924	./dependencies/jar
+18000	./dependencies					      |	18008	./dependencies
+349336	.						      |	349500	.
