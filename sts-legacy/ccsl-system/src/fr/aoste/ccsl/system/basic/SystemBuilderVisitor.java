@@ -69,6 +69,24 @@ public class SystemBuilderVisitor extends ACCSLSpecificationVisitor {
 	public void visit(Union union) {
 		builder.union(union.getName(), adapt(union.getOperands()));
 	}
+	@Override
+	public void visit(Exclusion relation) {
+		excludes(relation.getLeftClock(), relation.getRightClock());
+	}
+	@Override
+	public void visit(ExclusiveUnion expr) {
+		builder.union(expr.getName(), adapt(expr.getOperands()));
+		excludes(0, expr.getOperands());
+	}
+	private void excludes(int pos, String...operands) {
+		for (int i = pos+1; i < operands.length; i++) {
+			excludes(operands[pos], operands[i]);
+		}
+		excludes(1, operands);
+	}
+	private void excludes(String left, String right) {
+		builder.exclusion(adapt(left), adapt(right));
+	}
 	
 	@Override
 	public void visit(Intersection expression) {
@@ -105,13 +123,5 @@ public class SystemBuilderVisitor extends ACCSLSpecificationVisitor {
 		String res = nameMappings.get(name);
 		if (res==null) return name;
 		return res;
-	}
-	@Override
-	public void visit(Exclusion relation) {
-		builder.exclusion(adapt(relation.getLeftClock()), adapt(relation.getRightClock()));
-	}
-	@Override
-	public void visit(ExclusiveUnion expr) {
-		builder.union(expr.getName(), adapt(expr.getOperands()));
 	}
 }
