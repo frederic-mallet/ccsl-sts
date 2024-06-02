@@ -1,7 +1,6 @@
 4	./before.txt					      |	116	./before.txt
 							      >	44	./after.txt
-8	./dependencies/jar/html-0.1.jar			      |	12	./dependencies/jar/html-0.1.jar
-444	./dependencies/jar/lccsl-main.jar		      |	448	./dependencies/jar/lccsl-main.jar
-916	./dependencies/jar				      |	924	./dependencies/jar
-18000	./dependencies					      |	18008	./dependencies
-349336	.						      |	349500	.
+332	./dependencies/thirdparties/toools.jar		      |	336	./dependencies/thirdparties/toools.jar
+16244	./dependencies/thirdparties			      |	16248	./dependencies/thirdparties
+18008	./dependencies					      |	18012	./dependencies
+349404	.						      |	349564	.
