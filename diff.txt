@@ -1,6 +1,9 @@
 4	./before.txt					      |	116	./before.txt
 							      >	44	./after.txt
-332	./dependencies/thirdparties/toools.jar		      |	336	./dependencies/thirdparties/toools.jar
-16244	./dependencies/thirdparties			      |	16248	./dependencies/thirdparties
-18008	./dependencies					      |	18012	./dependencies
-349404	.						      |	349564	.
+448	./dependencies/jar/lccsl-main.jar		      |	444	./dependencies/jar/lccsl-main.jar
+924	./dependencies/jar				      |	120	./dependencies/jar/sts-legacy-0.1-sources.jar
+							      >	1040	./dependencies/jar
+336	./dependencies/thirdparties/toools.jar		      |	332	./dependencies/thirdparties/toools.jar
+16248	./dependencies/thirdparties			      |	16244	./dependencies/thirdparties
+18012	./dependencies					      |	18124	./dependencies
+349520	.						      |	349788	.
