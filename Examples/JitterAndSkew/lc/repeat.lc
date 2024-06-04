@@ -1,0 +1,7 @@
+Specification Repeat
+{
+		Clock s T
+		[
+			repeat T every 5 s
+		]		
+}

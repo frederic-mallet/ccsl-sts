@@ -1,0 +1,23 @@
+digraph {
+  "Td";
+  "s";
+  "T";
+  "Tmax";
+  "Tmin";
+T -> Td
+Td -> Tmax["color"="red", "dir"="both", "arrowtail"="dot", "arrowhead"="dot"]
+Tmin -> Td
+s -> T
+s -> Tmin
+T -> Tmin
+Td -> T["style"="dashed"]
+Td -> T["color"="blue", "arrowhead"="onormal"]
+T -> s["color"="blue", "arrowhead"="onormal"]
+Tmin -> Td["color"="red", "dir"="both", "arrowtail"="dot", "arrowhead"="dot"]
+Td -> Tmax
+Tmin -> s["color"="blue", "arrowhead"="onormal"]
+Tmax -> s["color"="blue", "arrowhead"="onormal"]
+s -> Tmax
+T -> Tmax
+
+}

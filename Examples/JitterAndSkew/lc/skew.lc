@@ -1,0 +1,15 @@
+Specification Skew
+{
+		Clock s T min T1 max
+		[
+			repeat T every 5 s
+			
+			// skew
+			min = T $ 4 on s
+			max = T $ 7 on s
+			
+			SubClocking T1 <- s
+			Precedence min <= T1 <= max
+		]
+		
+}

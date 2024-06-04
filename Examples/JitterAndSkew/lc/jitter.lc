@@ -1,0 +1,13 @@
+Specification Jitter
+{
+		Clock s Tmin T Tmax
+		[
+			// jitter
+			Tmin = T $ 4 on s
+			SubClocking T <- s	
+			Tmax = T $ 7 on s
+			Td = T$1
+			Precedence Tmin < Td <= Tmax
+		]
+		
+}

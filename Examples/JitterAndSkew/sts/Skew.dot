@@ -1,0 +1,128 @@
+digraph Skew { 
+  rankdir="LR"
+  s0 [ shape="doublecircle" ]
+  s0->s1 [
+    label= "s.T"
+  ] ;
+  s1->s2 [
+    label= "s"
+  ] ;
+  s2->s3 [
+    label= "s"
+  ] ;
+  s3->s4 [
+    label= "s"
+  ] ;
+  s4->s5 [
+    label= "s.min"
+  ] ;
+  s4->s6 [
+    label= "s.min.T1"
+  ] ;
+  s5->s7 [
+    label= "s.T"
+  ] ;
+  s5->s8 [
+    color = "red"label= "s.T.T1"
+  ] ;
+  s5->s9 [
+    color = "red"label= "s.T.T1"
+  ] ;
+  s6->s8 [
+    label= "s.T"
+  ] ;
+  s7->s10 [
+    label= "s"
+  ] ;
+  s7->s11 [
+    color = "red"label= "s.T1"
+  ] ;
+  s7->s12 [
+    color = "red"label= "s.T1"
+  ] ;
+  s8->s11 [
+    label= "s"
+  ] ;
+  s9->s12 [
+    label= "s"
+  ] ;
+  s9->s11 [
+    color = "red"label= "s.T1"
+  ] ;
+  s9->s12 [
+    color = "red"label= "s.T1"
+  ] ;
+  s10->s3 [
+    color = "red"label= "s.max.T1"
+  ] ;
+  s10->s13 [
+    color = "red"label= "s.max.T1"
+  ] ;
+  s11->s3 [
+    color = "red"label= "s.max"
+  ] ;
+  s11->s14 [
+    color = "red"label= "s.max"
+  ] ;
+  s12->s13 [
+    color = "red"label= "s.max"
+  ] ;
+  s12->s14 [
+    color = "red"label= "s.max.T1"
+  ] ;
+  s12->s15 [
+    color = "red"label= "s.max.T1"
+  ] ;
+  s12->s15 [
+    color = "red"label= "s.max"
+  ] ;
+  s13->s16 [
+    label= "s"
+  ] ;
+  s13->s17 [
+    color = "red"label= "s.T1"
+  ] ;
+  s13->s18 [
+    color = "red"label= "s.T1"
+  ] ;
+  s14->s17 [
+    label= "s"
+  ] ;
+  s15->s18 [
+    label= "s"
+  ] ;
+  s15->s17 [
+    color = "red"label= "s.T1"
+  ] ;
+  s15->s18 [
+    color = "red"label= "s.T1"
+  ] ;
+  s16->s5 [
+    label= "s.min"
+  ] ;
+  s16->s19 [
+    label= "s.min.T1"
+  ] ;
+  s17->s19 [
+    label= "s.min"
+  ] ;
+  s17->s6 [
+    label= "s.min.T1"
+  ] ;
+  s18->s19 [
+    label= "s.min"
+  ] ;
+  s18->s19 [
+    label= "s.min.T1"
+  ] ;
+  s19->s9 [
+    label= "s.T"
+  ] ;
+  s19->s8 [
+    color = "red"label= "s.T.T1"
+  ] ;
+  s19->s9 [
+    color = "red"label= "s.T.T1"
+  ] ;
+}
+
